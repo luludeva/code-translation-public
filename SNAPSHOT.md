@@ -1,7 +1,8 @@
 # About this snapshot
 
 This repository is a snapshot of the author's working repository, taken at commit `773d561fca1ca4165a00fdeb044676dab126b5af`
-of that repository. None of the history of the working repository is included.
+of that repository. Later changes are added as new commits, and each commit message names the commit of the working repository
+that it reproduces. None of the history of the working repository is included.
 
 ## Contents
 
