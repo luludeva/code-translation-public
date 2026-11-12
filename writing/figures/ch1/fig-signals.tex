@@ -20,7 +20,7 @@
 % ---------- (b) Holdem_Odds ----------
 \begin{scope}[xshift=8.9cm,
   box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize, minimum width=5.3cm, inner sep=3pt}]
-\node[anchor=west, font=\small\bfseries, text=failc] at (-2.7,0.75) {(b) Rejected, yet faithful};
+\node[anchor=west, font=\small\bfseries, text=failc] at (-2.7,0.75) {(b) A faithful translation would fail};
 \node[anchor=west, font=\scriptsize] at (-2.7,0.32) {CRUST-Bench, program \texttt{Holdem\_Odds}};
 \node[box] (in) at (0,-0.5) {Hand in the test: \texttt{6s 5c 4s 3h 2d}, a straight\\(s, c, h, d: spades, clubs, hearts, diamonds)};
 \node[box, fill=black!5] (st) at (0,-1.75) {Test code builds every card\\with \texttt{Suit::Spade}};
@@ -32,7 +32,7 @@
 \node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-3.3) {StraightFlush};
 \node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-3.7) {StraightFlush};
 \node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-4.1) {Straight};
-\node[anchor=west, font=\scriptsize\itshape, text=black!65] at (1.6,-3.7) {same as C};
+\node[anchor=west, font=\scriptsize\itshape, text=black!65] at (1.6,-3.7) {if it behaves like C};
 \draw[black!40] (-2.6,-4.38) -- (2.6,-4.38);
 \node[anchor=west, font=\scriptsize\bfseries] at (-2.6,-4.62) {Verdict};
 \node[anchor=west, draw=failc, very thick, text=failc, font=\scriptsize\bfseries, rounded corners=2pt, inner sep=2pt] at (-1.05,-4.62) {FAIL};

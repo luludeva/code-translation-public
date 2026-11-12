@@ -5,7 +5,7 @@ This appendix gives the settings that Chapter~\ref{ch:methodology} leaves out be
 
 \section{Environment}\label{app:s-env}
 
-The main run was executed on cloud machines of one type (\sEnvInstance{}, \sEnvVcpu{} vCPUs, \sEnvMemGiB{}~GiB of memory) with GCC~\sEnvGcc{}, Clang~\sEnvClang{}, AFL++~\sEnvAfl{} and rustc~\sEnvRustc{}. The corpus pins rustc~\sEnvRustcCorpus{} for the reproduction of decisions. Every job records the versions of its tools, its parameters and the hashes of its input sets.
+The main run was executed on cloud machines of one type (\sEnvInstance{}, \sEnvVcpu{} vCPUs, \sEnvMemGiB{}~GiB of memory) with GCC~\sEnvGcc{}, Clang~\sEnvClang{}, AFL++~\sEnvAfl{} and rustc~\sEnvRustc{}. The corpus pins rustc~\sEnvRustcCorpus{} for the reproduction of decisions. Every job records the versions of its tools, its parameters and the hashes of its input sets. The harness, the job definitions of the main run, the experiment scripts and the result files from which every reported number is computed are published at \url{https://github.com/luludeva/code-translation-public}, together with the commits of the corpus and of the published translations that were used. The raw execution records of the main run are not included because of their size and are available from the author on request.
 
 \section{Reading and Reproducing the Published Decisions}\label{app:s-repro}
 

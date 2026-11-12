@@ -1,14 +1,13 @@
 % Thesis v3 (viet tu thesis loi V3, 2026-11-11). Moi muc chi commit sau khi Le duyet.
+% Ch1 theo ban Le viet 2026-11-12 (1.1, 1.2, 1.3, 1.5); 1.4 va 1.6 giu tu ban truoc.
 \chapter{Introduction}\label{ch:introduction}
 \input{figures/ch1/colors}
 
-\section{Research Background}\label{sec:intro-background}
+\section{Overview}\label{sec:intro-background}
 
-Migrating legacy systems code from C to Rust has become a prominent direction in modern software engineering, because it promises memory safety without giving up the performance that systems software depends on. C still underlies operating systems, infrastructure components and widely reused libraries, where its low-level control over memory and other resources is valued. That same control lets a program read or write outside the bounds of an object or use memory that has already been freed, and such memory-safety errors form a major class of vulnerabilities in large C and C++ codebases~\cite{google-safecoding}. Rust removes many of them at compile time through ownership and borrowing rules that the compiler checks, while retaining the low-level control needed for systems programming~\cite{rustreference}. Industry and government have accordingly begun to invest in moving existing C code to Rust, among them DARPA's TRACTOR program, which aims to automate the translation~\cite{google-safecoding,darpa-tractor}. The promise holds only if the translated program still does what the C program did.
+A 2024 analysis by Google estimates that memory-safety bugs account for approximately 70\% of severe vulnerabilities in large C and C++ codebases~\cite{rebert2024memorysafety}. Against this backdrop, the Defense Advanced Research Projects Agency (DARPA) launched the Translating All C to Rust (TRACTOR) program in 2024 to automate the migration of legacy C software to Rust, aiming to address memory-safety vulnerabilities while preserving program functionality~\cite{darpa-tractor}. Rust offers a promising migration target because its ownership and borrowing mechanisms prevent many such defects in safe code~\cite{rustreference}. However, migrating existing C programs remains challenging, as differences in memory management, pointer semantics, and type systems must be reconciled without altering the behavior on which existing applications depend.
 
-For a system that has accumulated a large body of C code, migration by hand is expensive: engineers must understand the source program, rewrite it, and check the result. This cost has motivated a range of automated translators. Rule-based tools such as C2Rust transform C into Rust mechanically, and Laertes refines such output toward safer Rust~\cite{c2rust,emre2021laertes}. Other systems rely on large language models (LLMs). Some request a complete translation from a model in a single step (\emph{one-shot}); some combine a model with program analysis or with feedback from compilation and testing, as C2SaferRust and SmartC2Rust do~\cite{nitin2025c2saferrust,shiraishi2026smartc2rust}; and \emph{agentic} systems let a coding agent compile, test and repair its own translation over many steps~\cite{schesch2026actor}. These systems produce translations in very different ways, yet each must meet the same basic requirement: the Rust code has to build and run, and it has to preserve the behavior of the C program within the intended scope.
-
-To assess a translator, studies run it on a benchmark, and each translation receives a PASS or FAIL decision (Figure~\ref{fig:intro-workflow}). The decisions are then summarized as a success rate, which is used to compare translation systems~\cite{schesch2026actor}. Each rate, however, is built from individual decisions, and it can be trusted only as far as those decisions can. How well, then, does a passed or failed test suite support the decision recorded for a translation?
+Recent advances in large language models (LLMs) have opened new possibilities for automating C-to-Rust migration. LLM-based translation systems can generate Rust code from C and iteratively refine it using compilation errors, program analysis, and execution feedback~\cite{nitin2025c2saferrust,shiraishi2026smartc2rust,schesch2026actor}.
 
 \begin{figure}[htbp]
 \centering
@@ -19,9 +18,9 @@ To assess a translator, studies run it on a benchmark, and each translation rece
 
 \section{Motivation}\label{sec:intro-motivation}
 
-C-to-Rust translation studies commonly assess their outputs through compilation and execution of test suites. Establishing equivalence for every possible input is difficult to achieve at scale, making compilation and finite testing a practical means of assessing behavior on the cases actually exercised \cite{yang2024vert,schesch2026actor,farrukh2026orbit}. A comparison table in RustAssure lists existing concrete test cases as the evaluation method for seven of thirteen C-to-Rust systems \cite{bai2025rustassure}. The strength of the resulting evidence, however, depends on the inputs executed and the expected outcomes encoded in the tests.
+Nevertheless, generating compilable Rust does not establish that the translation preserves the behavior of its C counterpart. Published evaluations commonly rely on compilation and execution against available test suites, using the resulting PASS/FAIL decisions to assess translation success (Figure~\ref{fig:intro-workflow}). These decisions, however, depend on the inputs exercised and the expectations used to judge them. This raises a question beyond the ability of LLMs to generate Rust code: how reliably do the reported evaluation decisions reflect the behavioral evidence supporting them?
 
-Published observations illustrate how these limitations can affect both acceptance and rejection decisions (Figure~\ref{fig:intro-signals}). In Reboot, all six interpreters translated from C passed 100\% of the tests provided during translation, yet achieved only 61.58--91.78\% on a separate validation suite withheld from the translation process \cite{wang2026reboot}. Thus, passing the available tests did not rule out behavioral differences exposed by additional inputs. A complementary problem appears in CRUST-Bench issue \#37. In the \texttt{Holdem\_Odds} case, a test sets all five cards to spades, turning a hand originally represented with multiple suits into a straight flush, but still expects the result \texttt{Straight}. The original C program returns \texttt{StraightFlush} for that input. According to the issue's analysis, the inconsistency affects five of the project's twenty-four tests \cite{crustbench-issues}. A translation that agrees with C can therefore fail a test whose expectation contradicts the reference program.
+A concrete example of this limitation appears in Reboot, a recent system for translating C-based language interpreters into safe Rust. Wang et al.\ reported that all six translated interpreters passed 100\% of their provided test suites, yet achieved pass rates ranging from 61.58\% to 91.78\% on separately written validation tests that had not been available during translation~\cite{wang2026reboot} (Figure~\ref{fig:intro-signals}a). These results demonstrate that complete success on an existing test suite can coexist with failures exposed by additional tests. Consequently, a reported PASS provides evidence of success under the evaluated inputs, but does not establish that the translated program preserves the behavior of its C counterpart more generally.
 
 \begin{figure}[htbp]
 \centering
@@ -29,58 +28,59 @@ Published observations illustrate how these limitations can affect both acceptan
 \caption{Two signals that a test-based decision can be wrong in either
 direction. (a)~All six interpreters translated in Reboot pass every
 provided test (counted per test file) but only part of a validation suite
-that the authors wrote separately and withheld during
-translation~\cite{wang2026reboot}. (b)~A CRUST-Bench test turns a
-mixed-suit straight into five spades and still expects \code{Straight}, so
-a translation that behaves like the C program fails~\cite{crustbench-issues}.
+that the authors wrote separately, with expected outputs taken from the C
+programs, and withheld during translation~\cite{wang2026reboot}.
+(b)~A CRUST-Bench test turns a mixed-suit straight into five spades and
+still expects \code{Straight}, so a translation that behaves like the C
+program would fail, as the analysis in the issue shows~\cite{crustbench-issues}.
 Both cases lie outside the corpus studied in this thesis.}
 \label{fig:intro-signals}
 \end{figure}
 
-These cases expose two limitations of test-based evaluation: existing tests may miss behavioral divergences, and test expectations may conflict with the behavior of the reference program. When individual test outcomes are aggregated into a reported success rate, both limitations affect how that rate should be interpreted. In the related field of LLM-based code generation, EvalPlus has shown that augmenting the evaluation tests lowers the pass rates reported for the models evaluated \cite{liu2023evalplus}. Together, these findings motivate an independent examination of the reported PASS/FAIL decisions for C-to-Rust translations.
+The reliability of test-based evaluation can also be affected by the expectations against which translations are judged. An issue reported in CRUST-Bench illustrates this problem through the \texttt{Holdem\_Odds} project, where several tests construct card combinations incorrectly and expect results that conflict with the original C implementation. In one case, a test expects a \texttt{Straight} despite constructing a straight flush, for which the C program returns \texttt{StraightFlush}~\cite{crustbench-issues} (Figure~\ref{fig:intro-signals}b). A Rust translation preserving the C program's behavior would therefore fail the affected test. Although this example does not establish how frequently such problems occur, it demonstrates that a FAIL decision may reflect an inconsistency in the evaluation rather than a behavioral defect in the translation.
+
+Together, these observations raise concerns about the evidential basis of reported translation success rates. Additional tests can challenge decisions to accept translations, while incorrect test expectations can undermine decisions to reject them. However, isolated examples do not establish how frequently either problem affects published evaluations, nor how discrepancies in individual decisions influence the aggregate success rates used to assess translation systems. This motivates a systematic, independent examination of the behavioral evidence underlying reported PASS/FAIL decisions.
 
 \section{Problem Statement and Research Questions}\label{sec:intro-problem}
 
-The evidence discussed in Section~\ref{sec:intro-motivation} indicates that limitations of testing can affect decisions to accept or reject C-to-Rust translations. Individual cases, however, do not establish how frequently such discrepancies arise in published evaluation results or how they affect reported success rates. This thesis addresses that open question through three research questions.
+The evidence presented in Section~\ref{sec:intro-motivation} highlights a fundamental problem in the evaluation of automated C-to-Rust translation: \textbf{published PASS/FAIL decisions may not fully reflect the behavioral agreement between translated Rust programs and their C counterparts}. The problem addressed in this thesis is therefore to determine how strongly these decisions are supported by independently collected behavioral evidence and how reassessing them changes the interpretation of reported translation success.
+
+To investigate this problem, the thesis examines the publicly released translations and evaluation decisions in the HARVEST results repository, using the C programs and test vectors from the TRACTOR Public Test Corpus~\cite{harvest-results,tractor-test-corpus}. The study focuses on the evaluation of LLM-based C-to-Rust translation, while also including the two rule-based translators, C2Rust and Laertes, that the original evaluation reports as baselines on the same corpus. The unit of analysis is the original evaluation decision associated with each case--system pair. The decisions are examined with an independent differential oracle, which compares the behavior of a translation with that of its C program on the same input without reading the expected outputs stored in the tests. The study addresses three research questions:
 
 \begin{description}
-\item[RQ1.] Among the translations accepted by the original evaluation, for what proportion does an independent differential oracle detect a behavioral divergence from the C program?
-\item[RQ2.] Among the translations rejected at the test stage, what proportion of the rejections lacks supporting evidence under the same oracle?
-\item[RQ3.] Once these results are taken into account, within what interval does the success rate of each translation system lie, compared with the rate implied by its published decisions?
+\item[RQ1.] Among the translations accepted by their original evaluation, for what proportion does the independent oracle detect a behavioral divergence from the C program?
+\item[RQ2.] Among the translations rejected at the test stage by their original evaluation, what proportion of the rejection decisions does the independent oracle find unsupported?
+\item[RQ3.] After incorporating the reclassifications supported by the independent oracle, within what interval does each system's success rate over the study population lie, compared with its original rate?
 \end{description}
-
-Together, the three questions turn the open question stated above into quantities measured over one shared set of published decisions: how often test-based decisions are contradicted in each direction, and how far the reported success rates change as a result.
 
 \section{Research Approach}\label{sec:intro-approach}
 
-The thesis studies this problem through a post-hoc re-evaluation of decisions that have already been published. The decisions and the translations are taken from the HARVEST repository, which holds the results of translation systems evaluated on the executable programs and libraries of the TRACTOR Public Test Corpus~\cite{harvest-results,tractor-test-corpus,schesch2026actor}. Ten systems are studied: eight are LLM-based, and two are rule-based translators, C2Rust and Laertes, which the original evaluation reports as baselines on the same corpus. The translations are treated as fixed, so no translator is rerun and no translation is repaired. The re-evaluation covers the accepted translations and the translations rejected at the test stage, while rejections at the build stage keep their published status.
+The thesis answers these questions through a post-hoc re-evaluation. The translations are treated as fixed, so no translator is rerun and no translation is repaired. Accepted translations and translations rejected at the test stage are re-examined, while rejections at the build stage keep their published status.
 
-The re-evaluation proceeds in three steps (Figure~\ref{fig:intro-pipeline}). Each PASS decision and each FAIL decision at the test stage is first reproduced with the public TRACTOR runner. A differential testing harness built for this thesis then runs the C program and its Rust translation on the same inputs and compares their observable behavior: accepted translations are examined on the existing test vectors and on newly generated inputs, and test-stage rejections are examined on the vectors that failed. An observation counts as evidence only when it recurs across repeated executions and the C execution passes a sanitizer check for undefined behavior. Finally, the outcomes of both branches are returned to the original population, together with the decisions left without a result, so that the success rate of each system after reclassification is stated as an interval. Chapter~\ref{ch:methodology} defines the evidence rules and the metrics, including the supporting aspects from which each research question is examined.
+The re-evaluation proceeds in three steps (Figure~\ref{fig:intro-pipeline}). First, each PASS decision and each FAIL decision at the test stage is reproduced with the public runner of the corpus. Second, a differential testing harness built for this thesis runs the C program and its Rust translation on the same inputs and compares their observable behavior: accepted translations on the existing test vectors and on generated inputs, and test-stage rejections on the vectors that failed. An observation counts as evidence only when it recurs across repeated executions and a sanitizer check of the C execution reports no undefined behavior. Third, the outcomes of both branches are returned to the original population, together with the decisions left without a result, and the success rate of each system after reclassification is stated as an interval. Chapter~\ref{ch:methodology} defines the evidence rules and the metrics.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 \centering
 \resizebox{\linewidth}{!}{\input{figures/v3/fig-pipeline}}
-\caption{Overview of the re-evaluation. Each PASS decision and each test-stage FAIL decision is first reproduced. Accepted translations and test-stage rejections then follow separate branches with different inputs, and RQ3 combines the results of both branches with the decisions left without a result.}
+\caption{Overview of the re-evaluation in three steps. Each PASS decision and each test-stage FAIL decision is first reproduced. Accepted translations and test-stage rejections then follow separate branches with different inputs, and RQ3 combines the results of both branches with the decisions left without a result.}
 \label{fig:intro-pipeline}
 \end{figure}
 
-\section{Contributions}\label{sec:intro-contributions}
+\section{Research Contributions}\label{sec:intro-contributions}
 
-Carrying out this approach yields two scientific contributions and one technical contribution.
+This thesis makes a scientific and a technical contribution to the evaluation of automated C-to-Rust translation, with a focus on the validity of test-based evaluation decisions, and its findings have practical significance.
 
-\begin{enumerate}
-\item \textbf{A re-evaluation procedure for published PASS/FAIL decisions} (scientific). The procedure states, for acceptances and for test-stage rejections, when the observed C and Rust behavior counts as evidence for or against a decision. It also computes the success rate after reclassification as an interval over the original population, so that attrition remains visible in the result.
-\item \textbf{An empirical measurement of the evidence behind published decisions} (scientific). The measurement applies the procedure to the released translations of ten systems on the TRACTOR Public Test Corpus. It covers both PASS decisions and FAIL decisions at the test stage, and it reports separately the cases that could not be adjudicated or were not run to completion.
-\item \textbf{A differential testing harness for C programs and their Rust translations} (technical). The harness handles executable programs and library functions, generates inputs, and applies the evidence rules of the procedure. It records the inputs, the C and Rust observations and the adjudication conditions, so that each result can be traced (Section~\ref{sec:m-harness}).
-\end{enumerate}
+\paragraph{Scientific contribution.} The study contributes a re-evaluation procedure for published PASS/FAIL decisions and the empirical evidence obtained with it. The procedure states, for acceptances and for test-stage rejections, when the observed behavior of a translation and its C program counts as evidence for or against a decision, and it computes the success rate after reclassification as an interval over the original population, so that the decisions that could not be examined remain visible in the reported rate (Chapter~\ref{ch:methodology}). Applied to the released translations of ten systems, the procedure provides empirical evidence on the validity of published test-based PASS/FAIL decisions in C-to-Rust translation. By independently examining both accepted translations and test-stage rejections, it quantifies how often these decisions are contradicted or left unsupported by behavioral evidence and what this implies for reported success rates (Chapter~\ref{ch:results}). The analysis also accounts for unresolved evaluations, distinguishing observed discrepancies from conclusions that cannot be established with the available evidence.
 
-These contributions serve the interpretation of the evaluation results of the systems studied. They do not imply a ranking of those systems.
+\paragraph{Technical contribution.} The thesis develops a differential testing harness that implements this procedure for executable programs and library functions (Section~\ref{sec:m-harness}). The harness integrates input generation, paired C--Rust execution, repeated observations, sanitizer checks, and evidence recording, and its correctness was checked with held-out decisions, mutants and unit tests (Section~\ref{sec:m-evidence}). Together with the classification and accounting rules (Appendix~\ref{app:classes}), it makes the re-evaluation repeatable, and its code and result files are publicly available (Appendix~\ref{app:s-env}).
+
+\paragraph{Practical significance.} The findings inform how automated code translation systems can be evaluated and how their results should be reported. They indicate the value of testing accepted translations beyond existing test suites and of reporting evaluation coverage and unresolved cases explicitly (Section~\ref{sec:d-implications}). These practices can help researchers and developers interpret reported translation success rates more critically and improve the transparency of future evaluations. The findings serve the interpretation of the evaluation results of the systems studied and do not imply a ranking of those systems.
 
 \section{Thesis Organization}\label{sec:intro-organization}
 
-The remainder of this thesis is organized as follows.
+Table~\ref{tab:intro-organization} summarizes the content of the remaining chapters.
 
-\begin{table}[htbp]
+\begin{table}[!htb]
 \centering
 \small
 \caption{Organization of the thesis.}
@@ -91,7 +91,7 @@ Chapter & Content \\
 \midrule
 \textbf{Chapter 2: Related Work} & Evaluation approaches for C-to-Rust translation, differential testing, studies that re-evaluate published results, and the research gap. \\
 \textbf{Chapter 3: Methodology} & Design of the re-evaluation, study population, the harness, input generation and execution, evidence rules, and metrics. \\
-\textbf{Chapter 4: Results} & Findings for RQ1, RQ2 and RQ3, with the supporting analyses of each question. \\
+\textbf{Chapter 4: Results} & Findings for RQ1, RQ2 and RQ3, with the origin and weight of the divergences, the decisions without a result, and the effect of the comparison rule. \\
 \textbf{Chapter 5: Discussion} & Interpretation of the findings, relation to earlier studies, threats to validity, and implications for the evaluation of translations. \\
 \textbf{Chapter 6: Conclusion} & Answers to the research questions and directions for future work. \\
 \bottomrule

@@ -11,7 +11,7 @@
 \node[pa] (a2) at (9.55,1.55) {Retain divergences that recur and pass the sanitizer check};
 \node[outb, draw=passc] (a3) at (12.3,1.55) {RQ1};
 \node[fa] (b1) at (6.3,-1.55) {Replay the failing vectors on the C program and the translation};
-\node[fa] (b2) at (9.55,-1.55) {Adjudicate each vector: repeated runs, sanitizers};
+\node[fa] (b2) at (9.55,-1.55) {Check each failing vector: repeated runs, sanitizers};
 \node[outb, draw=failc] (b3) at (12.3,-1.55) {RQ2};
 \node[outb=1.9cm] (r3) at (14.6,0) {RQ3:\\success-rate interval};
 \draw[->] (src) -- (rep);
@@ -20,5 +20,6 @@
 \draw[->, passc, thick] (a1) -- (a2); \draw[->, passc, thick] (a2) -- (a3);
 \draw[->, failc, thick] (b1) -- (b2); \draw[->, failc, thick] (b2) -- (b3);
 \draw[->] (a3.east) -- (r3); \draw[->] (b3.east) -- (r3);
-\draw[->, dashed, black!60] (rep.south) -- (rep.south |- 0,-2.75) -- node[pos=0.5, below, font=\scriptsize]{decisions left open widen the RQ3 interval} (r3.south |- 0,-2.75) -- (r3.south);
+\draw[->, dashed, black!75] (rep.south) -- (rep.south |- 0,-2.75) -- node[pos=0.5, below, font=\scriptsize]{decisions still open after any step widen the RQ3 interval} (r3.south |- 0,-2.75) -- (r3.south);
+\foreach \x/\t in {2.45/Step 1, 7.925/Step 2, 14.6/Step 3} \node[font=\scriptsize\bfseries, text=black!75] at (\x,2.75) {\t};
 \end{tikzpicture}
