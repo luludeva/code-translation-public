@@ -1,0 +1,17 @@
+{
+ "rule": "exp 39 A, V3-C chạy bù (README); post hoc, sơ bộ, chưa kiểm tay",
+ "kind": "exe",
+ "units_case_seed": 189,
+ "totals": {
+  "div": 7927860,
+  "retained": 6827678
+ },
+ "violations": 0,
+ "ok": true,
+ "units_with_findings": {},
+ "sources": [
+  "rq1-main-exe-1of2@1fa636f50daa8cbfc1be127aaa678ca9b0ba5772",
+  "rq1-main-exe-2of2@c867337c1f87489d876daa4800bf5319ad162572",
+  "rq1-main-exe-light@40fedd1b50d011177233cd1a40adfcd844b3fdb8"
+ ]
+}

@@ -1,0 +1,228 @@
+{
+ "exe": {
+  "case": "B01_synthetic/027_ctype_ascii",
+  "case_part": {
+   "D_all": 3,
+   "NB_L": 3,
+   "NB_U": 3,
+   "P_test": 7
+  },
+  "check_n_div_all_vs_metrics": {
+   "ok": true,
+   "pairs": {}
+  },
+  "groups": {
+   "B01": {
+    "pct_with": 48.3,
+    "pct_without": 48.4,
+    "with_case": {
+     "D_all": 152,
+     "NB_L": 135,
+     "NB_U": 150,
+     "P_test": 315
+    },
+    "without_case": {
+     "D_all": 149,
+     "NB_L": 132,
+     "NB_U": 147,
+     "P_test": 308
+    }
+   },
+   "all": {
+    "pct_with": 37.0,
+    "pct_without": 36.9,
+    "with_case": {
+     "D_all": 176,
+     "NB_L": 158,
+     "NB_U": 174,
+     "P_test": 476
+    },
+    "without_case": {
+     "D_all": 173,
+     "NB_L": 155,
+     "NB_U": 171,
+     "P_test": 469
+    }
+   }
+  },
+  "seeds_missing_in_merge": [],
+  "seeds_with_record": [
+   0,
+   1,
+   2
+  ],
+  "sources": [
+   "rq1-main-exe-1of2@1fa636f50daa8cbfc1be127aaa678ca9b0ba5772",
+   "rq1-main-exe-2of2@c867337c1f87489d876daa4800bf5319ad162572",
+   "rq1-main-exe-light@40fedd1b50d011177233cd1a40adfcd844b3fdb8"
+  ],
+  "translations": {
+   "c2rust": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": 0,
+    "n_div_retained": 0,
+    "status": "P_test"
+   },
+   "c2saferrust": {
+    "NB_L": true,
+    "NB_U": true,
+    "in_D": true,
+    "n_div_all": 116327,
+    "n_div_retained": 116327,
+    "status": "P_test"
+   },
+   "claude": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": 0,
+    "n_div_retained": 0,
+    "status": "P_test"
+   },
+   "codex-gpt54": {
+    "NB_L": true,
+    "NB_U": true,
+    "in_D": true,
+    "n_div_all": 14981,
+    "n_div_retained": 14981,
+    "status": "P_test"
+   },
+   "kiro": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": 0,
+    "n_div_retained": 0,
+    "status": "P_test"
+   },
+   "laertes": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": 0,
+    "n_div_retained": 0,
+    "status": "P_test"
+   },
+   "smartc2rust": {
+    "NB_L": true,
+    "NB_U": true,
+    "in_D": true,
+    "n_div_all": 116327,
+    "n_div_retained": 116327,
+    "status": "P_test"
+   }
+  }
+ },
+ "lib": {
+  "case": "B01_synthetic/027_ctype_ascii_lib",
+  "case_part": {
+   "D_all": 0,
+   "NB_L": 0,
+   "NB_U": 0,
+   "P_test": 0
+  },
+  "check_n_div_all_vs_metrics": {
+   "ok": true,
+   "pairs": {}
+  },
+  "groups": {
+   "B01": {
+    "pct_with": 7.0,
+    "pct_without": 7.0,
+    "with_case": {
+     "D_all": 38,
+     "NB_L": 30,
+     "NB_U": 32,
+     "P_test": 540
+    },
+    "without_case": {
+     "D_all": 38,
+     "NB_L": 30,
+     "NB_U": 32,
+     "P_test": 540
+    }
+   },
+   "all": {
+    "pct_with": 6.0,
+    "pct_without": 6.0,
+    "with_case": {
+     "D_all": 65,
+     "NB_L": 56,
+     "NB_U": 59,
+     "P_test": 1088
+    },
+    "without_case": {
+     "D_all": 65,
+     "NB_L": 56,
+     "NB_U": 59,
+     "P_test": 1088
+    }
+   }
+  },
+  "seeds_missing_in_merge": [],
+  "seeds_with_record": [
+   0,
+   1,
+   2
+  ],
+  "sources": [
+   "rq1-main-lib-1of2@a980c526423742d8204e93f133fd8e53630d53f7",
+   "rq1-main-lib-2of2@97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+   "rq1-main-lib-shgeti@c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+   "rq1-main-lib-2of2-light@e8f97047ff01ab618a80ec3aaf7c1efb91eae337"
+  ],
+  "translations": {
+   "c2rust": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   },
+   "c2saferrust": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   },
+   "claude": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   },
+   "codex-gpt54": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   },
+   "kiro": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   },
+   "laertes": {
+    "NB_L": false,
+    "NB_U": false,
+    "in_D": false,
+    "n_div_all": null,
+    "n_div_retained": null,
+    "status": "incomplete"
+   }
+  }
+ },
+ "rule": "decision-log 2026-10-29: bỏ toàn bộ bản dịch của case (exe và lib); nhãn post-hoc"
+}

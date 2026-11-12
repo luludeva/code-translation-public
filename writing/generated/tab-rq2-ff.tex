@@ -1,0 +1,28 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+\begin{tabular}{@{}l rrrrrr rrrrrr@{}}
+\toprule
+ & \multicolumn{6}{c}{Executable programs} & \multicolumn{6}{c}{Libraries} \\
+\cmidrule(lr){2-7} \cmidrule(l){8-13}
+System & $R_0^{\mathit{test}}$ & $R_{\mathit{test}}$ & $A$ & $F$ & N.adj. & $r_{\mathit{FF}}$ (\%) & $R_0^{\mathit{test}}$ & $R_{\mathit{test}}$ & $A$ & $F$ & N.adj. & $r_{\mathit{FF}}$ (\%) \\
+\midrule
+\multicolumn{13}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & \rqRZeroTestExeAllKiroNum & \rqFFExeAllKiroDen & \rqFFDisagreeExeAllKiroNum & \rqFFExeAllKiroNum & \rqFFNotAdjExeAllKiroNum & \rqFFExeAllKiroPct & \rqRZeroTestLibAllKiroNum & \rqFFLibAllKiroDen & \rqFFDisagreeLibAllKiroNum & \rqFFLibAllKiroNum & \rqFFNotAdjLibAllKiroNum & \rqFFLibAllKiroPct \\
+\quad Claude Code & \rqRZeroTestExeAllClaudeNum & \rqFFExeAllClaudeDen & \rqFFDisagreeExeAllClaudeNum & \rqFFExeAllClaudeNum & \rqFFNotAdjExeAllClaudeNum & \rqFFExeAllClaudePct & \rqRZeroTestLibAllClaudeNum & \rqFFLibAllClaudeDen & \rqFFDisagreeLibAllClaudeNum & \rqFFLibAllClaudeNum & \rqFFNotAdjLibAllClaudeNum & \rqFFLibAllClaudePct \\
+\quad Codex (GPT-5.4) & \rqRZeroTestExeAllCodexNum & \rqFFExeAllCodexDen & \rqFFDisagreeExeAllCodexNum & \rqFFExeAllCodexNum & \rqFFNotAdjExeAllCodexNum & \rqFFExeAllCodexPct & \rqRZeroTestLibAllCodexNum & \rqFFLibAllCodexDen & \rqFFDisagreeLibAllCodexNum & \rqFFLibAllCodexNum & \rqFFNotAdjLibAllCodexNum & \rqFFLibAllCodexPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & \rqRZeroTestExeAllCTwoRustNum & \rqFFExeAllCTwoRustDen & \rqFFDisagreeExeAllCTwoRustNum & \rqFFExeAllCTwoRustNum & \rqFFNotAdjExeAllCTwoRustNum & \rqFFExeAllCTwoRustPct & \rqRZeroTestLibAllCTwoRustNum & \rqFFLibAllCTwoRustDen & \rqFFDisagreeLibAllCTwoRustNum & \rqFFLibAllCTwoRustNum & \rqFFNotAdjLibAllCTwoRustNum & \rqFFLibAllCTwoRustPct \\
+\quad Laertes & \rqRZeroTestExeAllLaertesNum & \rqFFExeAllLaertesDen & \rqFFDisagreeExeAllLaertesNum & \rqFFExeAllLaertesNum & \rqFFNotAdjExeAllLaertesNum & \rqFFExeAllLaertesPct & \rqRZeroTestLibAllLaertesNum & \rqFFLibAllLaertesDen & \rqFFDisagreeLibAllLaertesNum & \rqFFLibAllLaertesNum & \rqFFNotAdjLibAllLaertesNum & \rqFFLibAllLaertesPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & \rqRZeroTestExeAllCTwoSaferRustNum & \rqFFExeAllCTwoSaferRustDen & \rqFFDisagreeExeAllCTwoSaferRustNum & \rqFFExeAllCTwoSaferRustNum & \rqFFNotAdjExeAllCTwoSaferRustNum & \rqFFExeAllCTwoSaferRustPct & \rqRZeroTestLibAllCTwoSaferRustNum & \rqFFLibAllCTwoSaferRustDen & \rqFFDisagreeLibAllCTwoSaferRustNum & \rqFFLibAllCTwoSaferRustNum & \rqFFNotAdjLibAllCTwoSaferRustNum & \rqFFLibAllCTwoSaferRustPct \\
+\quad SmartC2Rust & \rqRZeroTestExeAllSmartCTwoRustNum & \rqFFExeAllSmartCTwoRustDen & \rqFFDisagreeExeAllSmartCTwoRustNum & \rqFFExeAllSmartCTwoRustNum & \rqFFNotAdjExeAllSmartCTwoRustNum & \rqFFExeAllSmartCTwoRustPct & \rqRZeroTestLibAllSmartCTwoRustNum & \rqFFLibAllSmartCTwoRustDen & \rqFFDisagreeLibAllSmartCTwoRustNum & \rqFFLibAllSmartCTwoRustNum & \rqFFNotAdjLibAllSmartCTwoRustNum & \rqFFLibAllSmartCTwoRustPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & \rqRZeroTestExeAllKimiNum & \rqFFExeAllKimiDen & \rqFFDisagreeExeAllKimiNum & \rqFFExeAllKimiNum & \rqFFNotAdjExeAllKimiNum & \rqFFExeAllKimiPct & \rqRZeroTestLibAllKimiNum & \rqFFLibAllKimiDen & \rqFFDisagreeLibAllKimiNum & \rqFFLibAllKimiNum & \rqFFNotAdjLibAllKimiNum & \rqFFLibAllKimiPct \\
+\quad GPT-5.4 & \rqRZeroTestExeAllGptFiveNum & \rqFFExeAllGptFiveDen & \rqFFDisagreeExeAllGptFiveNum & \rqFFExeAllGptFiveNum & \rqFFNotAdjExeAllGptFiveNum & \rqFFExeAllGptFivePct & \rqRZeroTestLibAllGptFiveNum & \rqFFLibAllGptFiveDen & \rqFFDisagreeLibAllGptFiveNum & \rqFFLibAllGptFiveNum & \rqFFNotAdjLibAllGptFiveNum & \rqFFLibAllGptFivePct \\
+\quad Gemini 3.1 Pro & \rqRZeroTestExeAllGeminiNum & \rqFFExeAllGeminiDen & \rqFFDisagreeExeAllGeminiNum & \rqFFExeAllGeminiNum & \rqFFNotAdjExeAllGeminiNum & \rqFFExeAllGeminiPct & \rqRZeroTestLibAllGeminiNum & \rqFFLibAllGeminiDen & \rqFFDisagreeLibAllGeminiNum & \rqFFLibAllGeminiNum & \rqFFNotAdjLibAllGeminiNum & \rqFFLibAllGeminiPct \\
+\midrule
+Total & \rqRZeroTestExeAllNum & \rqFFExeAllDen & \rqFFDisagreeExeAllNum & \rqFFExeAllNum & \rqFFNotAdjExeAllNum & \rqFFExeAllPct & \rqRZeroTestLibAllNum & \rqFFLibAllDen & \rqFFDisagreeLibAllNum & \rqFFLibAllNum & \rqFFNotAdjLibAllNum & \rqFFLibAllPct \\
+\bottomrule
+\end{tabular}

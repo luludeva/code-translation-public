@@ -1,0 +1,70 @@
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 255, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 484, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 618, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 621, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 785, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 939, "source": "random", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1091, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1148, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1400, "source": "random", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1449, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1593, "source": "random", "c_norm": "skip '2\"'", "r_norm": "skip ''\nskip '2\"'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1681, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1742, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1920, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 1945, "source": "random", "c_norm": "skip '0x'", "r_norm": "skip ''\nskip '0x'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 2090, "source": "random", "c_norm": "skip '-19-19'", "r_norm": "skip '-19-19'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3164, "source": "random", "c_norm": "skip '-856792-856792'", "r_norm": "skip ''\nskip '-856792-856792'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3300, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3335, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3503, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3521, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3595, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3656, "source": "random", "c_norm": "skip '-609-609'", "r_norm": "skip ''\nskip '-609-609'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3701, "source": "random", "c_norm": "skip '5\"'", "r_norm": "skip '5\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 3951, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4069, "source": "random", "c_norm": "skip '-739110-739110'", "r_norm": "skip ''\nskip '-739110-739110'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4141, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4311, "source": "random", "c_norm": "skip '6x'", "r_norm": "skip '6x'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4433, "source": "random", "c_norm": "skip '1e308'\nskip '-0.0'", "r_norm": "skip '1e308'\nskip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4466, "source": "random", "c_norm": "skip '1 '", "r_norm": "skip '1 '\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4473, "source": "random", "c_norm": "skip '8\\'", "r_norm": "skip '8\\'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4618, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip ''\nskip 'nan'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4729, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 4963, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "claude", "idx": 5202, "source": "afl", "c_norm": "skip '0-2147483659'", "r_norm": "skip '0-2147483659'\nskip ''\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 255, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 484, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 618, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 621, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 785, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 939, "source": "random", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1091, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1148, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1400, "source": "random", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1449, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1593, "source": "random", "c_norm": "skip '2\"'", "r_norm": "skip ''\nskip '2\"'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1681, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1742, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1920, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 1945, "source": "random", "c_norm": "skip '0x'", "r_norm": "skip ''\nskip '0x'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 2090, "source": "random", "c_norm": "skip '-19-19'", "r_norm": "skip '-19-19'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3164, "source": "random", "c_norm": "skip '-856792-856792'", "r_norm": "skip ''\nskip '-856792-856792'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3300, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3335, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3503, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3521, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3595, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3656, "source": "random", "c_norm": "skip '-609-609'", "r_norm": "skip ''\nskip '-609-609'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3701, "source": "random", "c_norm": "skip '5\"'", "r_norm": "skip '5\"'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 3951, "source": "random", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4069, "source": "random", "c_norm": "skip '-739110-739110'", "r_norm": "skip ''\nskip '-739110-739110'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4141, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4311, "source": "random", "c_norm": "skip '6x'", "r_norm": "skip '6x'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4433, "source": "random", "c_norm": "skip '1e308'\nskip '-0.0'", "r_norm": "skip '1e308'\nskip ''\nskip '-0.0'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4466, "source": "random", "c_norm": "skip '1 '", "r_norm": "skip '1 '\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4473, "source": "random", "c_norm": "skip '8\\'", "r_norm": "skip '8\\'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4618, "source": "random", "c_norm": "skip 'nan'", "r_norm": "skip ''\nskip 'nan'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4729, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 4963, "source": "random", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"kind": "exe", "case": "tu_linkage", "system": "kiro", "idx": 5202, "source": "afl", "c_norm": "skip '0-2147483659'", "r_norm": "skip '0-2147483659'\nskip ''\nskip ''"}

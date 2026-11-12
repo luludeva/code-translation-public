@@ -1,0 +1,61 @@
+{"id": "exe-000", "key": "c2saferrust/B01_synthetic/006_static_alias", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-001", "key": "c2saferrust/B01_synthetic/007_errno_pow", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stderr"], "frame": 92}
+{"id": "exe-002", "key": "c2saferrust/B01_synthetic/009_stack_buffer_overflow", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-003", "key": "c2saferrust/B01_synthetic/022_stdlib_div", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-004", "key": "claude/B02_synthetic/macrodepth_mul_4", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-005", "key": "claude/B02_synthetic/mutable_duplication_dag", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-006", "key": "codex-gpt54/B02_synthetic/macrodepth_mul_4", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-007", "key": "codex-gpt54/B02_synthetic/macrodepth_sub_6", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-008", "key": "gemini-3.1-pro-preview/B01_synthetic/002_stdin_echo", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-009", "key": "gemini-3.1-pro-preview/B02_organic/underhanded_c_luggage", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-010", "key": "gemini-3.1-pro-preview/B02_synthetic/char_to_bool", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-011", "key": "gemini-3.1-pro-preview/B02_synthetic/macrodepth_sub_6", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-012", "key": "gemini-3.1-pro-preview/P00_perlin_noise/001_perlin_noise", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-013", "key": "gpt-5.4/B01_synthetic/009_stack_buffer_overflow", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-014", "key": "gpt-5.4/B01_synthetic/025_struct_and_errno_and_static", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-015", "key": "gpt-5.4/B01_synthetic/027_ctype_ascii", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-016", "key": "gpt-5.4/B02_synthetic/macrodepth_sub_6", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-017", "key": "gpt-5.4/B02_synthetic/pointer_comparison_ascii_art", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-018", "key": "gpt-5.4/P00_perlin_noise/001_perlin_noise", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-019", "key": "kimi/B01_synthetic/003_string_slicing", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout", "stderr"], "frame": 92}
+{"id": "exe-020", "key": "kimi/B01_synthetic/009_stack_buffer_overflow", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-021", "key": "kimi/B01_synthetic/021_complex_goto", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "stdout", "stderr"], "frame": 92}
+{"id": "exe-022", "key": "kimi/B01_synthetic/023_struct_and_errno", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-023", "key": "kimi/B01_synthetic/042_float_union", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-024", "key": "kiro/B02_organic/underhanded_c_luggage", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-025", "key": "kiro/B02_synthetic/generic_foreach", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-026", "key": "kiro/B02_synthetic/strcmp", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-027", "key": "smartc2rust/B01_synthetic/002_stdin_echo", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-028", "key": "smartc2rust/B02_synthetic/generic_foreach", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "exe-029", "key": "smartc2rust/P00_perlin_noise/001_perlin_noise", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 92}
+{"id": "lib-030", "key": "c2saferrust/B01_organic/synth_pair_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-031", "key": "c2saferrust/B01_organic/to_barycentric_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-032", "key": "c2saferrust/B01_organic/wcscat_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-033", "key": "c2saferrust/B01_synthetic/013_poor_quality_addition_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-034", "key": "c2saferrust/B02_organic/basename_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-035", "key": "c2saferrust/B02_synthetic/cleanup_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-036", "key": "claude/P01_sphincs_plus/079_blake_192s_s_gen_message_random_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-037", "key": "claude/P01_sphincs_plus/087_blake_256f_s_gen_message_random_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-038", "key": "claude/P01_sphincs_plus/091_blake_256f_r_gen_message_random_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-039", "key": "codex-gpt54/P01_sphincs_plus/060_blake_128f_r_hash_message_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-040", "key": "codex-gpt54/P01_sphincs_plus/064_blake_128s_s_hash_message_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-041", "key": "codex-gpt54/P01_sphincs_plus/068_blake_128s_r_hash_message_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-042", "key": "codex-gpt54/P01_sphincs_plus/069_blake_192f_s_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-043", "key": "codex-gpt54/P01_sphincs_plus/070_blake_192f_s_prf_addr_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-044", "key": "codex-gpt54/P01_sphincs_plus/074_blake_192f_r_prf_addr_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-045", "key": "codex-gpt54/P01_sphincs_plus/077_blake_192s_s_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-046", "key": "codex-gpt54/P01_sphincs_plus/078_blake_192s_s_prf_addr_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-047", "key": "codex-gpt54/P01_sphincs_plus/093_blake_256s_s_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-048", "key": "codex-gpt54/P01_sphincs_plus/097_blake_256s_r_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-049", "key": "codex-gpt54/P01_sphincs_plus/099_blake_256s_r_gen_message_random_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-050", "key": "codex-gpt54/P01_sphincs_plus/101_sha2_128f_s_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-051", "key": "codex-gpt54/P01_sphincs_plus/105_sha2_128f_r_initialize_hash_function_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "state"], "frame": 111}
+{"id": "lib-052", "key": "gemini-3.1-pro-preview/B02_synthetic/confusion_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-053", "key": "gpt-5.4/B01_synthetic/027_ctype_ascii_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-054", "key": "gpt-5.4/B02_organic/agglom_lib", "outcome": "behavioral_agreement", "vector_outcome": "agrees", "channels": [], "frame": 111}
+{"id": "lib-055", "key": "gpt-5.4/B02_organic/sh_geti_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-056", "key": "gpt-5.4/B02_synthetic/confusion_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-057", "key": "kimi/B01_organic/hsl_to_rgb_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["state"], "frame": 111}
+{"id": "lib-058", "key": "kimi/B01_synthetic/025_struct_and_errno_and_static_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-059", "key": "kimi/B01_synthetic/027_ctype_ascii_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["stdout"], "frame": 111}
+{"id": "lib-060", "key": "kimi/B02_synthetic/matrix_mult_lib", "outcome": "behavioral_disagreement", "vector_outcome": "supports_rejection", "channels": ["status", "stderr"], "frame": 111}

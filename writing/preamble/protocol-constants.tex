@@ -1,0 +1,14 @@
+% Hang so giao thuc dang ky truoc, khong do harness sinh ra va khong phai ket qua.
+% Moi macro ghi nguon quyet dinh. Doi gia tri chi khi co muc decision-log moi.
+% Khi harness/audit.py duoc commit (truoc Freeze), phien ky thuat kiem gia tri trong code khop voi cac macro nay.
+
+% Kiem toan mau divergence library (decision-log 2026-10-25 "A8 sau exp 22; dang ky truoc kiem toan library ...")
+\newcommand{\pAuditLibMax}{50}          % so ban dich toi da trong mau
+\newcommand{\pAuditLibThresholdPct}{10} % nguong ti le "chua thay input hop le" de len version protocol (R11)
+
+% Luat B2 cua phan loai B/N/U: sai so tuong doi giua hai token so (experiments/09-bnu-rules/scripts/bnu_v0.py dong 24, REL_TOL = 1e-6).
+% TODO(macro): day la hang trong code, nen chuyen vao writing/scripts/gen-method-macros.py (phien ky thuat).
+\newcommand{\pBnuRelTolExp}{-6}
+
+% Luat chon muc ngan sach: tran thoi gian uoc tinh cua luot chinh (gio may c7i.2xlarge), decision-log 2026-10-22 (muc luat chon ngan sach).
+\newcommand{\pDurationCeilingH}{72}

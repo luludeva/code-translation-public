@@ -1,0 +1,313 @@
+{
+ "rule": "exp 41 (Le duyệt 12/11): L_P \\ L_P* = acceptance thiếu seed có retained divergence trên seed hoàn tất",
+ "translations": [
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "c2saferrust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "claude",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "gpt-5.4",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "kiro",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "laertes",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "012_uninit_int_ptr",
+   "system": "smartc2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "c2saferrust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "claude",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "gpt-5.4",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "kimi",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "kiro",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "laertes",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "017_signed_length_confusion",
+   "system": "smartc2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B02_synthetic",
+   "case": "pointer_comparison_ascii_art",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_synthetic",
+   "case": "pointer_comparison_ascii_art",
+   "system": "c2saferrust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_synthetic",
+   "case": "pointer_comparison_ascii_art",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "c2saferrust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "P00_perlin_noise",
+   "case": "001_perlin_noise",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  }
+ ],
+ "retained_by_system": {
+  "c2saferrust": 2,
+  "claude": 2,
+  "gemini-3.1-pro-preview": 2,
+  "gpt-5.4": 2,
+  "smartc2rust": 2,
+  "kimi": 1,
+  "kiro": 1
+ }
+}

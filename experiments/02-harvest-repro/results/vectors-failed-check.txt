@@ -1,0 +1,50 @@
+== exe: bị từ chối ở bước test 128
+     54  có chi tiết     khớp
+          vd smartc2rust/001_helloworld công bố 3 (danh sách 3), tái lập {'VectorComparisonFailed': 3}
+          vd kimi/004_nineality_sieve công bố 2 (danh sách 2), tái lập {'VectorComparisonFailed': 2, 'Pass': 2}
+          vd c2saferrust/006_static_alias công bố 2 (danh sách 2), tái lập {'VectorComparisonFailed': 2, 'Pass': 1}
+     17  giữ chỗ dạng 1  công bố < tái lập
+          vd kimi/002_stdin_echo công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 3, 'Pass': 1}
+          vd kimi/003_string_slicing công bố 1 (danh sách 1), tái lập {'Pass': 4, 'VectorComparisonFailed': 8}
+          vd smartc2rust/char_to_bool công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 69, 'Skip': 14}
+     20  giữ chỗ dạng 1  khớp
+          vd c2saferrust/002_stdin_echo công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 1, 'Pass': 3}
+          vd smartc2rust/002_stdin_echo công bố 1 (danh sách 1), tái lập {'Pass': 3, 'VectorComparisonFailed': 1}
+          vd gpt-5.4/002_stdin_echo công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 1, 'Pass': 3}
+     37  giữ chỗ dạng 2  khớp
+          vd codex-gpt54/002_stdin_echo công bố 1 (danh sách 0), tái lập {'Pass': 3, 'VectorComparisonFailed': 1}
+          vd codex-gpt54/005_sphincs_PQCgenKAT_sign_blake_128f_simple công bố 1 (danh sách 0), tái lập {'VectorComparisonFailed': 1}
+          vd codex-gpt54/006_sphincs_PQCgenKAT_sign_blake_128f_robust công bố 1 (danh sách 0), tái lập {'VectorComparisonFailed': 1}
+== lib: bị từ chối ở bước test 138
+      3  có chi tiết     không build khi tái lập
+          vd codex-gpt54/cJSON_lib công bố 7 (danh sách 7), tái lập None
+          vd kimi/cJSON_lib công bố 7 (danh sách 7), tái lập None
+          vd gemini-3.1-pro-preview/utf8_lib công bố 12 (danh sách 12), tái lập None
+     24  có chi tiết     khớp
+          vd c2saferrust/006_static_alias_lib công bố 2 (danh sách 2), tái lập {'VectorComparisonFailed': 2, 'Pass': 1}
+          vd kimi/017_signed_length_confusion_lib công bố 1 (danh sách 1), tái lập {'Pass': 5, 'VectorComparisonFailed': 1}
+          vd kimi/021_complex_goto_lib công bố 19 (danh sách 19), tái lập {'Pass': 11, 'VectorComparisonFailed': 19}
+     10  có chi tiết     tái lập đỗ
+          vd kiro/underhanded_c_nuke_lib công bố 2 (danh sách 2), tái lập {'Pass': 2}
+          vd claude/underhanded_c_nuke_lib công bố 2 (danh sách 2), tái lập {'Pass': 2}
+          vd kiro/task_manager_lib công bố 1 (danh sách 1), tái lập {'Pass': 3, 'Skip': 2}
+     25  giữ chỗ dạng 1  công bố < tái lập
+          vd c2saferrust/bin2hex_lib công bố 1 (danh sách 1), tái lập {'UnknownFailure': 5}
+          vd c2saferrust/div_euclid_lib công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 5, 'Pass': 5}
+          vd c2saferrust/hdr_compare_lib công bố 1 (danh sách 1), tái lập {'SegmentationFault': 30}
+      9  giữ chỗ dạng 1  không build khi tái lập
+          vd gemini-3.1-pro-preview/crc16_lib công bố 1 (danh sách 1), tái lập None
+          vd kimi/half2float_lib công bố 1 (danh sách 1), tái lập None
+          vd kimi/agglom_lib công bố 1 (danh sách 1), tái lập None
+     17  giữ chỗ dạng 1  khớp
+          vd c2saferrust/dequantize_granule_lib công bố 1 (danh sách 1), tái lập {'Skip': 1, 'SegmentationFault': 1}
+          vd c2saferrust/013_poor_quality_addition_lib công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 1}
+          vd c2saferrust/cleanup_lib công bố 1 (danh sách 1), tái lập {'VectorComparisonFailed': 1, 'Pass': 3}
+      5  giữ chỗ dạng 1  tái lập đỗ
+          vd c2saferrust/contrast_ratio_lib công bố 1 (danh sách 1), tái lập {'Pass': 16}
+          vd gpt-5.4/contrast_ratio_lib công bố 1 (danh sách 1), tái lập {'Pass': 16}
+          vd kimi/contrast_ratio_lib công bố 1 (danh sách 1), tái lập {'Pass': 16}
+     45  giữ chỗ dạng 2  khớp
+          vd codex-gpt54/058_blake_128f_r_prf_addr_lib công bố 1 (danh sách 0), tái lập {'VectorComparisonFailed': 1}
+          vd codex-gpt54/059_blake_128f_r_gen_message_random_lib công bố 1 (danh sách 0), tái lập {'VectorComparisonFailed': 1}
+          vd codex-gpt54/060_blake_128f_r_hash_message_lib công bố 1 (danh sách 0), tái lập {'VectorComparisonFailed': 1}

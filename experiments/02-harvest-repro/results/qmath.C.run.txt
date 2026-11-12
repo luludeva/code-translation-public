@@ -1,0 +1,1 @@
+{"test0.json":{"result":"Pass","output":{"stdout":"0.576847 0.576847 0.576847\n","stderr":""}},"test2.json":{"result":"Pass","output":{"stdout":"0.000000 0.000000 0.999550\n","stderr":""}},"test1.json":{"result":"Pass","output":{"stdout":"0.000000 0.000000 0.000000\n","stderr":""}},"test3.json":{"result":"Pass","output":{"stdout":"0.706930 -0.706930 0.000000\n","stderr":""}}}

@@ -1,0 +1,11 @@
+FREEZE_TAG từ config/freeze 6cb36b0c572536f4efcdae65f4cf5b3c17910d12: protocol-freeze-r1
+{"tag": "protocol-freeze-r1", "rule": "tag là HEAD hoặc tổ tiên; git diff --no-renames --name-status <tag> HEAD -- harness/ chỉ có trạng thái A; harness/ không có thay đổi chưa commit", "ok": true, "tag_commit": "bc82907c053f84438a735cd4fa890bb074703f01", "head": "64ac2a5bd04edb5a40de60cbb52556dab58b8384", "harness_diff": ["A\tharness/analysis.py", "A\tharness/main_merge.py", "A\tharness/main_merge_v2.py", "A\tharness/main_run.py", "A\tharness/secondary_l3.py"], "harness_added": ["harness/analysis.py", "harness/main_merge.py", "harness/main_merge_v2.py", "harness/main_run.py", "harness/secondary_l3.py"], "reason": "ok"}
+freeze: tag protocol-freeze-r1 -> bc82907c053f84438a735cd4fa890bb074703f01, HEAD 64ac2a5bd04edb5a40de60cbb52556dab58b8384
+census-lib3: results 883c57ddcb976b0f07e0348aba6bc924b234ed25 chạy ở bc82907c053f84438a735cd4fa890bb074703f01; P_rep library /home/ubuntu/actions-runner/_work/code-translation/code-translation/ci-in/census-lib3/ci-out/census-lib3/census-lib.jsonl sha256 6e9886225bc329fc1836d3b53d62a2a58e2ab544c128d5d17a3a3a767fe69ef4
+rq1-main-exe-1of2: results 1fa636f50daa8cbfc1be127aaa678ca9b0ba5772
+rq1-main-exe-2of2: results c867337c1f87489d876daa4800bf5319ad162572
+rq1-main-exe-light: results 40fedd1b50d011177233cd1a40adfcd844b3fdb8
+rq1-main-lib-1of2: results a980c526423742d8204e93f133fd8e53630d53f7
+rq1-main-lib-2of2: results 97f80c58521d051b88ffc7aa0c0d492d3f977d5d
+rq1-main-lib-shgeti: results c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b
+rq1-main-lib-2of2-light: results e8f97047ff01ab618a80ec3aaf7c1efb91eae337

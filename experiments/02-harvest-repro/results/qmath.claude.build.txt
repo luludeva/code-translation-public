@@ -1,0 +1,2 @@
+   Compiling driver v0.1.0 (/home/claude/exp02/.build/src/claude/qmath)
+    Finished `release` profile [optimized] target(s) in 0.41s

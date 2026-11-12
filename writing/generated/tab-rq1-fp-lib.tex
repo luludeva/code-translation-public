@@ -1,0 +1,29 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% RQ1 lib: Unst. = moi divergence khong on dinh; Inc. = sanitizer inconclusive (overlap: macro InconclUnstable)
+\begin{tabular}{@{}l rrrr rrr rr rr@{}}
+\toprule
+ & & & & & \multicolumn{3}{c}{Seeds detecting} & & & \multicolumn{2}{c}{Bounds (\%)} \\
+\cmidrule(lr){6-8} \cmidrule(l){11-12}
+System & $P_{\mathit{acc}}$ & $P_{\mathit{test}}$ & $D$ & $r_{\mathit{FP}}$ (\%) & 1 & 2 & 3 & Unst. & Inc. & $D/P_{\mathit{acc}}$ & $(D{+}L_P)/P_{\mathit{acc}}$ \\
+\midrule
+\multicolumn{12}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & \rqPaccLibAllKiroNum & \rqPtestLibAllKiroNum & \rqFPLibAllKiroNum & \rqFPLibAllKiroPct & \rqSeedDetOneLibAllKiroNum & \rqSeedDetTwoLibAllKiroNum & \rqSeedDetThreeLibAllKiroNum & \rqUnstableOnlyLibAllKiroNum & \rqInconclOnlyLibAllKiroNum & \rqFPBoundLoLibAllKiroPct & \rqFPBoundHiLibAllKiroPct \\
+\quad Claude Code & \rqPaccLibAllClaudeNum & \rqPtestLibAllClaudeNum & \rqFPLibAllClaudeNum & \rqFPLibAllClaudePct & \rqSeedDetOneLibAllClaudeNum & \rqSeedDetTwoLibAllClaudeNum & \rqSeedDetThreeLibAllClaudeNum & \rqUnstableOnlyLibAllClaudeNum & \rqInconclOnlyLibAllClaudeNum & \rqFPBoundLoLibAllClaudePct & \rqFPBoundHiLibAllClaudePct \\
+\quad Codex (GPT-5.4) & \rqPaccLibAllCodexNum & \rqPtestLibAllCodexNum & \rqFPLibAllCodexNum & \rqFPLibAllCodexPct & \rqSeedDetOneLibAllCodexNum & \rqSeedDetTwoLibAllCodexNum & \rqSeedDetThreeLibAllCodexNum & \rqUnstableOnlyLibAllCodexNum & \rqInconclOnlyLibAllCodexNum & \rqFPBoundLoLibAllCodexPct & \rqFPBoundHiLibAllCodexPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & \rqPaccLibAllCTwoRustNum & \rqPtestLibAllCTwoRustNum & \rqFPLibAllCTwoRustNum & \rqFPLibAllCTwoRustPct & \rqSeedDetOneLibAllCTwoRustNum & \rqSeedDetTwoLibAllCTwoRustNum & \rqSeedDetThreeLibAllCTwoRustNum & \rqUnstableOnlyLibAllCTwoRustNum & \rqInconclOnlyLibAllCTwoRustNum & \rqFPBoundLoLibAllCTwoRustPct & \rqFPBoundHiLibAllCTwoRustPct \\
+\quad Laertes & \rqPaccLibAllLaertesNum & \rqPtestLibAllLaertesNum & \rqFPLibAllLaertesNum & \rqFPLibAllLaertesPct & \rqSeedDetOneLibAllLaertesNum & \rqSeedDetTwoLibAllLaertesNum & \rqSeedDetThreeLibAllLaertesNum & \rqUnstableOnlyLibAllLaertesNum & \rqInconclOnlyLibAllLaertesNum & \rqFPBoundLoLibAllLaertesPct & \rqFPBoundHiLibAllLaertesPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & \rqPaccLibAllCTwoSaferRustNum & \rqPtestLibAllCTwoSaferRustNum & \rqFPLibAllCTwoSaferRustNum & \rqFPLibAllCTwoSaferRustPct & \rqSeedDetOneLibAllCTwoSaferRustNum & \rqSeedDetTwoLibAllCTwoSaferRustNum & \rqSeedDetThreeLibAllCTwoSaferRustNum & \rqUnstableOnlyLibAllCTwoSaferRustNum & \rqInconclOnlyLibAllCTwoSaferRustNum & \rqFPBoundLoLibAllCTwoSaferRustPct & \rqFPBoundHiLibAllCTwoSaferRustPct \\
+\quad SmartC2Rust & \rqPaccLibAllSmartCTwoRustNum & \rqPtestLibAllSmartCTwoRustNum & \rqFPLibAllSmartCTwoRustNum & \rqFPLibAllSmartCTwoRustPct & \rqSeedDetOneLibAllSmartCTwoRustNum & \rqSeedDetTwoLibAllSmartCTwoRustNum & \rqSeedDetThreeLibAllSmartCTwoRustNum & \rqUnstableOnlyLibAllSmartCTwoRustNum & \rqInconclOnlyLibAllSmartCTwoRustNum & \rqFPBoundLoLibAllSmartCTwoRustPct & \rqFPBoundHiLibAllSmartCTwoRustPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & \rqPaccLibAllKimiNum & \rqPtestLibAllKimiNum & \rqFPLibAllKimiNum & \rqFPLibAllKimiPct & \rqSeedDetOneLibAllKimiNum & \rqSeedDetTwoLibAllKimiNum & \rqSeedDetThreeLibAllKimiNum & \rqUnstableOnlyLibAllKimiNum & \rqInconclOnlyLibAllKimiNum & \rqFPBoundLoLibAllKimiPct & \rqFPBoundHiLibAllKimiPct \\
+\quad GPT-5.4 & \rqPaccLibAllGptFiveNum & \rqPtestLibAllGptFiveNum & \rqFPLibAllGptFiveNum & \rqFPLibAllGptFivePct & \rqSeedDetOneLibAllGptFiveNum & \rqSeedDetTwoLibAllGptFiveNum & \rqSeedDetThreeLibAllGptFiveNum & \rqUnstableOnlyLibAllGptFiveNum & \rqInconclOnlyLibAllGptFiveNum & \rqFPBoundLoLibAllGptFivePct & \rqFPBoundHiLibAllGptFivePct \\
+\quad Gemini 3.1 Pro & \rqPaccLibAllGeminiNum & \rqPtestLibAllGeminiNum & \rqFPLibAllGeminiNum & \rqFPLibAllGeminiPct & \rqSeedDetOneLibAllGeminiNum & \rqSeedDetTwoLibAllGeminiNum & \rqSeedDetThreeLibAllGeminiNum & \rqUnstableOnlyLibAllGeminiNum & \rqInconclOnlyLibAllGeminiNum & \rqFPBoundLoLibAllGeminiPct & \rqFPBoundHiLibAllGeminiPct \\
+\midrule
+Total & \rqPaccLibAllNum & \rqPtestLibAllNum & \rqFPLibAllNum & \rqFPLibAllPct & \rqSeedDetOneLibAllNum & \rqSeedDetTwoLibAllNum & \rqSeedDetThreeLibAllNum & \rqUnstableOnlyLibAllNum & \rqInconclOnlyLibAllNum & \rqFPBoundLoLibAllPct & \rqFPBoundHiLibAllPct \\
+\bottomrule
+\end{tabular}

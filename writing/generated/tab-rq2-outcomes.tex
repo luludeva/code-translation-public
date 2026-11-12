@@ -1,0 +1,33 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Kiem: tong cac dong khong thut le bang R_0^test (non-reproduced va not re-examined truoc R_run tu census, Q-F1)
+\begin{tabular}{@{}l rr@{}}
+\toprule
+Outcome & Executable programs & Libraries \\
+\midrule
+Behavioral disagreement ($A$) & \rqFFDisagreeExeAllNum & \rqFFDisagreeLibAllNum \\
+Behavioral agreement ($F$) & \rqFFExeAllNum & \rqFFLibAllNum \\
+Not adjudicable & \rqFFNotAdjExeAllNum & \rqFFNotAdjLibAllNum \\
+\quad C sanitizer reports undefined behavior & \rqFFReasonNotAdjudicableUbInCExeAllNum & \rqFFReasonNotAdjudicableUbInCLibAllNum \\
+\quad Both sides exceed the budget & \rqFFReasonNotAdjudicableBothBudgetExeAllNum & \rqFFReasonNotAdjudicableBothBudgetLibAllNum \\
+\quad Sanitizer check inconclusive & \rqFFReasonNotAdjudicableSanitizerInconclusiveExeAllNum & \rqFFReasonNotAdjudicableSanitizerInconclusiveLibAllNum \\
+\quad C observation varies across runs & \rqFFReasonNotAdjudicableCUnstableExeAllNum & \rqFFReasonNotAdjudicableCUnstableLibAllNum \\
+\quad Comparison result varies across runs & \rqFFReasonNotAdjudicableUnstableComparisonExeAllNum & \rqFFReasonNotAdjudicableUnstableComparisonLibAllNum \\
+Non-reproduced decision & \rqRZeroTestRNonrepExeAllNum & \rqRZeroTestRNonrepLibAllNum \\
+Not re-examined, before $R_{\mathit{run}}$: no build & \rqRZeroTestRNobuildExeAllNum & \rqRZeroTestRNobuildLibAllNum \\
+Not re-examined, before $R_{\mathit{run}}$: other & \rqRZeroTestROtherExeAllNum & \rqRZeroTestROtherLibAllNum \\
+Not re-examined, in $R_{\mathit{run}}$ & \rqFFNotReexExeAllNum & \rqFFNotReexLibAllNum \\
+\quad Recorded report lists no failing vector & \rqFFReasonNotReExaminedNoFailingVectorExeAllNum & \rqFFReasonNotReExaminedNoFailingVectorLibAllNum \\
+\quad Recorded report not found & \rqFFReasonNotReExaminedReportMissingExeAllNum & \rqFFReasonNotReExaminedReportMissingLibAllNum \\
+\quad Failing vectors fail only through timeouts & \rqFFReasonNotReExaminedTimeoutOnlyRulePendingExeAllNum & \rqFFReasonNotReExaminedTimeoutOnlyRulePendingLibAllNum \\
+\quad C or Rust build fails in the harness & \rqFFReasonNotReExaminedBuildFailedInHarnessExeAllNum & \rqFFReasonNotReExaminedBuildFailedInHarnessLibAllNum \\
+\quad Incomplete run: vector file empty & \rqFFReasonNotReExaminedIncompleteHarnessRunVectorUnreadableExeAllNum & \rqFFReasonNotReExaminedIncompleteHarnessRunVectorUnreadableLibAllNum \\
+\quad Incomplete run: vector outside the runner input domain & \rqFFReasonNotReExaminedIncompleteHarnessRunInvalidInputExeAllNum & \rqFFReasonNotReExaminedIncompleteHarnessRunInvalidInputLibAllNum \\
+\quad Incomplete run: runner wrote no report & \rqFFReasonNotReExaminedIncompleteHarnessRunRunUnobservedExeAllNum & \rqFFReasonNotReExaminedIncompleteHarnessRunRunUnobservedLibAllNum \\
+\quad Incomplete run: C sanitizer build failed & \rqFFReasonNotReExaminedIncompleteHarnessRunSanBuildFailedExeAllNum & \rqFFReasonNotReExaminedIncompleteHarnessRunSanBuildFailedLibAllNum \\
+\quad Incomplete run: sanitizer infrastructure fault & \rqFFReasonNotReExaminedIncompleteHarnessRunSanInfraExeAllNum & \rqFFReasonNotReExaminedIncompleteHarnessRunSanInfraLibAllNum \\
+Harness error & \rqFFHarnessErrorExeAllNum & \rqFFHarnessErrorLibAllNum \\
+\midrule
+$R_0^{\mathit{test}}$ & \rqRZeroTestExeAllNum & \rqRZeroTestLibAllNum \\
+$L_R$ & \rqLrExeAllNum & \rqLrLibAllNum \\
+\bottomrule
+\end{tabular}

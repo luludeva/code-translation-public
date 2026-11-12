@@ -1,0 +1,1091 @@
+bundle	tractor_case	harvest_case	system	source_dir	passed	error
+B01_synthetic	001_helloworld	001_helloworld	kiro	verified	true	
+B01_synthetic	001_helloworld	001_helloworld	claude	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	codex-gpt54	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	c2rust	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	laertes	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	c2saferrust	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	smartc2rust	translated	false	test failed
+B01_synthetic	001_helloworld	001_helloworld	gpt-5.4	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	kimi	translated	true	
+B01_synthetic	001_helloworld	001_helloworld	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	kiro	verified	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	claude	verified	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	codex-gpt54	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	c2rust	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	laertes	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	c2saferrust	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	smartc2rust	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	gpt-5.4	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	kimi	translated	true	
+B01_synthetic	001_helloworld_with_header	001_helloworld_with_header	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	002_stdin_echo	002_stdin_echo	kiro	verified	true	
+B01_synthetic	002_stdin_echo	002_stdin_echo	claude	verified	true	
+B01_synthetic	002_stdin_echo	002_stdin_echo	codex-gpt54	translated	false	test failed
+B01_synthetic	002_stdin_echo	002_stdin_echo	c2rust	translated	true	
+B01_synthetic	002_stdin_echo	002_stdin_echo	laertes	translated	true	
+B01_synthetic	002_stdin_echo	002_stdin_echo	c2saferrust	translated	false	test failed
+B01_synthetic	002_stdin_echo	002_stdin_echo	smartc2rust	translated	false	test failed
+B01_synthetic	002_stdin_echo	002_stdin_echo	gpt-5.4	translated	false	test failed
+B01_synthetic	002_stdin_echo	002_stdin_echo	kimi	translated	false	test failed
+B01_synthetic	002_stdin_echo	002_stdin_echo	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	003_string_slicing	003_string_slicing	kiro	verified	true	
+B01_synthetic	003_string_slicing	003_string_slicing	claude	verified	true	
+B01_synthetic	003_string_slicing	003_string_slicing	codex-gpt54	translated	true	
+B01_synthetic	003_string_slicing	003_string_slicing	c2rust	translated	true	
+B01_synthetic	003_string_slicing	003_string_slicing	laertes	translated	true	
+B01_synthetic	003_string_slicing	003_string_slicing	c2saferrust	translated	false	test failed
+B01_synthetic	003_string_slicing	003_string_slicing	smartc2rust	translated	true	
+B01_synthetic	003_string_slicing	003_string_slicing	gpt-5.4	translated	false	test failed
+B01_synthetic	003_string_slicing	003_string_slicing	kimi	translated	false	test failed
+B01_synthetic	003_string_slicing	003_string_slicing	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	kiro	verified	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	claude	verified	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	codex-gpt54	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	c2rust	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	laertes	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	c2saferrust	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	smartc2rust	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	gpt-5.4	translated	true	
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	kimi	translated	false	test failed
+B01_synthetic	004_nineality_sieve	004_nineality_sieve	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	kiro	verified	true	
+B01_synthetic	005_static_loop	005_static_loop	claude	verified	true	
+B01_synthetic	005_static_loop	005_static_loop	codex-gpt54	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	c2rust	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	laertes	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	c2saferrust	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	smartc2rust	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	gpt-5.4	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	kimi	translated	true	
+B01_synthetic	005_static_loop	005_static_loop	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	006_static_alias	006_static_alias	kiro	verified	true	
+B01_synthetic	006_static_alias	006_static_alias	claude	verified	true	
+B01_synthetic	006_static_alias	006_static_alias	codex-gpt54	translated	true	
+B01_synthetic	006_static_alias	006_static_alias	c2rust	translated	true	
+B01_synthetic	006_static_alias	006_static_alias	laertes	translated	true	
+B01_synthetic	006_static_alias	006_static_alias	c2saferrust	translated	false	test failed
+B01_synthetic	006_static_alias	006_static_alias	smartc2rust	translated	true	
+B01_synthetic	006_static_alias	006_static_alias	gpt-5.4	translated	false	test failed
+B01_synthetic	006_static_alias	006_static_alias	kimi	translated	false	build failed
+B01_synthetic	006_static_alias	006_static_alias	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	007_errno_pow	007_errno-pow	kiro	verified	true	
+B01_synthetic	007_errno_pow	007_errno-pow	claude	verified	true	
+B01_synthetic	007_errno_pow	007_errno-pow	codex-gpt54	translated	true	
+B01_synthetic	007_errno_pow	007_errno-pow	c2rust	translated	true	
+B01_synthetic	007_errno_pow	007_errno-pow	laertes	translated	true	
+B01_synthetic	007_errno_pow	007_errno-pow	c2saferrust	translated	false	test failed
+B01_synthetic	007_errno_pow	007_errno-pow	smartc2rust	translated	true	
+B01_synthetic	007_errno_pow	007_errno-pow	gpt-5.4	translated	false	test failed
+B01_synthetic	007_errno_pow	007_errno-pow	kimi	translated	false	test failed
+B01_synthetic	007_errno_pow	007_errno-pow	gemini-3.1-pro-preview	translated	false	build failed
+B01_synthetic	008_long_run	008_long_run	kiro	verified	true	
+B01_synthetic	008_long_run	008_long_run	claude	verified	true	
+B01_synthetic	008_long_run	008_long_run	codex-gpt54	translated	true	
+B01_synthetic	008_long_run	008_long_run	c2rust	translated	true	
+B01_synthetic	008_long_run	008_long_run	laertes	translated	true	
+B01_synthetic	008_long_run	008_long_run	c2saferrust	translated	true	
+B01_synthetic	008_long_run	008_long_run	smartc2rust	translated	false	build failed
+B01_synthetic	008_long_run	008_long_run	gpt-5.4	translated	false	build failed
+B01_synthetic	008_long_run	008_long_run	kimi	translated	true	
+B01_synthetic	008_long_run	008_long_run	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	kiro	verified	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	claude	verified	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	codex-gpt54	translated	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	c2rust	translated	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	laertes	translated	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	c2saferrust	translated	false	test failed
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	smartc2rust	translated	true	
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	gpt-5.4	translated	false	test failed
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	kimi	translated	false	test failed
+B01_synthetic	009_stack_buffer_overflow	009_stack_buffer_overflow	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	010_integer_overflow	010_integer_overflow	kiro	verified	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	claude	verified	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	codex-gpt54	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	c2rust	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	laertes	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	c2saferrust	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	smartc2rust	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	gpt-5.4	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	kimi	translated	true	
+B01_synthetic	010_integer_overflow	010_integer_overflow	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	kiro	verified	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	claude	verified	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	codex-gpt54	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	c2rust	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	laertes	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	c2saferrust	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	smartc2rust	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	gpt-5.4	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	kimi	translated	true	
+B01_synthetic	011_uninit_char_ptr	011_uninit_char_ptr	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	kiro	verified	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	claude	verified	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	codex-gpt54	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	c2rust	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	laertes	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	c2saferrust	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	smartc2rust	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	gpt-5.4	translated	true	
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	kimi	translated	false	build failed
+B01_synthetic	012_uninit_int_ptr	012_uninit_int_ptr	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	kiro	verified	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	claude	verified	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	codex-gpt54	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	c2rust	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	laertes	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	c2saferrust	translated	false	test failed
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	smartc2rust	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	gpt-5.4	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	kimi	translated	true	
+B01_synthetic	013_poor_quality_addition	013_poor_quality_addition	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	kiro	verified	true	
+B01_synthetic	014_dead_code	014_dead_code	claude	verified	true	
+B01_synthetic	014_dead_code	014_dead_code	codex-gpt54	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	c2rust	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	laertes	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	c2saferrust	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	smartc2rust	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	gpt-5.4	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	kimi	translated	true	
+B01_synthetic	014_dead_code	014_dead_code	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	kiro	verified	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	claude	verified	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	codex-gpt54	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	c2rust	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	laertes	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	c2saferrust	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	smartc2rust	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	gpt-5.4	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	kimi	translated	true	
+B01_synthetic	015_return_stack_buffer	015_return_stack_buffer	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	kiro	verified	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	claude	verified	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	codex-gpt54	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	c2rust	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	laertes	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	c2saferrust	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	smartc2rust	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	gpt-5.4	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	kimi	translated	true	
+B01_synthetic	016_divide_by_zero_float	016_divide_by_zero_float	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	kiro	verified	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	claude	verified	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	codex-gpt54	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	c2rust	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	laertes	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	c2saferrust	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	smartc2rust	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	gpt-5.4	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	kimi	translated	true	
+B01_synthetic	017_signed_length_confusion	017_signed_length_confusion	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	kiro	verified	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	claude	verified	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	codex-gpt54	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	c2rust	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	laertes	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	c2saferrust	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	smartc2rust	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	gpt-5.4	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	kimi	translated	true	
+B01_synthetic	018_stack_buffer_overflow_loop1	018_stack_buffer_overflow_loop1	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	kiro	verified	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	claude	verified	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	codex-gpt54	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	c2rust	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	laertes	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	c2saferrust	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	smartc2rust	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	gpt-5.4	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	kimi	translated	true	
+B01_synthetic	019_integer_overflow_char_max_multiply	019_integer_overflow_char_max_multiply	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	kiro	verified	true	
+B01_synthetic	021_complex_goto	021_complex_goto	claude	verified	true	
+B01_synthetic	021_complex_goto	021_complex_goto	codex-gpt54	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	c2rust	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	laertes	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	c2saferrust	translated	false	test failed
+B01_synthetic	021_complex_goto	021_complex_goto	smartc2rust	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	gpt-5.4	translated	true	
+B01_synthetic	021_complex_goto	021_complex_goto	kimi	translated	false	test failed
+B01_synthetic	021_complex_goto	021_complex_goto	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	kiro	verified	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	claude	verified	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	codex-gpt54	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	c2rust	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	laertes	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	c2saferrust	translated	false	test failed
+B01_synthetic	022_stdlib_div	022_stdlib_div	smartc2rust	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	gpt-5.4	translated	true	
+B01_synthetic	022_stdlib_div	022_stdlib_div	kimi	translated	false	test failed
+B01_synthetic	022_stdlib_div	022_stdlib_div	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	kiro	verified	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	claude	verified	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	codex-gpt54	translated	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	c2rust	translated	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	laertes	translated	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	c2saferrust	translated	false	test failed
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	smartc2rust	translated	true	
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	gpt-5.4	translated	false	test failed
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	kimi	translated	false	test failed
+B01_synthetic	023_struct_and_errno	023_struct_and_errno	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	kiro	verified	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	claude	verified	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	codex-gpt54	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	c2rust	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	laertes	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	c2saferrust	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	smartc2rust	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	gpt-5.4	translated	true	
+B01_synthetic	024_struct_and_static	024_struct_and_static	kimi	translated	false	build failed
+B01_synthetic	024_struct_and_static	024_struct_and_static	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	kiro	verified	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	claude	verified	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	codex-gpt54	translated	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	c2rust	translated	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	laertes	translated	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	c2saferrust	translated	false	test failed
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	smartc2rust	translated	true	
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	gpt-5.4	translated	false	test failed
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	kimi	translated	false	build failed
+B01_synthetic	025_struct_and_errno_and_static	025_struct_and_errno_and_static	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	026_goto_and_static	026_goto_and_static	kiro	verified	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	claude	verified	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	codex-gpt54	translated	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	c2rust	translated	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	laertes	translated	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	c2saferrust	translated	false	test failed
+B01_synthetic	026_goto_and_static	026_goto_and_static	smartc2rust	translated	false	build failed
+B01_synthetic	026_goto_and_static	026_goto_and_static	gpt-5.4	translated	true	
+B01_synthetic	026_goto_and_static	026_goto_and_static	kimi	translated	false	test failed
+B01_synthetic	026_goto_and_static	026_goto_and_static	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	kiro	verified	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	claude	verified	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	codex-gpt54	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	c2rust	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	laertes	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	c2saferrust	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	smartc2rust	translated	true	
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	gpt-5.4	translated	false	test failed
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	kimi	translated	false	build failed
+B01_synthetic	027_ctype_ascii	027_ctype_ascii	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	028_strchr	028_strchr	kiro	verified	true	
+B01_synthetic	028_strchr	028_strchr	claude	verified	true	
+B01_synthetic	028_strchr	028_strchr	codex-gpt54	translated	true	
+B01_synthetic	028_strchr	028_strchr	c2rust	translated	true	
+B01_synthetic	028_strchr	028_strchr	laertes	translated	true	
+B01_synthetic	028_strchr	028_strchr	c2saferrust	translated	true	
+B01_synthetic	028_strchr	028_strchr	smartc2rust	translated	true	
+B01_synthetic	028_strchr	028_strchr	gpt-5.4	translated	true	
+B01_synthetic	028_strchr	028_strchr	kimi	translated	true	
+B01_synthetic	028_strchr	028_strchr	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	kiro	verified	true	
+B01_synthetic	029_strcspn	029_strcspn	claude	verified	true	
+B01_synthetic	029_strcspn	029_strcspn	codex-gpt54	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	c2rust	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	laertes	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	c2saferrust	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	smartc2rust	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	gpt-5.4	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	kimi	translated	true	
+B01_synthetic	029_strcspn	029_strcspn	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	kiro	verified	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	claude	verified	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	codex-gpt54	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	c2rust	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	laertes	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	c2saferrust	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	smartc2rust	translated	false	test failed
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	gpt-5.4	translated	true	
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	kimi	translated	false	test failed
+B01_synthetic	030_mutable_buffer_overlap_extrahard	030_mutable_buffer_overlap_extrahard	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	kiro	verified	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	claude	verified	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	codex-gpt54	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	c2rust	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	laertes	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	c2saferrust	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	smartc2rust	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	gpt-5.4	translated	true	
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	kimi	translated	false	test failed
+B01_synthetic	031_disjoint_arrays	031_disjoint_arrays	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	kiro	verified	true	
+B01_synthetic	032_comma_operator	032_comma_operator	claude	verified	true	
+B01_synthetic	032_comma_operator	032_comma_operator	codex-gpt54	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	c2rust	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	laertes	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	c2saferrust	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	smartc2rust	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	gpt-5.4	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	kimi	translated	true	
+B01_synthetic	032_comma_operator	032_comma_operator	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	kiro	verified	true	
+B01_synthetic	033_bitfield	033_bitfield	claude	verified	true	
+B01_synthetic	033_bitfield	033_bitfield	codex-gpt54	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	c2rust	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	laertes	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	c2saferrust	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	smartc2rust	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	gpt-5.4	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	kimi	translated	true	
+B01_synthetic	033_bitfield	033_bitfield	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	kiro	verified	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	claude	verified	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	codex-gpt54	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	c2rust	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	laertes	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	c2saferrust	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	smartc2rust	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	gpt-5.4	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	kimi	translated	true	
+B01_synthetic	034_cast_to_char_ptr_int	034_cast_to_char_ptr_int	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	kiro	verified	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	claude	verified	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	codex-gpt54	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	c2rust	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	laertes	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	c2saferrust	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	smartc2rust	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	gpt-5.4	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	kimi	translated	true	
+B01_synthetic	035_cast_to_char_ptr_float	035_cast_to_char_ptr_float	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	kiro	verified	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	claude	verified	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	codex-gpt54	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	c2rust	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	laertes	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	c2saferrust	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	smartc2rust	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	gpt-5.4	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	kimi	translated	true	
+B01_synthetic	036_cast_to_char_ptr_struct	036_cast_to_char_ptr_struct	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	kiro	verified	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	claude	verified	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	codex-gpt54	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	c2rust	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	laertes	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	c2saferrust	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	smartc2rust	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	gpt-5.4	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	kimi	translated	true	
+B01_synthetic	037_cast_to_char_ptr_int_no_strict_aliasing	037_cast_to_char_ptr_int_no_strict_aliasing	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	kiro	verified	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	claude	verified	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	codex-gpt54	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	c2rust	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	laertes	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	c2saferrust	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	smartc2rust	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	gpt-5.4	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	kimi	translated	true	
+B01_synthetic	038_cast_to_char_ptr_float_no_strict_aliasing	038_cast_to_char_ptr_float_no_strict_aliasing	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	kiro	verified	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	claude	verified	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	codex-gpt54	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	c2rust	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	laertes	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	c2saferrust	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	smartc2rust	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	gpt-5.4	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	kimi	translated	true	
+B01_synthetic	039_cast_to_char_ptr_struct_no_strict_aliasing	039_cast_to_char_ptr_struct_no_strict_aliasing	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	kiro	verified	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	claude	verified	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	codex-gpt54	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	c2rust	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	laertes	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	c2saferrust	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	smartc2rust	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	gpt-5.4	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	kimi	translated	true	
+B01_synthetic	040_storage_class_auto	040_storage_class_auto	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	kiro	verified	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	claude	verified	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	codex-gpt54	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	c2rust	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	laertes	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	c2saferrust	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	smartc2rust	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	gpt-5.4	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	kimi	translated	true	
+B01_synthetic	041_storage_class_register	041_storage_class_register	gemini-3.1-pro-preview	translated	true	
+B01_synthetic	042_float_union	042_float_union	kiro	verified	true	
+B01_synthetic	042_float_union	042_float_union	claude	verified	true	
+B01_synthetic	042_float_union	042_float_union	codex-gpt54	translated	true	
+B01_synthetic	042_float_union	042_float_union	c2rust	translated	true	
+B01_synthetic	042_float_union	042_float_union	laertes	translated	true	
+B01_synthetic	042_float_union	042_float_union	c2saferrust	translated	true	
+B01_synthetic	042_float_union	042_float_union	smartc2rust	translated	true	
+B01_synthetic	042_float_union	042_float_union	gpt-5.4	translated	false	build failed
+B01_synthetic	042_float_union	042_float_union	kimi	translated	false	test failed
+B01_synthetic	042_float_union	042_float_union	gemini-3.1-pro-preview	translated	false	test failed
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	kiro	verified	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	claude	verified	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	codex-gpt54	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	c2rust	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	laertes	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	c2saferrust	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	smartc2rust	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	gpt-5.4	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	kimi	translated	true	
+B01_synthetic	043_iso646_and_digraphs	043_iso646_and_digraphs	gemini-3.1-pro-preview	translated	true	
+B02_organic	qmath	qmath	kiro	verified	true	
+B02_organic	qmath	qmath	claude	verified	true	
+B02_organic	qmath	qmath	codex-gpt54	translated	true	
+B02_organic	qmath	qmath	c2rust	translated	true	
+B02_organic	qmath	qmath	laertes	translated	true	
+B02_organic	qmath	qmath	c2saferrust	translated	true	
+B02_organic	qmath	qmath	smartc2rust	translated	false	build failed
+B02_organic	qmath	qmath	gpt-5.4	translated	false	build failed
+B02_organic	qmath	qmath	kimi	translated	false	build failed
+B02_organic	qmath	qmath	gemini-3.1-pro-preview	translated	false	build failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	kiro	verified	false	test failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	claude	verified	true	
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	codex-gpt54	translated	false	test failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	c2rust	translated	false	build failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	laertes	translated	false	build failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	c2saferrust	translated	false	build failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	smartc2rust	translated	false	build failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	gpt-5.4	translated	false	test failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	kimi	translated	false	test failed
+B02_organic	underhanded_c_luggage	underhanded-c-luggage	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	kiro	verified	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	claude	verified	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	codex-gpt54	translated	true	
+B02_synthetic	char_to_bool	char-to-bool	c2rust	translated	true	
+B02_synthetic	char_to_bool	char-to-bool	laertes	translated	true	
+B02_synthetic	char_to_bool	char-to-bool	c2saferrust	translated	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	smartc2rust	translated	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	gpt-5.4	translated	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	kimi	translated	false	test failed
+B02_synthetic	char_to_bool	char-to-bool	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	container_of	container_of	kiro	verified	true	
+B02_synthetic	container_of	container_of	claude	verified	true	
+B02_synthetic	container_of	container_of	codex-gpt54	translated	true	
+B02_synthetic	container_of	container_of	c2rust	translated	false	build failed
+B02_synthetic	container_of	container_of	laertes	translated	false	build failed
+B02_synthetic	container_of	container_of	c2saferrust	translated	false	build failed
+B02_synthetic	container_of	container_of	smartc2rust	translated	true	
+B02_synthetic	container_of	container_of	gpt-5.4	translated	true	
+B02_synthetic	container_of	container_of	kimi	translated	true	
+B02_synthetic	container_of	container_of	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	generic_foreach	generic-foreach	kiro	verified	false	test failed
+B02_synthetic	generic_foreach	generic-foreach	claude	verified	true	
+B02_synthetic	generic_foreach	generic-foreach	codex-gpt54	translated	false	test failed
+B02_synthetic	generic_foreach	generic-foreach	c2rust	translated	true	
+B02_synthetic	generic_foreach	generic-foreach	laertes	translated	true	
+B02_synthetic	generic_foreach	generic-foreach	c2saferrust	translated	false	build failed
+B02_synthetic	generic_foreach	generic-foreach	smartc2rust	translated	false	test failed
+B02_synthetic	generic_foreach	generic-foreach	gpt-5.4	translated	true	
+B02_synthetic	generic_foreach	generic-foreach	kimi	translated	true	
+B02_synthetic	generic_foreach	generic-foreach	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	hashmap_tree	hashmap-tree	kiro	verified	false	test failed
+B02_synthetic	hashmap_tree	hashmap-tree	claude	verified	true	
+B02_synthetic	hashmap_tree	hashmap-tree	codex-gpt54	translated	true	
+B02_synthetic	hashmap_tree	hashmap-tree	c2rust	translated	true	
+B02_synthetic	hashmap_tree	hashmap-tree	laertes	translated	true	
+B02_synthetic	hashmap_tree	hashmap-tree	c2saferrust	translated	false	build failed
+B02_synthetic	hashmap_tree	hashmap-tree	smartc2rust	translated	false	build failed
+B02_synthetic	hashmap_tree	hashmap-tree	gpt-5.4	translated	false	build failed
+B02_synthetic	hashmap_tree	hashmap-tree	kimi	translated	false	build failed
+B02_synthetic	hashmap_tree	hashmap-tree	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	kiro	verified	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	claude	verified	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	codex-gpt54	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	c2rust	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	laertes	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	c2saferrust	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	smartc2rust	translated	false	build failed
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	gpt-5.4	translated	true	
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	kimi	translated	false	build failed
+B02_synthetic	macrodepth_add_5	macrodepth_add_5	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	kiro	translated	false	test failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	claude	verified	false	test failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	codex-gpt54	translated	false	test failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	c2rust	translated	false	build failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	laertes	translated	true	
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	c2saferrust	translated	true	
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	smartc2rust	translated	false	build failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	gpt-5.4	translated	false	test failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	kimi	translated	false	build failed
+B02_synthetic	macrodepth_mul_4	macrodepth_mul_4	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	kiro	translated	false	test failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	claude	verified	false	test failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	codex-gpt54	translated	false	test failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	c2rust	translated	false	build failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	laertes	translated	true	
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	c2saferrust	translated	true	
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	smartc2rust	translated	false	build failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	gpt-5.4	translated	false	test failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	kimi	translated	false	build failed
+B02_synthetic	macrodepth_sub_6	macrodepth_sub_6	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	kiro	verified	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	claude	verified	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	codex-gpt54	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	c2rust	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	laertes	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	c2saferrust	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	smartc2rust	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	gpt-5.4	translated	true	
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	kimi	translated	false	build failed
+B02_synthetic	memcpy_fun_buffers	memcpy-fun-buffers	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	memmove	memmove	kiro	verified	false	test failed
+B02_synthetic	memmove	memmove	claude	verified	true	
+B02_synthetic	memmove	memmove	codex-gpt54	translated	true	
+B02_synthetic	memmove	memmove	c2rust	translated	true	
+B02_synthetic	memmove	memmove	laertes	translated	true	
+B02_synthetic	memmove	memmove	c2saferrust	translated	true	
+B02_synthetic	memmove	memmove	smartc2rust	translated	false	test failed
+B02_synthetic	memmove	memmove	gpt-5.4	translated	false	test failed
+B02_synthetic	memmove	memmove	kimi	translated	false	build failed
+B02_synthetic	memmove	memmove	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	kiro	verified	false	test failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	claude	verified	false	test failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	codex-gpt54	translated	true	
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	c2rust	translated	true	
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	laertes	translated	true	
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	c2saferrust	translated	true	
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	smartc2rust	translated	false	build failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	gpt-5.4	translated	false	test failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	kimi	translated	false	test failed
+B02_synthetic	mutable_duplication_dag	mutable-duplication-dag	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	kiro	verified	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	claude	verified	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	codex-gpt54	translated	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	c2rust	translated	true	
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	laertes	translated	true	
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	c2saferrust	translated	true	
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	smartc2rust	translated	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	gpt-5.4	translated	false	test failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	kimi	translated	false	build failed
+B02_synthetic	pointer_comparison_ascii_art	pointer-comparison-ascii-art	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	kiro	verified	false	test failed
+B02_synthetic	static_vars_fpts	static-vars-fpts	claude	verified	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	codex-gpt54	translated	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	c2rust	translated	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	laertes	translated	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	c2saferrust	translated	true	
+B02_synthetic	static_vars_fpts	static-vars-fpts	smartc2rust	translated	false	build failed
+B02_synthetic	static_vars_fpts	static-vars-fpts	gpt-5.4	translated	false	test failed
+B02_synthetic	static_vars_fpts	static-vars-fpts	kimi	translated	false	build failed
+B02_synthetic	static_vars_fpts	static-vars-fpts	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	strcmp	strcmp	kiro	verified	false	test failed
+B02_synthetic	strcmp	strcmp	claude	verified	true	
+B02_synthetic	strcmp	strcmp	codex-gpt54	translated	false	test failed
+B02_synthetic	strcmp	strcmp	c2rust	translated	true	
+B02_synthetic	strcmp	strcmp	laertes	translated	true	
+B02_synthetic	strcmp	strcmp	c2saferrust	translated	true	
+B02_synthetic	strcmp	strcmp	smartc2rust	translated	false	build failed
+B02_synthetic	strcmp	strcmp	gpt-5.4	translated	false	test failed
+B02_synthetic	strcmp	strcmp	kimi	translated	false	test failed
+B02_synthetic	strcmp	strcmp	gemini-3.1-pro-preview	translated	false	test failed
+B02_synthetic	strcpy	strcpy	kiro	verified	true	
+B02_synthetic	strcpy	strcpy	claude	verified	true	
+B02_synthetic	strcpy	strcpy	codex-gpt54	translated	true	
+B02_synthetic	strcpy	strcpy	c2rust	translated	true	
+B02_synthetic	strcpy	strcpy	laertes	translated	true	
+B02_synthetic	strcpy	strcpy	c2saferrust	translated	true	
+B02_synthetic	strcpy	strcpy	smartc2rust	translated	false	build failed
+B02_synthetic	strcpy	strcpy	gpt-5.4	translated	false	test failed
+B02_synthetic	strcpy	strcpy	kimi	translated	false	build failed
+B02_synthetic	strcpy	strcpy	gemini-3.1-pro-preview	translated	true	
+B02_synthetic	tu_linkage	tu_linkage	kiro	verified	true	
+B02_synthetic	tu_linkage	tu_linkage	claude	verified	true	
+B02_synthetic	tu_linkage	tu_linkage	codex-gpt54	translated	true	
+B02_synthetic	tu_linkage	tu_linkage	c2rust	translated	true	
+B02_synthetic	tu_linkage	tu_linkage	laertes	translated	false	build failed
+B02_synthetic	tu_linkage	tu_linkage	c2saferrust	translated	true	
+B02_synthetic	tu_linkage	tu_linkage	smartc2rust	translated	false	build failed
+B02_synthetic	tu_linkage	tu_linkage	gpt-5.4	translated	false	test failed
+B02_synthetic	tu_linkage	tu_linkage	kimi	translated	false	build failed
+B02_synthetic	tu_linkage	tu_linkage	gemini-3.1-pro-preview	translated	false	test failed
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	kiro	verified	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	claude	verified	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	codex-gpt54	translated	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	c2rust	translated	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	laertes	translated	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	c2saferrust	translated	true	
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	smartc2rust	translated	false	test failed
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	gpt-5.4	translated	false	test failed
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	kimi	translated	false	test failed
+P00_perlin_noise	001_perlin_noise	001_perlin_noise	gemini-3.1-pro-preview	translated	false	test failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	kiro	verified	true	
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	claude	verified	true	
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	kimi	translated	false	build failed
+P01_sphincs_plus	005_sphincs_PQCgenKAT_sign_blake_128f_simple	005_sphincs_PQCgenKAT_sign_blake_128f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	kiro	verified	true	
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	claude	verified	true	
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	kimi	missing		
+P01_sphincs_plus	006_sphincs_PQCgenKAT_sign_blake_128f_robust	006_sphincs_PQCgenKAT_sign_blake_128f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	kiro	verified	true	
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	claude	verified	true	
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	kimi	missing		
+P01_sphincs_plus	007_sphincs_PQCgenKAT_sign_blake_128s_simple	007_sphincs_PQCgenKAT_sign_blake_128s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	kiro	verified	true	
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	claude	verified	true	
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	kimi	missing		
+P01_sphincs_plus	008_sphincs_PQCgenKAT_sign_blake_128s_robust	008_sphincs_PQCgenKAT_sign_blake_128s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	kiro	verified	true	
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	claude	verified	true	
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	kimi	missing		
+P01_sphincs_plus	009_sphincs_PQCgenKAT_sign_blake_192f_simple	009_sphincs_PQCgenKAT_sign_blake_192f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	kiro	verified	true	
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	claude	verified	true	
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	kimi	missing		
+P01_sphincs_plus	010_sphincs_PQCgenKAT_sign_blake_192f_robust	010_sphincs_PQCgenKAT_sign_blake_192f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	kiro	verified	true	
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	claude	verified	true	
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	kimi	missing		
+P01_sphincs_plus	011_sphincs_PQCgenKAT_sign_blake_192s_simple	011_sphincs_PQCgenKAT_sign_blake_192s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	kiro	verified	true	
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	claude	verified	true	
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	kimi	missing		
+P01_sphincs_plus	012_sphincs_PQCgenKAT_sign_blake_192s_robust	012_sphincs_PQCgenKAT_sign_blake_192s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	kiro	verified	true	
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	claude	verified	true	
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	kimi	missing		
+P01_sphincs_plus	013_sphincs_PQCgenKAT_sign_blake_256f_simple	013_sphincs_PQCgenKAT_sign_blake_256f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	kiro	verified	true	
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	claude	verified	true	
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	kimi	missing		
+P01_sphincs_plus	014_sphincs_PQCgenKAT_sign_blake_256f_robust	014_sphincs_PQCgenKAT_sign_blake_256f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	kiro	verified	true	
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	claude	verified	true	
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	kimi	missing		
+P01_sphincs_plus	015_sphincs_PQCgenKAT_sign_blake_256s_simple	015_sphincs_PQCgenKAT_sign_blake_256s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	kiro	verified	true	
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	claude	verified	true	
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	kimi	missing		
+P01_sphincs_plus	016_sphincs_PQCgenKAT_sign_blake_256s_robust	016_sphincs_PQCgenKAT_sign_blake_256s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	kiro	verified	true	
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	claude	verified	true	
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	kimi	missing		
+P01_sphincs_plus	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	017_sphincs_PQCgenKAT_sign_sha2_128f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	kiro	verified	true	
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	claude	verified	true	
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	kimi	missing		
+P01_sphincs_plus	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	018_sphincs_PQCgenKAT_sign_sha2_128f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	kiro	verified	true	
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	claude	verified	true	
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	kimi	missing		
+P01_sphincs_plus	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	019_sphincs_PQCgenKAT_sign_sha2_128s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	kiro	verified	true	
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	claude	verified	true	
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	kimi	missing		
+P01_sphincs_plus	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	020_sphincs_PQCgenKAT_sign_sha2_128s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	kiro	verified	true	
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	claude	verified	true	
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	kimi	missing		
+P01_sphincs_plus	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	021_sphincs_PQCgenKAT_sign_sha2_192f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	kiro	verified	true	
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	claude	verified	true	
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	kimi	missing		
+P01_sphincs_plus	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	022_sphincs_PQCgenKAT_sign_sha2_192f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	kiro	verified	true	
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	claude	verified	true	
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	kimi	missing		
+P01_sphincs_plus	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	023_sphincs_PQCgenKAT_sign_sha2_192s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	kiro	verified	true	
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	claude	verified	true	
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	kimi	missing		
+P01_sphincs_plus	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	024_sphincs_PQCgenKAT_sign_sha2_192s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	kiro	verified	true	
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	claude	verified	true	
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	kimi	missing		
+P01_sphincs_plus	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	025_sphincs_PQCgenKAT_sign_sha2_256f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	kiro	verified	true	
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	claude	verified	true	
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	kimi	missing		
+P01_sphincs_plus	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	026_sphincs_PQCgenKAT_sign_sha2_256f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	kiro	verified	true	
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	claude	verified	true	
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	codex-gpt54	translated	true	
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	kimi	missing		
+P01_sphincs_plus	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	027_sphincs_PQCgenKAT_sign_sha2_256s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	kiro	verified	true	
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	claude	verified	true	
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	codex-gpt54	translated	true	
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	kimi	missing		
+P01_sphincs_plus	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	028_sphincs_PQCgenKAT_sign_sha2_256s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	kiro	verified	true	
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	claude	verified	true	
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	kimi	missing		
+P01_sphincs_plus	029_sphincs_PQCgenKAT_sign_shake_128f_simple	029_sphincs_PQCgenKAT_sign_shake_128f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	kiro	verified	true	
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	claude	verified	true	
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	kimi	missing		
+P01_sphincs_plus	030_sphincs_PQCgenKAT_sign_shake_128f_robust	030_sphincs_PQCgenKAT_sign_shake_128f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	kiro	verified	true	
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	claude	verified	true	
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	kimi	missing		
+P01_sphincs_plus	031_sphincs_PQCgenKAT_sign_shake_128s_simple	031_sphincs_PQCgenKAT_sign_shake_128s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	kiro	verified	true	
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	claude	verified	true	
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	kimi	missing		
+P01_sphincs_plus	032_sphincs_PQCgenKAT_sign_shake_128s_robust	032_sphincs_PQCgenKAT_sign_shake_128s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	kiro	verified	true	
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	claude	verified	true	
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	kimi	missing		
+P01_sphincs_plus	033_sphincs_PQCgenKAT_sign_shake_192f_simple	033_sphincs_PQCgenKAT_sign_shake_192f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	kiro	verified	true	
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	claude	verified	true	
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	kimi	missing		
+P01_sphincs_plus	034_sphincs_PQCgenKAT_sign_shake_192f_robust	034_sphincs_PQCgenKAT_sign_shake_192f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	kiro	verified	true	
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	claude	verified	true	
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	kimi	missing		
+P01_sphincs_plus	035_sphincs_PQCgenKAT_sign_shake_192s_simple	035_sphincs_PQCgenKAT_sign_shake_192s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	kiro	verified	true	
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	claude	verified	true	
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	kimi	missing		
+P01_sphincs_plus	036_sphincs_PQCgenKAT_sign_shake_192s_robust	036_sphincs_PQCgenKAT_sign_shake_192s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	kiro	verified	true	
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	claude	verified	true	
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	kimi	missing		
+P01_sphincs_plus	037_sphincs_PQCgenKAT_sign_shake_256f_simple	037_sphincs_PQCgenKAT_sign_shake_256f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	kiro	verified	true	
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	claude	verified	true	
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	kimi	missing		
+P01_sphincs_plus	038_sphincs_PQCgenKAT_sign_shake_256f_robust	038_sphincs_PQCgenKAT_sign_shake_256f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	kiro	verified	true	
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	claude	verified	true	
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	kimi	missing		
+P01_sphincs_plus	039_sphincs_PQCgenKAT_sign_shake_256s_simple	039_sphincs_PQCgenKAT_sign_shake_256s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	kiro	verified	true	
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	claude	verified	true	
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	kimi	missing		
+P01_sphincs_plus	040_sphincs_PQCgenKAT_sign_shake_256s_robust	040_sphincs_PQCgenKAT_sign_shake_256s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	kiro	verified	true	
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	claude	verified	true	
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	kimi	missing		
+P01_sphincs_plus	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	041_sphincs_PQCgenKAT_sign_haraka_128f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	kiro	verified	true	
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	claude	verified	true	
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	kimi	missing		
+P01_sphincs_plus	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	042_sphincs_PQCgenKAT_sign_haraka_128f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	kiro	verified	true	
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	claude	verified	true	
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	kimi	missing		
+P01_sphincs_plus	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	043_sphincs_PQCgenKAT_sign_haraka_128s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	kiro	verified	true	
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	claude	verified	true	
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	kimi	missing		
+P01_sphincs_plus	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	044_sphincs_PQCgenKAT_sign_haraka_128s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	kiro	verified	true	
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	claude	verified	true	
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	kimi	missing		
+P01_sphincs_plus	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	045_sphincs_PQCgenKAT_sign_haraka_192f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	kiro	verified	true	
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	claude	verified	true	
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	kimi	missing		
+P01_sphincs_plus	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	046_sphincs_PQCgenKAT_sign_haraka_192f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	kiro	verified	true	
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	claude	verified	true	
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	kimi	missing		
+P01_sphincs_plus	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	047_sphincs_PQCgenKAT_sign_haraka_192s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	kiro	verified	true	
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	claude	verified	true	
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	kimi	missing		
+P01_sphincs_plus	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	048_sphincs_PQCgenKAT_sign_haraka_192s_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	kiro	verified	true	
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	claude	verified	true	
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	laertes	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	kimi	missing		
+P01_sphincs_plus	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	049_sphincs_PQCgenKAT_sign_haraka_256f_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	kiro	verified	true	
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	claude	verified	true	
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	laertes	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	kimi	missing		
+P01_sphincs_plus	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	050_sphincs_PQCgenKAT_sign_haraka_256f_robust	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	kiro	verified	true	
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	claude	verified	true	
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	c2rust	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	laertes	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	c2saferrust	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	smartc2rust	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	kimi	missing		
+P01_sphincs_plus	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	051_sphincs_PQCgenKAT_sign_haraka_256s_simple	gemini-3.1-pro-preview	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	kiro	verified	true	
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	claude	verified	true	
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	codex-gpt54	translated	false	test failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	c2rust	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	laertes	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	c2saferrust	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	smartc2rust	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	gpt-5.4	translated	false	build failed
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	kimi	missing		
+P01_sphincs_plus	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	052_sphincs_PQCgenKAT_sign_haraka_256s_robust	gemini-3.1-pro-preview	translated	false	build failed

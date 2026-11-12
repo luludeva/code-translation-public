@@ -1,0 +1,573 @@
+\chapter{Related Work}
+\label{ch:related-work}
+
+This chapter reviews the automated C-to-Rust translation systems and the ways in which their translations are evaluated. It examines what kind of evidence each evaluation approach provides about a translation and where that evidence stops. It then considers studies that have independently reassessed published results, and from these two strands it derives the research gap that this thesis addresses.
+
+\section{Evaluation Approaches in C-to-Rust Translation}
+\label{sec:rw-approaches}\label{sec:rw-translation}
+
+Automated C-to-Rust systems differ considerably in how they produce
+translations. Rule-based tools such as C2Rust mechanically transform C
+code into Rust, often retaining substantial use of \texttt{unsafe};
+Laertes subsequently refines raw pointers into Rust references where
+possible, using compiler feedback during the conversion process
+\cite{c2rust,emre2021laertes}. LLM-assisted systems range from
+approaches that refine C2Rust output, such as C2SaferRust, to
+feedback-driven translation systems such as SmartC2Rust, which use
+compilation failures, run-time errors, execution-flow discrepancies, and
+assertion failures to guide revisions
+\cite{nitin2025c2saferrust,shiraishi2026smartc2rust}. Other
+configurations make a single model call for a project, whereas the ACTOR
+study evaluates general-purpose coding agents, including Kiro, Claude
+Code, and Codex, that can interact with development tools throughout
+translation \cite{schesch2026actor}. These production mechanisms provide context; the present review focuses on the evidence used to judge their outputs.
+
+Three components are useful for distinguishing evaluation procedures:
+the \emph{corpus}, which defines the programs to be translated; the
+\emph{oracle}, which determines whether a candidate meets the selected
+acceptance criteria; and the \emph{metric}, which aggregates judgments
+into a reported quantity such as compilation rate or test pass rate.
+These components should not be conflated. Two studies may use similarly
+named correctness metrics while selecting different programs, imposing
+different acceptance conditions, or omitting different classes of
+results from their denominators.
+
+C-to-Rust benchmarks illustrate the importance of specifying the
+evaluation population. CRUST-Bench comprises 100 C repositories with
+Rust interfaces and functional tests \cite{khatry2025crustbench}. The
+TRACTOR Public Test Corpus contains executable C programs and libraries
+accompanied by test vectors for evaluating translations
+\cite{tractor-test-corpus}. Sharing a benchmark name does not
+necessarily mean sharing an identical experimental population: TRAIL and
+DepTrans evaluate all 100 CRUST-Bench repositories, whereas ORBIT
+evaluates 24 repositories, preferentially selecting larger programs; 22
+of its 24 selections exceed 1,000 lines of code
+\cite{wang2026trail,feng2026deptrans,farrukh2026orbit}. A reported
+percentage is interpretable only in relation to the cases from which it
+was calculated.
+
+The surveyed methods draw on six overlapping categories of evidence,
+summarized in Table~\ref{tab:rw-evidence}. Some of these categories describe a judgment
+mechanism, whereas others describe how test inputs are obtained. In
+particular, generating a test is not itself a behavioral oracle: the
+generated test still requires an expected result or another comparison
+procedure. A system may therefore use compilation checks, existing
+tests, generated tests, and differential testing within a single
+pipeline.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Evaluation approaches in C-to-Rust studies and limitations
+documented in prior work. Rows follow the order of
+Sections~\ref{sec:rw-compilation}--\ref{sec:rw-formal}. Citations after
+each approach are examples of studies that use it rather than a census,
+and one study may appear in several rows.}
+\label{tab:rw-evidence}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.27\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+\textbf{Approach} & \textbf{Documented limitation} \\
+\midrule
+Compilation \cite{bedell2026llm4c2rust,feng2026deptrans,farrukh2026orbit} & With a compile-only reward, DepTrans reaches 97.9\% compilation and 0\% functional accuracy \cite{feng2026deptrans} \\
+\addlinespace
+Existing tests \cite{farrukh2026orbit,wang2026trail,feng2026deptrans,rustify2026,schesch2026actor} & PASS: Reboot's translations pass all supplied tests but 61.58--91.78\% of held-out tests \cite{wang2026reboot}. FAIL: 21 of 26 examined CRUST-Bench projects have expected values that cannot be derived from the C source \cite{schesch2026actor} \\
+\addlinespace
+Generated or ported tests \cite{schesch2026actor,leanh2026rustprint,yuan2026ptrtrans} & RustPrint's test translator tends to omit tests for features its own translation lost \cite{leanh2026rustprint} \\
+\addlinespace
+Reference similarity and model judgment \cite{feng2026deptrans,rustify2026,wang2026evoc2rust,leanh2026rustprint} & No program is executed; EvoC2Rust compares generated lines with a reference translation \cite{wang2026evoc2rust} \\
+\addlinespace
+Differential testing against C \cite{eniser2024flourine,sim2026encrust,shiraishi2026smartc2rust,actor2025} & Evidence is limited to executed inputs; Flourine accepts after five minutes without a counterexample \cite{eniser2024flourine}; C-side UB leaves no reference \\
+\addlinespace
+Symbolic and formal methods \cite{yang2024vert,bai2025rustassure} & VERT's full verification does not scale to loops bounded by input; RustAssure compares symbolic expressions by graph edit distance \cite{yang2024vert,bai2025rustassure} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The distinction between these sources matters for this thesis. The
+reported decisions under study were produced by a build-and-test
+procedure that compares translated programs with stored expected
+results. The thesis subsequently examines those decisions using an
+independent behavioral comparison against the C programs. The following
+sections explain the evidence each procedure offers and the limits of
+the conclusions drawn from it.
+
+\section{Compilation and Existing Test-Suite Evaluation}
+\label{sec:rw-compilation}\label{sec:rw-evaluation}
+
+Compilation is a common condition in C-to-Rust evaluation, but a
+successful build establishes only that the generated program meets the
+requirements enforced by the compiler. Some studies evaluate
+translations primarily at this level. LLM4C2Rust, for example, examines
+\texttt{rustc} diagnostics and counts \texttt{unsafe} constructs without
+running the translated programs as functional tests
+\cite{bedell2026llm4c2rust}. The distinction between compilation and
+correct behavior is especially visible in a DepTrans ablation: when its
+reward was based only on compilation, the reported compilation success
+rate reached 97.9\%, while functional accuracy was 0\%, because the
+model could produce trivial function bodies invoking \texttt{panic!}
+\cite{feng2026deptrans}. Compilability is consequently a useful
+prerequisite for execution, but not evidence that a translation
+preserves the behavior of its C source.
+
+Many studies add functional tests to the build requirement. ORBIT uses
+\texttt{cargo\ check} and \texttt{cargo\ test} against the interfaces
+and tests supplied by CRUST-Bench \cite{farrukh2026orbit}. A comparison
+table in RustAssure identifies seven of thirteen surveyed C-to-Rust
+systems as using existing concrete test cases, whereas RustAssure itself
+is classified under differential symbolic testing
+\cite{bai2025rustassure}. In the TRACTOR Public Test Corpus, test
+vectors contain inputs and expected outputs, and the corpus checks in its
+continuous integration that every vector matches the behavior of the C
+program. The runner evaluates Rust against these recorded expectations,
+rather than executing C and Rust side by side when judging each
+translation \cite{tractor-test-corpus,okhravi2026tractorbenchmark}. The
+detailed vector semantics and runner behavior needed to reproduce the
+original decisions are described in Chapter~\ref{ch:methodology}. At this level, a PASS
+establishes conformity to the particular build requirements and test
+expectations applied; its strength as behavioral evidence depends on the
+content and adequacy of those tests.
+
+One limitation is that a translation can pass the available tests while
+differing from the source on untested inputs. Reboot provides direct
+evidence: all six translated interpreters pass the test suites supplied
+during translation, but their pass rates range from 61.58\% to 91.78\%
+on separate validation suites written by the researchers and withheld
+from the translation process \cite{wang2026reboot}. Related evidence
+concerns the amount of functionality that available tests actually
+exercise. In ORBIT's LTRE ablation, a basic coding-agent configuration
+successfully built and passed the tests it executed while implementing
+only 64.4\% of the functions and running 3.0\% of the original tests
+\cite{farrukh2026orbit}. This result shows why coverage and functional completeness should be considered alongside the pass status. At function level, RustAssure also reports that the
+existing tests for the \texttt{libcsv} and \texttt{u8c} libraries found
+only one of the translation bugs exposed by its symbolic comparison
+\cite{bai2025rustassure}. Together these findings show that passing a
+finite suite may leave substantial behavior unexamined.
+
+The reverse problem arises when a translation fails a test whose
+expectation is unsuitable as a behavioral reference. CRUST-Bench issue
+37 documents inconsistent expectations for the \texttt{Holdem\_Odds}
+project: some hands that the C implementation identifies as a straight
+flush are tested against expectations for a different poker-hand
+category \cite{crustbench-issues}. Schesch and Ernst similarly report
+that, among 26 CRUST-Bench projects they examined, 21 had tests whose expected values could not be derived from the C source. They separately exclude 13 of the benchmark's 100 projects as having unsatisfiable tests
+\cite{schesch2026actor}. These observations are of different kinds: an expected value that cannot be derived from the C source is one problem, and a test that no translation can satisfy is another. Nevertheless, a FAIL by itself
+establishes disagreement with the test criterion, not necessarily a
+fault in the Rust translation relative to C.
+
+Limitations of individual judgments also affect how aggregate results
+are interpreted. A compilation rate may be computed per file, function,
+module, or repository, and a behavioral score may be restricted to
+translations that have already compiled
+\cite{rustify2026,sim2026encrust,wang2026trail,wang2026evoc2rust}.
+C2RustXW, for instance, computes its semantic-correctness measures only
+for compilable Rust programs \cite{yan2026c2rustxw}. LAC2R evaluates
+selected subsets of its benchmarks while retaining programs that fail to
+compile in the denominator used for its reported rates
+\cite{sim2025lac2r}. Test availability during translation introduces
+another relevant condition: ACTOR reports 56 of 87 CRUST-Bench projects
+passing when agents cannot see the benchmark tests and 82 of 87 when
+they are allowed to repair against them \cite{schesch2026actor}. These
+quantities are meaningful for their stated settings, but should not be
+compared as if they represented identical populations and evaluation
+procedures.
+
+Thus, the build-and-test approach has three distinct limits for
+interpreting published results. A PASS can overlook a behavioral
+divergence that available tests do not exercise; a FAIL can arise from
+an expectation that does not faithfully describe the C program; and a
+reported success rate depends on how cases and decisions enter its
+denominator. The first two issues motivate the two directions of
+decision re-evaluation examined by RQ1 and RQ2, while the third matters
+when the resulting evidence is used to reassess per-system success
+rates.
+
+\section{Automatically Generated and Translated Tests}
+\label{sec:rw-generated-tests}
+
+When a benchmark lacks tests suitable for generated Rust code, a
+translation system may synthesize tests or convert tests from the
+original C project. Such techniques can extend the set of executed
+inputs, but generating inputs and establishing their expected outcomes
+are separate tasks. More tests do not automatically imply stronger
+evidence about behavioral preservation; the evidential value depends on
+what the tests cover and how their results are judged.
+
+ACTOR allows coding agents to construct tests and check candidate
+translations against the C source \cite{schesch2026actor}. RustPrint
+introduces a TestTranslator agent that ports maintainers' C tests to
+Rust \cite{leanh2026rustprint}. PtrTrans combines LLMs with AFL++: a
+model constructs a test harness, fuzzing collects C input-output pairs,
+and selected pairs are converted into Rust unit tests
+\cite{yuan2026ptrtrans}. These systems automate test construction in
+different ways. In particular, obtaining expected behavior from an
+actual C execution provides a different kind of evidence from having an
+LLM infer what a program ought to return.
+
+Test construction can also depend on the translation being evaluated.
+RustPrint reports \emph{self-alignment bias}: a TestTranslator tends to
+omit tests associated with features that its own translation failed to
+preserve. The study addresses this concern through a cross-test protocol
+that applies tests prepared by one system to translations produced by
+others \cite{leanh2026rustprint}. This is an important methodological response to that concern. If a
+system influences both the translation and the test cases used to
+validate it, a positive result may reflect its ability to select
+favorable cases as well as its ability to implement the required
+functionality.
+
+The independence of a generated suite must therefore be assessed in
+terms of input provenance, expected-result construction, and the use of
+testing feedback to revise or select translations. Automatically
+generated tests can provide independent behavioral evidence when their
+expected results are obtained from the C reference and the tested
+translations are held fixed. Conversely, a test that was absent from the
+benchmark may still be part of the translation process if its outcome is
+used to drive repair. The present thesis adopts a post-publication
+arrangement: its independent oracle does not inform the creation or
+refinement of the released translations whose reported decisions it
+re-examines.
+
+\section{Reference-Similarity and Model-Based Judgments}
+\label{sec:rw-model}
+
+Other C-to-Rust evaluations use code-reference similarity or a language
+model's judgment rather than executing the translated program. Although
+both avoid the need to run every candidate, they should be
+distinguished. A similarity metric scores features of the generated
+representation against a reference; a model-based judge assesses a
+supplied artifact against criteria expressed in a prompt or evaluation
+procedure.
+
+CodeBLEU extends token-level overlap measures with information about
+syntax and data flow, and can be computed without executing the code
+\cite{ren2020codebleu}. DepTrans and Rustify use CodeBLEU where
+reference Rust implementations are available
+\cite{feng2026deptrans,rustify2026}. EvoC2Rust reports an accepted-line
+rate (AccRate) that compares generated lines with a reference translation produced with an LLM and then checked by people \cite{wang2026evoc2rust}. These measures can
+be informative about structural resemblance or the amount of subsequent
+editing. Nevertheless, two implementations can preserve the same
+behavior while having very different syntax, and a nearly identical
+condition or expression can still cause a meaningful behavioral
+difference.
+
+RustPrint uses CodeWikiBench and an LLM-as-judge procedure to compare
+documentation generated from the C and Rust repositories. Its
+functional-coverage measure rests on the assumption that similarity
+between their documentation is informative about similarity of the
+implemented functionality \cite{leanh2026rustprint}. DepTrans also uses
+an LLM to assess C and Rust during translation refinement, but such
+feedback inside a repair loop is not the same as a final independent
+evaluation metric \cite{feng2026deptrans}. For either mechanism, the
+conclusion remains conditional on the representational proxy or the
+criteria available to the model. Neither directly establishes that the
+two executable programs produce the same observation for a specified
+input. The thesis therefore bases its own re-evaluation on comparisons of executed behavior.
+
+\section{Differential Testing Against the C Program}
+\label{sec:rw-differential}\label{sec:rw-equivalence}
+
+Differential testing compares the observable outcomes of comparable
+programs on common inputs \cite{mckeeman1998differential}. For C-to-Rust
+translation, the original C program can serve as a behavioral reference
+for the translated program without requiring an expected output to be
+written for every new input. Inputs may come from a benchmark or be
+generated by fuzzing. Coverage-guided fuzzers such as AFL++ mutate
+candidate inputs and retain those that exercise previously unseen
+program paths or transitions \cite{fioraldi2020aflpp,aflpp-docs}. If the
+two executions differ according to the selected observation relation,
+the input exposes a \emph{divergence}. Such a divergence is evidence of
+disagreement, but it is not automatically evidence of a translation
+error: the C reference execution and the comparison itself must also be
+valid. Conversely, failing to find a divergence among finitely many
+tests cannot establish equivalence on all possible inputs.
+
+Several C-to-Rust systems combine differential testing with automated
+input generation. Flourine uses cross-language differential fuzzing and
+serialized program state across an FFI boundary to compare C and Rust;
+its acceptance criterion treats the absence of a counterexample during a
+five-minute fuzzing budget as practical equivalence, not as a
+mathematical proof \cite{eniser2024flourine}. ENCRUST uses AFL++ to
+generate 1,000 inputs for each of the Laertes libraries it evaluates. It
+first executes the C implementation, discards inputs for which C crashes
+or produces nondeterministic output across repeated runs, and uses the
+remaining C observations to compare the Rust translation
+\cite{sim2026encrust}. These approaches obtain behavioral reference
+information directly from the program being translated, although their
+conclusions remain limited by their inputs and observation models.
+
+The observable behavior used in these comparisons also varies. RustMap
+compares execution state at corresponding breakpoints to help localize
+the point at which C and Rust diverge \cite{cai2025rustmap}. SmartC2Rust
+records C outputs in advance to compare entry-point results without
+requiring a C-to-Rust FFI call during testing. It additionally compares
+execution-flow information, including call stacks and function inputs
+and returns, to diagnose differences between implementations
+\cite{shiraishi2026smartc2rust}. Final-output comparisons are relatively
+straightforward for complete programs, whereas intermediate-state or
+trace comparisons can help identify the location and nature of a
+discrepancy. The latter require additional assumptions about which
+states or events correspond across the two languages.
+
+ACToR, developed by a group at the National University of Singapore,
+pairs a translation agent with a discriminator that constructs
+differential fuzzers to find inputs exposing mismatches between C and
+Rust. Counterexamples are fed back into the translation loop for
+refinement; the system also uses C-versus-Rust execution when assessing
+its resulting translations \cite{actor2025}. Its equivalence objective
+is formulated over a \emph{safe universe} of inputs considered valid for
+the C program. ACToR should not be confused with the similarly named
+ACTOR study by Schesch and Ernst on general-purpose coding agents and
+TRACTOR. ACToR's additional evaluation of C2SaferRust translations is
+discussed separately in Section~\ref{sec:rw-reevaluation} because it is a particularly
+relevant precedent for assessing outputs from another translation
+system.
+
+\phantomsection\label{sec:bg-ub}%
+A fundamental challenge for a C-based oracle is \emph{undefined
+behavior} (UB). Under the C standard, undefined behavior imposes no
+requirements on the outcome of the execution \cite{wg14n2176}. Signed
+integer overflow, invalid memory access, and use of an object after its
+lifetime ends are familiar examples. If the C program encounters UB on
+an input, its observed output is not a language-defined reference to
+which the Rust program must conform. A mismatch with that output is
+therefore insufficient to show that Rust is incorrect, while a match is
+not proof of correctness. This is different from inadequate test
+coverage: even when both results are available, the supposed reference
+may not have the required semantic status.
+
+Existing evaluations handle this issue through different restrictions.
+TRACTOR skips vectors explicitly labeled \texttt{has\_ub}
+\cite{tractor-test-corpus}. ENCRUST discards inputs leading to C crashes
+or nondeterministic results, but neither property coincides exactly with
+undefined behavior \cite{sim2026encrust}. AddressSanitizer (ASan) and
+UndefinedBehaviorSanitizer (UBSan) can detect selected memory errors and
+undefined operations in instrumented C executions
+\cite{asan-docs,ubsan}. A positive report of a covered UB condition
+disqualifies that execution as a reliable reference; the absence of a
+report, however, does not prove that no UB occurred. Sanitizer-based
+screening consequently strengthens the interpretation of differential
+results only within the classes of errors and executed operations that
+the instrumentation can detect.
+
+Differential testing thus provides empirical evidence within a defined
+observation relation and execution budget. The thesis applies this principle after translations and their original decisions have been published, and it leaves the translations unchanged. Chapter~\ref{ch:methodology} defines its observation model, input generation,
+stability checks, and rules for adjudicating divergent executions and
+C-side UB.
+
+\section{Symbolic and Formal Approaches}
+\label{sec:rw-formal}
+
+Translation validation provides a complementary approach: it checks
+whether an individual translation is equivalent to its source, rather
+than proving that every output of the translator must be correct
+\cite{pnueli1998tv,necula2000tv}. Symbolic execution and formal
+verification can reason about multiple program paths through
+constraints, potentially providing stronger guarantees than a finite
+collection of concrete tests. The conclusions they support nevertheless
+depend on the semantics represented by their models, the assumptions
+imposed on inputs and environments, and the bounds or proof obligations
+actually discharged.
+
+VERT generates Rust translations with an LLM and constructs a separate
+Rust reference by lifting the original program through WebAssembly. It
+combines property-based testing with bounded and, where feasible, full
+verification using Kani \cite{yang2024vert}. The authors report
+difficulty scaling full verification to programs containing loops whose
+iteration counts depend on input. Consequently, a passed property-based
+test, a bounded model-checking result, and the discharge of a full proof
+obligation should not be interpreted as interchangeable evidence, even
+when they arise within the same verification framework.
+
+RustAssure takes a different symbolic approach at the function level. It
+symbolically executes the C and Rust functions using KLEE, then compares
+symbolic return-value expressions by graph edit distance
+\cite{bai2025rustassure}. The comparison can reveal differences missed
+by existing concrete tests, but similarity between selected symbolic
+expressions does not automatically amount to a proof of behavioral
+equivalence for a whole program. The unit of analysis, modeled outputs,
+and approximation used in comparison all affect the scope of the result.
+
+These methods extend the choices available for evaluating translations,
+without eliminating the need to specify what is being checked. The
+present thesis instead pursues a uniform empirical re-evaluation of a
+defined population of previously released translations. This choice sets the scope of the evidence the thesis can report.
+
+\section{Independent Re-evaluation of Reported Results}
+\label{sec:rw-reevaluation}\label{sec:rw-threats}
+
+The validity of test-based acceptance decisions has also been
+investigated outside program translation. These studies provide
+precedents for testing whether published evaluation outcomes are
+supported by stronger or independently obtained evidence. They are relevant because they distinguish a system's originally reported success from the outcome of a
+subsequent assessment. It is nevertheless necessary to distinguish
+post-hoc audits of prior decisions from independent primary evaluations
+and from tests performed to improve a system's own outputs. The studies
+are reviewed in three groups: audits of acceptance decisions, evidence
+about rejections and about C-to-Rust evaluations, and the closest
+C-to-Rust precedents.
+
+A first group of studies shows that published acceptance decisions can
+be unreliable. In automated program repair, Qi et al.~re-examined
+patches reported by
+GenProg, RSRepair, and AE on a benchmark of 105 C defects. They found
+that many patches did not pass even the validation tests used in the
+original studies when their actual outputs were checked. Of 414 reported
+GenProg patches, only 110 satisfied the test suite according to the
+re-evaluation; subsequent analysis showed that truly correct repairs
+were much rarer still \cite{qi2015plausibility}. This result exposes a
+problem more fundamental than insufficient test coverage: the original
+test infrastructure could accept patches despite their failure on
+supplied test cases. Smith et al.~showed, with tests held out from
+repair, that patches passing the repair-time suite need not behave
+correctly on independent tests \cite{smith2015overfitting}. These studies question
+positive decisions, but they do not systematically reconsider previously
+rejected candidates.
+
+The same concern appears in LLM-based code generation and
+repository-level issue solving. EvalPlus strengthens code-generation
+benchmarks with additional automatically constructed tests and shows
+that reported \texttt{pass@k} values and model rankings can change when
+the accepted solutions are subjected to a stronger test oracle
+\cite{liu2023evalplus}. PatchDiff examines patches judged plausible by
+SWE-bench Verified. Running a more complete collection of developer
+tests reveals failures in 7.8\% of accepted patches, while generated
+differential tests detect behavioral discrepancies between 29.6\% of the
+examined patches and developer reference patches. Because discrepancies
+can arise from legitimate implementation differences, the authors
+additionally investigate correctness by manual analysis and estimate an
+average inflation of 6.4 percentage points in reported issue-resolution
+rates \cite{wang2026patchdiff}. The separation between \emph{behavioral
+difference} and \emph{confirmed incorrectness} is important: a differential test supplies evidence of disagreement, and a verdict on correctness requires further analysis.
+
+SWE-ABS provides another independent examination of positive judgments
+in SWE-bench Verified. It strengthens tests using coverage-driven
+augmentation and mutation-based adversarial construction, then
+re-evaluates patches that had previously passed the benchmark. The study
+reports that 19.78\% of these formerly accepted patches are rejected by
+the strengthened tests; the leading agent's reported score decreases
+from 78.80\% to 62.20\%, moving it from first to fifth place
+\cite{yu2026sweabs}. The synthetic mutants are used to expose weaknesses
+in test suites, not to measure the rate at which the original benchmark
+wrongly rejected correct patches. SWE-ABS therefore supplies evidence
+about accepted solutions that fail under stronger tests, while leaving
+the population of previously rejected solutions outside its primary
+re-evaluation.
+
+A second group concerns rejection decisions and evaluations of C-to-Rust
+translations themselves. Evidence about unsupported rejections is less
+common in the studies reviewed here. In a cross-language investigation that does not include
+Rust, Rabbi et al.~identify evaluation-related failure modes including
+missing linker flags, incorrect compilation commands, unsuitable
+inherited time limits, and mistakes in converted tests. They manually
+inspect a subset of failing translations, showing that some reported
+failures can originate in the evaluation setup rather than in the
+translation itself \cite{rabbi2026beyond}. Such results demonstrate that
+the failure side merits scrutiny, although they do not yield a
+cross-system estimate of unsupported test-stage rejection decisions for
+C-to-Rust translations. Furthermore, build-configuration failures are a
+different population from the test-stage rejections examined in the
+present thesis.
+
+Within C-to-Rust translation, several studies look beyond the original
+testing conditions. Li et al.'s user study compares 31 Rust translations
+written by participants against eight C programs using fuzzing and
+documents behavioral discrepancies \cite{li2025userstudy}. Reboot uses
+separately prepared validation suites to evaluate its translated
+interpreters, while RustAssure uses symbolic comparison to uncover bugs
+not detected by existing unit tests
+\cite{wang2026reboot,bai2025rustassure}. These studies strengthen the
+evidence available for their own experimental subjects, but their
+primary purpose is not to audit a shared set of published PASS and
+test-stage FAIL decisions from multiple translation systems.
+
+The closest precedents examine C-to-Rust outputs directly but pursue
+different objectives. ACToR offers a particularly close precedent
+because it also examines
+translations produced by \emph{another} C-to-Rust system. In addition to
+evaluating its own translation loop, ACToR applies differential testing
+and refinement to C2SaferRust translations for seven standalone
+programs. Before ACToR's modifications, the C2SaferRust translations
+achieve a 76.3\% pass rate on the held-out validation tests used in that
+experiment; after the adversarial refinement loop, the pass rate rises
+to 92.9\% \cite{actor2025}. The initial 76.3\% is a validation result
+obtained in ACToR's experimental setting, not necessarily the original
+PASS/FAIL rate reported by C2SaferRust. Similarly, the 92.9\% pertains
+to \emph{modified} translations, not a second verdict on unchanged
+submissions. ACToR thus establishes a concrete precedent for applying
+additional behavioral testing to published outputs of another
+translator, while retaining a different purpose from a post-hoc audit:
+its testing actively drives improvements to the translations. A separate
+contribution by Rustine recalculates structural \texttt{unsafe} measures
+for multiple C-to-Rust systems with a common measurement procedure,
+illustrating cross-system consistency for a different class of metrics
+\cite{dehghan2025rustine}.
+
+The TRACTOR program also provides independent testing and evaluation.
+MIT Lincoln Laboratory's first test-and-evaluation report covers six
+participating development teams and two baselines on 150 Battery 01
+cases, using predefined test vectors and excluding those marked as
+exhibiting known UB from automated scoring
+\cite{tractor-first-evaluation-report}. This is important evidence that
+C-to-Rust systems can be evaluated by a common external organization. It should, however, be described as an \emph{independent primary evaluation}, which assigns its own scores to the systems. The report and the
+present thesis need not involve the same released translations or runner
+revision.
+
+\begingroup
+\footnotesize
+\begin{xltabular}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.13\textwidth}>{\raggedright\arraybackslash}p{.16\textwidth}>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{.18\textwidth}@{}}
+\caption{Studies relevant to assessing the validity of test-based evaluation results.}\label{tab:rw-reevaluation}\\
+\toprule
+\textbf{Study} & \textbf{Role} & \textbf{Decisions or outputs} & \textbf{Additional assessment} & \textbf{Effect on results} \\
+\midrule\endfirsthead
+\toprule
+\textbf{Study} & \textbf{Role} & \textbf{Decisions or outputs} & \textbf{Additional assessment} & \textbf{Effect on results} \\
+\midrule\endhead
+Qi et al.\ \cite{qi2015plausibility} & Post-hoc audit & Accepted repair patches & Replayed test suites and manual review & Recounts plausible and correct repairs \\
+Smith et al.\ \cite{smith2015overfitting} & Method study & Patches passing repair-time tests & Held-out independent tests & Exposes overfitting \\
+EvalPlus\ \cite{liu2023evalplus} & Benchmark re-evaluation & Accepted generated code & Augmented tests & Changes pass@k and ranking \\
+PatchDiff\ \cite{wang2026patchdiff} & Post-hoc audit & Accepted SWE-bench patches & Developer tests, differential tests, manual review & Estimates inflated resolution rates \\
+SWE-ABS\ \cite{yu2026sweabs} & Benchmark re-evaluation & Previously accepted SWE-bench patches & Coverage- and mutation-based test strengthening & Revises rates and rankings \\
+Rabbi et al.\ \cite{rabbi2026beyond} & Failure analysis & Failed cross-language translations & Manual examination of build and test setup & Identifies rejection mechanisms \\
+Li et al.\ \cite{li2025userstudy} & Behavioral study & Participant-written C-to-Rust programs & Differential fuzzing against C & Reports discrepancies \\
+ACToR\ \cite{actor2025} & External-output assessment and refinement & Published C2SaferRust translations & Held-out tests, differential repair & 76.3\% before; 92.9\% after repair \\
+MIT LL\ \cite{tractor-first-evaluation-report} & Independent primary evaluation & Multi-team C-to-Rust translations & Fixed TRACTOR vectors & Reports its own scores \\
+\bottomrule
+\end{xltabular}
+\endgroup
+
+These precedents establish that independent or strengthened evaluation
+can materially alter the interpretation of software-generation results.
+They also delineate distinct aims: rechecking a published decision,
+constructing an independent initial score, and improving an output using
+newly obtained tests.
+
+\section{Research Gap and Thesis Positioning}
+\label{sec:rw-positioning}
+
+The preceding work establishes both the usefulness and the limitations
+of the evidence commonly used to evaluate C-to-Rust translations.
+Compiling and passing a benchmark suite are operationally meaningful
+outcomes, but the original tests may fail to expose divergences or may
+reject programs because of inappropriate expectations. Differential
+testing, symbolic execution, and formal techniques provide additional
+ways to examine behavior, but each brings its own observation
+assumptions, input restrictions, or verification bounds. Research in
+program repair, code generation, and issue solving further demonstrates
+that the validity of published acceptance decisions can be studied
+independently of the systems that produced the outputs.
+
+The present thesis does not claim novelty for differential testing,
+evaluating translations produced by another system, or recalculating
+success rates in themselves. In particular, ACToR has already applied
+additional behavioral tests to published C2SaferRust translations and
+improved their validation performance through further repair
+\cite{actor2025}. PatchDiff and SWE-ABS have independently reassessed
+positive benchmark decisions and their effects on reported results in
+repository-level issue solving \cite{wang2026patchdiff,yu2026sweabs}.
+MIT Lincoln Laboratory has conducted a standardized independent
+evaluation of multiple C-to-Rust systems
+\cite{tractor-first-evaluation-report}. These are substantive
+precedents, but their aims and measurement populations differ from those
+of this thesis.
+
+Within the surveyed literature, the remaining gap is a \emph{combined post-hoc assessment} of the test-based decisions published for several C-to-Rust translation systems. The studies reviewed above each cover part of it. Work on test adequacy and on differential testing shows that an accepted translation can still diverge from its C program (Sections~\ref{sec:rw-compilation} and~\ref{sec:rw-differential}), yet none of the studies reviewed here measures how often this holds among published PASS decisions; this is the subject of RQ1. Reports of unsuitable test expectations and analyses of failure causes show that a rejection can originate in the evaluation itself (Sections~\ref{sec:rw-compilation} and~\ref{sec:rw-reevaluation}), yet none estimates the share of unsupported test-stage rejections for C-to-Rust systems; this is the subject of RQ2. Studies that reassess benchmark results show that reclassified decisions change the reported rates (Section~\ref{sec:rw-reevaluation}). For C-to-Rust translation, that effect has not been computed over a shared population in which the decisions that could not be re-examined remain visible; this is the subject of RQ3.
+
+The thesis addresses this gap on the translations and decisions released in the HARVEST results repository for the TRACTOR Public Test Corpus~\cite{harvest-results,tractor-test-corpus,schesch2026actor}. Chapter~\ref{ch:methodology} presents the design of the study.

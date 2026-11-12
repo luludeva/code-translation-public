@@ -1,0 +1,59 @@
+{
+ "rule": "exp 40, MR-01 và MR-04 (README); post hoc, sơ bộ, chưa kiểm tay",
+ "mr01": {
+  "exe": {
+   "agrees_vectors": 0,
+   "c_unstable_flag": 0,
+   "c_unstable_crosscheck": 0,
+   "flag_crosscheck_mismatch": 0,
+   "F_translations": 0,
+   "F_affected": 0,
+   "F_keys": []
+  },
+  "lib": {
+   "agrees_vectors": 2,
+   "c_unstable_flag": 0,
+   "c_unstable_crosscheck": 0,
+   "flag_crosscheck_mismatch": 0,
+   "F_translations": 1,
+   "F_affected": 0,
+   "F_keys": [
+    "gpt-5.4/B02_organic/agglom_lib"
+   ]
+  }
+ },
+ "mr04": {
+  "exe": {
+   "D": 176,
+   "D_without_retained": [],
+   "retained_div": 6655127,
+   "resource_div": 0,
+   "mem_one_side_div": 0,
+   "sigxfsz_div": 0,
+   "translations_resource_only": 0,
+   "translations_resource_only_keys": [],
+   "translations_any_resource": 0
+  },
+  "lib": {
+   "D": 65,
+   "D_without_retained": [],
+   "retained_div": 18194,
+   "resource_div": 22,
+   "mem_one_side_div": 22,
+   "sigxfsz_div": 0,
+   "translations_resource_only": 0,
+   "translations_resource_only_keys": [],
+   "translations_any_resource": 3
+  }
+ },
+ "sources": [
+  "rq1-main-exe-1of2@1fa636f50daa8cbfc1be127aaa678ca9b0ba5772",
+  "rq1-main-exe-2of2@c867337c1f87489d876daa4800bf5319ad162572",
+  "rq1-main-exe-light@40fedd1b50d011177233cd1a40adfcd844b3fdb8",
+  "rq1-main-lib-1of2@a980c526423742d8204e93f133fd8e53630d53f7",
+  "rq1-main-lib-2of2@97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+  "rq1-main-lib-shgeti@c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+  "rq1-main-lib-2of2-light@e8f97047ff01ab618a80ec3aaf7c1efb91eae337",
+  "rq2-main@b757f4da7c979623c2e0878c6a644f277d9a8be4"
+ ]
+}

@@ -1,0 +1,43 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize]
+% ---------- (a) Reboot ----------
+\def\W{4.4}
+\node[anchor=west, font=\small\bfseries, text=passc] at (-2.0,0.75) {(a) Accepted, yet diverges on held-out tests};
+\node[anchor=west, font=\scriptsize] at (-2.0,0.32) {Reboot: six C interpreters translated to Rust};
+\foreach \name/\v [count=\i] in {wren/91.78, awk/78.82, gnu-bc/78.57, mujs/74.77, picoc/69.50, pocketpy/61.58}{
+  \pgfmathsetmacro{\y}{-0.5*\i}
+  \node[anchor=east, font=\scriptsize\ttfamily] at (-0.08,\y) {\name};
+  \fill[passc!75] (0,\y-0.17) rectangle ({\W*\v/100},\y+0.17);
+  \node[anchor=east, font=\scriptsize, text=white] at ({\W*\v/100},\y) {\v};
+}
+\draw[black!60] (0,-0.15) -- (0,-3.25) -- (\W,-3.25);
+\foreach \t in {0,50,100}{
+  \draw[black!60] ({\W*\t/100},-3.25) -- ({\W*\t/100},-3.33)
+     node[below, font=\scriptsize] {\t};
+}
+\draw[dashed, thick, black!75] (\W,-0.15) -- (\W,-3.25);
+\node[anchor=south, font=\scriptsize, align=center] at (\W,-0.17) {provided\\tests: 100\%};
+\node[font=\scriptsize] at ({\W/2},-4.1) {\% of held-out validation tests passed};
+% ---------- (b) Holdem_Odds ----------
+\begin{scope}[xshift=8.9cm,
+  box/.style={draw, rounded corners=2pt, align=center, font=\scriptsize, minimum width=5.3cm, inner sep=3pt}]
+\node[anchor=west, font=\small\bfseries, text=failc] at (-2.7,0.75) {(b) Rejected, yet faithful};
+\node[anchor=west, font=\scriptsize] at (-2.7,0.32) {CRUST-Bench, program \texttt{Holdem\_Odds}};
+\node[box] (in) at (0,-0.5) {Hand in the test: \texttt{6s 5c 4s 3h 2d}, a straight\\(s, c, h, d: spades, clubs, hearts, diamonds)};
+\node[box, fill=black!5] (st) at (0,-1.75) {Test code builds every card\\with \texttt{Suit::Spade}};
+\node[box] (hd) at (0,-2.65) {Hand actually tested: $6\spadesuit\ 5\spadesuit\ 4\spadesuit\ 3\spadesuit\ 2\spadesuit$};
+\draw[->] (in) -- (st); \draw[->] (st) -- (hd);
+\node[anchor=west, font=\scriptsize] at (-2.6,-3.3) {C program};
+\node[anchor=west, font=\scriptsize] at (-2.6,-3.7) {Translation};
+\node[anchor=west, font=\scriptsize] at (-2.6,-4.1) {Test expects};
+\node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-3.3) {StraightFlush};
+\node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-3.7) {StraightFlush};
+\node[anchor=west, font=\scriptsize\ttfamily] at (-1.05,-4.1) {Straight};
+\node[anchor=west, font=\scriptsize\itshape, text=black!65] at (1.6,-3.7) {same as C};
+\draw[black!40] (-2.6,-4.38) -- (2.6,-4.38);
+\node[anchor=west, font=\scriptsize\bfseries] at (-2.6,-4.62) {Verdict};
+\node[anchor=west, draw=failc, very thick, text=failc, font=\scriptsize\bfseries, rounded corners=2pt, inner sep=2pt] at (-1.05,-4.62) {FAIL};
+\node[anchor=west, font=\scriptsize\itshape, text=black!65] at (-0.1,-4.62) {although the translation matches C};
+\node[font=\scriptsize, align=center, text width=5.4cm] at (0,-5.2)
+  {The same cause makes 5 of the 24 tests of this program fail (issue \#37).};
+\end{scope}
+\end{tikzpicture}

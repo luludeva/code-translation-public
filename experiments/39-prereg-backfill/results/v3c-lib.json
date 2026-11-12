@@ -1,0 +1,26 @@
+{
+ "rule": "exp 39 A, V3-C chạy bù (README); post hoc, sơ bộ, chưa kiểm tay",
+ "kind": "lib",
+ "units_case_seed": 589,
+ "totals": {
+  "div": 225953,
+  "retained": 18198,
+  "no_div_file": 2
+ },
+ "violations": 0,
+ "ok": true,
+ "units_with_findings": {
+  "B01_organic/update_md5_lib/s0": {
+   "no_div_file": 1
+  },
+  "B01_organic/update_md5_lib/s1": {
+   "no_div_file": 1
+  }
+ },
+ "sources": [
+  "rq1-main-lib-1of2@a980c526423742d8204e93f133fd8e53630d53f7",
+  "rq1-main-lib-2of2@97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+  "rq1-main-lib-shgeti@c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+  "rq1-main-lib-2of2-light@e8f97047ff01ab618a80ec3aaf7c1efb91eae337"
+ ]
+}

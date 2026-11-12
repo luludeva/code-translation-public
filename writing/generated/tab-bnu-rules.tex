@@ -1,0 +1,22 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Total: divergence giu lai (n_div_retained) va D; mot ban dich co the co nhieu ma luat nen cot Translations khong cong lai bang D
+\begin{tabular}{@{}l rr rr@{}}
+\toprule
+ & \multicolumn{2}{c}{Executable programs} & \multicolumn{2}{c}{Libraries} \\
+\cmidrule(lr){2-3} \cmidrule(l){4-5}
+Rule & Divergences & Translations & Divergences & Translations \\
+\midrule
+\code{B1-whitespace} & \rqBnuDivBOneWhitespaceExeAllNum & \rqBnuTransBOneWhitespaceExeAllNum & \rqBnuDivBOneWhitespaceLibAllNum & \rqBnuTransBOneWhitespaceLibAllNum \\
+\code{B2-numeric} & \rqBnuDivBTwoNumericExeAllNum & \rqBnuTransBTwoNumericExeAllNum & \rqBnuDivBTwoNumericLibAllNum & \rqBnuTransBTwoNumericLibAllNum \\
+\addlinespace
+\code{N1-status} & \rqBnuDivNOneStatusExeAllNum & \rqBnuTransNOneStatusExeAllNum & \rqBnuDivNOneStatusLibAllNum & \rqBnuTransNOneStatusLibAllNum \\
+\code{N2-timeout} & \rqBnuDivNTwoTimeoutExeAllNum & \rqBnuTransNTwoTimeoutExeAllNum & \rqBnuDivNTwoTimeoutLibAllNum & \rqBnuTransNTwoTimeoutLibAllNum \\
+\code{N3-line} & \rqBnuDivNThreeLineExeAllNum & \rqBnuTransNThreeLineExeAllNum & \rqBnuDivNThreeLineLibAllNum & \rqBnuTransNThreeLineLibAllNum \\
+\code{N4-field} & \rqBnuDivNFourFieldExeAllNum & \rqBnuTransNFourFieldExeAllNum & \rqBnuDivNFourFieldLibAllNum & \rqBnuTransNFourFieldLibAllNum \\
+\addlinespace
+\code{U-residual} & \rqBnuDivUResidualExeAllNum & \rqBnuTransUResidualExeAllNum & \rqBnuDivUResidualLibAllNum & \rqBnuTransUResidualLibAllNum \\
+\code{U-stderr} & \rqBnuDivUStderrExeAllNum & \rqBnuTransUStderrExeAllNum & \rqBnuDivUStderrLibAllNum & \rqBnuTransUStderrLibAllNum \\
+\midrule
+Total & \rqBnuDivBOneWhitespaceExeAllDen & \rqBnuTransBOneWhitespaceExeAllDen & \rqBnuDivBOneWhitespaceLibAllDen & \rqBnuTransBOneWhitespaceLibAllDen \\
+\bottomrule
+\end{tabular}

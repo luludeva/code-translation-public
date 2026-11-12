@@ -1,0 +1,4 @@
+== clang -### -fsanitize=address,undefined -O3 
+"-mrelocation-model" "pic" "-pic-level" "2" "-pic-is-pie" "-mframe-pointer=none" 
+== clang -### -fsanitize=address,undefined -O3 -fPIE
+"-mrelocation-model" "pic" "-pic-level" "2" "-pic-is-pie" "-mframe-pointer=none" 

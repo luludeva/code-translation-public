@@ -1,0 +1,30 @@
+# Cờ biên dịch từng object, case 005: build gốc (harness) so với build PIC. Chỉ liệt kê object có cờ khác nhau.
+object: driver.dir/src/PQCgenKAT_sign.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIE
+object: sphincs_obj.dir/src/address.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/fors.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/merkle.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/sign.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/utils.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/utilsx1.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/wots.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+object: sphincs_obj.dir/src/wotsx1.c.o:
+  goc: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99
+  pic: -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG -std=gnu99 -fPIC
+# Object có cờ giống nhau: 7
+# LINK_FLAGS/LINK_LIBRARIES khác nhau (sau khi bỏ đường dẫn): 0

@@ -1,0 +1,60 @@
+% =====================================================================
+% Khoa luan tot nghiep - Truong Dai hoc Cong nghe, DHQGHN
+% Bien dich: latexmk -xelatex main.tex
+% =====================================================================
+\documentclass[a4paper, 12pt, oneside]{report}
+
+\input{preamble/packages}
+\input{preamble/format-uet}
+\input{preamble/macros}
+\providecommand{\TODOnum}[1]{\textcolor{red}{#1}}
+\input{frontmatter/00-metadata}
+
+\begin{document}
+
+% ---- Front matter: khong danh so trang ----
+\pagenumbering{gobble}
+% Than bai tieng Anh; tom tat song ngu: Phu luc 03 tieng Viet (yeu cau chung)
+% va Phu luc 06 tieng Anh (CLC), xem docs/decision-log.md 2026-09-18.
+\input{frontmatter/01-cover}
+\input{frontmatter/03-title-en}
+\input{frontmatter/04-abstract-vi}
+\input{frontmatter/05-abstract-en}
+\input{frontmatter/06-declaration}
+
+\tableofcontents
+\clearpage
+\input{frontmatter/07-acronyms}
+\listoffigures
+\listoftables
+\clearpage
+
+% ---- Than bai: danh so lien tuc tu Mo dau (quy dinh muc 2) ----
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% Five numbered chapters plus an unnumbered Conclusion (writing/STRUCTURE.md).
+\input{v3/01-introduction}
+\input{v3/02-related-work}
+\input{v3/03-methodology}
+\input{v3/04-results}
+\input{v3/05-discussion}
+\input{v3/06-conclusion}
+
+% ---- Tai lieu tham khao ----
+% Phu luc 04 yeu cau: nhom theo ngon ngu, trong moi nhom xep ABC theo ho
+% tac gia, danh so [1][2] lien tuc. Voi khoa luan toan tieng Anh thi chi
+% co mot nhom, va style `plain` cua BibTeX dap ung dung yeu cau nay.
+% Neu sau nay co trich dan tai lieu tieng Viet, phai tach nhom thu cong.
+\bibliographystyle{plain}
+\renewcommand{\bibname}{References}
+\clearpage\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\bibliography{references}
+
+% ---- Phu luc (sau Tai lieu tham khao, theo quy dinh F1 muc 1) ----
+\appendix
+\input{v3/A-settings}
+\input{v3/B-classification}
+
+\end{document}

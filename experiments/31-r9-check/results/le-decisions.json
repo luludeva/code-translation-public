@@ -1,0 +1,22 @@
+{
+ "date": "2026-11-03",
+ "note": "Le xử qua AskUserQuestion; Le xem 18 mục R18 và 10 mục kiểm ngẫu nhiên, đồng ý tất cả nhãn đồng thuận.",
+ "rules": {
+  "both_crash_lib": "lib-068, 073, 074, 075: hai phía cùng crash khác kiểu; q1 unclear, báo riêng; Threats: bảng luật N1 library không phủ ca hai phía cùng thất bại",
+  "b1_before_n3": "lib-059, 062: B1 bỏ dòng rỗng cuối trước N3, mã đúng U-residual (script đúng, ba lượt sai)",
+  "read_side_info": "lib-039, 040, 041, 051, 056: q3 no; ghi nhóm UB phía C không bị sanitizer phát hiện (Threats, Q-N1)"
+ },
+ "override": {
+  "lib-068": {"q1": "unclear", "q2": "N1-status", "q3": "unclear"},
+  "lib-073": {"q1": "unclear", "q2": "N1-status", "q3": "unclear"},
+  "lib-074": {"q1": "unclear", "q2": "N1-status", "q3": "unclear"},
+  "lib-075": {"q1": "unclear", "q2": "N1-status", "q3": "unclear"},
+  "lib-059": {"q2": "U-residual"},
+  "lib-062": {"q2": "U-residual"},
+  "lib-039": {"q1": "yes", "q2": "N4-field", "q3": "no"},
+  "lib-040": {"q1": "yes", "q2": "N4-field", "q3": "no"},
+  "lib-041": {"q1": "yes", "q2": "N4-field", "q3": "no"},
+  "lib-051": {"q1": "yes", "q2": "N4-field", "q3": "no"},
+  "lib-056": {"q1": "yes", "q2": "N4-field", "q3": "no"}
+ }
+}

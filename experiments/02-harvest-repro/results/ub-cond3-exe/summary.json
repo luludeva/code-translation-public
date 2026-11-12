@@ -1,0 +1,18 @@
+[
+ {
+  "case": "generic_foreach",
+  "runs": 24,
+  "run_errors": 0,
+  "vectors": 100,
+  "vectors_not_pass_any": [],
+  "varying_vectors": {}
+ },
+ {
+  "case": "pointer_comparison_ascii_art",
+  "runs": 24,
+  "run_errors": 0,
+  "vectors": 97,
+  "vectors_not_pass_any": [],
+  "varying_vectors": {}
+ }
+]

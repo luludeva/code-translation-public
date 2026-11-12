@@ -1,0 +1,13 @@
+__pycache__/
+writing/*.aux
+writing/*.bbl
+writing/*.blg
+writing/*.fdb_latexmk
+writing/*.fls
+writing/*.lof
+writing/*.log
+writing/*.lot
+writing/*.out
+writing/*.toc
+writing/*.xdv
+writing/main.pdf

@@ -1,0 +1,21 @@
+   Compiling libc v0.2.189
+   Compiling driver v0.0.0 (/home/claude/exp02/.build/src/c2rust/static-vars-fpts)
+warning: the feature `raw_ref_op` has been stable since 1.82.0 and no longer requires an attribute to enable
+ --> lib.rs:7:12
+  |
+7 | #![feature(raw_ref_op)]
+  |            ^^^^^^^^^^
+  |
+  = note: `#[warn(stable_features)]` on by default
+
+warning: `driver` (lib) generated 1 warning
+warning: the feature `raw_ref_op` has been stable since 1.82.0 and no longer requires an attribute to enable
+ --> src/main.rs:9:12
+  |
+9 | #![feature(raw_ref_op)]
+  |            ^^^^^^^^^^
+  |
+  = note: `#[warn(stable_features)]` on by default
+
+warning: `driver` (bin "driver") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1.22s

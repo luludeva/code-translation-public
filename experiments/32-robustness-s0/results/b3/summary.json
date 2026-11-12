@@ -1,0 +1,35 @@
+{
+ "exe": {
+  "D": 176,
+  "by_label": {
+   "no": 85,
+   "yes": 90,
+   "unclear": 1
+  },
+  "D_B1_by_label": {
+   "no": 85,
+   "yes": 87,
+   "unclear": 1
+  },
+  "cases_by_label": {
+   "no": 19,
+   "yes": 17,
+   "unclear": 1
+  }
+ },
+ "lib": {
+  "D": 65,
+  "by_label": {
+   "no": 44,
+   "yes": 21
+  },
+  "D_B1_by_label": {
+   "no": 44,
+   "yes": 21
+  },
+  "cases_by_label": {
+   "no": 21,
+   "yes": 7
+  }
+ }
+}

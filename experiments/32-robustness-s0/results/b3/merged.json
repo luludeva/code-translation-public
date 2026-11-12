@@ -1,0 +1,1562 @@
+[
+ {
+  "id": "exe:B01_synthetic/003_string_slicing",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Cắt chuỗi theo [start, stop) có kiểm tra biên; chỉ strtol tràn khoảng int mới chạm chuyển đổi implementation-defined, đó là input bất thường.",
+   "Substring printing with bounds checks; start/stop compared against len after conversion to size_t, so valid input has defined behavior.",
+   "Substring printing with bounds checks against strlen; defined for valid integer arguments, UB only for pathological inputs (e.g. negative start, strtol out of int range)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/005_static_loop",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề là biến static cộng dồn; tràn số có dấu chỉ xảy ra khi stride rất lớn, không phải đường chạy chính.",
+   "Theme is a static running total; only possible signed overflow for huge strides is an ordinary error case.",
+   "Running sum in a static local; defined for ordinary strides, signed overflow only for extreme inputs."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/007_errno_pow",
+  "votes": [
+   "no",
+   "yes",
+   "yes"
+  ],
+  "agree": false,
+  "why": [
+   "pow kèm kiểm tra errno EDOM/ERANGE, hành vi xác định trên input hợp lệ.",
+   "Case is built around pow setting errno to EDOM/ERANGE, and whether math functions report errors via errno depends on implementation-defined math_errhandling.",
+   "Case is built around detecting pow() domain/range errors via errno, but whether pow sets errno depends on implementation-defined math_errhandling (glibc sets it, other libms may not)."
+  ],
+  "c11": [
+   "",
+   "7.12.1p2; 7.12p9",
+   "7.12p9; 7.12.1p2"
+  ],
+  "kind": [
+   "none",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/009_stack_buffer_overflow",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Case Juliet CWE-121: hàm bad() ghi buffer[data] với data đọc từ stdin không kiểm cận trên, chủ đích kích hoạt ghi ngoài mảng.",
+   "Juliet-style bad() writes buffer[data] with an unchecked stdin index, so out-of-range input is an intended out-of-bounds write.",
+   "Juliet-style CWE-121 case: bad() writes buffer[data] with unchecked stdin index >= 10, an out-of-bounds store."
+  ],
+  "c11": [
+   "6.5.6p8",
+   "6.5.6p8",
+   "6.5.6p8"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/010_integer_overflow",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Case Juliet integer overflow trên char: data+1 gán lại vào char và in %02x phụ thuộc char có dấu hay không và chuyển đổi ngoài khoảng.",
+   "Named integer overflow: data+1 stored back into plain char, whose signedness and out-of-range conversion result are implementation-defined and are printed in hex.",
+   "Named integer_overflow: char data+1 stored back into char overflows for 0x7f/high bytes, giving implementation-defined conversion and output that depends on plain-char signedness."
+  ],
+  "c11": [
+   "6.3.1.3p3, 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/011_uninit_char_ptr",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Nhánh bad() (input 0) dùng con trỏ char* chưa khởi tạo, đúng chủ đề tên case.",
+   "bad() path (input 0) passes an uninitialized pointer to printLine, the explicit purpose of the case.",
+   "bad() (taken on input 0) passes an uninitialized automatic char* to printf, an explicit uninitialized-use case."
+  ],
+  "c11": [
+   "6.3.2.1p2, 6.2.4p6",
+   "6.7.9p10; 6.3.2.1p2",
+   "6.3.2.1p2"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/015_return_stack_buffer",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Nhánh bad() (input 0) trả về con trỏ tới mảng cục bộ đã hết lifetime rồi in ra.",
+   "bad() path returns and then reads a pointer to an automatic array whose lifetime has ended.",
+   "helperBad returns a pointer to a local array that is printed after its lifetime ends (bad path on input 0)."
+  ],
+  "c11": [
+   "6.2.4p2",
+   "6.2.4p2",
+   "6.2.4p2"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/016_divide_by_zero_float",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Nhánh bad() chia 100.0 cho float đọc từ stdin không kiểm tra 0 rồi ép (int), chủ đích kích hoạt chia cho 0 và chuyển đổi float ngoài khoảng.",
+   "bad() divides by user float that may be 0 and casts the resulting inf/huge value to int, the stated purpose of the case.",
+   "bad() always runs and divides by a stdin float without a zero check, then converts the inf/huge result to int, which is UB."
+  ],
+  "c11": [
+   "6.5.5p5, 6.3.1.4p1",
+   "6.5.5p5; 6.3.1.4p1",
+   "6.5.5p5; 6.3.1.4p1"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/019_integer_overflow_char_max_multiply",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Nhánh bad() gán CHAR_MAX*2 vào char và in hex, kết quả phụ thuộc dấu của char và chuyển đổi ngoài khoảng.",
+   "bad() stores CHAR_MAX*2 into char, an out-of-range conversion whose result (and char signedness) is implementation-defined and printed.",
+   "bad() stores CHAR_MAX*2 into char, an implementation-defined out-of-range conversion; printed value depends on char signedness."
+  ],
+  "c11": [
+   "6.3.1.3p3, 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/022_stdlib_div",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Gọi div(x, y) và in thương/dư; UB chỉ khi y = 0 hoặc INT_MIN/-1 (7.22.6.2p2), là lỗi input thông thường.",
+   "Exercises div() quotient/remainder, defined for ordinary inputs; div by zero or INT_MIN/-1 would be UB (7.22.6.2p2) only as an input error.",
+   "Exercises stdlib div() with quotient/remainder fully specified since C99; UB only for y==0 or INT_MIN/-1 as ordinary bad input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/023_struct_and_errno",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Thao tác struct và parse strtol có kiểm errno, xác định trên input hợp lệ; tràn bedrooms chỉ với giá trị gần INT_MAX.",
+   "Struct mutation with strtol/errno-checked parsing; defined for valid input apart from ordinary overflow on extreme values.",
+   "Struct mutation with strtol/errno range-checked input; defined except signed overflow at extreme bedroom counts."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/024_struct_and_static",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Struct static được cập nhật qua hàm, xác định trên input số nguyên hợp lệ.",
+   "Static struct mutation printed twice; defined behavior on valid input.",
+   "Static struct mutation; defined for ordinary integer input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/025_struct_and_errno_and_static",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Kết hợp struct static và parse có kiểm errno, xác định trên input hợp lệ.",
+   "Static struct plus errno-checked strtol parsing; defined on valid input.",
+   "Static struct plus errno-checked parsing; defined for ordinary integer input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/026_goto_and_static",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề goto và biến static đọc qua scanf, hành vi xác định.",
+   "goto-based error handling with a static int read via scanf; fully defined.",
+   "goto-based error path and static int read by scanf; fully defined control flow."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/027_ctype_ascii",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "In trực tiếp giá trị trả về của isalnum/isalpha... bằng %d, giá trị khác 0 cụ thể không được C11 quy định, và char âm (byte >= 0x80) truyền vào ctype là UB.",
+   "Prints raw isalnum/isalpha/... return values whose nonzero value is left to the implementation, and passes a possibly negative char (UB) for non-ASCII bytes.",
+   "Prints the raw int returned by isalnum/isalpha etc., which C only specifies as nonzero (exact value unspecified, libc-specific); non-ASCII bytes as negative char are also UB for ctype."
+  ],
+  "c11": [
+   "7.4.1, 7.4p1",
+   "7.4.1; 7.4p1",
+   "7.4.1p1; 7.4p1"
+  ],
+  "kind": [
+   "mixed",
+   "mixed",
+   "mixed"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/028_strchr",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Đếm ký tự bằng strchr trên buffer khởi tạo 0; chỉ input đủ 1000 byte mới mất NUL kết thúc.",
+   "Counts characters with strchr; defined unless input fills all 1000 bytes without a terminator (ordinary error).",
+   "Counts occurrences with strchr; defined unless stdin fills all 1000 bytes leaving no terminator."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/029_strcspn",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Gọi strcspn trên hai dòng input; s1[strlen-1] chỉ lỗi khi thiếu dòng, là input sai định dạng.",
+   "strcspn on two input lines; s[strlen-1] on an empty line would be UB only for malformed input.",
+   "strcspn on two input lines; defined for normal input, UB only for empty input (index strlen-1 on empty string)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/030_mutable_buffer_overlap_extrahard",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề aliasing không có restrict, hợp lệ trong C; tràn nhân có dấu chỉ khi giá trị lớn.",
+   "Aliased out/in pointers without restrict are well defined in C; only ordinary signed overflow for large inputs.",
+   "Aliased pointers without restrict are well-defined in C; the case targets aliasing translation difficulty, with signed overflow only for large inputs."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/031_disjoint_arrays",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Mảng out restrict thực sự tách biệt với input, tuân thủ 6.7.3.1; hành vi xác định.",
+   "restrict out pointer used with genuinely disjoint VLAs, so the restrict contract holds; defined.",
+   "restrict-qualified out is genuinely disjoint from inputs, so behavior is defined; VLAs sized by input count."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/033_bitfield",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Gán vào bit-field unsigned bọc theo modulo (6.3.1.3p2) và _Bool bit-field hợp lệ, output xác định.",
+   "Values assigned to unsigned and _Bool bit-fields are reduced/converted by defined rules and printed by member, not by layout.",
+   "Assignments to unsigned bit-fields reduce modulo 2^width (defined); layout is implementation-defined but never observed."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/034_cast_to_char_ptr_int",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "In từng byte biểu diễn object của int, output phụ thuộc thứ tự byte và biểu diễn do implementation định nghĩa.",
+   "Prints the object representation bytes of an int, whose byte order and representation are implementation-defined.",
+   "Prints the object representation bytes of an int, whose byte order and size are implementation-defined."
+  ],
+  "c11": [
+   "6.2.6.1p2, 6.2.6.2",
+   "6.2.6.1p2; 6.2.6.2p2",
+   "6.2.6.1p2"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/035_cast_to_char_ptr_float",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "In byte biểu diễn object của float, phụ thuộc định dạng float và endianness của implementation.",
+   "Prints the object representation bytes of a float, whose encoding and byte order are implementation-defined.",
+   "Prints the raw bytes of a float, whose representation and byte order are implementation-defined."
+  ],
+  "c11": [
+   "6.2.6.1p2, 5.2.4.2.2",
+   "6.2.6.1p2; 5.2.4.2.2",
+   "6.2.6.1p2; 5.2.4.2.2"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/036_cast_to_char_ptr_struct",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "In byte biểu diễn của struct, phụ thuộc layout/padding (padding là unspecified) và endianness.",
+   "Hex-dumps a whole struct: endianness/float encoding implementation-defined and any padding bytes unspecified.",
+   "Dumps the bytes of a struct: field byte order is implementation-defined and any padding bytes hold unspecified values."
+  ],
+  "c11": [
+   "6.2.6.1p2, 6.2.6.1p6, 6.7.2.1p15",
+   "6.2.6.1p2; 6.2.6.1p6; 6.7.2.1p15",
+   "6.2.6.1p2; 6.2.6.1p6"
+  ],
+  "kind": [
+   "mixed",
+   "mixed",
+   "mixed"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/037_cast_to_char_ptr_int_no_strict_aliasing",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "memcpy int sang mảng char rồi in byte, output phụ thuộc biểu diễn và endianness của int.",
+   "memcpy of an int into a char array then hex dump; output is the implementation-defined object representation.",
+   "memcpy variant that still prints the int's object representation (implementation-defined byte order/size)."
+  ],
+  "c11": [
+   "6.2.6.1p2, 6.2.6.2",
+   "6.2.6.1p2; 6.2.6.2p2",
+   "6.2.6.1p2"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/038_cast_to_char_ptr_float_no_strict_aliasing",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "memcpy float sang mảng char rồi in byte, phụ thuộc định dạng float và endianness.",
+   "memcpy of a float into bytes then hex dump; output is the implementation-defined float representation.",
+   "memcpy variant that prints the float's object representation (implementation-defined)."
+  ],
+  "c11": [
+   "6.2.6.1p2, 5.2.4.2.2",
+   "6.2.6.1p2; 5.2.4.2.2",
+   "6.2.6.1p2; 5.2.4.2.2"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/039_cast_to_char_ptr_struct_no_strict_aliasing",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "memcpy struct sang mảng char rồi in byte, phụ thuộc layout/padding và endianness.",
+   "memcpy of a struct into bytes then hex dump; byte order implementation-defined and padding bytes unspecified.",
+   "memcpy variant dumping struct bytes: implementation-defined representation, unspecified padding values."
+  ],
+  "c11": [
+   "6.2.6.1p2, 6.2.6.1p6, 6.7.2.1p15",
+   "6.2.6.1p2; 6.2.6.1p6",
+   "6.2.6.1p2; 6.2.6.1p6"
+  ],
+  "kind": [
+   "mixed",
+   "mixed",
+   "mixed"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/040_storage_class_auto",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề từ khoá auto; 2*x+300 xác định trừ khi tràn với x rất lớn.",
+   "auto storage class with 2*x+300; defined except ordinary signed overflow for extreme input.",
+   "Tests the auto storage-class keyword; arithmetic defined except overflow for extreme input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/041_storage_class_register",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề từ khoá register; phép tính xác định trừ khi tràn với x rất lớn.",
+   "register storage class with 2*x+300; defined except ordinary signed overflow for extreme input.",
+   "Tests the register keyword; arithmetic defined except overflow for extreme input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/042_float_union",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Type punning qua union đọc uint64_t từ double rồi in hex, output phụ thuộc biểu diễn double; %a cũng có chọn lựa do implementation.",
+   "Type-puns a double through a union and prints the uint64 bits (implementation-defined representation), with %llx for uint64_t and %a formatting choices.",
+   "Type-puns a double through a union and prints its raw bits (implementation-defined representation); %a leading digit is unspecified and %llx is given a uint64_t."
+  ],
+  "c11": [
+   "6.5.2.3p3 (fn 95), 6.2.6.1p2, 7.21.6.1p8",
+   "6.5.2.3p3; 6.2.6.1p2; 7.21.6.1p9",
+   "6.2.6.1p2; 6.5.2.3p3; 7.21.6.1p8"
+  ],
+  "kind": [
+   "mixed",
+   "mixed",
+   "mixed"
+  ]
+ },
+ {
+  "id": "exe:B01_synthetic/043_iso646_and_digraphs",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề digraph và macro iso646; x bitor compl y xác định với biểu diễn bù hai thông dụng.",
+   "Theme is iso646 macros and digraph syntax; x | ~y depends on signed representation (6.2.6.2p2) only incidentally.",
+   "Targets digraph/iso646 syntax; x | ~y on int is defined on two's-complement implementations and is not the case's theme."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B02_organic/underhanded_c_luggage",
+  "votes": [
+   "no",
+   "unclear",
+   "no"
+  ],
+  "agree": false,
+  "why": [
+   "Mẹo underhanded dựa vào scanf thất bại khớp giữ lại giá trị cũ (7.21.6.2p16), là hành vi xác định; %d vào unsigned int chỉ là lệch kiểu ngẫu nhiên.",
+   "Underhanded C entry exploiting scanf semantics (stale buffers on partial matches); every line reads %d into an unsigned int* and buffers may be used uninitialized, but the hidden trick may be defined behavior.",
+   "Underhanded-C routing program whose hidden misbehavior appears to come from scanf field parsing and stale buffers (defined); bounded scanf widths prevent overflow (scanf %d into unsigned int is a formal mismatch but not the theme)."
+  ],
+  "c11": [
+   "",
+   "7.21.6.2p10",
+   ""
+  ],
+  "kind": [
+   "none",
+   "undefined",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/macrodepth_add_5",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Chủ đề mở rộng macro lồng sâu; phép cộng xác định trên input atoi hợp lệ.",
+   "Exercises nested macro expansion and token pasting; arithmetic is defined for ordinary arguments.",
+   "Macro-expansion depth test (OP=add, REPEAT=5); arithmetic defined except atoi/addition overflow on extreme arguments."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/memcpy_fun_buffers",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Các thao tác buffer bằng memcpy có kiểm độ dài, xác định trên input hợp lệ.",
+   "Buffer operations using non-overlapping memcpy with length checks; defined on valid input.",
+   "Buffer operations with explicit length checks on non-overlapping memcpy; defined for valid input."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/memmove",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Thuật toán xoay/nén buffer dùng memmove đúng cho vùng chồng lấn; lỗi biên nếu có là bug thông thường.",
+   "Buffer transforms using memmove, which is defined for overlapping regions; length capped at 256.",
+   "memmove-based buffer transforms on overlapping regions (defined); possible overrun from compact_runs growth is an ordinary bug, not the theme."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/mutable_duplication_dag",
+  "votes": [
+   "unclear",
+   "unclear",
+   "unclear"
+  ],
+  "agree": true,
+  "why": [
+   "Lệnh xoá node (7) free node khi ref_count về 0 nhưng graph vẫn giữ con trỏ, lệnh hợp lệ sau đó (tra cứu, exit) dẫn tới use-after-free/double free; không rõ đây là chủ đích hay bug.",
+   "Theme is shared ownership via refcounts, but deleting a refcount-1 node frees it while the graph keeps the pointer, so a valid menu sequence (delete then show/exit) reaches use-after-free/double free.",
+   "delete_node frees a node still referenced by the graph, so a valid sequence (delete then list or exit) reads freed memory; this looks like a latent bug rather than the case's stated purpose."
+  ],
+  "c11": [
+   "6.2.4p2, 7.22.3.3p2",
+   "7.22.3.3p2; 6.2.4p2",
+   "6.2.4p2; 7.22.3.3p2"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/strcmp",
+  "votes": [
+   "unclear",
+   "yes",
+   "yes"
+  ],
+  "agree": false,
+  "why": [
+   "Lệnh compare in nguyên giá trị strcmp (độ lớn không được quy định), dòng chỉ có khoảng trắng để command chưa khởi tạo; nhưng chủ đề chính là bộ thông dịch lệnh.",
+   "The compare/compareN commands print the raw strcmp/strncmp result, for which only the sign is specified; the time command also prints the current time.",
+   "Billed as a strcmp/strncmp demonstration and prints the raw strcmp/strncmp return value, whose magnitude C leaves unspecified (only its sign is defined); blank lines also leave command uninitialized."
+  ],
+  "c11": [
+   "7.24.4.2p3, 6.2.4p6",
+   "7.24.4.2p3; 7.24.4.4p3",
+   "7.24.4.2p3; 7.24.4.4p3"
+  ],
+  "kind": [
+   "mixed",
+   "unspecified",
+   "mixed"
+  ]
+ },
+ {
+  "id": "exe:B02_synthetic/strcpy",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Chú thích ghi rõ VULNERABLE: strcmp trên buffer input không bảo đảm NUL kết thúc và phần chưa khởi tạo, chủ đích đọc ngoài phạm vi.",
+   "Code is explicitly marked VULNERABLE: strcmp on caller-supplied byte buffers not guaranteed to be NUL-terminated, plus unsigned wrap in text_len - pattern_len, giving out-of-bounds reads.",
+   "Comments mark strcmp calls as VULNERABLE on non-terminated input; main copies raw bytes into buffers without a terminator, so string functions read past initialized/array bounds."
+  ],
+  "c11": [
+   "7.24.1p1, 6.5.6p8, 6.2.4p6",
+   "7.24.1p1; 6.5.6p8",
+   "7.24.1p1; 6.5.6p8"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/collided_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Kiểm tra va chạm hình học bằng float, xác định.",
+   "cute_c2 float collision tests on correctly typed structs; defined.",
+   "2D collision tests on floats via void* casts to correctly typed structs; defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/dequantize_granule_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Giải lượng tử MP2 từ minimp3; dịch bit quá độ rộng chỉ khi bitalloc không hợp lệ.",
+   "minimp3 dequantization; oversized shifts/reads only for bit-allocation values that are invalid in real streams.",
+   "minimp3 dequantization; relies on the universal modulo unsigned-to-int conversion idiom (6.3.1.3p3) but is not designed around it; shifts are bounded for valid bit allocations."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/flip_horizontal_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Lật ảnh hoán đổi hàng pixel, xác định với kích thước hợp lệ.",
+   "Swaps pixel rows; defined for consistent w/h/buffer.",
+   "Swaps image rows in place; defined for valid dimensions."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/premultiply_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Nhân alpha trên byte, chuyển float về uint8_t luôn trong khoảng [0,255].",
+   "Float alpha premultiply with in-range float to uint8 conversions; defined.",
+   "Premultiplies RGB by alpha; float-to-uint8 conversions stay within [0,255]."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/read_side_info_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Đọc side info MP3; chỉ header không hợp lệ (sr_idx = 8) mới truy cập ngoài bảng.",
+   "minimp3 side-info parsing; out-of-range table index only for reserved header values (malformed input).",
+   "minimp3 side-info parser; defined for valid headers, out-of-range table index only for reserved header values."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/tfm_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Tính toán float với sqrtf được kẹp không âm, xác định.",
+   "Float eigenvalue arithmetic with sqrtf clamped at 0; defined.",
+   "Float eigenvalue-style transform with sqrtf clamped at 0; defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_organic/wcscat_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Nối chuỗi wide có kiểm số phần tử, xác định trên input hợp lệ.",
+   "Bounded wide-string concat returning error codes; defined (reusing the reserved name wcscat is incidental).",
+   "Bounded wide-string concatenation with explicit size checks; defined (reuse of the reserved name wcscat is incidental)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/007_errno_pow_lib",
+  "votes": [
+   "no",
+   "yes",
+   "yes"
+  ],
+  "agree": false,
+  "why": [
+   "pow kèm kiểm tra errno, xác định.",
+   "Library form of errno_pow: behavior hinges on pow reporting EDOM/ERANGE via errno, which depends on implementation-defined math_errhandling.",
+   "Library form of errno_pow: error reporting depends on whether pow sets errno, which is governed by implementation-defined math_errhandling."
+  ],
+  "c11": [
+   "",
+   "7.12.1p2; 7.12p9",
+   "7.12p9; 7.12.1p2"
+  ],
+  "kind": [
+   "none",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/011_uninit_char_ptr_lib",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "driver(0) gọi bad() dùng con trỏ char* chưa khởi tạo, đúng chủ đề tên case.",
+   "driver(0) runs bad(), which reads an uninitialized pointer, the stated purpose of the case.",
+   "driver(0) calls bad(), which prints an uninitialized automatic char*."
+  ],
+  "c11": [
+   "6.3.2.1p2, 6.2.4p6",
+   "6.7.9p10; 6.3.2.1p2",
+   "6.3.2.1p2"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/016_divide_by_zero_float_lib",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "bad(badData) chia 100.0 cho badData không kiểm tra 0 rồi ép (int), chủ đích kích hoạt chia 0 và chuyển đổi ngoài khoảng.",
+   "bad(badData) divides by a caller float that may be 0 and converts the result to int, the stated purpose.",
+   "bad(badData) divides by an unchecked float and converts the result to int, UB for zero or tiny divisors."
+  ],
+  "c11": [
+   "6.5.5p5, 6.3.1.4p1",
+   "6.5.5p5; 6.3.1.4p1",
+   "6.5.5p5; 6.3.1.4p1"
+  ],
+  "kind": [
+   "undefined",
+   "undefined",
+   "undefined"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/019_integer_overflow_char_max_multiply_lib",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "driver(0) gán CHAR_MAX*2 vào char và in hex, phụ thuộc dấu của char và chuyển đổi ngoài khoảng.",
+   "bad() stores CHAR_MAX*2 into char; out-of-range conversion and char signedness are implementation-defined.",
+   "driver(0) runs bad(): CHAR_MAX*2 stored into char is an implementation-defined conversion with signedness-dependent output."
+  ],
+  "c11": [
+   "6.3.1.3p3, 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15",
+   "6.3.1.3p3; 6.2.5p15"
+  ],
+  "kind": [
+   "implementation-defined",
+   "implementation-defined",
+   "implementation-defined"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/020_stack_linked_list_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Tìm giá trị nhỏ nhất trên danh sách liên kết, xác định.",
+   "Finds the minimum in a 3-node stack-allocated list; defined.",
+   "Finds minimum of a stack-allocated linked list; defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B01_synthetic/031_disjoint_arrays_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Mảng restrict tách biệt, sscanf có kiểm, xác định.",
+   "restrict used on genuinely disjoint VLAs, input parsed with sscanf; defined.",
+   "restrict output is disjoint from inputs; %zn with size_t* is permitted; defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/decode_base64_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Giải base64 trên ký tự đã lọc, phép bit trên unsigned char xác định.",
+   "Base64 decode after filtering to ASCII alphabet chars; defined.",
+   "Base64 decoder; results stored to unsigned char reduce modulo 256 (defined)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/gen_ray_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Raycast hình học bằng float, xác định với input hữu hạn.",
+   "cute_c2 raycasts in float arithmetic (IEEE inf/NaN on degenerate input); defined.",
+   "Float raycasts against circle/capsule/AABB; defined for supplied shape types."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/intput_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "hashmap stb_ds với ba lần put/get và assert; kết quả (pass hoặc abort khi num = 9/11) xác định.",
+   "stb_ds hashmap insert/get with a fixed seed and asserts; deterministic on valid input.",
+   "stb_ds hashmap put/get with asserts; observable result (assert pass/abort) is deterministic and defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/omni_collide_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Va chạm GJK bằng float trên kiểu shape hợp lệ, xác định.",
+   "cute_c2 collision dispatch on correctly typed shapes; defined float logic.",
+   "GJK/collision code; UB only if an invalid shape type makes ptr_from_parts fall off its end."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/omni_manifold_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Tính manifold va chạm bằng float trên kiểu shape hợp lệ, xác định.",
+   "cute_c2 manifold computation on correctly typed shapes; defined float logic.",
+   "Collision manifold computation; UB only for invalid shape type (missing return in ptr_from_parts)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/parse_number_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "parse_number của cJSON với strtod và kẹp bão hoà về int, xác định.",
+   "cJSON number parse with saturation before the int conversion; defined.",
+   "cJSON number parser with saturating double-to-int conversion; defined."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/pinflate_lib",
+  "votes": [
+   "yes",
+   "unclear",
+   "yes"
+  ],
+  "agree": false,
+  "why": [
+   "Đường giải nén chính đọc buffer byte qua uint32_t* sau khi căn lề bằng ép con trỏ sang size_t, kết quả phụ thuộc endianness và vi phạm strict aliasing.",
+   "Organic DEFLATE decoder whose normal path reads input bytes as uint32_t words (byte order implementation-defined, effective-type aliasing), though the case is not designed around this.",
+   "Not its stated purpose, but every decode reads the byte stream as uint32_t words after aligning via pointer-to-integer conversion, so output depends on byte order (implementation-defined) and type-punned access."
+  ],
+  "c11": [
+   "6.5p7, 6.3.2.3p6, 6.2.6.1p2",
+   "6.2.6.1p2; 6.5p7",
+   "6.2.6.1p2; 6.3.2.3p6; 6.5p7"
+  ],
+  "kind": [
+   "mixed",
+   "implementation-defined",
+   "mixed"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/search_and_replace_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Tìm và thay chuỗi bằng strstr/realloc, xác định trên chuỗi hợp lệ.",
+   "String search/replace with realloc; defined for non-empty search strings.",
+   "String search-and-replace with realloc; defined for non-empty search strings."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_organic/utf8_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Lọc UTF-8; các so sánh với (char)0xC2 cho kết quả đúng dù char có dấu hay không.",
+   "UTF-8 validation; the (char)0xC2-style conversions are implementation-defined but give the same result for signed or unsigned char.",
+   "UTF-8 filter; comparisons with (char)0xC2 etc. are written to give the same result under either char signedness."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/charinbuf_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Các mode thao tác chuỗi/memchr/con trỏ hàm, xác định; tràn chỉ khi tham số rất lớn.",
+   "Mode-based demos (uint16 range, memchr, malloc, function pointers); defined apart from ordinary overflow.",
+   "Mode-driven demos (uint16 range, memchr, malloc/free, function pointers); defined except signed overflow at extreme parameters."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/checkshift_lib",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Mỗi lần gọi đều dịch trái giá trị có dấu có thể âm và dịch phải tham số âm, cùng checksum trên byte biểu diễn int phụ thuộc endianness.",
+   "Shift-themed: left-shifts possibly negative values (UB), right-shifts negatives (implementation-defined), and checksums the int byte representation.",
+   "Named checkshift: left-shifts possibly negative values (UB) and right-shifts negatives (implementation-defined), and the checksum is computed over int object bytes (byte order implementation-defined)."
+  ],
+  "c11": [
+   "6.5.7p4, 6.5.7p5, 6.2.6.1p2",
+   "6.5.7p4; 6.5.7p5; 6.2.6.1p2",
+   "6.5.7p4; 6.5.7p5; 6.2.6.1p2"
+  ],
+  "kind": [
+   "mixed",
+   "mixed",
+   "mixed"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/dataentry_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Thao tác struct entry có kiểm chỉ số, xác định trên tham số hợp lệ.",
+   "Struct/lookup operations with bounds checks; defined on valid input.",
+   "Entry table create/find/modify; defined except signed overflow or allocation failure at extreme parameters."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/fallcalc_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Switch fallthrough và chuyển double sang int có kẹp an toàn, xác định.",
+   "Theme is switch fallthrough and octal constants; output does not depend on the incidental ptr-- one past the start in process_array_reverse (6.5.6p8).",
+   "Switch fallthrough, octal constants and saturating double-to-int; defined except overflow at extreme parameters."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/mathop_lib",
+  "votes": [
+   "yes",
+   "yes",
+   "yes"
+  ],
+  "agree": true,
+  "why": [
+   "Kết quả trả về luôn cộng (time() >> 29) % 100, mà cách mã hoá giá trị time_t là unspecified theo C11.",
+   "Final result adds (time()>>29)%100, so output depends on the unspecified encoding of time_t and on wall-clock time.",
+   "Output adds and prints time()>>29, depending on the time_t encoding that C leaves unspecified (and on wall-clock time)."
+  ],
+  "c11": [
+   "7.27.2.4p3",
+   "7.27.2.4p3",
+   "7.27.2.4p3; 7.27.1p4"
+  ],
+  "kind": [
+   "unspecified",
+   "unspecified",
+   "unspecified"
+  ]
+ },
+ {
+  "id": "lib:B02_synthetic/matrix_mult_lib",
+  "votes": [
+   "no",
+   "no",
+   "no"
+  ],
+  "agree": true,
+  "why": [
+   "Nhân ma trận số nguyên và ghi file, xác định; tràn nhân chỉ với giá trị lớn.",
+   "Matrix multiply from strings written to a file; defined for ordinary values.",
+   "Matrix multiply written to a file; defined for normal inputs (string buffer undersizing for long negatives is an ordinary bug)."
+  ],
+  "c11": [
+   "",
+   "",
+   ""
+  ],
+  "kind": [
+   "none",
+   "none",
+   "none"
+  ]
+ }
+]

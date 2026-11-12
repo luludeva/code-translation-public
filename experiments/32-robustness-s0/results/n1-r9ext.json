@@ -1,0 +1,54 @@
+{
+ "exe_D": 176,
+ "exe_P_test": 476,
+ "exe_new_sample": 30,
+ "lib_D": 65,
+ "lib_P_test": 1088,
+ "lib_new_sample": 32,
+ "N1": {
+  "rule": "README.md mục N1",
+  "lib_D": 65,
+  "translations_only_both_fail": 7,
+  "ids": [
+   [
+    "B02_organic",
+    "intput_lib",
+    "claude"
+   ],
+   [
+    "B02_organic",
+    "intput_lib",
+    "gpt-5.4"
+   ],
+   [
+    "B02_organic",
+    "intput_lib",
+    "kimi"
+   ],
+   [
+    "B02_organic",
+    "intput_lib",
+    "kiro"
+   ],
+   [
+    "B02_organic",
+    "utf8_lib",
+    "claude"
+   ],
+   [
+    "B02_organic",
+    "utf8_lib",
+    "gpt-5.4"
+   ],
+   [
+    "B02_organic",
+    "utf8_lib",
+    "kiro"
+   ]
+  ],
+  "D_without": 58,
+  "P_test": 1088,
+  "translations_any_both_fail": 9
+ },
+ "r9ext_items": 62
+}

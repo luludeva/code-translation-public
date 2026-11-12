@@ -1,0 +1,78 @@
+{"id": "exe-000", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "Same exit 0 and empty stderr; C prints a lone newline, Rust prints nothing, which matches after trailing empty lines are dropped; no truncation or timing value."}
+{"id": "exe-001", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "Same exit 0 and empty stderr; C prints a lone newline, Rust prints nothing, which matches after trailing empty lines are dropped; no truncation or timing value."}
+{"id": "exe-002", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "Same exit 0 and empty stderr; C prints a lone newline, Rust prints nothing, which matches after trailing empty lines are dropped; no truncation or timing value."}
+{"id": "exe-003", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C answers each empty input line with an \"Unknown command\" line (garbage name) while Rust only prints the prompt, so a shared line position differs; the line exists regardless of the garbage bytes, no truncation."}
+{"id": "exe-004", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C answers each empty input line with an \"Unknown command\" line (garbage name) while Rust only prints the prompt, so a shared line position differs; the line exists regardless of the garbage bytes, no truncation."}
+{"id": "exe-005", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C answers each empty input line with an \"Unknown command\" line (garbage name) while Rust only prints the prompt, so a shared line position differs; the line exists regardless of the garbage bytes, no truncation."}
+{"id": "exe-006", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single stdout line 0 vs 1 (integers must match exactly)."}
+{"id": "exe-007", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single stdout line 0 vs 1 (integers must match exactly)."}
+{"id": "exe-008", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "No timeout; C ends with signal 11 while Rust exits 0 printing 0; full records, no truncation."}
+{"id": "exe-009", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0 and line count; in the bad() section the position of the 1 differs between sides (integer lines differ)."}
+{"id": "exe-010", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C prints sign-extended ffffffd5, Rust prints d5, the hex text differs on the only line."}
+{"id": "exe-011", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Same exit 0; C prints one line, Rust prints nothing, so no shared line position exists and only one output is longer."}
+{"id": "exe-012", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Same exit 0; C prints one line, Rust prints nothing, so no shared line position exists and only one output is longer."}
+{"id": "exe-013", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Same exit 0; C prints one line, Rust prints nothing, so no shared line position exists and only one output is longer."}
+{"id": "exe-014", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; line helperGood1 string vs helperBad string differ in text."}
+{"id": "exe-015", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Same exit 0; C prints one line, Rust prints nothing, so no shared line position exists and only one output is longer."}
+{"id": "exe-016", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; first line 04 vs fffffffe differ (C then prints an overflow warning line)."}
+{"id": "exe-017", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C prints An error occurred while Rust parses the input and prints house lines, so line 1 differs."}
+{"id": "exe-018", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C prints An error occurred while Rust parses the input and prints house lines, so line 1 differs."}
+{"id": "exe-019", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "No timeout; C exits 0 with output while Rust panics with exit 101 (ParseIntError PosOverflow); thread id in stderr does not drive the difference."}
+{"id": "exe-020", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C prints An error occurred while Rust parses the input and prints house lines, so line 1 differs."}
+{"id": "exe-021", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; ctype counts graphical 32768 vs 1, printing 16384 vs 1, punctuation 4 vs 1 (integers differ)."}
+{"id": "exe-022", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; counts A: 0 vs A: 2 and x: 0 vs x: 1 differ."}
+{"id": "exe-023", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single line 3 vs 2916."}
+{"id": "exe-024", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single line -2147483648 vs 123."}
+{"id": "exe-025", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single line -3 vs 42."}
+{"id": "exe-026", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; 3 7 1 -42 vs 3 0 1 -42, second integer differs."}
+{"id": "exe-027", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; 2 0 0 0 vs 0 0 1 1."}
+{"id": "exe-028", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; ffffffff vs 00000000."}
+{"id": "exe-029", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; hex dump prefix ffffffff vs 00000000."}
+{"id": "exe-030", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; hex dump prefix ffffffff vs 00000000."}
+{"id": "exe-031", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; 00000000 vs 00000080."}
+{"id": "exe-032", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; b6f39d3f vs 00000000 (C parses 1.234, Rust yields 0)."}
+{"id": "exe-033", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "No timeout; C exits 0 printing 000040c1 while Rust panics with exit 101 (ParseFloatError)."}
+{"id": "exe-034", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; 0000f6c2 vs 00000000."}
+{"id": "exe-035", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; single line 302 vs 300 (integers)."}
+{"id": "exe-036", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Same exit 0; all 57 shared lines identical, C continues with one more menu at EOF (67 lines), no truncation."}
+{"id": "exe-037", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Same exit 0; C answers the empty line with an Unknown command line while Rust prints only the prompt, shifting a shared line."}
+{"id": "exe-038", "q1": "yes", "q2": "U-stderr", "q3": "no", "why": "Both exit 1 with empty stdout; only stderr differs (byte 5 vs byte 4), which N normalization does not remove."}
+{"id": "lib-039", "q1": "yes", "q2": "N4-field", "q3": "unclear", "why": "k1, result, stdout and stderr match; 23-entry sfbtab table differs in all 4 granules (N4); hdr sample-rate bits are the reserved value, so the C pointer may index past its table and the serialized content may reflect static data layout read by the runner."}
+{"id": "lib-040", "q1": "yes", "q2": "N4-field", "q3": "unclear", "why": "k1, result, stdout and stderr match; 23-entry sfbtab table differs in all 4 granules (N4); hdr sample-rate bits are the reserved value, so the C pointer may index past its table and the serialized content may reflect static data layout read by the runner."}
+{"id": "lib-041", "q1": "yes", "q2": "N4-field", "q3": "unclear", "why": "k1, result, stdout and stderr match; 23-entry sfbtab table differs in all 4 granules (N4); hdr sample-rate bits are the reserved value, so the C pointer may index past its table and the serialized content may reflect static data layout read by the runner."}
+{"id": "lib-042", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass with no output; C leaves dst[0]=64 while Rust writes 0, a state_out field difference."}
+{"id": "lib-043", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass with no output; C leaves dst[0]=64 while Rust writes 0, a state_out field difference."}
+{"id": "lib-044", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass with no output; C leaves dst[0]=64 while Rust writes 0, a state_out field difference."}
+{"id": "lib-045", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "No crash on either side, state_out equal; C writes a lone newline (hence VectorComparisonFailed against the cleared expectation), Rust writes nothing, equal after dropping trailing empty lines."}
+{"id": "lib-046", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "No crash on either side, state_out equal; C writes a lone newline (hence VectorComparisonFailed against the cleared expectation), Rust writes nothing, equal after dropping trailing empty lines."}
+{"id": "lib-047", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "No crash on either side, state_out equal; C writes a lone newline (hence VectorComparisonFailed against the cleared expectation), Rust writes nothing, equal after dropping trailing empty lines."}
+{"id": "lib-048", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass, no output; returns 0 vs 1."}
+{"id": "lib-049", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass) with state_out; Rust panics with no state recorded."}
+{"id": "lib-050", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass); Rust ends with SegmentationFault, which is Rust-side behaviour."}
+{"id": "lib-051", "q1": "yes", "q2": "N4-field", "q3": "unclear", "why": "k1, result, stdout and stderr match; 23-entry sfbtab table differs in all 4 granules (N4); hdr sample-rate bits are the reserved value, so the C pointer may index past its table and the serialized content may reflect static data layout read by the runner."}
+{"id": "lib-052", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass) with state_out; Rust panics with no state recorded."}
+{"id": "lib-053", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass) with state_out; Rust panics with no state recorded."}
+{"id": "lib-054", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass) with state_out; Rust panics with no state recorded."}
+{"id": "lib-055", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally (Pass) with state_out; Rust panics with no state recorded."}
+{"id": "lib-056", "q1": "yes", "q2": "N4-field", "q3": "unclear", "why": "k1, result, stdout and stderr match; 23-entry sfbtab table differs in all 4 granules (N4); hdr sample-rate bits are the reserved value, so the C pointer may index past its table and the serialized content may reflect static data layout read by the runner."}
+{"id": "lib-057", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass, no output; dest[1] is NaN in C (listed nonfinite) but -5e+29 in Rust, NaN does not equal a finite value."}
+{"id": "lib-058", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "No crash; returns -1.0 vs 0.0 and C also writes a pow range-error line to stderr; state field differs so U-stderr does not apply."}
+{"id": "lib-059", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "State equal, both VectorComparisonFailed; stdout line 1 is empty in C but string in Rust (taking the empty line as a line; if trailing empty lines were dropped first this would be U-residual)."}
+{"id": "lib-060", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "No crash on either side, state_out equal; C writes a lone newline (hence VectorComparisonFailed against the cleared expectation), Rust writes nothing, equal after dropping trailing empty lines."}
+{"id": "lib-061", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "No crash on either side, state_out equal; C writes a lone newline (hence VectorComparisonFailed against the cleared expectation), Rust writes nothing, equal after dropping trailing empty lines."}
+{"id": "lib-062", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "State equal, both VectorComparisonFailed; stdout line 1 is empty in C but string in Rust (taking the empty line as a line; if trailing empty lines were dropped first this would be U-residual)."}
+{"id": "lib-063", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "State equal; bad() prints 299 in C vs 300 in Rust, integer tokens must match exactly."}
+{"id": "lib-064", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "State equal; bad() prints 74 in C vs 75 in Rust."}
+{"id": "lib-065", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "State equal; stdout fffffffe vs fe."}
+{"id": "lib-066", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass; C returns a decoded byte array (with trailing non-ASCII bytes) while Rust returns null for the input with an invalid character."}
+{"id": "lib-067", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass; cast3.n is (0,1) in C vs (-1,0) in Rust, beyond tolerance; other fields including NaN t match."}
+{"id": "lib-068", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Both sides fail without state, stdout or stderr and k1 is the same; only the failure kind differs (C UnknownFailure vs Rust Panic), the lib N1 predicate needs one side to report a result, and UnknownFailure may be a runner catch-all, so neither the difference nor its source is settled."}
+{"id": "lib-069", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass, no output; returns 1 vs 0."}
+{"id": "lib-070", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C returns normally with a filled manifold; Rust panics with no state."}
+{"id": "lib-071", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass; C parses 1.23 from 1.23e-T (type 8, returns true) while Rust leaves item at 0 and returns false."}
+{"id": "lib-072", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Both Pass; returns is the 16-byte value array in C vs [0] in Rust."}
+{"id": "lib-073", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Both sides fail without state, stdout or stderr and k1 is the same; only the failure kind differs (C UnknownFailure vs Rust SegmentationFault), the lib N1 predicate needs one side to report a result, and UnknownFailure may be a runner catch-all, so neither the difference nor its source is settled."}
+{"id": "lib-074", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Both sides fail without state, stdout or stderr and k1 is the same; only the failure kind differs (C UnknownFailure vs Rust Panic), the lib N1 predicate needs one side to report a result, and UnknownFailure may be a runner catch-all, so neither the difference nor its source is settled."}
+{"id": "lib-075", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Both sides fail without state, stdout or stderr and k1 is the same; only the failure kind differs (C UnknownFailure vs Rust Panic), the lib N1 predicate needs one side to report a result, and UnknownFailure may be a runner catch-all, so neither the difference nor its source is settled."}
+{"id": "lib-076", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Same termination; returns 13789 vs 1073755613 (SHIFT -1 vs 1073741823 in stdout too), state field checked first."}
+{"id": "lib-077", "q1": "yes", "q2": "U-stderr", "q3": "no", "why": "State, stdout and result match; only stderr differs (Insufficient columns in row 1 vs Insufficient rows)."}

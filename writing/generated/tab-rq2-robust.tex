@@ -1,0 +1,14 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Ba phan tich RQ2: harness.analysis (analysis-K.json), ban ghi khong co obs thi ??; ban doi thanh not adjudicable, not re-examined: macro RobFF<phan tich>NotAdj, NotReex (Q-R3)
+\begin{tabular}{@{}l rrr rrr@{}}
+\toprule
+ & \multicolumn{3}{c}{Executable programs} & \multicolumn{3}{c}{Libraries} \\
+\cmidrule(lr){2-4} \cmidrule(l){5-7}
+Analysis & $F$ & $|R_{\mathit{test}}|$ & \% & $F$ & $|R_{\mathit{test}}|$ & \% \\
+\midrule
+Primary measure & \rqFFExeAllNum & \rqFFExeAllDen & \rqFFExeAllPct & \rqFFLibAllNum & \rqFFLibAllDen & \rqFFLibAllPct \\
+Without standard error & \rqRobFFNoStderrExeAllNum & \rqRobFFNoStderrExeAllDen & \rqRobFFNoStderrExeAllPct & \rqRobFFNoStderrLibAllNum & \rqRobFFNoStderrLibAllDen & \rqRobFFNoStderrLibAllPct \\
+Exact floating-point comparison & \multicolumn{3}{c}{n/a} & \rqRobFFExactLibAllNum & \rqRobFFExactLibAllDen & \rqRobFFExactLibAllPct \\
+Floating-point criterion of the original oracle & \multicolumn{3}{c}{n/a} & \rqRobFFOrigFloatLibAllNum & \rqRobFFOrigFloatLibAllDen & \rqRobFFOrigFloatLibAllPct \\
+\bottomrule
+\end{tabular}

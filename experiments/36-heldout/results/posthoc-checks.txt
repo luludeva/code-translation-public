@@ -1,0 +1,34 @@
+# exp 36 kiểm tra sau kết quả (ngoài protocol; sơ bộ, chưa kiểm tay)
+## (1) độ bền: seed done, bỏ divergence chỉ ở stderr
+u00 kiro seed_done=[0, 1, 2] seed_khac=[] gen_retained=37093 khong_chi_stderr=37092 theo_seed={0: 12330, 1: 12472, 2: 12290}
+u01 gpt-5.4 seed_done=[0, 1, 2] seed_khac=[] gen_retained=30899 khong_chi_stderr=30891 theo_seed={0: 11372, 1: 11333, 2: 8186}
+u02 gemini-3.1-pro-preview seed_done=[0, 1, 2] seed_khac=[] gen_retained=58567 khong_chi_stderr=16452 theo_seed={0: 5525, 1: 5415, 2: 5512}
+u02 gpt-5.4 seed_done=[0, 1, 2] seed_khac=[] gen_retained=58567 khong_chi_stderr=16452 theo_seed={0: 5525, 1: 5415, 2: 5512}
+u03 kimi seed_done=[0, 1, 2] seed_khac=[] gen_retained=2883 khong_chi_stderr=2883 theo_seed={0: 985, 1: 935, 2: 963}
+u04 codex-gpt54 seed_done=[1, 2] seed_khac=[0] gen_retained=4000 khong_chi_stderr=4000 theo_seed={1: 2000, 2: 2000}
+u05 c2saferrust seed_done=[0, 1, 2] seed_khac=[] gen_retained=6000 khong_chi_stderr=6000 theo_seed={0: 2000, 1: 2000, 2: 2000}
+u06 c2saferrust seed_done=[2] seed_khac=[0, 1] gen_retained=910 khong_chi_stderr=910 theo_seed={2: 910}
+u07 claude seed_done=[0, 1, 2] seed_khac=[] gen_retained=6000 khong_chi_stderr=6000 theo_seed={0: 2000, 1: 2000, 2: 2000}
+u07 codex-gpt54 seed_done=[0, 1, 2] seed_khac=[] gen_retained=6000 khong_chi_stderr=6000 theo_seed={0: 2000, 1: 2000, 2: 2000}
+u08 codex-gpt54 seed_done=[0, 1, 2] seed_khac=[] gen_retained=6000 khong_chi_stderr=6000 theo_seed={0: 2000, 1: 2000, 2: 2000}
+phat_hien_ban_ben=11/11
+## (2) đối chứng: hệ P_rep trên cùng case, cùng input (lượt đầu bị bỏ)
+u00 B02_synthetic/static_vars_fpts seed={1: 'done', 0: 'done', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'c2saferrust': 0, 'claude': 1067, 'codex-gpt54': 1067, 'laertes': 0}
+u01 B02_synthetic/static_vars_fpts seed={1: 'done', 0: 'done', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'c2saferrust': 0, 'claude': 1080, 'codex-gpt54': 1082, 'laertes': 0}
+u02 B02_synthetic/tu_linkage seed={0: 'done', 1: 'done', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'c2saferrust': 0, 'claude': 15284, 'codex-gpt54': 12712, 'kiro': 40096}
+u03 B02_organic/encode_base64_lib seed={1: 'harness_error', 0: 'harness_error', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'c2saferrust': 115, 'claude': 0, 'codex-gpt54': 0, 'gemini-3.1-pro-preview': 114, 'gpt-5.4': 115, 'kiro': 115, 'laertes': 0}
+u04 P01_sphincs_plus/054_blake_128f_s_prf_addr_lib seed={0: 'harness_error', 1: 'done', 2: 'done'} gen_retained_P_rep={'claude': 0, 'kiro': 0}
+u05 B01_synthetic/029_strcspn_lib seed={0: 'done', 1: 'done', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'claude': 0, 'codex-gpt54': 0, 'gemini-3.1-pro-preview': 0, 'gpt-5.4': 0, 'kimi': 0, 'kiro': 0, 'laertes': 0}
+u06 B01_organic/gaussian_kernel_lib seed={1: 'done', 0: 'done', 2: 'done'} gen_retained_P_rep={'c2rust': 0, 'claude': 0, 'codex-gpt54': 0, 'gemini-3.1-pro-preview': 0, 'gpt-5.4': 0, 'kimi': 0, 'kiro': 0, 'laertes': 0}
+u07 P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib seed={0: 'harness_error', 1: 'done', 2: 'done'} gen_retained_P_rep={'kiro': 0}
+u08 P01_sphincs_plus/056_blake_128f_s_hash_message_lib seed={1: 'done', 0: 'done', 2: 'done'} gen_retained_P_rep={'claude': 0, 'kiro': 0}
+## (3) tu_linkage: build lại độc lập, chạy lại input mẫu
+gemini-3.1-pro-preview=60477 gpt-5.4=60477 cung_khoa=True quan_sat_Rust_trung=60477
+seed=0 idx=28949 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=2 idx=53928 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=1 idx=49991 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=1 idx=39666 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=1 idx=30802 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=0 idx=19510 channels=['stdout', 'stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=0 idx=53202 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True
+seed=0 idx=26987 channels=['stderr'] hai_ban_giong=True khop_ban_ghi=True

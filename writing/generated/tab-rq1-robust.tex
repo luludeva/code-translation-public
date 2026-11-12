@@ -1,0 +1,19 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Phan tich 4, 5: harness.analysis, ban ghi RQ1 khong du de tinh D nen in not computable (Q-R1, MR-16); thanh phan tinh duoc: macro RobOrigFloatRemovedDiv, RobOrigFloatAllRemoved
+\begin{tabular}{@{}l rrr rrr@{}}
+\toprule
+ & \multicolumn{3}{c}{Executable programs} & \multicolumn{3}{c}{Libraries} \\
+\cmidrule(lr){2-4} \cmidrule(l){5-7}
+Analysis & $D$ & Den. & \% & $D$ & Den. & \% \\
+\midrule
+Primary measure & \rqFPExeAllNum & \rqFPExeAllDen & \rqFPExeAllPct & \rqFPLibAllNum & \rqFPLibAllDen & \rqFPLibAllPct \\
+1 C crash without sanitizer report & \rqRobCCrashExeAllNum & \rqRobCCrashExeAllDen & \rqRobCCrashExeAllPct & \rqRobCCrashLibAllNum & \rqRobCCrashLibAllDen & \rqRobCCrashLibAllPct \\
+2 Unstable divergences & \rqRobUnstableExeAllNum & \rqRobUnstableExeAllDen & \rqRobUnstableExeAllPct & \rqRobUnstableLibAllNum & \rqRobUnstableLibAllDen & \rqRobUnstableLibAllPct \\
+3 Complete input layers & \rqRobCompleteExeAllNum & \rqRobCompleteExeAllDen & \rqRobCompleteExeAllPct & \multicolumn{3}{c}{n/a} \\
+4 Exact floating-point comparison & \multicolumn{3}{c}{n/a} & \multicolumn{3}{c}{not computable} \\
+5 Floating-point criterion of the original oracle & \multicolumn{3}{c}{n/a} & \multicolumn{3}{c}{not computable} \\
+6 Without standard error & \rqRobNoStderrExeAllNum & \rqRobNoStderrExeAllDen & \rqRobNoStderrExeAllPct & \rqRobNoStderrLibAllNum & \rqRobNoStderrLibAllDen & \rqRobNoStderrLibAllPct \\
+7 Larger output limit & \rqRobCapEightExeAllNum & \rqRobCapEightExeAllDen & \rqRobCapEightExeAllPct & \rqRobCapEightLibAllNum & \rqRobCapEightLibAllDen & \rqRobCapEightLibAllPct \\
+8 Inconclusive sanitizer checks & \rqRobInconclExeAllNum & \rqRobInconclExeAllDen & \rqRobInconclExeAllPct & \rqRobInconclLibAllNum & \rqRobInconclLibAllDen & \rqRobInconclLibAllPct \\
+\bottomrule
+\end{tabular}

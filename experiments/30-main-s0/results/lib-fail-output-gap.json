@@ -1,0 +1,87 @@
+{
+ "rule": "Định lượng khe hở output của lời gọi library thất bại (Le chọn 4/11, \"định lượng rồi ghi log\"). Chỉ đọc, không đổi số đo.",
+ "rq1": {
+  "units_case_seed": 589,
+  "matched_both_fail_upper": {
+   "SegmentationFault": 68678,
+   "UnknownFailure": 18616,
+   "Panic": 0
+  },
+  "observed": 6752490,
+  "match": 6494537,
+  "by_case": {
+   "B01_organic/bin2hex_lib": {
+    "SegmentationFault": 1316,
+    "UnknownFailure": 14693
+   },
+   "B01_synthetic/017_signed_length_confusion_lib": {
+    "SegmentationFault": 11588
+   },
+   "B02_organic/search_and_replace_lib": {
+    "SegmentationFault": 11172
+   },
+   "B01_organic/premultiply_lib": {
+    "SegmentationFault": 9816
+   },
+   "B02_organic/sh_geti_lib": {
+    "SegmentationFault": 8695
+   },
+   "B01_organic/flip_horizontal_lib": {
+    "SegmentationFault": 7515
+   },
+   "B02_organic/unfilter_lib": {
+    "SegmentationFault": 5996,
+    "UnknownFailure": 258
+   },
+   "B01_organic/pow43_lib": {
+    "SegmentationFault": 3192
+   },
+   "B01_synthetic/009_stack_buffer_overflow_lib": {
+    "SegmentationFault": 1950,
+    "UnknownFailure": 418
+   },
+   "B02_synthetic/matrix_mult_lib": {
+    "SegmentationFault": 2316
+   },
+   "B02_organic/pinflate_lib": {
+    "UnknownFailure": 2129
+   },
+   "B02_organic/parse_number_lib": {
+    "SegmentationFault": 1627
+   },
+   "B01_organic/read_side_info_lib": {
+    "SegmentationFault": 1608
+   },
+   "B01_synthetic/022_stdlib_div_lib": {
+    "UnknownFailure": 1070
+   },
+   "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib": {
+    "SegmentationFault": 928
+   },
+   "B01_organic/tfm_lib": {
+    "SegmentationFault": 525
+   },
+   "B02_organic/hm_geti_lib": {
+    "SegmentationFault": 344
+   },
+   "B02_organic/utf8_lib": {
+    "SegmentationFault": 48,
+    "UnknownFailure": 24
+   },
+   "B02_organic/decode_base64_lib": {
+    "SegmentationFault": 42
+   },
+   "B02_organic/intput_lib": {
+    "UnknownFailure": 24
+   }
+  }
+ },
+ "rq2": {},
+ "sources": [
+  "rq1-main-lib-1of2@a980c526423742d8204e93f133fd8e53630d53f7",
+  "rq1-main-lib-2of2@97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+  "rq1-main-lib-shgeti@c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+  "rq1-main-lib-2of2-light@e8f97047ff01ab618a80ec3aaf7c1efb91eae337",
+  "rq2-main@b757f4da7c979623c2e0878c6a644f277d9a8be4"
+ ]
+}

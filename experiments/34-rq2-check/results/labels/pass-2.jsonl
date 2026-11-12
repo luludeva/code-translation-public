@@ -1,0 +1,61 @@
+{"id": "exe-000", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Cùng exit 0, stdout lệch từ dòng 5 (C 2,4,8,16; Rust 1,3,3,8), output đầy đủ, C ổn định."}
+{"id": "exe-001", "q1": "yes", "q2": ["stderr"], "q3": "no", "why": "Exit code và stdout trùng, stderr khác câu chữ thông báo lỗi sau chuẩn hoá N (C báo lỗi chuyển đổi số mũ, Rust báo lỗi pow overflow)."}
+{"id": "exe-002", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Stdin rỗng, C in 'fgets() failed.' và lỗi chỉ số âm, Rust không in và chạy nhánh khác trong bad(); không có dấu hiệu harness."}
+{"id": "exe-003", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Với -37 và 5, C in quotient -7 remainder -2, Rust in quotient -37 remainder 0."}
+{"id": "exe-004", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C chọn op=mul và các giá trị theo đó, Rust chọn op=add, toàn bộ giá trị stdout khác."}
+{"id": "exe-005", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Khoảng cách 9999999999999: C in 1316134911 (cắt 32 bit), Rust in 2147483647 (bão hoà); không UB được báo."}
+{"id": "exe-006", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C dùng op=mul, Rust dùng op=add, mọi giá trị in ra khác."}
+{"id": "exe-007", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C dùng op=sub, Rust dùng op=add, mọi giá trị in ra khác."}
+{"id": "exe-008", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Stdin chứa NUL: C dừng in ở NUL, Rust in cả byte NUL và phần sau."}
+{"id": "exe-009", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Hai dòng stdout khác nội dung: Rust in bản ghi đầu tiên và bỏ dòng cuối mà C in."}
+{"id": "exe-010", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in -2, Rust in 56 trên cùng input chứa NUL."}
+{"id": "exe-011", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C dùng op=sub, Rust dùng op=add, mọi giá trị in ra khác."}
+{"id": "exe-012", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 5.56809425, Rust in 5.5680943: so khớp chính xác thì khác (luật B2 độ nhạy có thể xếp B), không phải chuẩn hoá đã đăng ký."}
+{"id": "exe-013", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Trong good(), C in lỗi chỉ số vượt biên, Rust in thêm một mảng thay cho thông báo lỗi."}
+{"id": "exe-014", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 8 dòng mô tả căn nhà, Rust chỉ in 'An error occurred'."}
+{"id": "exe-015", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Với ký tự \\v, C in control: 2 và space: 8192 (giá trị khác 0 của ctype), Rust in control: 1 và space: 0."}
+{"id": "exe-016", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C dùng op=sub, Rust dùng op=add, mọi giá trị in ra khác."}
+{"id": "exe-017", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Input phân tách bằng form feed: C chấp nhận lựa chọn 2 và hỏi tên scene, Rust báo 'Invalid input'."}
+{"id": "exe-018", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 0.0858955011, Rust in 0.085895501: so khớp chính xác thì khác, chỉ lệch số chữ số in."}
+{"id": "exe-019", "q1": "yes", "q2": ["stdout", "stderr"], "q3": "no", "why": "Cùng exit 1, cùng thông báo lỗi nhưng C in ra stdout còn Rust in ra stderr."}
+{"id": "exe-020", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Stdin rỗng, C in 'fgets() failed.' hai lần, Rust không in dòng này."}
+{"id": "exe-021", "q1": "yes", "q2": ["status", "stdout", "stderr"], "q3": "no", "why": "C exit 0 và in output, Rust panic unwrap None với exit 101; thread id trong stderr không phải nguồn khác biệt."}
+{"id": "exe-022", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 8 dòng mô tả căn nhà, Rust chỉ in 'An error occurred'."}
+{"id": "exe-023", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Định dạng %a: C in 0x1.3ae147ae147aep+0, Rust in 1.23e0."}
+{"id": "exe-024", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C giữ phần đuôi của chuỗi mô tả, Rust giữ phần đầu, dòng stdout khác."}
+{"id": "exe-025", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Input '0b101': C in 'Invalid choice', Rust in 'Invalid input'."}
+{"id": "exe-026", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "N=999999999999999: C dùng -1530494977 (cắt 32 bit) và trả -23, Rust dùng 0 và trả 0."}
+{"id": "exe-027", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Stdin chứa NUL: C dừng in ở NUL, Rust in cả byte NUL và phần sau."}
+{"id": "exe-028", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Input '1 && echo test': C chạy demo 1, Rust báo 'Invalid input'."}
+{"id": "exe-029", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in -0.00803056359, Rust in nan; R-NaN chỉ đồng nhất cách viết nan nên vẫn khác."}
+{"id": "lib-030", "q1": "yes", "q2": ["status", "state"], "q3": "unclear", "why": "C trả Pass và ghi 17 phần tử vào pcm, Rust SegmentationFault; vector cấp pcm rỗng nên không loại được khả năng do cách runner cấp buffer."}
+{"id": "lib-031", "q1": "yes", "q2": ["state"], "q3": "no", "why": "returns.x: C 2.709325e-07, Rust NaN; returns.y: C -3.34e-07, Rust 1.7077866; vượt sai số tương đối 1e-6."}
+{"id": "lib-032", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass với returns 34, Rust SegmentationFault, không có state ra."}
+{"id": "lib-033", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "state trùng, stdout của bad() khác (C in 0 0, Rust in 2 2)."}
+{"id": "lib-034", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass và trả về chuỗi path, Rust SegmentationFault."}
+{"id": "lib-035", "q1": "yes", "q2": ["state"], "q3": "no", "why": "returns: C 160, Rust 120; stdout trùng."}
+{"id": "lib-036", "q1": "yes", "q2": ["state"], "q3": "no", "why": "R[0] trùng nhưng C ghi tiếp 40 byte vào R[1], R[2] (đủ 64 byte hash), Rust để 0; khác thật trong state ra."}
+{"id": "lib-037", "q1": "yes", "q2": ["state"], "q3": "no", "why": "R[0] trùng, C ghi thêm 32 byte vào R[1], Rust để 0."}
+{"id": "lib-038", "q1": "yes", "q2": ["state"], "q3": "no", "why": "R[0] trùng, C ghi thêm 32 byte vào R[1], Rust để 0."}
+{"id": "lib-039", "q1": "yes", "q2": ["state"], "q3": "no", "why": "tree và digest khác nhau hoàn toàn giữa C và Rust."}
+{"id": "lib-040", "q1": "yes", "q2": ["state"], "q3": "no", "why": "tree và digest khác nhau hoàn toàn giữa C và Rust."}
+{"id": "lib-041", "q1": "yes", "q2": ["state"], "q3": "no", "why": "tree và digest khác nhau hoàn toàn giữa C và Rust."}
+{"id": "lib-042", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-043", "q1": "yes", "q2": ["state"], "q3": "no", "why": "Mảng out khác hoàn toàn giữa C và Rust."}
+{"id": "lib-044", "q1": "yes", "q2": ["state"], "q3": "no", "why": "Mảng out khác hoàn toàn giữa C và Rust."}
+{"id": "lib-045", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-046", "q1": "yes", "q2": ["state"], "q3": "no", "why": "Mảng out khác hoàn toàn giữa C và Rust."}
+{"id": "lib-047", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-048", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-049", "q1": "yes", "q2": ["state"], "q3": "no", "why": "R[0] khác, và C ghi thêm R[1] trong khi Rust để 0."}
+{"id": "lib-050", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-051", "q1": "yes", "q2": ["status", "state"], "q3": "no", "why": "C trả Pass, Rust SegmentationFault, không có state ra."}
+{"id": "lib-052", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "state trùng, Rust in tên tham số kèm dấu nháy (\"param1\") còn C không."}
+{"id": "lib-053", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Với \\v, C in control: 2 và space: 8192, Rust in control: 1 và space: 0."}
+{"id": "lib-054", "q1": "no", "q2": [], "q3": "no", "why": "Mọi trường trùng; returns 33012.30000025 và 33012.30000210 lệch tương đối khoảng 6e-11, dưới ngưỡng 1e-6."}
+{"id": "lib-055", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in theo thứ tự test_0..test_8 hai lần, Rust in thứ tự khác và khác giữa hai lần in (thứ tự duyệt kiểu hash), là hành vi bản dịch."}
+{"id": "lib-056", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 'Read as float: 0.000000', Rust in giá trị subnormal với nhiều chữ số."}
+{"id": "lib-057", "q1": "yes", "q2": ["state"], "q3": "no", "why": "dest: C [0.08, 0.08, 0.08], Rust [0.08, 0.72, 0.4]."}
+{"id": "lib-058", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "C in 8 dòng mô tả căn nhà, Rust chỉ in 'An error occurred'."}
+{"id": "lib-059", "q1": "yes", "q2": ["stdout"], "q3": "no", "why": "Với 0x7f, C in control: 2, printing: 0; Rust in control: 1, printing: 1."}
+{"id": "lib-060", "q1": "yes", "q2": ["stderr"], "q3": "no", "why": "state và stdout trùng, C in thông báo lỗi kích thước ma trận ra stderr còn Rust không in; result khác chỉ do việc ghi stderr."}

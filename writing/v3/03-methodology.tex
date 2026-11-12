@@ -1,0 +1,281 @@
+% Thesis v3, Chuong 3 (viet tu thesis loi V3). Moi muc chi coi la xong khi Le duyet.
+\IfFileExists{generated/method-params.tex}{\input{generated/method-params.tex}}{}
+\IfFileExists{generated/census-numbers.tex}{\input{generated/census-numbers.tex}}{}
+\IfFileExists{generated/setup-numbers.tex}{\input{generated/setup-numbers.tex}}{}
+\IfFileExists{generated/v3-numbers.tex}{\input{generated/v3-numbers.tex}}{}
+\chapter{Methodology}\label{ch:methodology}
+
+This chapter presents the research methodology for independently reassessing published PASS/FAIL decisions in C-to-Rust translation. Building on the evaluation-validity gap identified in Chapter~\ref{ch:related-work}, the study employs a differential testing approach to examine the behavioral evidence underlying these decisions. Using previously published translations and their published decisions, the methodology establishes a systematic process for reproducing the decisions, generating additional inputs, comparing C and Rust executions, and determining whether the observed evidence supports the original decisions. The resulting classifications are then used to quantify retained divergences and unsupported rejections and assess their implications for reported success rates, while explicitly accounting for incomplete observations and unresolved cases.
+
+\section{Research Design}\label{sec:m-design}
+
+The study is designed as a post-hoc re-evaluation of published decisions: it takes each PASS/FAIL decision, checks the behavioral evidence that supports it, and quantifies how the outcome of these checks changes the published success rate. Figure~\ref{fig:m-design} shows the whole design. Every decision belongs to a \emph{case--system pair}, that is, one corpus case translated by one system. Each PASS decision and each FAIL decision at the test stage is first reproduced with the public TRACTOR runner. A reproduced PASS decision enters the accepted branch, which answers RQ1, and a reproduced FAIL decision at the test stage enters the rejected branch, which answers RQ2. A pair that was rejected at the build stage, or for which no translation was released, keeps its published status, and a decision that cannot be reproduced or whose re-evaluation is not completed is recorded with the reason. RQ3 brings all of these back together.
+
+\begin{figure}[!htb]
+\centering
+\resizebox{\linewidth}{!}{\input{figures/v3/fig-design}}
+\caption{Design of the re-evaluation. Each PASS decision and each test-stage FAIL decision is reproduced with the public TRACTOR runner. Reproduced PASS decisions enter RQ1, where the C program and the translation run on the original vectors and on generated inputs. Reproduced FAIL decisions at the test stage enter RQ2, where the failing vectors are replayed. RQ1 yields the translations with a retained divergence ($D$) among those fully re-evaluated ($P_{\mathit{test}}$); RQ2 yields the rejections that are supported ($A$), unsupported ($F$) or not adjudicable ($\mathit{na}$). The decisions without a result in either branch ($L_P$, $L_R$) and the pairs that keep their published status enter RQ3 together with these results. Section~\ref{sec:m-measures} defines the symbols.}
+\label{fig:m-design}
+\end{figure}
+
+The two branches ask for different evidence (Figure~\ref{fig:m-evidence}). For a PASS decision, one confirmed divergence on one eligible input is enough, because it identifies an input on which the accepted translation and the C program behave differently. The accepted branch is therefore a search, and it uses inputs beyond the original vectors. For a FAIL decision, the question is whether the grounds recorded for the rejection hold, and each failing vector is a separate ground. The rejected branch therefore replays every failing vector, and a rejection is unsupported only if none of them shows a difference from the C program.
+
+\begin{figure}[!htb]
+\centering
+\resizebox{\linewidth}{!}{\input{figures/v3/fig-evidence}}
+\caption{Use of behavioral evidence in the two branches. In RQ1, a difference between C and Rust is repeated to check that it is stable, and the C execution is then checked with sanitizers; a translation is counted in $D$ when at least one difference is stable and the sanitizer check completes without a report. In RQ2, every failing vector is run several times on each side and the C execution of every vector is checked with sanitizers, including vectors on which C and Rust agree. A rejection is supported ($A$) when at least one vector supports it and unsupported ($F$) when all vectors agree with C; the remaining rejections are not adjudicable ($\mathit{na}$) or have no outcome, and both are counted in $L_R$. A sanitizer check without a report establishes only the status of that check, and the limits of the sanitizers remain.}
+\label{fig:m-evidence}
+\end{figure}
+
+% Dan trang (Le 12/11): ngat trang o day de Hinh 3.2 dung ngay sau doan nhac toi no, khong chen vao giua doan ke tiep.
+In both branches, an observed difference or agreement becomes evidence only after two checks. It must recur when the executions are repeated, and the C execution must complete a sanitizer check without a report of undefined behavior, since the result of an execution with undefined behavior is not a reference (Section~\ref{sec:rw-differential}). An observation that fails either check is recorded under a status of its own. Section~\ref{sec:m-execution} states these rules, and Section~\ref{sec:m-measures} defines the outcomes they produce.
+
+\enlargethispage{1\baselineskip}The harness records each input together with the C and Rust observations, the stability and sanitizer results, and the outcome assigned to the translation. Each reported number can thus be traced to the executions behind it, and the evidence for a decision can be replayed.
+
+\section{Data and Selection Criteria}\label{sec:m-data}
+
+The study design in Section~\ref{sec:m-design} imposes three requirements on the data. First, because the study re-examines published decisions without rerunning the translators, the translations must be fixed and publicly available. Second, because the decisions are reproduced and then checked against the C reference, each translation must come with its recorded PASS or FAIL decision, the corresponding C program, and the test vectors used in the original evaluation. Third, because a common execution and classification procedure is applied across systems, the systems must have been evaluated on the same corpus under a shared setup. The evaluation by Schesch and Ernst on the TRACTOR Public Test Corpus satisfies these requirements: its HARVEST repository provides the released translations and the recorded decisions, and TRACTOR supplies the C reference programs and the test vectors~\cite{schesch2026actor,harvest-results,tractor-test-corpus}. TRACTOR checks in its continuous integration that every test vector matches the behavior of the C program~\cite{okhravi2026tractorbenchmark}, which bears on how the rejections of RQ2 can be read (Section~\ref{sec:d-interpretation}). The study therefore draws its translations and decisions from HARVEST and its reference programs and test vectors from TRACTOR.
+
+A system is included if Schesch and Ernst report its results and its translations are available in HARVEST. Ten systems satisfy both criteria: three coding agents (Kiro, Claude Code, and Codex), two LLM-assisted systems (C2SaferRust and SmartC2Rust), three one-shot LLM configurations (Kimi K2.5, GPT-5.4, and Gemini 3.1 Pro), and two rule-based translators (C2Rust and Laertes), which the original evaluation reports as baselines for the LLM-based systems~\cite{schesch2026actor}.
+
+The study population is derived from the \nCorpusCases{} cases of the corpus, of which \nExeCases{} are executable programs and \nLibCases{} are libraries (Table~\ref{tab:m-size}). A small subset was used in a pilot to refine the harness and to select the execution budget, and these cases are therefore reported separately from the main study. Each remaining case is paired with each of the ten systems, and these pairs form the study population $P_0$. Because RQ3 measures the change in the published success rate, $P_0$ keeps the full denominator of that rate and includes the Kimi K2.5 pairs for which no translation was released.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Cases and case--system pairs in the study.}
+\label{tab:m-size}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+ & Executable & Library & Total \\
+\midrule
+Cases in TRACTOR & \nExeCases & \nLibCases & \nCorpusCases \\
+Cases set aside for the pilot & \nExePilot & \nLibPilot & \nTotalPilot \\
+Cases of the main study & \nExePrimary & \nLibPrimary & \nTotalPrimary \\
+Case--system pairs in $P_0$ & \nExePzero & \nLibPzero & \nTotalPzero \\
+Pairs of Kimi K2.5 without a released translation & \nKimiMissingExe & \nKimiMissingLib & \nTotalKimiMissing \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The published results record each pair in $P_0$ that has a released translation as accepted, rejected at the build stage, or rejected at the test stage. Table~\ref{tab:m-population} summarizes these counts by system, where $P_{\mathit{acc}}$ denotes the accepted pairs, $R_0$ the rejected pairs, and $M$ the pairs without a released translation. Because the re-evaluation compares run-time behavior, it is restricted to translations that can be built and executed. Build-stage rejections therefore retain their published status, and test-stage rejections are the candidates for RQ2.
+
+\IfFileExists{generated/tab-m-population.tex}{\input{generated/tab-m-population.tex}}{}
+
+A published decision enters the analysis of RQ1 or RQ2 only after it has been reproduced. A TRACTOR test vector specifies an input and the expected result: the exit code, the standard output, and the standard error, and for a library also the state after the function call. The runner executes the translation on the input, compares what it observes with these expectations, and skips the vectors marked as involving undefined behavior~\cite{tractor-test-corpus}.
+
+The published evaluation used a private revision of this runner, whereas the study has access to the public revision. A disagreement between a published decision and the harness could therefore originate in the runner revision as well as in the translation. To separate the two sources, the study first reproduces each PASS decision and each FAIL decision at the test stage with the public runner. A decision that is reproduced enters its branch, and a later disagreement can then be traced to the difference between the check of the runner and the check of the harness. A decision that is not reproduced is a \emph{non-reproduced decision}: it stays outside both branches, remains in $P_0$, and is counted among the decisions without a result ($L_P$ or $L_R$).
+
+Some decisions do not reach an independent result. Each of them is recorded with its cause and is accounted for in the interval of RQ3. The population is also unevenly distributed over source programs: the bundle associated with the SPHINCS+ signature scheme contributes \nExePzeroP{} of the \nExePrimary{} executable cases and \nLibPzeroP{} of the \nLibPrimary{} library cases of the main study. This concentration is considered when the findings are interpreted and generalized.
+
+\section{The Harness}\label{sec:m-harness}
+
+The runner used in Section~\ref{sec:m-data} reproduces a decision by grading one run of a translation against the expectations stored in a test vector. The re-evaluation needs an instrument of a different kind. It must observe the C program and the translation on the same input, including inputs for which no expectation exists, and it must apply the evidence rules of Section~\ref{sec:m-design} to what it observes. The harness built for this study derives its design from the requirements that the study places on such an instrument (Figure~\ref{fig:m-harness}).
+
+\begin{figure}[!htb]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  bx/.style={draw, rounded corners=2pt, align=center, text width=#1, minimum height=10mm, inner sep=2.5pt},
+  bx/.default=2.7cm,
+  src/.style={bx=2.0cm, fill=black!5},
+  ac/.style={bx=#1, draw=passc, fill=passc!8, thick}, ac/.default=2.6cm,
+  rj/.style={bx=#1, draw=failc, fill=failc!8, thick}, rj/.default=2.6cm]
+\node[src] (tr) at (0,5.7) {TRACTOR: C programs, vectors};
+\node[src] (hv) at (0,3.2) {HARVEST: translations, decisions};
+\node[src] (cs) at (0,0.7) {Reproduced decisions};
+\node[ac=3.2cm] (gen) at (3.2,5.7) {Input generation for RQ1: sources, domain filter, deduplication};
+\node[bx=3.2cm] (bld) at (3.2,3.2) {Builds: C, sanitized C, fuzzing C, Rust, library runner};
+\node[bx=3.2cm] (sel) at (3.2,0.7) {Selection: acceptances; rejections with failing vectors};
+\node[bx=3.0cm, fill=white] (l1) at (7.15,5.7) {Executable lane: run under a launcher that sets the limits};
+\node[bx=3.0cm, fill=white] (l2) at (7.15,3.2) {Library lane: call through the case runner, dump state and streams};
+\node[bx=3.0cm, fill=white] (cmp) at (7.15,0.7) {Comparison: normalization, tolerance, limits};
+\begin{scope}[on background layer]
+\node[draw=black!70, thick, fill=black!6, rounded corners=3pt, inner sep=5pt, fit=(l1)(l2)(cmp),
+  label={[font=\footnotesize\bfseries]above:Shared core: observe C and Rust, then compare}] (core) {};
+\end{scope}
+\node[ac=2.8cm] (p1) at (11.1,4.7) {RQ1 evidence rules: repeat on divergence, sanitizer check};
+\node[rj=2.8cm] (p2) at (11.1,1.7) {RQ2 evidence rules: repeated runs, sanitizer on every vector};
+\node[bx=1.65cm] (rec) at (14.1,3.2) {Records, stored inputs, manifest};
+\node[bx=3.6cm, dashed] (val) at (7.15,-1.45) {Validation checks reuse the core};
+\node[bx=3.6cm, dashed] (ana) at (12.8,-1.45) {Analysis of the records: metrics of Section~\ref{sec:m-measures}};
+\draw[->] (tr) -- (gen);
+\draw[->] (tr.south east) -- (bld.north west);
+\draw[->] (hv) -- (bld);
+\draw[->] (cs) -- (sel);
+\draw[->, passc, thick] (gen.east) -- (gen.east -| core.west);
+\draw[->] (bld.east) -- (bld.east -| core.west);
+\draw[->] (sel.east) -- (sel.east -| core.west);
+\draw[<->, passc, thick] (p1.west -| core.east) -- (p1.west);
+\draw[<->, failc, thick] (p2.west -| core.east) -- (p2.west);
+\draw[->, passc, thick] (p1.east) -- (rec);
+\draw[->, failc, thick] (p2.east) -- (rec);
+\draw[->, dashed] (rec.south) -- (rec.south |- ana.north);
+\draw[->, dashed] (val.north) -- (val.north |- core.south);
+\end{tikzpicture}}
+\caption{Architecture of the harness. The gray frame is the shared core; blue marks the steps of the accepted branch and red those of the rejected branch. Double arrows show that a branch calls the core again for repeated runs, and dashed boxes lie outside a measurement run.}
+\label{fig:m-harness}
+\end{figure}
+
+The first requirement is a common reference for any input. Every comparison in the study sets a translation against its C program, so the harness observes both programs in the same way and compares the two observations. This takes place in a shared core with one lane for each kind of program. An executable runs under a small launcher that sets the limits of memory and file size before the program starts. A library function is called through the runner of its case, which already knows how to pass a state to the functions of that case; the harness extends the runner only so that it writes the state and the output streams of each call to a file.
+
+The second requirement is that the programs under comparison are those that the evaluation concerns. The harness therefore builds them as the corpus prescribes: the C program with Clang through the build configuration of its case, and each translation with Cargo in its release profile, without overriding the optimization level or the profile. The sanitized build of the C program uses the same configuration with AddressSanitizer and UndefinedBehaviorSanitizer added. A separate build instrumented by AFL++ serves only to find fuzzing inputs, which then run on the regular build, so the instrumentation never enters an observation. Appendix~\ref{app:s-env} gives the versions of the tools.
+
+The third requirement is equal treatment of the decisions. A difference between the two branches, or between two systems, should arise from the evidence alone. Both branches therefore call the same core and differ only in their evidence rules: the accepted branch repeats a run when a divergence appears, and the rejected branch runs every failing vector a fixed number of times. The harness also treats each translation as a black box observed at the boundary of a process or of a function call, which keeps it independent of how a translator works, and it spends the same budget of inputs on every translation of a case.
+
+The fourth requirement is that every reported number can be traced and computed again. Each job stores its input sets with their hashes, writes every observation as a record whose key lets an interrupted job resume, and writes a manifest of its parameters and tool versions. The outcomes of the rejected branch are computed from stored observations, so they can be recomputed under another comparison rule without further runs, and the metrics of Section~\ref{sec:m-measures} are computed by scripts from the records. The harness is a Python package with a command-line interface, and it drives the toolchains, the sanitizers and AFL++ as external processes.
+
+These requirements exclude two alternatives and leave one limit. An input generator based on a language model would make the inputs nondeterministic and hard to reproduce, and a symbolic comparison in the style of RustAssure works on single functions with a high cost of setup for each case~\cite{bai2025rustassure}. The fuzzer is guided by the coverage of the C program, so a branch that exists only in the translation receives no guidance. Section~\ref{sec:m-execution} specifies what each operation of the harness does.
+
+\section{Test Generation and Execution}\label{sec:m-execution}
+
+\subsection{Test Inputs}\label{sec:m-inputs}
+
+The two branches of Section~\ref{sec:m-design} need different inputs. A reproduced PASS decision means that the translation passed every graded test vector under the runner. Inputs outside the vectors are therefore the part of its behavior that the original evaluation did not examine, and the accepted branch generates such inputs in addition to the vectors. A FAIL decision at the test stage rests on the vectors that failed. A difference found on a new input would say nothing about these recorded grounds, so the rejected branch replays only the vectors that failed when the decision was reproduced.
+
+What is generated depends on the kind of case (Table~\ref{tab:m-inputs}). For an executable, an input consists of command-line arguments and standard input. The harness starts from the test vectors that carry no undefined-behavior mark, derives variants by mutating their arguments and standard input, applies structural changes such as an emptied argument or an added standard input, and then runs the coverage-guided fuzzer AFL++~\cite{fioraldi2020aflpp} on the C program and executes the inputs it finds on both sides. For a library, an input is the state passed to one function call. The harness builds further states from the types of the fields, from the existing vectors, from constants in the C source, and from sweeps over integer fields with a small domain.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Input sources of the accepted branch. The rejected branch uses only the failing vectors.}
+\label{tab:m-inputs}
+\begin{tabularx}{\linewidth}{@{}lp{0.24\linewidth}X@{}}
+\toprule
+Kind & Source & Inputs \\
+\midrule
+Executable & Original vectors & Test vectors without an undefined-behavior mark \\
+ & Mutation & Random changes to arguments and standard input, partly with constants taken from the C source \\
+ & Structural change & Mutation combined with changes of structure, such as an emptied argument or an added standard input \\
+ & Fuzzing & Inputs found by AFL++ under coverage guidance from the C program \\
+\midrule
+Library & Original vectors & Input state of each test vector without an undefined-behavior mark \\
+ & Typed mutation & Changes to the state according to the type of each field \\
+ & Constants & Values taken from the C source \\
+ & Sweep & All values of integer fields with a small domain \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Because generation is random, a result depends on the seed and on the number of inputs. Both are therefore fixed before the main run: the study uses \pSeeds{} seeds and a budget counted in inputs, which is chosen on the pilot cases and then frozen. For each executable case and each seed, the budget is \num{\sBudgetExeInputs} generated inputs for mutation and the same number for structural change, followed by \num{\sBudgetAflExecs} executions of the fuzzer. For each library case and each seed, it is \num{\sBudgetLibStates} generated states. The generated inputs depend only on the case and the seed, so every translation of a case is run on the same inputs, whichever system produced it. Generated library states are not restricted to the preconditions of the function, so a state can violate a precondition that the C function enforces, for example by an assertion. Some generated inputs cannot be delivered by the original runner, for example an argument that contains a NUL byte. They lie outside the interface of the evaluation under re-examination, so they are dropped and counted. The budget is therefore an upper bound for each case and seed, and Appendix~\ref{app:s-inputs} gives the numbers of inputs that were executed. Two kinds of cases receive no generated input at all. An executable case whose C program imports no function that reads input, such as from standard input, a file or the environment, and whose \code{main} function takes no parameters, so that it cannot read its arguments, is run on its original vectors only, and its accepted translations remain in the re-evaluation. A library case whose function takes no input field admits no generated state, and its accepted translations are counted as attrition.
+
+\subsection{Execution and Comparison}\label{sec:m-comparison}
+
+Every execution is bounded, because a program under test may fail to terminate or may produce output without end (Table~\ref{tab:m-conditions}). A run that exceeds its time limit or its output limit ends in a budget-exceeded status, and the comparison treats this status as one kind of termination. A time limit can also be exceeded by a program that is only slower than the other. When exactly one side exceeds its limit, both sides are therefore run again with a limit \pRerunFactor{} times longer, and the input counts as a divergence only if one side still exceeds it.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Execution conditions that affect how an outcome is read. Appendix~\ref{app:settings} gives the remaining settings.}
+\label{tab:m-conditions}
+\begin{tabularx}{\linewidth}{@{}p{0.27\linewidth}X@{}}
+\toprule
+Condition & Setting \\
+\midrule
+Seeds and budget & \pSeeds{} fixed seeds. Per case and seed: \num{\sBudgetExeInputs} inputs for each of mutation and structural change and \num{\sBudgetAflExecs} fuzzer executions (executable); \num{\sBudgetLibStates} states (library). Chosen on the pilot cases and frozen before the main run \\
+Limits of one run & Time limit of \pTimeoutSec{} seconds, extended for an executable whose C program is slow on its own vectors; \pMemLimitGiB{}~GiB of memory; \pOutputCapMiB{}~MiB for each output stream \\
+One side exceeds a limit & Both sides run again with a limit \pRerunFactor{} times longer \\
+Repeated runs & Accepted branch: \pStabReps{} further runs of each side for every divergence. Rejected branch: \pRqTwoReps{} runs of each side for every failing vector \\
+Sanitizer check & C program built with AddressSanitizer and UndefinedBehaviorSanitizer \\
+Environment & Cloud machines of one type; compiler and tool versions pinned and recorded with every job \\
+Incomplete execution & Recorded with its cause and counted as attrition \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Each execution is reduced to an observation. For an executable, the observation consists of the termination status, with the exit code or the signal, the standard output, and the standard error. For a library, it also contains the state after the function call. When a library call fails on a side, the harness does not read the output streams of that call, so two calls that fail in the same way are compared by the kind of failure alone. The reference observation is obtained by running the C program on the same input, which allows inputs without stored expectations to be used. Two observations are equal when all of their parts are equal, after fixed normalization rules have been applied; the three that matter most are stated here, and Appendix~\ref{app:s-comparison} lists all of them. Memory addresses and process identifiers printed to standard error change between runs of one program, so they are masked. C and Rust spell a not-a-number value differently, so all spellings are mapped to one form. Floating-point fields of a library state are compared within a relative tolerance of $10^{\pFloatRelTolExp}$, and Section~\ref{sec:m-rq2} examines how the result of RQ2 depends on this rule. An input on which the two observations are not equal is a \emph{divergence}.
+
+\subsection{Evidence Rules and Harness Validation}\label{sec:m-evidence}
+
+A divergence describes two runs, and two properties decide whether it is evidence about the translation. The first is stability. A program can behave differently from one run to the next, so a single difference may come from variation within one side. A divergence is \emph{stable} when \pStabReps{} further runs of each side reproduce the first observation of that side. Requiring each side to repeat itself excludes differences that come from values depending on the run, such as time, addresses or the order of threads, without a rule for each case. The same requirement also excludes a translation that behaves nondeterministically while the C program does not, even when every run of the translation differs from C, so the rule can only lower the count of retained divergences. The second property is the validity of the reference. An execution of C with undefined behavior defines no behavior for the translation to preserve (Section~\ref{sec:rw-differential}), so the harness runs the C program, built with AddressSanitizer and UndefinedBehaviorSanitizer~\cite{serebryany2012asan,ubsan}, on the input of every divergence. When the sanitizers report undefined behavior, the input is not used as evidence. When the check completes without a report, the C execution serves as the reference. When the check exceeds its own limits or cannot be carried out, the divergence is recorded as inconclusive or unresolved. A \emph{retained divergence} is a stable divergence whose sanitizer check completes without a report. The sanitizers detect selected classes of undefined behavior on the executed path, so a check without a report leaves open that the execution has undefined behavior of another class.
+
+The rejected branch checks the same two properties for every failing vector. Each vector is run \pRqTwoReps{} times on each side. The sanitizer check is applied to every vector, including the vectors on which the two sides agree, because agreement with C carries weight only when the C execution is a valid reference. Table~\ref{tab:m-vector} gives the four outcomes of a vector. Support for a rejection requires a fixed reference: the C program must give the same observation in every run, and the translation must differ from it in every run. The translation need not repeat itself here, because the question is whether the recorded failure holds, and a translation that varies between runs but always differs from a fixed C observation fails in every run. Agreement is judged run by run: the translation must equal the C program in each run. Section~\ref{sec:m-measures} combines the vector outcomes into the outcome of the rejection.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Outcome of one failing vector in the rejected branch.}
+\label{tab:m-vector}
+\begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}X@{}}
+\toprule
+Outcome & Condition \\
+\midrule
+Supports the rejection & The C program gives the same observation in every run, the translation differs from it in every run, and the sanitizer check completes without a report \\
+Agrees & The translation equals the C program in every run, and the sanitizer check completes without a report \\
+Not adjudicable & The sanitizers report undefined behavior, the sanitizer check is inconclusive, both sides exceed a limit, or the observation of C or the result of the comparison changes between runs \\
+No outcome & A run cannot be observed, the vector cannot be delivered, or the sanitizer check cannot be carried out \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+All results of the two branches pass through the harness, which carries two risks: a defect in the harness would produce wrong observations, and a limited ability to detect would leave divergences unfound. The validation of the harness is designed around these two risks. Against the first, the comparison and evidence rules are tested on fixed cases with known results, and the original vectors of the accepted translations are replayed through the whole path of build, execution and comparison. The runner has already accepted these translations on these vectors, which gives the path an external reference. The C program is also run against itself on a sample of inputs, where any difference comes from nondeterminism or from the harness. Against the second risk, the study uses translations that are known to differ from C: translations with seeded faults (mutants) that the original vectors do not detect, each labeled as equivalent or non-equivalent to its source by model-assisted review that the author checked on a sample, and rejected translations of the pilot cases whose failing vectors are withheld, so that only generated inputs can reveal the difference. A further control lets a second compilation of the C program take the place of the translation, where no translation is involved and every retained divergence must be explained. Three checks complete these controls: the pilot cases are measured again on the final harness, the inputs of retained divergences are checked against the input domain of the runner, and a sample of library divergences is audited. Finally, samples are inspected for false evidence. A retained divergence is false evidence when the two observations do not differ under the comparison of Section~\ref{sec:m-comparison}, or when the difference comes from the harness or the environment, such as truncated output, a value that depends on time or on the process, or a failure of the infrastructure. The executable sample takes translations in $D$ stratified by system, the library sample takes every translation in $D$, and the sample of rejections takes rejections that reached an outcome, stratified by system; one retained divergence or one deciding vector is inspected per translation. Each item is labeled in three passes of a language model, and the author resolves the disagreements and checks a subset by hand (Appendix~\ref{app:s-labeling}). Chapter~\ref{ch:results} and Table~\ref{tab:d-validation} report the outcome of these checks, and Section~\ref{sec:d-threats} relates them to the threats to validity.
+
+\section{Metrics and Classification of Divergences}\label{sec:m-measures}
+
+The unit of analysis is the published decision for one translation. The rules of Section~\ref{sec:m-execution} produce results for single inputs and single vectors, so this section first states how these results classify a decision. It then gives, for each research question of Section~\ref{sec:intro-problem}, the main metric and the supporting analyses that are reported with it. All metrics are computed separately for executables and for libraries, and for each system, so that they can be set beside the published results.
+
+\subsection{Classification of Decisions}\label{sec:m-outcomes}
+
+Each published PASS decision and each FAIL decision at the test stage receives exactly one outcome (Table~\ref{tab:m-outcomes}).
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Outcomes of a published decision. $|P_{\mathit{test}}|$ counts the first two rows and $|R_{\mathit{test}}| = A + F + \mathit{na}$ the first three rows of the rejected branch.}
+\label{tab:m-outcomes}
+\begin{tabularx}{\linewidth}{@{}p{0.11\linewidth}p{0.21\linewidth}Xp{0.13\linewidth}@{}}
+\toprule
+Decision & Outcome & Condition & Count \\
+\midrule
+Accepted & Retained divergence & Complete re-evaluation with a retained divergence on at least one input under at least one seed & $D$ \\
+ & No divergence detected & Complete re-evaluation without a retained divergence; equivalence to the C program is not established & $|P_{\mathit{test}}| - D$ \\
+ & Without a result & The decision is not reproduced, the translation is not built or exceeds the time limit at reproduction, the case has no input field, or some input of some seed is not observed on both sides & $L_P$ \\
+\midrule
+Rejected at the test stage & Supported & At least one failing vector supports the rejection & $A$ \\
+ & Unsupported & Every failing vector agrees with the C program & $F$ \\
+ & Not adjudicable & Every failing vector has an outcome and neither condition above holds & $\mathit{na}$ \\
+ & No outcome & The decision is not reproduced, or a vector has no outcome and no vector supports the rejection & $L_R - \mathit{na}$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Three choices in this classification follow from the evidence rules. In the accepted branch, one seed is sufficient for a retained divergence, because the seeds extend a single search for one input on which the translation differs. A translation whose divergences are all unstable or inconclusive stays among the complete re-evaluations and is counted as showing no retained divergence, because removing it would make the denominator depend on the result that is being measured. In the rejected branch, each failing vector is a separate ground for the rejection, so one supporting vector decides the outcome whatever the other vectors show.
+
+\subsection{Behavioral Divergences in Accepted Translations}\label{sec:m-rq1}
+
+The main metric of RQ1 is the proportion of fully re-evaluated acceptances that have a retained divergence:
+\begin{equation}
+\frac{D}{|P_{\mathit{test}}|}.
+\end{equation}
+The denominator is narrower than the accepted translations named in the question, because a proportion can be stated only over decisions that reached an outcome. The remaining acceptances are counted in $L_P = |P_{\mathit{acc}}| - |P_{\mathit{test}}|$ and enter RQ3. More inputs or further seeds can only add retained divergences, so $D$ is bounded below by the search and depends on the fixed budget.
+
+A single proportion does not show what stands behind it, and three properties of $D$ decide how it can be read. The supporting analyses of RQ1 examine these properties on the same translations.
+
+The first property is the origin of the divergences. All translations of one case share its C program and its inputs, so a small number of cases can account for a large part of $D$. The analysis by case reports the cases with at least one translation in $D$, out of the cases with a translation in $P_{\mathit{test}}$, and the part of $D$ that lies in the five cases with the most. The inputs matter in the same way. A retained divergence on an original vector lies on an input that the original evaluation graded, while one on a generated input lies outside its tests. The analysis by input source therefore reports, out of $D$, the translations with a retained divergence on an original vector.
+
+The second property is the weight of the divergences. $D$ counts a translation with a trailing space in its output and a translation with a different exit status alike. Each retained divergence is therefore assigned to one of three classes, \emph{benign}, \emph{non-benign} or \emph{undecided}, by fixed rules of which the first that matches decides (Appendix~\ref{app:classes}). A different termination or a different field of a library state is non-benign, a difference in standard output that concerns only layout whitespace or the formatting of numbers is benign, and any other difference in the content of an output line is non-benign. A difference in standard error alone is undecided, and so is an output that agrees with the other on every common line and only continues beyond it. A translation takes the strongest class among its retained divergences. With $N_{\mathit{NB}}$ and $N_{\mathit{U}}$ the numbers of non-benign and undecided translations, the analysis reports the proportion of translations with a non-benign divergence as the range from $N_{\mathit{NB}}/|P_{\mathit{test}}|$ to $(N_{\mathit{NB}}+N_{\mathit{U}})/|P_{\mathit{test}}|$. The comparison also includes standard error, which the classification leaves undecided, so a second analysis reports, out of $D$, the translations with a retained divergence in each part of the observation: the termination status, the standard output, the standard error only, and for libraries the state after the call.
+
+The third property is what $D$ leaves out. Executions on which the sanitizers report undefined behavior are not used as evidence, so $D$ makes no statement about them. Their number is reported out of all executions with a divergence, which shows the size of the part that is set aside.
+
+\subsection{Evidential Support for Test-Stage Rejections}\label{sec:m-rq2}
+
+The main metric of RQ2 is the proportion of unsupported rejections among the rejections that reached an outcome:
+\begin{equation}
+\frac{F}{|R_{\mathit{test}}|}.
+\end{equation}
+As in RQ1, the denominator is narrower than the rejections at the test stage, $R_0^{\mathit{test}}$, named in the question. Every rejection that ends as neither supported nor unsupported is counted in $L_R = |R_0^{\mathit{test}}| - A - F$ and enters RQ3. The proportions of RQ1 and RQ2 have different denominators and describe different decisions, so they are reported side by side and are not combined into one rate.
+
+Two features of this proportion decide how it can be read. The first is that $F$ requires every failing vector to agree with the C program, so a rejection that is not adjudicable stays in the denominator and outside $F$. If all such rejections were in fact unsupported, the proportion would be $(F + \mathit{na})/|R_{\mathit{test}}|$. The analysis reports this value beside the main metric as the largest value that the not adjudicable rejections allow. To show where the rejections outside $R_{\mathit{test}}$ end, all outcomes of Table~\ref{tab:m-outcomes} are also reported out of $|R_0^{\mathit{test}}|$, with the reasons for each.
+
+The second feature is the dependence on the comparison. Whether a vector agrees is decided by the comparison of Section~\ref{sec:m-comparison}, and a different rule can turn an agreement into a difference or a difference into an agreement. $F$ is therefore recomputed over the same $R_{\mathit{test}}$ under three alternative rules: standard error ignored, floating-point fields compared exactly, and floating-point fields compared by the rule of the runner.
+
+\subsection{Interval for the Reclassified Success Rate}\label{sec:m-rq3}
+
+The main metric of RQ3 is an interval for the success rate after reclassification. It starts from the published success rate, $s = |P_{\mathit{acc}}| / |P_0|$, which is computed here from the published decisions on the study population; the original publication reports a rate for each system over all of its cases, without separating executables and libraries. A retained divergence removes a translation from the successes, and an unsupported rejection adds one. The decisions in $L_P$ and $L_R$ have no such result, so the rate after reclassification is known only up to an interval:
+\begin{equation}
+s_{\mathit{low}} = \frac{|P_{\mathit{acc}}| - D - L_P + F}{|P_0|}, \qquad
+s_{\mathit{up}} = \frac{|P_{\mathit{acc}}| - D - (L_P - L_P^{\ast}) + F + L_R^{\ast}}{|P_0|}.
+\end{equation}
+The lower end assumes that every acceptance in $L_P$ would have shown a retained divergence and that every rejection in $L_R$ would have been supported. The upper end assumes the opposite, as far as the recorded runs allow it. An unsupported rejection requires every failing vector to agree with the C program. A rejection whose recorded runs already contain a failing vector on which the translation differs from the C program in every run can therefore no longer become unsupported, whatever a missing check would have returned. $L_R^{\ast}$ denotes the rejections in $L_R$ without such a vector, and only these are counted as unsupported at the upper end. The same reasoning applies to acceptances. One retained divergence on one input under one seed is enough for $D$, so an acceptance in $L_P$ whose completed seeds already contain a retained divergence can no longer show none, whatever the missing seeds would have returned. $L_P^{\ast}$ denotes the acceptances in $L_P$ without a recorded retained divergence, and only these are counted as successes at the upper end. Both adjustments act on the interval alone: $D$ and $F$ keep the denominators of RQ1 and RQ2. Rejections at the build stage and pairs without a released translation keep their published status at both ends.
+
+The width of the interval is $(L_P^{\ast} + L_R^{\ast})/|P_0|$, the share of decisions whose result is still open, so the interval can be read only together with the reasons for which decisions lack a result. Two analyses supply them. The coverage of each branch is reported as $|P_{\mathit{test}}|/|P_{\mathit{acc}}|$ and $(A+F)/|R_0^{\mathit{test}}|$. The decisions in $L_P$ and $L_R$ are then counted under the cause that stopped each of them, out of $L_P + L_R$, which shows what the width is made of.

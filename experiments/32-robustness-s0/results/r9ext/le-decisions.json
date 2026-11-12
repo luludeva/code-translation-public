@@ -1,0 +1,35 @@
+{
+ "date": "2026-11-03",
+ "note": "Le xử qua AskUserQuestion: 10 mục kiểm ngẫu nhiên đồng ý; mục đồng thuận unclear xử như dưới; xlib-047 đến 049 áp luật hai phía cùng crash (Le chốt 3/11, exp 31).",
+ "rules": {
+  "pinflate": "Đổi 3/11 18:2x (Le duyệt): runner pinflate cấp lại b_out theo out_bytes (main.rs dòng 20), nên căn cứ \"input ngoài miền\" không đứng; xlib-051, 052 thành q3 unclear, reason runner_buffer_contract_unverified, chờ exp 35. xlib-053 là utf8_lib (string null), bị gom nhầm vào nhóm pinflate; giữ q3 yes chờ Le xử sau exp 35.",
+  "memlimit": "xlib-061: C chạm trần bộ nhớ 2 GB của harness; q3 unclear, báo riêng",
+  "exp35": "Chốt 3/11 (Le duyệt) theo exp 35: buffer runner đủ; pinflate C dừng do assert cp_decode (lib.c:217), utf8 C dừng do assert string != NULL (lib.c:60), Rust chạy qua: divergence thật, không do harness. xlib-051, 052, 053 q3 no."
+ },
+ "override": {
+  "xlib-047": {
+   "q1": "unclear",
+   "q2": "N1-status",
+   "q3": "unclear"
+  },
+  "xlib-048": {
+   "q1": "unclear",
+   "q2": "N1-status",
+   "q3": "unclear"
+  },
+  "xlib-049": {
+   "q1": "unclear",
+   "q2": "N1-status",
+   "q3": "unclear"
+  },
+  "xlib-051": {
+   "q3": "no"
+  },
+  "xlib-052": {
+   "q3": "no"
+  },
+  "xlib-053": {
+   "q3": "no"
+  }
+ }
+}

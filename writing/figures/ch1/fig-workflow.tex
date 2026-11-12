@@ -1,0 +1,29 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  st/.style={draw, rounded corners=2pt, align=center, minimum height=10mm, inner sep=4pt, fill=white},
+  io/.style={st, fill=black!6}]
+% ---- translation, generalized (not studied) ----
+\node[io, minimum width=2.4cm] (c) at (0.6,0) {C program};
+\node[st, minimum width=5.0cm, minimum height=13mm, fill=black!3, dashed] (tr) at (5.0,0)
+  {\textbf{Translator}\\[1pt]\scriptsize produces Rust code; its internal\\[-1pt]\scriptsize steps differ from system to system};
+\node[io, minimum width=2.6cm] (rs) at (9.6,0) {Rust translation};
+\draw[->, thick] (c) -- (tr); \draw[->, thick] (tr) -- (rs);
+% ---- evaluation, expanded ----
+\node[st, minimum width=3.6cm] (cmp) at (9.6,-1.9) {Compile the translation};
+\node[st, fill=black!12, text=black!70, minimum width=2.6cm] (fb) at (14.7,-1.9) {FAIL at the\\build stage};
+\node[io, minimum width=3.2cm] (tests) at (4.3,-3.55) {Benchmark tests:\\inputs and expected results};
+\node[st, minimum width=3.6cm] (run) at (9.6,-3.55) {Run on each test input;\\compare with the expected result};
+\node[st, very thick, draw=passc, fill=passc!10, minimum width=3.0cm] (pass) at (7.6,-5.3) {\textbf{\textcolor{passc}{PASS}}\\every result matches};
+\node[st, very thick, draw=failc, fill=failc!10, minimum width=3.0cm] (ft) at (11.6,-5.3) {\textbf{\textcolor{failc}{FAIL}} at the test stage\\some result differs};
+\draw[->, thick] (rs) -- (cmp);
+\draw[->, thick] (cmp) -- node[above, align=center, font=\scriptsize]{does not\\compile} (fb);
+\draw[->, thick] (cmp) -- node[right, font=\scriptsize]{compiles} (run);
+\draw[->, thick] (tests) -- (run);
+\draw[->, thick] (run) -- (pass); \draw[->, thick] (run) -- (ft);
+\node[anchor=north, text=accentc!65!black, font=\scriptsize\bfseries] (fq) at (9.6,-6.15)
+  {Are these decisions supported by the behavior of the C program?};
+\begin{scope}[on background layer]
+  \node[draw=black!40, rounded corners=5pt, fill=black!2, inner sep=8pt, fit=(cmp)(fb)(tests)(pass)(ft)(fq)] (ev) {};
+  \node[draw=accentc, very thick, dashed, rounded corners=5pt, fill=accentc!8, inner sep=4pt, fit=(pass)(ft)(fq)] (focus) {};
+\end{scope}
+\node[anchor=north west, font=\footnotesize\bfseries] at (ev.north west) {Evaluation of each translation};
+\end{tikzpicture}

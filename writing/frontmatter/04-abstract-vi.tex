@@ -1,0 +1,20 @@
+% Phu luc 03: Trang tom tat tieng Viet (yeu cau chung, decision-log 2026-09-18). Khoang 360 tu, toi da 4 tu khoa.
+% Noi dung song song voi 05-abstract-en.tex.
+\IfFileExists{generated/rq-numbers.tex}{\input{generated/rq-numbers.tex}}{}
+\IfFileExists{generated/v3-numbers.tex}{\input{generated/v3-numbers.tex}}{}
+\providecommand{\vipct}[1]{\begingroup\edef\vitmp{\endgroup\noexpand\num[output-decimal-marker={,}]{\csname #1\endcsname}}\vitmp}
+\thispagestyle{plain}
+\begin{center}
+{\fontsize{13}{16}\selectfont\bfseries TÓM TẮT}
+\end{center}
+\vspace{1em}
+
+\begingroup
+\fontsize{12}{15}\selectfont
+\noindent\textbf{Tóm tắt:}
+Các hệ thống dịch chương trình C sang Rust thường được đánh giá bằng cách biên dịch từng bản dịch rồi chạy một bộ test có sẵn. Kết quả của mỗi bản dịch được ghi thành một quyết định PASS hoặc FAIL, và các quyết định này được tổng hợp thành tỉ lệ thành công của hệ thống. Mức độ tin cậy của tỉ lệ đó phụ thuộc vào việc bộ test có làm lộ ra khác biệt hành vi hay không và vào độ chính xác của các kỳ vọng dùng để chấm; các nghiên cứu ở những bài toán gần đã cho thấy sản phẩm được chấp nhận thường trượt khi được kiểm thử thêm. Khoá luận hậu kiểm các quyết định đã công bố của mười hệ thống dịch trên bộ dữ liệu TRACTOR Public Test Corpus, không chạy lại hệ dịch nào. Khoá luận xây dựng một harness kiểm thử vi sai độc lập, chạy bản dịch Rust và chương trình C trên cùng đầu vào rồi so sánh trạng thái kết thúc, đầu ra và, với library, trạng thái sau lời gọi hàm. Với các bản dịch đã được chấp nhận, harness tìm khác biệt hành vi trên các test vector gốc và trên đầu vào sinh thêm; với các bản dịch bị từ chối ở bước test, harness phát lại những vector đã gây trượt. Một quan sát chỉ được tính là bằng chứng khi nó ổn định qua các lượt chạy lặp và lượt chạy phía C hoàn tất phép kiểm sanitizer về undefined behavior mà không có báo cáo. Trong số các bản dịch được chấp nhận và hậu kiểm đầy đủ, \rqFPExeAllNum/\rqFPExeAllDen{} bản executable (\vipct{rqFPExeAllPct}\%) và \rqFPLibAllNum/\rqFPLibAllDen{} bản library (\vipct{rqFPLibAllPct}\%) có ít nhất một khác biệt được giữ lại, gần như toàn bộ nằm trên đầu vào sinh thêm. Trong số các quyết định từ chối ở bước test đi tới kết cục, \rqFFExeAllNum/\rqFFExeAllDen{} quyết định với executable và \rqFFLibAllNum/\rqFFLibAllDen{} quyết định với library thiếu bằng chứng hỗ trợ. Khi đưa các tái phân loại này cùng những quyết định còn mở trở lại quần thể ban đầu, tỉ lệ thành công của executable theo oracle của nghiên cứu này nằm trong khoảng \vipct{rqSRLoExeAllPct} đến \vipct{rqSRUpExeAllPct}\%, so với \vipct{rqSRExeAllPct}\% theo các quyết định đã công bố; với library là \vipct{rqSRLoLibAllPct} đến \vipct{rqSRUpLibAllPct}\%, so với \vipct{rqSRLibAllPct}\%. Trên corpus này, bằng chứng làm thay đổi cách đọc một kết quả đánh giá nằm chủ yếu ở chiều chấp nhận. Kết quả cho thấy các bản dịch được chấp nhận cần thêm bằng chứng hành vi ngoài bộ test gốc, và một tỉ lệ thành công khi công bố nên đi kèm luật so sánh, mẫu số đầy đủ và phần bất định do các quyết định chưa được kiểm tra để lại. Các phát hiện giới hạn trong một corpus, và một khác biệt được giữ lại ghi nhận sai khác quan sát được, còn việc đó có là lỗi ngữ nghĩa hay không thì chưa được xác lập.
+
+\vspace{1em}
+\noindent\textit{\textbf{Từ khoá:}} \textit{dịch C sang Rust, kiểm thử vi sai, test oracle, hành vi không xác định}
+\endgroup
+\clearpage

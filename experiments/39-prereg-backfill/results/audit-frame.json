@@ -1,0 +1,1417 @@
+{
+ "rule": "exp 39 B, library audit chạy bù (README); post hoc",
+ "n_D": 65,
+ "n_frame": 65,
+ "n_sample": 50,
+ "seed": 20261110,
+ "frame": [
+  "B01_organic/collided_lib/gpt-5.4",
+  "B01_organic/collided_lib/kimi",
+  "B01_organic/dequantize_granule_lib/gpt-5.4",
+  "B01_organic/dequantize_granule_lib/kimi",
+  "B01_organic/flip_horizontal_lib/kimi",
+  "B01_organic/premultiply_lib/c2saferrust",
+  "B01_organic/premultiply_lib/gemini-3.1-pro-preview",
+  "B01_organic/premultiply_lib/gpt-5.4",
+  "B01_organic/premultiply_lib/kimi",
+  "B01_organic/read_side_info_lib/c2rust",
+  "B01_organic/read_side_info_lib/c2saferrust",
+  "B01_organic/read_side_info_lib/claude",
+  "B01_organic/read_side_info_lib/codex-gpt54",
+  "B01_organic/read_side_info_lib/gpt-5.4",
+  "B01_organic/read_side_info_lib/kimi",
+  "B01_organic/read_side_info_lib/kiro",
+  "B01_organic/read_side_info_lib/laertes",
+  "B01_organic/tfm_lib/gpt-5.4",
+  "B01_organic/tfm_lib/kimi",
+  "B01_organic/wcscat_lib/c2rust",
+  "B01_organic/wcscat_lib/laertes",
+  "B01_synthetic/007_errno_pow_lib/c2saferrust",
+  "B01_synthetic/007_errno_pow_lib/kimi",
+  "B01_synthetic/011_uninit_char_ptr_lib/c2rust",
+  "B01_synthetic/011_uninit_char_ptr_lib/claude",
+  "B01_synthetic/011_uninit_char_ptr_lib/codex-gpt54",
+  "B01_synthetic/011_uninit_char_ptr_lib/gemini-3.1-pro-preview",
+  "B01_synthetic/011_uninit_char_ptr_lib/gpt-5.4",
+  "B01_synthetic/011_uninit_char_ptr_lib/kimi",
+  "B01_synthetic/011_uninit_char_ptr_lib/kiro",
+  "B01_synthetic/011_uninit_char_ptr_lib/laertes",
+  "B01_synthetic/016_divide_by_zero_float_lib/gemini-3.1-pro-preview",
+  "B01_synthetic/016_divide_by_zero_float_lib/gpt-5.4",
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/c2saferrust",
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/gpt-5.4",
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/kimi",
+  "B01_synthetic/020_stack_linked_list_lib/c2saferrust",
+  "B01_synthetic/031_disjoint_arrays_lib/gpt-5.4",
+  "B02_organic/decode_base64_lib/kimi",
+  "B02_organic/gen_ray_lib/gemini-3.1-pro-preview",
+  "B02_organic/intput_lib/claude",
+  "B02_organic/intput_lib/gpt-5.4",
+  "B02_organic/intput_lib/kimi",
+  "B02_organic/intput_lib/kiro",
+  "B02_organic/omni_collide_lib/kimi",
+  "B02_organic/omni_manifold_lib/gpt-5.4",
+  "B02_organic/omni_manifold_lib/kimi",
+  "B02_organic/parse_number_lib/gpt-5.4",
+  "B02_organic/pinflate_lib/claude",
+  "B02_organic/pinflate_lib/kiro",
+  "B02_organic/search_and_replace_lib/kimi",
+  "B02_organic/utf8_lib/claude",
+  "B02_organic/utf8_lib/gpt-5.4",
+  "B02_organic/utf8_lib/kimi",
+  "B02_organic/utf8_lib/kiro",
+  "B02_synthetic/charinbuf_lib/c2saferrust",
+  "B02_synthetic/checkshift_lib/gpt-5.4",
+  "B02_synthetic/checkshift_lib/kiro",
+  "B02_synthetic/dataentry_lib/kimi",
+  "B02_synthetic/fallcalc_lib/gemini-3.1-pro-preview",
+  "B02_synthetic/mathop_lib/claude",
+  "B02_synthetic/mathop_lib/gemini-3.1-pro-preview",
+  "B02_synthetic/matrix_mult_lib/c2saferrust",
+  "B02_synthetic/matrix_mult_lib/gpt-5.4",
+  "B02_synthetic/matrix_mult_lib/kiro"
+ ],
+ "excluded_with_vector_source": {},
+ "sample": [
+  "B01_organic/dequantize_granule_lib/gpt-5.4",
+  "B01_organic/dequantize_granule_lib/kimi",
+  "B01_organic/flip_horizontal_lib/kimi",
+  "B01_organic/premultiply_lib/c2saferrust",
+  "B01_organic/premultiply_lib/gpt-5.4",
+  "B01_organic/premultiply_lib/kimi",
+  "B01_organic/read_side_info_lib/c2saferrust",
+  "B01_organic/read_side_info_lib/claude",
+  "B01_organic/read_side_info_lib/codex-gpt54",
+  "B01_organic/read_side_info_lib/gpt-5.4",
+  "B01_organic/read_side_info_lib/kimi",
+  "B01_organic/read_side_info_lib/kiro",
+  "B01_organic/tfm_lib/gpt-5.4",
+  "B01_organic/tfm_lib/kimi",
+  "B01_organic/wcscat_lib/c2rust",
+  "B01_organic/wcscat_lib/laertes",
+  "B01_synthetic/007_errno_pow_lib/kimi",
+  "B01_synthetic/011_uninit_char_ptr_lib/c2rust",
+  "B01_synthetic/011_uninit_char_ptr_lib/claude",
+  "B01_synthetic/011_uninit_char_ptr_lib/codex-gpt54",
+  "B01_synthetic/011_uninit_char_ptr_lib/gemini-3.1-pro-preview",
+  "B01_synthetic/011_uninit_char_ptr_lib/kimi",
+  "B01_synthetic/011_uninit_char_ptr_lib/kiro",
+  "B01_synthetic/011_uninit_char_ptr_lib/laertes",
+  "B01_synthetic/016_divide_by_zero_float_lib/gemini-3.1-pro-preview",
+  "B01_synthetic/016_divide_by_zero_float_lib/gpt-5.4",
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/c2saferrust",
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/kimi",
+  "B01_synthetic/020_stack_linked_list_lib/c2saferrust",
+  "B02_organic/decode_base64_lib/kimi",
+  "B02_organic/gen_ray_lib/gemini-3.1-pro-preview",
+  "B02_organic/intput_lib/claude",
+  "B02_organic/intput_lib/gpt-5.4",
+  "B02_organic/intput_lib/kiro",
+  "B02_organic/omni_collide_lib/kimi",
+  "B02_organic/omni_manifold_lib/gpt-5.4",
+  "B02_organic/omni_manifold_lib/kimi",
+  "B02_organic/parse_number_lib/gpt-5.4",
+  "B02_organic/pinflate_lib/kiro",
+  "B02_organic/search_and_replace_lib/kimi",
+  "B02_organic/utf8_lib/gpt-5.4",
+  "B02_organic/utf8_lib/kimi",
+  "B02_synthetic/charinbuf_lib/c2saferrust",
+  "B02_synthetic/checkshift_lib/kiro",
+  "B02_synthetic/dataentry_lib/kimi",
+  "B02_synthetic/fallcalc_lib/gemini-3.1-pro-preview",
+  "B02_synthetic/mathop_lib/claude",
+  "B02_synthetic/mathop_lib/gemini-3.1-pro-preview",
+  "B02_synthetic/matrix_mult_lib/c2saferrust",
+  "B02_synthetic/matrix_mult_lib/gpt-5.4"
+ ],
+ "items": {
+  "B01_organic/dequantize_granule_lib/gpt-5.4": [
+   {
+    "key": "B01_organic/dequantize_granule_lib/s2/gpt-5.4/930",
+    "input_sha256": "0082141e90d1f18d924267e3c3ad867e6439b7a33fa52eab7c49086606a12c4e",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/dequantize_granule_lib/s2/gpt-5.4/154",
+    "input_sha256": "00a6157f41db529b56608adb42aae1d0771cd7d04916a83c85c2f40b1b012354",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/dequantize_granule_lib/s1/gpt-5.4/655",
+    "input_sha256": "010e5ce9617e4b090f76c316dc2d8704176fbe62109e219c3bd023af97812160",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/dequantize_granule_lib/kimi": [
+   {
+    "key": "B01_organic/dequantize_granule_lib/s1/kimi/1765",
+    "input_sha256": "2177212ead9287d364292634ba7f3a0e38eeef665209a50dc6093e62cfef4d1f",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/flip_horizontal_lib/kimi": [
+   {
+    "key": "B01_organic/flip_horizontal_lib/s0/kimi/1833",
+    "input_sha256": "003b6ee988103cdf8d7cc6a2d3a2fd65942fdb7bd1a1236eb6beeb40a4ec6bdf",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/flip_horizontal_lib/s2/kimi/204",
+    "input_sha256": "00746b0732e267f07e8a6b2a7ff3aa912a06235015800220ea4905ec4802d097",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/flip_horizontal_lib/s0/kimi/649",
+    "input_sha256": "0075e6b0b11d965878abc051bc4c8f077107645c792c469874a93938789da503",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/premultiply_lib/c2saferrust": [
+   {
+    "key": "B01_organic/premultiply_lib/s1/c2saferrust/1750",
+    "input_sha256": "00329cba1deedbd1151a7530d111e8afd6c57ee0515816657a53db39b5bed7bf",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s2/c2saferrust/961",
+    "input_sha256": "004c40ac788dbf50ee7548fac55614b9a3af02a0363ae90300188b59620450ea",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s2/c2saferrust/246",
+    "input_sha256": "005ec23ddd8150b2298bd1dd2ee472a3c78d82d7ef9b28934331e28f310629d7",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/premultiply_lib/gpt-5.4": [
+   {
+    "key": "B01_organic/premultiply_lib/s2/gpt-5.4/961",
+    "input_sha256": "004c40ac788dbf50ee7548fac55614b9a3af02a0363ae90300188b59620450ea",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s2/gpt-5.4/246",
+    "input_sha256": "005ec23ddd8150b2298bd1dd2ee472a3c78d82d7ef9b28934331e28f310629d7",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s0/gpt-5.4/979",
+    "input_sha256": "00b9e60659473e985adba1180018125d6496ddb11ce8c406c941ee0b560b3d28",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/premultiply_lib/kimi": [
+   {
+    "key": "B01_organic/premultiply_lib/s1/kimi/1750",
+    "input_sha256": "00329cba1deedbd1151a7530d111e8afd6c57ee0515816657a53db39b5bed7bf",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s2/kimi/961",
+    "input_sha256": "004c40ac788dbf50ee7548fac55614b9a3af02a0363ae90300188b59620450ea",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/premultiply_lib/s2/kimi/246",
+    "input_sha256": "005ec23ddd8150b2298bd1dd2ee472a3c78d82d7ef9b28934331e28f310629d7",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/c2saferrust": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/c2saferrust/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/c2saferrust/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/c2saferrust/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/claude": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/claude/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/claude/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/claude/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/codex-gpt54": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/codex-gpt54/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/codex-gpt54/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/codex-gpt54/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/gpt-5.4": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/gpt-5.4/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/gpt-5.4/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/gpt-5.4/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/kimi": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/kimi/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/kimi/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/kimi/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/read_side_info_lib/kiro": [
+   {
+    "key": "B01_organic/read_side_info_lib/s2/kiro/286",
+    "input_sha256": "00222d94a243a7b866af3fd1a4976e363c015050846e6b218ac41ce653e2f82d",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s0/kiro/1076",
+    "input_sha256": "043ce8ca8e819fde219c6b1eb8f868ebfc2dc18c1ab77177efa3eafa4e9dccbd",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/read_side_info_lib/s2/kiro/325",
+    "input_sha256": "04ceab8055a33515b45cbff742d81cd2e06b67714d4ad52c9ac6cdaf788f1249",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/tfm_lib/gpt-5.4": [
+   {
+    "key": "B01_organic/tfm_lib/s1/gpt-5.4/1240",
+    "input_sha256": "e748238f00c64022c1862c7f1f022d98e03a24dd67f8ef5853a6368d8a1c2a2f",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/tfm_lib/kimi": [
+   {
+    "key": "B01_organic/tfm_lib/s1/kimi/1240",
+    "input_sha256": "e748238f00c64022c1862c7f1f022d98e03a24dd67f8ef5853a6368d8a1c2a2f",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/wcscat_lib/c2rust": [
+   {
+    "key": "B01_organic/wcscat_lib/s1/c2rust/733",
+    "input_sha256": "112b07740a80553d699e728e2989f3cba4750d9a6415f15960307826d5b4dd13",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/wcscat_lib/s1/c2rust/561",
+    "input_sha256": "21711832589d7b405baae9b06a69f97e1ee92a5a8676400506182b1c156578d3",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/wcscat_lib/s0/c2rust/887",
+    "input_sha256": "50652918574cd565382d8081871313003c9a00a1efa3940e0b032448833e0f31",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_organic/wcscat_lib/laertes": [
+   {
+    "key": "B01_organic/wcscat_lib/s1/laertes/733",
+    "input_sha256": "112b07740a80553d699e728e2989f3cba4750d9a6415f15960307826d5b4dd13",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/wcscat_lib/s1/laertes/561",
+    "input_sha256": "21711832589d7b405baae9b06a69f97e1ee92a5a8676400506182b1c156578d3",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_organic/wcscat_lib/s0/laertes/887",
+    "input_sha256": "50652918574cd565382d8081871313003c9a00a1efa3940e0b032448833e0f31",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B01_synthetic/007_errno_pow_lib/kimi": [
+   {
+    "key": "B01_synthetic/007_errno_pow_lib/s0/kimi/234",
+    "input_sha256": "0097f4678f8ea1ca6112b851911cbe26de32486a15c52960641532bc572a34d9",
+    "source": "random",
+    "channels": [
+     "state",
+     "stderr"
+    ]
+   },
+   {
+    "key": "B01_synthetic/007_errno_pow_lib/s0/kimi/1770",
+    "input_sha256": "00a951c2551234c9c4ffc96545d9db5b1f1de707aea7c85fba570cf46791ebcc",
+    "source": "random",
+    "channels": [
+     "state",
+     "stderr"
+    ]
+   },
+   {
+    "key": "B01_synthetic/007_errno_pow_lib/s1/kimi/1723",
+    "input_sha256": "00f556cd17d83c4ed669b6650449e4b3d49f408e6b7709dd72b7043e2d0e1dc4",
+    "source": "random",
+    "channels": [
+     "state",
+     "stderr"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/c2rust": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/c2rust/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/c2rust/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/c2rust/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/claude": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/claude/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/claude/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/claude/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/codex-gpt54": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/codex-gpt54/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/codex-gpt54/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/codex-gpt54/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/gemini-3.1-pro-preview": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/gemini-3.1-pro-preview/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/gemini-3.1-pro-preview/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/gemini-3.1-pro-preview/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/kimi": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/kimi/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/kimi/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/kimi/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/kiro": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/kiro/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/kiro/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/kiro/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/011_uninit_char_ptr_lib/laertes": [
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s1/laertes/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s2/laertes/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/011_uninit_char_ptr_lib/s0/laertes/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/016_divide_by_zero_float_lib/gemini-3.1-pro-preview": [
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s0/gemini-3.1-pro-preview/711",
+    "input_sha256": "04d39e794e36227713a0b8e041ebe112fd0ccdc5c816ebc8433f4aa0e9d16ca1",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s1/gemini-3.1-pro-preview/463",
+    "input_sha256": "05198f6e205cde13c50a0103e40158869562a35efec8c5423a878e783018e2d9",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s2/gemini-3.1-pro-preview/82",
+    "input_sha256": "05b7da53c6ecc2e485e1546e847b4d2facfa1089c7a7b79f62532bbec6fefcb9",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/016_divide_by_zero_float_lib/gpt-5.4": [
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s0/gpt-5.4/711",
+    "input_sha256": "04d39e794e36227713a0b8e041ebe112fd0ccdc5c816ebc8433f4aa0e9d16ca1",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s1/gpt-5.4/463",
+    "input_sha256": "05198f6e205cde13c50a0103e40158869562a35efec8c5423a878e783018e2d9",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/016_divide_by_zero_float_lib/s2/gpt-5.4/82",
+    "input_sha256": "05b7da53c6ecc2e485e1546e847b4d2facfa1089c7a7b79f62532bbec6fefcb9",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/c2saferrust": [
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s1/c2saferrust/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s2/c2saferrust/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s0/c2saferrust/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/019_integer_overflow_char_max_multiply_lib/kimi": [
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s1/kimi/8",
+    "input_sha256": "5ebd9d3d81336c689fcefe5d8b91ea69cf728a8c3e771d18dc551b51cb302415",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s2/kimi/3",
+    "input_sha256": "7a7095ed9c4420104457a21d98017ee53d21a750b16f8379a0f8557c40098530",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   },
+   {
+    "key": "B01_synthetic/019_integer_overflow_char_max_multiply_lib/s0/kimi/2",
+    "input_sha256": "af306ce4cfd476d31b07c0d465e4f45f750a12988bd1dd5640ae4754eb4ce377",
+    "source": "random",
+    "channels": [
+     "stdout"
+    ]
+   }
+  ],
+  "B01_synthetic/020_stack_linked_list_lib/c2saferrust": [
+   {
+    "key": "B01_synthetic/020_stack_linked_list_lib/s2/c2saferrust/1205",
+    "input_sha256": "00bcc2fd6150077c12b852d87052b350b222d1d9b8d9025ca9c7b9022452bb75",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_synthetic/020_stack_linked_list_lib/s2/c2saferrust/1704",
+    "input_sha256": "00f6672d901fa4533819e0cffa35823b28303576a96841a93905de5f83b6b167",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B01_synthetic/020_stack_linked_list_lib/s1/c2saferrust/1824",
+    "input_sha256": "01147a13ebf347e0818b925d6391064e8ff97c48bf60632ffc0e1d4d5f4971db",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/decode_base64_lib/kimi": [
+   {
+    "key": "B02_organic/decode_base64_lib/s2/kimi/1617",
+    "input_sha256": "0004143f4a3164388ae45347eda9c92ed13c8cffbe6d7f8d3f40a037aee470ca",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/decode_base64_lib/s1/kimi/1046",
+    "input_sha256": "008f44d4ce66510f5477ce8b72ebb86fffd397ab54cb70b2b2e769859e1cb058",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/decode_base64_lib/s0/kimi/1969",
+    "input_sha256": "00ec933dd0d324f4c17bdfbfd0f1db43989b6bc6f2ab47a8d75dc809aa5d6518",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/gen_ray_lib/gemini-3.1-pro-preview": [
+   {
+    "key": "B02_organic/gen_ray_lib/s2/gemini-3.1-pro-preview/1117",
+    "input_sha256": "cec1ca199d2e3eea0509cfb99988888c19a8fb202b02fdba42ac96e7beea14fa",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/intput_lib/claude": [
+   {
+    "key": "B02_organic/intput_lib/s2/claude/1492",
+    "input_sha256": "226922d69d6405a9498607bfd5100f8a1f2d32f560645307fe9309c0db0550b8",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s1/claude/1509",
+    "input_sha256": "81acf1b7d888617b96b33a88d1a1f46e09fe9ca9ffd767efc05884430cb2dc7f",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s2/claude/1474",
+    "input_sha256": "e336800dd7e1478fba8b89f365a46b2140d11d49bc20472035e2a808a34df089",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   }
+  ],
+  "B02_organic/intput_lib/gpt-5.4": [
+   {
+    "key": "B02_organic/intput_lib/s2/gpt-5.4/1492",
+    "input_sha256": "226922d69d6405a9498607bfd5100f8a1f2d32f560645307fe9309c0db0550b8",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s1/gpt-5.4/1509",
+    "input_sha256": "81acf1b7d888617b96b33a88d1a1f46e09fe9ca9ffd767efc05884430cb2dc7f",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s2/gpt-5.4/1474",
+    "input_sha256": "e336800dd7e1478fba8b89f365a46b2140d11d49bc20472035e2a808a34df089",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   }
+  ],
+  "B02_organic/intput_lib/kiro": [
+   {
+    "key": "B02_organic/intput_lib/s2/kiro/1492",
+    "input_sha256": "226922d69d6405a9498607bfd5100f8a1f2d32f560645307fe9309c0db0550b8",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s1/kiro/1509",
+    "input_sha256": "81acf1b7d888617b96b33a88d1a1f46e09fe9ca9ffd767efc05884430cb2dc7f",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/intput_lib/s2/kiro/1474",
+    "input_sha256": "e336800dd7e1478fba8b89f365a46b2140d11d49bc20472035e2a808a34df089",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   }
+  ],
+  "B02_organic/omni_collide_lib/kimi": [
+   {
+    "key": "B02_organic/omni_collide_lib/s2/kimi/1739",
+    "input_sha256": "433a86cba2ccd80e62bd74ef8bc98a0c3d11dd4e6973b12f0ef471cbccca168e",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/omni_collide_lib/s0/kimi/1953",
+    "input_sha256": "65a156ae6711d16fea54862617d10b16eed7761b90566162007b30129927fef3",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/omni_manifold_lib/gpt-5.4": [
+   {
+    "key": "B02_organic/omni_manifold_lib/s1/gpt-5.4/1659",
+    "input_sha256": "01911f3c5bb67e23d8514d4ab1b5fccc9b8693d8eacb6c53f866a28f546b4b4f",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/omni_manifold_lib/s0/gpt-5.4/1005",
+    "input_sha256": "040d6b8d009fcec0bf28281084e2195ff9d67c294e5d49759c90d44aff6a00c4",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/omni_manifold_lib/s1/gpt-5.4/1356",
+    "input_sha256": "0671ec597f1667f0f296b6d29670e11e54636c92cd85dc1c4af2fbff493ee1df",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/omni_manifold_lib/kimi": [
+   {
+    "key": "B02_organic/omni_manifold_lib/s1/kimi/1659",
+    "input_sha256": "01911f3c5bb67e23d8514d4ab1b5fccc9b8693d8eacb6c53f866a28f546b4b4f",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/omni_manifold_lib/s0/kimi/1005",
+    "input_sha256": "040d6b8d009fcec0bf28281084e2195ff9d67c294e5d49759c90d44aff6a00c4",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/omni_manifold_lib/s0/kimi/1822",
+    "input_sha256": "04d38659546afe9732756e8967af631c112fd8474bd02886a320976432eb6640",
+    "source": "dict",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/parse_number_lib/gpt-5.4": [
+   {
+    "key": "B02_organic/parse_number_lib/s0/gpt-5.4/1245",
+    "input_sha256": "0038df83cfa821967b9bb8b381f7d239b7404a49ecf58747cc647787f13af53d",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/parse_number_lib/s2/gpt-5.4/1471",
+    "input_sha256": "01f077263a549299cf145604257213f0b491f4df7d24ae9ad9cf6b6b30e08998",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/parse_number_lib/s0/gpt-5.4/1671",
+    "input_sha256": "03e5612186e04acb2f0d96f2d7ba5a4f27d185b2df382c3185cc1428ddf9cef5",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/pinflate_lib/kiro": [
+   {
+    "key": "B02_organic/pinflate_lib/s0/kiro/805",
+    "input_sha256": "011f6a9c32ec46ccb4122476d9ef9b4a651348374d0ccb6d7f9809aaae339a6e",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/pinflate_lib/s2/kiro/606",
+    "input_sha256": "021515b1339ca49f63005644c36c1a7f1877348861ce4d80ab13beae2a0ea193",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/pinflate_lib/s1/kiro/1423",
+    "input_sha256": "06af36a9d83ba8630b752bf86b1ee4191012296fdd90e02230f1be39ccd33e5e",
+    "source": "dict",
+    "channels": [
+     "status"
+    ]
+   }
+  ],
+  "B02_organic/search_and_replace_lib/kimi": [
+   {
+    "key": "B02_organic/search_and_replace_lib/s1/kimi/276",
+    "input_sha256": "002294022a42566766f21bae866404108ef4fe3b7a43c6f49db6efddcbc50e56",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/search_and_replace_lib/s0/kimi/1212",
+    "input_sha256": "0188cf01725831e263972d39943dd2d021df4534f82e5169f3c338ab78195412",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/search_and_replace_lib/s0/kimi/1630",
+    "input_sha256": "01c3287da70b9b4519618741e49e4213c8763ce8b97b5f1196302881a390c876",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_organic/utf8_lib/gpt-5.4": [
+   {
+    "key": "B02_organic/utf8_lib/s1/gpt-5.4/16",
+    "input_sha256": "4bdee28a851d3b01b76718ab242f0c4f4f25f16d6e91189918cce2e253c932a3",
+    "source": "random",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/utf8_lib/s0/gpt-5.4/18",
+    "input_sha256": "6d5ac34bde93eacfe9ad0ab5ef8ef3933bc0f284e7ea9c0759635e86892c3128",
+    "source": "random",
+    "channels": [
+     "status"
+    ]
+   },
+   {
+    "key": "B02_organic/utf8_lib/s2/gpt-5.4/36",
+    "input_sha256": "77ec51f3b58e65f03534d6ca8f8810a0cf0abb0d488ff9e2cabb4a67dbccfc16",
+    "source": "random",
+    "channels": [
+     "status"
+    ]
+   }
+  ],
+  "B02_organic/utf8_lib/kimi": [
+   {
+    "key": "B02_organic/utf8_lib/s1/kimi/16",
+    "input_sha256": "4bdee28a851d3b01b76718ab242f0c4f4f25f16d6e91189918cce2e253c932a3",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/utf8_lib/s0/kimi/18",
+    "input_sha256": "6d5ac34bde93eacfe9ad0ab5ef8ef3933bc0f284e7ea9c0759635e86892c3128",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   },
+   {
+    "key": "B02_organic/utf8_lib/s2/kimi/36",
+    "input_sha256": "77ec51f3b58e65f03534d6ca8f8810a0cf0abb0d488ff9e2cabb4a67dbccfc16",
+    "source": "random",
+    "channels": [
+     "status",
+     "state"
+    ]
+   }
+  ],
+  "B02_synthetic/charinbuf_lib/c2saferrust": [
+   {
+    "key": "B02_synthetic/charinbuf_lib/s1/c2saferrust/565",
+    "input_sha256": "00278469173fec02c86d5dceca64c4cdb5f826702f841514663186a8ac51f078",
+    "source": "random",
+    "channels": [
+     "stdout",
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/charinbuf_lib/s2/c2saferrust/322",
+    "input_sha256": "003434e68df3a4a797372594d9f04b6cad1119d347afa3303a76f9f5d36afaa2",
+    "source": "random",
+    "channels": [
+     "stdout",
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/charinbuf_lib/s2/c2saferrust/950",
+    "input_sha256": "00353d31e940f56635b1371ab141817a4a42ec690c873cc2ee412b51adef43a2",
+    "source": "random",
+    "channels": [
+     "stdout",
+     "stderr"
+    ]
+   }
+  ],
+  "B02_synthetic/checkshift_lib/kiro": [
+   {
+    "key": "B02_synthetic/checkshift_lib/s2/kiro/1601",
+    "input_sha256": "01166e51a75b2096a5880b4d56149475a22dedfd444f95af6c0d2ada76bdb41c",
+    "source": "dict",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/checkshift_lib/s2/kiro/1924",
+    "input_sha256": "0119de90d1d3493a5ebfbeb3d2b523c37147e81f429a60b19077157d95cf902f",
+    "source": "dict",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/checkshift_lib/s2/kiro/1532",
+    "input_sha256": "0150db1409995b1143050b9485a0bd0c4ec6964dfc5265ee503d571eaa6155f6",
+    "source": "dict",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   }
+  ],
+  "B02_synthetic/dataentry_lib/kimi": [
+   {
+    "key": "B02_synthetic/dataentry_lib/s2/kimi/1637",
+    "input_sha256": "01dcc0c5c122ff423189bce740e35cec5517520295afeabf5db2b0fbaeb8392a",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_synthetic/dataentry_lib/s0/kimi/1532",
+    "input_sha256": "044d5c51c65eaf10c1dd309617e7c19805d01cc0f95d1db797380c8cb0291b3e",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_synthetic/dataentry_lib/s0/kimi/1817",
+    "input_sha256": "0498b65fd4e122f27c03c6ded0fae9b5c5225232d7e8a14a04122f6834ffe6ae",
+    "source": "dict",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_synthetic/fallcalc_lib/gemini-3.1-pro-preview": [
+   {
+    "key": "B02_synthetic/fallcalc_lib/s0/gemini-3.1-pro-preview/59",
+    "input_sha256": "01eee6edd1491c4b206af221e4660355fa8bb7c6d9c00a241e2070562547c993",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_synthetic/fallcalc_lib/s0/gemini-3.1-pro-preview/510",
+    "input_sha256": "033c829803cc65643ca48d48485782ca4c3f2ef38e90c68f26b7a08b92a9e1ae",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   },
+   {
+    "key": "B02_synthetic/fallcalc_lib/s2/gemini-3.1-pro-preview/751",
+    "input_sha256": "04166eddd7378efda06d5d4c65283ba224689285ea155877357b82d95bcfdba6",
+    "source": "random",
+    "channels": [
+     "state"
+    ]
+   }
+  ],
+  "B02_synthetic/mathop_lib/claude": [
+   {
+    "key": "B02_synthetic/mathop_lib/s2/claude/337",
+    "input_sha256": "007c880c34ef7d111a23a58ef0791a647cd3a69dc82041ce47813c4616522cdb",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/mathop_lib/s0/claude/523",
+    "input_sha256": "009be8f425d4b99d431f2ad3e28a87334fc7f8507fb3df0d2f49ff52c491d624",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/mathop_lib/s0/claude/324",
+    "input_sha256": "016b4e5c6939a1774ead38bd405fa2474aa8654bca6d1e93cb58498367ea7924",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   }
+  ],
+  "B02_synthetic/mathop_lib/gemini-3.1-pro-preview": [
+   {
+    "key": "B02_synthetic/mathop_lib/s2/gemini-3.1-pro-preview/337",
+    "input_sha256": "007c880c34ef7d111a23a58ef0791a647cd3a69dc82041ce47813c4616522cdb",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/mathop_lib/s0/gemini-3.1-pro-preview/523",
+    "input_sha256": "009be8f425d4b99d431f2ad3e28a87334fc7f8507fb3df0d2f49ff52c491d624",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   },
+   {
+    "key": "B02_synthetic/mathop_lib/s0/gemini-3.1-pro-preview/324",
+    "input_sha256": "016b4e5c6939a1774ead38bd405fa2474aa8654bca6d1e93cb58498367ea7924",
+    "source": "random",
+    "channels": [
+     "state",
+     "stdout"
+    ]
+   }
+  ],
+  "B02_synthetic/matrix_mult_lib/c2saferrust": [
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s2/c2saferrust/1920",
+    "input_sha256": "050300544569de854288ecd95c6c65770bfb9869bb5910999e004984ee8e57c7",
+    "source": "dict",
+    "channels": [
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s0/c2saferrust/1374",
+    "input_sha256": "0f15cff1bb7abd86de28badcda92c1cae57c2f813eeab99ed6593a2609fef559",
+    "source": "random",
+    "channels": [
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s1/c2saferrust/633",
+    "input_sha256": "17f0cab823e395e26f86aa8c38ede718cfaa02afc9f5d760dd92383ff4bf063a",
+    "source": "random",
+    "channels": [
+     "status",
+     "state",
+     "stderr"
+    ]
+   }
+  ],
+  "B02_synthetic/matrix_mult_lib/gpt-5.4": [
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s2/gpt-5.4/1693",
+    "input_sha256": "0004e6fc4d5f1358673e9d45195788a919c9f5ff9a79f2ca1ba5cc91fc3175a1",
+    "source": "dict",
+    "channels": [
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s2/gpt-5.4/1730",
+    "input_sha256": "0060da574ab7a31e7cf8ad1324c8e72cc672ed2c880c67997b59af1d9e136187",
+    "source": "dict",
+    "channels": [
+     "stderr"
+    ]
+   },
+   {
+    "key": "B02_synthetic/matrix_mult_lib/s1/gpt-5.4/1901",
+    "input_sha256": "00ceebdcf87c721c937f1930b4917b9fad144f589abc44a472cc173f4dc18e7e",
+    "source": "dict",
+    "channels": [
+     "state",
+     "stderr"
+    ]
+   }
+  ]
+ },
+ "sources": [
+  "rq1-main-lib-1of2@a980c526423742d8204e93f133fd8e53630d53f7",
+  "rq1-main-lib-2of2@97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+  "rq1-main-lib-shgeti@c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+  "rq1-main-lib-2of2-light@e8f97047ff01ab618a80ec3aaf7c1efb91eae337"
+ ]
+}

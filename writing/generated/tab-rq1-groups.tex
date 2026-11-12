@@ -1,0 +1,23 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Bo cot theo seed (MR-17, Q-S1); hang All cua group la moi nhom
+\begin{tabular}{@{}l rrr rrr@{}}
+\toprule
+ & & & & \multicolumn{3}{c}{Non-benign} \\
+\cmidrule(l){5-7}
+Group & $P_{\mathit{test}}$ & $D$ & $r_{\mathit{FP}}$ (\%) & $\mathit{NB}^L$ & $\mathit{NB}^U$ & range (\%) \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Executable programs}} \\
+\quad B01 & \rqPtestExeBOneNum & \rqFPExeBOneNum & \rqFPExeBOnePct & \rqNBLoExeBOneNum & \rqNBHiExeBOneNum & \rqNBLoExeBOnePct--\rqNBHiExeBOnePct \\
+\quad B02 & \rqPtestExeBTwoNum & \rqFPExeBTwoNum & \rqFPExeBTwoPct & \rqNBLoExeBTwoNum & \rqNBHiExeBTwoNum & \rqNBLoExeBTwoPct--\rqNBHiExeBTwoPct \\
+\quad P00 & \rqPtestExePZeroNum & \rqFPExePZeroNum & \rqFPExePZeroPct & \rqNBLoExePZeroNum & \rqNBHiExePZeroNum & \rqNBLoExePZeroPct--\rqNBHiExePZeroPct \\
+\quad P01 & \rqPtestExePOneNum & \rqFPExePOneNum & \rqFPExePOnePct & \rqNBLoExePOneNum & \rqNBHiExePOneNum & \rqNBLoExePOnePct--\rqNBHiExePOnePct \\
+\quad All & \rqPtestExeAllNum & \rqFPExeAllNum & \rqFPExeAllPct & \rqNBLoExeAllNum & \rqNBHiExeAllNum & \rqNBLoExeAllPct--\rqNBHiExeAllPct \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Libraries}} \\
+\quad B01 & \rqPtestLibBOneNum & \rqFPLibBOneNum & \rqFPLibBOnePct & \rqNBLoLibBOneNum & \rqNBHiLibBOneNum & \rqNBLoLibBOnePct--\rqNBHiLibBOnePct \\
+\quad B02 & \rqPtestLibBTwoNum & \rqFPLibBTwoNum & \rqFPLibBTwoPct & \rqNBLoLibBTwoNum & \rqNBHiLibBTwoNum & \rqNBLoLibBTwoPct--\rqNBHiLibBTwoPct \\
+\quad P00 & \rqPtestLibPZeroNum & \rqFPLibPZeroNum & \rqFPLibPZeroPct & \rqNBLoLibPZeroNum & \rqNBHiLibPZeroNum & \rqNBLoLibPZeroPct--\rqNBHiLibPZeroPct \\
+\quad P01 & \rqPtestLibPOneNum & \rqFPLibPOneNum & \rqFPLibPOnePct & \rqNBLoLibPOneNum & \rqNBHiLibPOneNum & \rqNBLoLibPOnePct--\rqNBHiLibPOnePct \\
+\quad All & \rqPtestLibAllNum & \rqFPLibAllNum & \rqFPLibAllPct & \rqNBLoLibAllNum & \rqNBHiLibAllNum & \rqNBLoLibAllPct--\rqNBHiLibAllPct \\
+\bottomrule
+\end{tabular}

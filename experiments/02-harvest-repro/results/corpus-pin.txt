@@ -1,0 +1,3 @@
+harvest-agentic-translate-results  https://github.com/UW-HARVEST/harvest-agentic-translate-results  38352c21068c8ebcf58457ee246cd97feefeea86  (main, khớp bản in của Schesch & Ernst)
+PUBLIC-Test-Corpus                 https://github.com/DARPA-TRACTOR-Program/PUBLIC-Test-Corpus      37960ee08a7c644ee66e29855eca33903f702e67  (Second evaluation #225)
+Ngày pin: 2026-09-28. Cả hai HEAD tại ngày pin trùng các commit trên.

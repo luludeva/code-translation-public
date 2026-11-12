@@ -1,0 +1,22 @@
+[1/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/hash_blake.c.o
+[2/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/__/__/app/src/utils.c.o
+[3/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/thash_blake_robust.c.o
+[4/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/address.c.o
+[5/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/fors.c.o
+[6/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/merkle.c.o
+[7/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/sign.c.o
+[8/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/utils.c.o
+[9/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/utilsx1.c.o
+[10/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/wots.c.o
+[11/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/wotsx1.c.o
+[12/20] Building C object test_case/app/CMakeFiles/sphincs_core.dir/src/randombytes.c.o
+[13/20] Linking C shared library libsphincs_core.so
+FAILED: libsphincs_core.so 
+: && /usr/bin/clang -fPIC -fsanitize=address,undefined -fno-sanitize-recover=undefined -g -O3 -DPARAMS=sphincs-blake-128f -DBLAKE_TR=1 -O3 -DNDEBUG   -shared -Wl,-soname,libsphincs_core.so -o libsphincs_core.so test_case/app/CMakeFiles/sphincs_obj.dir/src/address.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/fors.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/merkle.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/sign.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/utils.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/utilsx1.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/wots.c.o test_case/app/CMakeFiles/sphincs_obj.dir/src/wotsx1.c.o test_case/app/CMakeFiles/sphincs_core.dir/src/randombytes.c.o   && :
+/usr/bin/ld: test_case/app/CMakeFiles/sphincs_obj.dir/src/utilsx1.c.o: warning: relocation against `SPX_fors_treehashx1' in read-only section `.text'
+/usr/bin/ld: test_case/app/CMakeFiles/sphincs_obj.dir/src/fors.c.o: relocation R_X86_64_PC32 against symbol `SPX_fors_sign' can not be used when making a shared object; recompile with -fPIC
+/usr/bin/ld: final link failed: bad value
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+[14/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/blake256.c.o
+[15/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/blake512.c.o
+ninja: build stopped: subcommand failed.

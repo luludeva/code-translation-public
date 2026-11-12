@@ -1,0 +1,2 @@
+   Compiling driver v0.1.0 (/home/claude/exp02/.build/src/claude/static-vars-fpts)
+    Finished `release` profile [optimized] target(s) in 1.05s

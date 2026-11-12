@@ -1,0 +1,2594 @@
+{
+ "rule": "exp 40, P_test theo case (S₀, L5); post hoc, sơ bộ, chưa kiểm tay",
+ "exe": {
+  "P_test": 476,
+  "cases": 95,
+  "by_case": {
+   "B01_synthetic/001_helloworld": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/001_helloworld_with_header": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/002_stdin_echo": [
+    "c2rust",
+    "claude",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/003_string_slicing": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/005_static_loop": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/007_errno_pow": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/008_long_run": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/009_stack_buffer_overflow": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/010_integer_overflow": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/011_uninit_char_ptr": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/013_poor_quality_addition": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/014_dead_code": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/015_return_stack_buffer": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/016_divide_by_zero_float": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/019_integer_overflow_char_max_multiply": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/022_stdlib_div": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/023_struct_and_errno": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/024_struct_and_static": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/025_struct_and_errno_and_static": [
+    "c2rust",
+    "claude",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/026_goto_and_static": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/027_ctype_ascii": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/028_strchr": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/029_strcspn": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/030_mutable_buffer_overlap_extrahard": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/031_disjoint_arrays": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/033_bitfield": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/034_cast_to_char_ptr_int": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/035_cast_to_char_ptr_float": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/036_cast_to_char_ptr_struct": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/037_cast_to_char_ptr_int_no_strict_aliasing": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/038_cast_to_char_ptr_float_no_strict_aliasing": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/039_cast_to_char_ptr_struct_no_strict_aliasing": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/040_storage_class_auto": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/041_storage_class_register": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/042_float_union": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B01_synthetic/043_iso646_and_digraphs": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B02_organic/underhanded_c_luggage": [
+    "claude"
+   ],
+   "B02_synthetic/char_to_bool": [
+    "c2rust",
+    "codex-gpt54",
+    "laertes"
+   ],
+   "B02_synthetic/container_of": [
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "smartc2rust"
+   ],
+   "B02_synthetic/generic_foreach": [
+    "c2rust",
+    "claude",
+    "laertes"
+   ],
+   "B02_synthetic/hashmap_tree": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "laertes"
+   ],
+   "B02_synthetic/macrodepth_add_5": [
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro"
+   ],
+   "B02_synthetic/memcpy_fun_buffers": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes",
+    "smartc2rust"
+   ],
+   "B02_synthetic/memmove": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "laertes"
+   ],
+   "B02_synthetic/mutable_duplication_dag": [
+    "c2rust",
+    "c2saferrust",
+    "codex-gpt54",
+    "laertes"
+   ],
+   "B02_synthetic/strcmp": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "laertes"
+   ],
+   "B02_synthetic/strcpy": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "P01_sphincs_plus/005_sphincs_PQCgenKAT_sign_blake_128f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/006_sphincs_PQCgenKAT_sign_blake_128f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/007_sphincs_PQCgenKAT_sign_blake_128s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/008_sphincs_PQCgenKAT_sign_blake_128s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/009_sphincs_PQCgenKAT_sign_blake_192f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/010_sphincs_PQCgenKAT_sign_blake_192f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/011_sphincs_PQCgenKAT_sign_blake_192s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/012_sphincs_PQCgenKAT_sign_blake_192s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/013_sphincs_PQCgenKAT_sign_blake_256f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/014_sphincs_PQCgenKAT_sign_blake_256f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/015_sphincs_PQCgenKAT_sign_blake_256s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/016_sphincs_PQCgenKAT_sign_blake_256s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/017_sphincs_PQCgenKAT_sign_sha2_128f_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/018_sphincs_PQCgenKAT_sign_sha2_128f_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/019_sphincs_PQCgenKAT_sign_sha2_128s_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/020_sphincs_PQCgenKAT_sign_sha2_128s_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/021_sphincs_PQCgenKAT_sign_sha2_192f_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/022_sphincs_PQCgenKAT_sign_sha2_192f_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/023_sphincs_PQCgenKAT_sign_sha2_192s_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/024_sphincs_PQCgenKAT_sign_sha2_192s_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/025_sphincs_PQCgenKAT_sign_sha2_256f_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/026_sphincs_PQCgenKAT_sign_sha2_256f_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/027_sphincs_PQCgenKAT_sign_sha2_256s_simple": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/028_sphincs_PQCgenKAT_sign_sha2_256s_robust": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/029_sphincs_PQCgenKAT_sign_shake_128f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/030_sphincs_PQCgenKAT_sign_shake_128f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/031_sphincs_PQCgenKAT_sign_shake_128s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/032_sphincs_PQCgenKAT_sign_shake_128s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/033_sphincs_PQCgenKAT_sign_shake_192f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/034_sphincs_PQCgenKAT_sign_shake_192f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/035_sphincs_PQCgenKAT_sign_shake_192s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/036_sphincs_PQCgenKAT_sign_shake_192s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/037_sphincs_PQCgenKAT_sign_shake_256f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/038_sphincs_PQCgenKAT_sign_shake_256f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/039_sphincs_PQCgenKAT_sign_shake_256s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/040_sphincs_PQCgenKAT_sign_shake_256s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/041_sphincs_PQCgenKAT_sign_haraka_128f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/042_sphincs_PQCgenKAT_sign_haraka_128f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/043_sphincs_PQCgenKAT_sign_haraka_128s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/044_sphincs_PQCgenKAT_sign_haraka_128s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/045_sphincs_PQCgenKAT_sign_haraka_192f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/046_sphincs_PQCgenKAT_sign_haraka_192f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/047_sphincs_PQCgenKAT_sign_haraka_192s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/048_sphincs_PQCgenKAT_sign_haraka_192s_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/049_sphincs_PQCgenKAT_sign_haraka_256f_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/050_sphincs_PQCgenKAT_sign_haraka_256f_robust": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/051_sphincs_PQCgenKAT_sign_haraka_256s_simple": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/052_sphincs_PQCgenKAT_sign_haraka_256s_robust": [
+    "claude",
+    "kiro"
+   ]
+  },
+  "R_test": 92,
+  "R_test_cases": 29,
+  "F": 0,
+  "F_cases": 0,
+  "R_test_by_case": {
+   "B01_synthetic/001_helloworld": [
+    "smartc2rust"
+   ],
+   "B01_synthetic/002_stdin_echo": [
+    "c2saferrust",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "smartc2rust"
+   ],
+   "B01_synthetic/003_string_slicing": [
+    "c2saferrust",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/004_nineality_sieve": [
+    "kimi"
+   ],
+   "B01_synthetic/006_static_alias": [
+    "c2saferrust",
+    "gpt-5.4"
+   ],
+   "B01_synthetic/007_errno_pow": [
+    "c2saferrust",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/009_stack_buffer_overflow": [
+    "c2saferrust",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/013_poor_quality_addition": [
+    "c2saferrust"
+   ],
+   "B01_synthetic/021_complex_goto": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B01_synthetic/022_stdlib_div": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B01_synthetic/023_struct_and_errno": [
+    "c2saferrust",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/025_struct_and_errno_and_static": [
+    "c2saferrust",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4"
+   ],
+   "B01_synthetic/026_goto_and_static": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B01_synthetic/027_ctype_ascii": [
+    "gemini-3.1-pro-preview",
+    "gpt-5.4"
+   ],
+   "B01_synthetic/030_mutable_buffer_overlap_extrahard": [
+    "kimi",
+    "smartc2rust"
+   ],
+   "B01_synthetic/031_disjoint_arrays": [
+    "kimi"
+   ],
+   "B01_synthetic/042_float_union": [
+    "gemini-3.1-pro-preview",
+    "kimi"
+   ],
+   "B02_organic/underhanded_c_luggage": [
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro"
+   ],
+   "B02_synthetic/char_to_bool": [
+    "c2saferrust",
+    "claude",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "smartc2rust"
+   ],
+   "B02_synthetic/generic_foreach": [
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "smartc2rust"
+   ],
+   "B02_synthetic/hashmap_tree": [
+    "kiro"
+   ],
+   "B02_synthetic/macrodepth_mul_4": [
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro"
+   ],
+   "B02_synthetic/macrodepth_sub_6": [
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro"
+   ],
+   "B02_synthetic/memmove": [
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "smartc2rust"
+   ],
+   "B02_synthetic/mutable_duplication_dag": [
+    "claude",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro"
+   ],
+   "B02_synthetic/pointer_comparison_ascii_art": [
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kiro",
+    "smartc2rust"
+   ],
+   "B02_synthetic/strcmp": [
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro"
+   ],
+   "B02_synthetic/strcpy": [
+    "gpt-5.4"
+   ],
+   "P00_perlin_noise/001_perlin_noise": [
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "smartc2rust"
+   ]
+  },
+  "F_by_case": {}
+ },
+ "lib": {
+  "P_test": 1088,
+  "cases": 192,
+  "by_case": {
+   "B01_organic/bin2hex_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/bitwriter_add_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/collided_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/colourblind_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/contrast_ratio_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/crc16_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/dequantize_granule_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/div_euclid_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/encode_quant_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/flac_validate_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/flip_horizontal_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/float2half_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/half2float_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/hdr_bitrate_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/hdr_compare_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/hsl_to_rgb_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/hsv_to_rgb_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/ima_parse_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/ldexp_q2_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/max_size_frame_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/md5_digest_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/merge_sort_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/next_double_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/normalize_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/premultiply_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/read_side_info_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/rev16_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/rgb_to_hsv_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/synth_pair_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/tfm_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/to_barycentric_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/tritanopia_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/update_frame_header_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_organic/update_md5_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro"
+   ],
+   "B01_organic/wcscat_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/003_string_slicing_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/005_static_loop_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/007_errno_pow_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/009_stack_buffer_overflow_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/011_uninit_char_ptr_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/012_uninit_int_ptr_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro"
+   ],
+   "B01_synthetic/016_divide_by_zero_float_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/017_signed_length_confusion_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/018_stack_buffer_overflow_loop1_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/019_integer_overflow_char_max_multiply_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/020_stack_linked_list_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/022_stdlib_div_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/023_struct_and_errno_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/024_struct_and_static_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/025_struct_and_errno_and_static_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/026_goto_and_static_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/028_strchr_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/031_disjoint_arrays_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/033_bitfield_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/034_cast_to_char_ptr_int_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/035_cast_to_char_ptr_float_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/036_cast_to_char_ptr_struct_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/037_cast_to_char_ptr_int_no_strict_aliasing_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/038_cast_to_char_ptr_float_no_strict_aliasing_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/039_cast_to_char_ptr_struct_no_strict_aliasing_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/040_storage_class_auto_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/041_storage_class_register_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/042_float_union_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B01_synthetic/043_iso646_and_digraphs_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/agglom_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/arr_del_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/arr_ins_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/basename_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/cJSON_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/call_predict_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/capsule_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/circle_collide_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/decode_base64_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/file_queue_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/gen_ray_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/get_predict_func_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/gjk_cache_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/gjk_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/intput_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/lines_in_buffer_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/omni_collide_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/omni_manifold_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/parse_number_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/pinflate_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/poly_ray_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/rdg_genstdout_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/reverse_collide_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/search_and_replace_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/siphash_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/spec_ray_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/strdup_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/unfilter_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_organic/utf8_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/arity_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/arrayfunc_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/betagamma_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/buffapp_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/charinbuf_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/checkshift_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/cleanup_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/complexmode_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/confusion_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/dataentry_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/doubleneg_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/envy_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/fallcalc_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/findrep_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/gotomach_lib": [
+    "c2rust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/hatch_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/inreftree_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/jumpnode_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/mathop_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/matrix_mult_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/maxnmin_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kiro",
+    "laertes"
+   ],
+   "B02_synthetic/overunder_lib": [
+    "c2rust",
+    "c2saferrust",
+    "claude",
+    "codex-gpt54",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi",
+    "kiro",
+    "laertes"
+   ],
+   "P01_sphincs_plus/057_blake_128f_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/058_blake_128f_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/059_blake_128f_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/060_blake_128f_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/061_blake_128s_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/062_blake_128s_s_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/063_blake_128s_s_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/064_blake_128s_s_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/065_blake_128s_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/066_blake_128s_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/067_blake_128s_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/068_blake_128s_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/069_blake_192f_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/070_blake_192f_s_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/071_blake_192f_s_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/072_blake_192f_s_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/073_blake_192f_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/074_blake_192f_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/075_blake_192f_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/076_blake_192f_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/077_blake_192s_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/078_blake_192s_s_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/079_blake_192s_s_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/080_blake_192s_s_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/081_blake_192s_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/082_blake_192s_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/083_blake_192s_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/084_blake_192s_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/085_blake_256f_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/086_blake_256f_s_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/087_blake_256f_s_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/088_blake_256f_s_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/089_blake_256f_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/090_blake_256f_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/091_blake_256f_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/092_blake_256f_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/093_blake_256s_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/094_blake_256s_s_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/095_blake_256s_s_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/096_blake_256s_s_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/097_blake_256s_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/098_blake_256s_r_prf_addr_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/099_blake_256s_r_gen_message_random_lib": [
+    "kiro"
+   ],
+   "P01_sphincs_plus/100_blake_256s_r_hash_message_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/101_sha2_128f_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/102_sha2_128f_s_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/103_sha2_128f_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/104_sha2_128f_s_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/105_sha2_128f_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/106_sha2_128f_r_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/107_sha2_128f_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/108_sha2_128f_r_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/109_sha2_128s_s_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/110_sha2_128s_s_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/111_sha2_128s_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/112_sha2_128s_s_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/113_sha2_128s_r_initialize_hash_function_lib": [
+    "claude",
+    "kiro"
+   ],
+   "P01_sphincs_plus/114_sha2_128s_r_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/115_sha2_128s_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/116_sha2_128s_r_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/117_sha2_192f_s_initialize_hash_function_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/118_sha2_192f_s_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/119_sha2_192f_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/120_sha2_192f_s_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/121_sha2_192f_r_initialize_hash_function_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/122_sha2_192f_r_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/123_sha2_192f_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/124_sha2_192f_r_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/125_sha2_192s_s_initialize_hash_function_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/126_sha2_192s_s_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/127_sha2_192s_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/128_sha2_192s_s_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/129_sha2_192s_r_initialize_hash_function_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/130_sha2_192s_r_prf_addr_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/131_sha2_192s_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ],
+   "P01_sphincs_plus/132_sha2_192s_r_hash_message_lib": [
+    "claude",
+    "codex-gpt54",
+    "kiro"
+   ]
+  },
+  "R_test": 111,
+  "R_test_cases": 81,
+  "F": 1,
+  "F_cases": 1,
+  "R_test_by_case": {
+   "B01_organic/bin2hex_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/dequantize_granule_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/div_euclid_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/hdr_compare_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/hsl_to_rgb_lib": [
+    "c2saferrust",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_organic/merge_sort_lib": [
+    "c2saferrust",
+    "gpt-5.4"
+   ],
+   "B01_organic/normalize_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/synth_pair_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/tfm_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/to_barycentric_lib": [
+    "c2saferrust"
+   ],
+   "B01_organic/update_frame_header_lib": [
+    "kimi"
+   ],
+   "B01_organic/wcscat_lib": [
+    "c2saferrust"
+   ],
+   "B01_synthetic/003_string_slicing_lib": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B01_synthetic/006_static_alias_lib": [
+    "c2saferrust"
+   ],
+   "B01_synthetic/013_poor_quality_addition_lib": [
+    "c2saferrust"
+   ],
+   "B01_synthetic/017_signed_length_confusion_lib": [
+    "kimi"
+   ],
+   "B01_synthetic/021_complex_goto_lib": [
+    "kimi"
+   ],
+   "B01_synthetic/023_struct_and_errno_lib": [
+    "c2saferrust",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/025_struct_and_errno_and_static_lib": [
+    "c2saferrust",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/027_ctype_ascii_lib": [
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B01_synthetic/042_float_union_lib": [
+    "kimi"
+   ],
+   "B02_organic/agglom_lib": [
+    "gpt-5.4"
+   ],
+   "B02_organic/basename_lib": [
+    "c2saferrust"
+   ],
+   "B02_organic/decode_base64_lib": [
+    "c2saferrust"
+   ],
+   "B02_organic/file_queue_lib": [
+    "gpt-5.4"
+   ],
+   "B02_organic/gjk_cache_lib": [
+    "gpt-5.4"
+   ],
+   "B02_organic/lines_in_buffer_lib": [
+    "c2saferrust"
+   ],
+   "B02_organic/parse_uname_lib": [
+    "gpt-5.4"
+   ],
+   "B02_organic/search_and_replace_lib": [
+    "gpt-5.4"
+   ],
+   "B02_organic/sh_geti_lib": [
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B02_synthetic/cleanup_lib": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B02_synthetic/complexmode_lib": [
+    "c2saferrust",
+    "kimi"
+   ],
+   "B02_synthetic/confusion_lib": [
+    "c2saferrust",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4",
+    "kimi"
+   ],
+   "B02_synthetic/goto_lib": [
+    "c2saferrust",
+    "gemini-3.1-pro-preview",
+    "kimi"
+   ],
+   "B02_synthetic/jumpnode_lib": [
+    "gpt-5.4"
+   ],
+   "B02_synthetic/matrix_mult_lib": [
+    "gemini-3.1-pro-preview",
+    "kimi"
+   ],
+   "P01_sphincs_plus/058_blake_128f_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/059_blake_128f_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/060_blake_128f_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/062_blake_128s_s_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/063_blake_128s_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/064_blake_128s_s_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/066_blake_128s_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/067_blake_128s_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/068_blake_128s_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/069_blake_192f_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/070_blake_192f_s_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/071_blake_192f_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/072_blake_192f_s_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/073_blake_192f_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/074_blake_192f_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/075_blake_192f_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/076_blake_192f_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/077_blake_192s_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/078_blake_192s_s_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/079_blake_192s_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/080_blake_192s_s_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/081_blake_192s_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/082_blake_192s_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/083_blake_192s_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/084_blake_192s_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/085_blake_256f_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/086_blake_256f_s_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/087_blake_256f_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/088_blake_256f_s_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/089_blake_256f_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/090_blake_256f_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/091_blake_256f_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/092_blake_256f_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/093_blake_256s_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/094_blake_256s_s_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/095_blake_256s_s_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/096_blake_256s_s_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/097_blake_256s_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/098_blake_256s_r_prf_addr_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/099_blake_256s_r_gen_message_random_lib": [
+    "claude",
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/100_blake_256s_r_hash_message_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/101_sha2_128f_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/105_sha2_128f_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/109_sha2_128s_s_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ],
+   "P01_sphincs_plus/113_sha2_128s_r_initialize_hash_function_lib": [
+    "codex-gpt54"
+   ]
+  },
+  "F_by_case": {
+   "B02_organic/agglom_lib": [
+    "gpt-5.4"
+   ]
+  }
+ }
+}

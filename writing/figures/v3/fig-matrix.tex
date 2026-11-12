@@ -1,0 +1,26 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  cell/.style={draw, minimum width=4.9cm, minimum height=2.2cm, align=center, inner sep=4pt}]
+\def\xa{3.2} \def\xb{8.2} \def\xc{13.2} \def\xd{18.2}
+\node[font=\small\bfseries] at ({(\xa+\xd)/2},1.25) {Outcome under the independent differential oracle};
+\node[align=center] at ({(\xa+\xb)/2},0.45) {evidence against\\the published decision};
+\node[align=center] at ({(\xb+\xc)/2},0.45) {no evidence against\\the published decision};
+\node[align=center] at ({(\xc+\xd)/2},0.45) {no outcome};
+\node[font=\small\bfseries, rotate=90] at (-0.5,-2.2) {Published decision};
+\node[align=center, text=passc, font=\small\bfseries] at (1.7,-1.1) {Accepted\\(PASS)};
+\node[align=center, text=failc, font=\small\bfseries] at (1.7,-3.3) {Rejected at\\the test stage\\(FAIL)};
+\node[cell, fill=passc!12, draw=passc, thick] at ({(\xa+\xb)/2},-1.1)
+  {\textbf{Retained divergence}\\[3pt]the translation and the C program\\behave differently on some input\\[3pt]\textcolor{passc}{counted by RQ1}};
+\node[cell, fill=black!4] at ({(\xb+\xc)/2},-1.1)
+  {\textbf{No divergence detected}\\[3pt]equivalence remains unshown};
+\node[cell, fill=white, dashed] at ({(\xc+\xd)/2},-1.1)
+  {\textbf{Re-evaluation incomplete}\\[3pt]attrition};
+\node[cell, fill=failc!12, draw=failc, thick] at ({(\xa+\xb)/2},-3.3)
+  {\textbf{Unsupported rejection}\\[3pt]every failing vector\\agrees with the C program\\[3pt]\textcolor{failc}{counted by RQ2}};
+\node[cell, fill=black!4] at ({(\xb+\xc)/2},-3.3)
+  {\textbf{Supported rejection}\\[3pt]a failing vector shows\\a difference from the C program};
+\node[cell, fill=white, dashed] at ({(\xc+\xd)/2},-3.3)
+  {\textbf{Not adjudicable}\\or \textbf{not re-examined}\\[3pt]the latter is attrition};
+\node[draw, thick, rounded corners=3pt, fill=black!4, align=center, inner sep=6pt] at ({(\xa+\xd)/2},-5.45)
+  {\textbf{RQ3}: the two colored cells change the number of accepted translations;\\
+   the right-hand column turns the resulting success rate into an interval};
+\end{tikzpicture}

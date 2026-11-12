@@ -1,0 +1,965 @@
+% references.bib
+% Chiến lược: resolve đầy đủ theo nhu cầu.
+% Vào file này khi key có vai trò motivation / baseline / metric-source,
+% hoặc được >=2 paper trong corpus 9 paper cite.
+% Key chưa đủ điều kiện nằm ở cuối, trong khối STUB.
+%
+% Nguồn hiện tại: Laertes (Emre et al. OOPSLA 2021), bibliography 40 entry.
+% Cập nhật gần nhất: 2026-09-16
+
+% =====================================================================
+% CORPUS 9 PAPER
+% =====================================================================
+
+@article{emre2021laertes,
+  author    = {Emre, Mehmet and Schroeder, Ryan and Dewey, Kyle and Hardekopf, Ben},
+  title     = {Translating {C} to Safer {Rust}},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  volume    = {5},
+  number    = {OOPSLA},
+  articleno = {121},
+  numpages  = {29},
+  year      = {2021},
+  month     = oct,
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3485498}
+}
+
+% =====================================================================
+% TOOL VÀ ARTIFACT
+% =====================================================================
+
+@misc{c2rust,
+  author       = {{Immunant inc.}},
+  title        = {immunant/c2rust},
+  year         = {2020},
+  howpublished = {\url{https://github.com/immunant/c2rust}},
+  note         = {Original-date: 2018-04-20}
+}
+
+@misc{c2rust-manual,
+  author       = {{Immunant inc.}},
+  title        = {c2rust Manual Examples},
+  year         = {2020},
+  howpublished = {\url{https://c2rust.com/manual/examples/index.html}}
+}
+
+@misc{citrus,
+  author       = {{Citrus Developers}},
+  title        = {Citrus / Citrus},
+  howpublished = {\url{https://gitlab.com/citrus-rs/citrus}},
+  note         = {Accessed via Emre et al. 2021}
+}
+
+@misc{corrode,
+  author       = {Sharp, Jamey},
+  title        = {jameysharp/corrode},
+  year         = {2020},
+  howpublished = {\url{https://github.com/jameysharp/corrode}},
+  note         = {Original-date: 2016-05-05}
+}
+
+@misc{emre2021artifact,
+  author       = {Emre, Mehmet and Schroeder, Ryan},
+  title        = {Artifact for ``Translating {C} to Safer {Rust}''},
+  year         = {2021},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.5442253}
+}
+
+@misc{emre2021supplementary,
+  author       = {Emre, Mehmet and Schroeder, Ryan and Dewey, Kyle and Hardekopf, Ben},
+  title        = {Supplementary Material on ``Translating {C} to Safer {Rust}''},
+  year         = {2021},
+  howpublished = {\url{https://cs.ucsb.edu/~benh/research/papers/oopsla21-supplementary.pdf}}
+}
+
+@misc{emre2021extended,
+  author       = {Emre, Mehmet and Schroeder, Ryan and Dewey, Kyle and Hardekopf, Ben},
+  title        = {Translating {C} to Safer {Rust} --- Extended Version},
+  year         = {2021},
+  howpublished = {\url{https://cs.ucsb.edu/~benh/research/papers/oopsla21-extended.pdf}}
+}
+
+% =====================================================================
+% METRIC-SOURCE — định nghĩa và cách đo unsafe
+% =====================================================================
+
+@misc{rustreference,
+  author       = {{The Rust developers}},
+  title        = {The {Rust} Reference},
+  howpublished = {\url{https://doc.rust-lang.org/stable/reference/}},
+  note         = {Accessed 2026-10-26}
+}
+
+@misc{rust-error-index,
+  author       = {{The Rust developers}},
+  title        = {{Rust} Compiler Error Index},
+  howpublished = {\url{https://doc.rust-lang.org/error-index.html}}
+}
+
+@article{astrauskas2020,
+  author    = {Astrauskas, Vytautas and Matheja, Christoph and Poli, Federico and M\"{u}ller, Peter and Summers, Alexander J.},
+  title     = {How Do Programmers Use Unsafe {Rust}?},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  volume    = {4},
+  number    = {OOPSLA},
+  articleno = {136},
+  numpages  = {27},
+  year      = {2020},
+  month     = nov,
+  doi       = {10.1145/3428204}
+}
+
+@inproceedings{qin2020,
+  author    = {Qin, Boqin and Chen, Yilun and Yu, Zeming and Song, Linhai and Zhang, Yiying},
+  title     = {Understanding Memory and Thread Safety Practices and Issues in Real-World {Rust} Programs},
+  booktitle = {Proceedings of the 41st ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  pages     = {763--779},
+  year      = {2020},
+  doi       = {10.1145/3385412.3386036}
+}
+
+@inproceedings{evans2020,
+  author    = {Evans, Ana Nora and Campbell, Bradford and Soffa, Mary Lou},
+  title     = {Is {Rust} Used Safely by Software Developers?},
+  booktitle = {2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)},
+  pages     = {246--257},
+  year      = {2020}
+}
+
+% =====================================================================
+% MOTIVATION
+% =====================================================================
+
+@inproceedings{durumeric2014heartbleed,
+  author    = {Durumeric, Zakir and Li, Frank and Kasten, James and Amann, Johanna and Beekman, Jethro and Payer, Mathias and Weaver, Nicolas and Adrian, David and Paxson, Vern and Bailey, Michael and Halderman, J. Alex},
+  title     = {The Matter of {Heartbleed}},
+  booktitle = {Proceedings of the 2014 Conference on Internet Measurement Conference (IMC)},
+  pages     = {475--488},
+  year      = {2014},
+  doi       = {10.1145/2663716.2663755}
+}
+
+% NOTE: WARNING: this is a race condition, NOT a memory-safety bug. Do not use it as evidence for memory-safety claims.
+@article{leveson1993therac,
+  author  = {Leveson, N.G. and Turner, C.S.},
+  title   = {An investigation of the {Therac-25} accidents},
+  journal = {Computer},
+  volume  = {26},
+  number  = {7},
+  pages   = {18--41},
+  year    = {1993},
+  doi     = {10.1109/MC.1993.274940},
+}
+
+@misc{cve-2021-21148,
+  title        = {{NVD} --- {CVE-2021-21148}},
+  year         = {2021},
+  howpublished = {\url{https://nvd.nist.gov/vuln/detail/CVE-2021-21148}}
+}
+
+@misc{cve-2021-3156,
+  title        = {{NVD} --- {CVE-2021-3156}},
+  year         = {2021},
+  howpublished = {\url{https://nvd.nist.gov/vuln/detail/CVE-2021-3156}}
+}
+
+% NOTE: Grey literature. Emre et al. frame it as "indicative (though unscientific)" and "conservatively estimates"; keep that framing when citing.
+@misc{hutt2021curl,
+  author       = {Hutt, Tim},
+  title        = {Would {Rust} secure {cURL}?},
+  year         = {2021},
+  howpublished = {\url{https://timmmm.github.io/curl-vulnerabilities-rust/}},
+}
+
+@article{anderson2015servo,
+  author  = {Anderson, Brian and Bergstrom, Lars and Herman, David and Matthews, Josh and McAllister, Keegan and Goregaokar, Manish and Moffitt, Jack and Sapin, Simon},
+  title   = {Experience Report: Developing the {Servo} Web Browser Engine using {Rust}},
+  journal = {arXiv:1505.07383 [cs]},
+  year    = {2015},
+  month   = may,
+  url     = {http://arxiv.org/abs/1505.07383}
+}
+
+@inproceedings{levy2015tock,
+  author    = {Levy, Amit and Andersen, Michael P. and Campbell, Bradford and Culler, David and Dutta, Prabal and Ghena, Branden and Levis, Philip and Pannuto, Pat},
+  title     = {Ownership is theft: experiences building an embedded {OS} in {Rust}},
+  booktitle = {Proceedings of the 8th Workshop on Programming Languages and Operating Systems (PLOS)},
+  pages     = {21--26},
+  year      = {2015},
+  doi       = {10.1145/2818302.2818306}
+}
+
+@inproceedings{lin2016gc,
+  author    = {Lin, Yi and Blackburn, Stephen M. and Hosking, Antony L. and Norrish, Michael},
+  title     = {{Rust} as a language for high performance {GC} implementation},
+  booktitle = {Proceedings of the 2016 ACM SIGPLAN International Symposium on Memory Management (ISMM)},
+  pages     = {89--98},
+  year      = {2016},
+  doi       = {10.1145/2926697.2926707}
+}
+
+@misc{bryant2016quantum,
+  author       = {Bryant, David},
+  title        = {A Quantum Leap for the Web},
+  year         = {2016},
+  howpublished = {\url{https://medium.com/mozilla-tech/a-quantum-leap-for-the-web-a3b7174b3c12}}
+}
+
+@misc{stoep2021android,
+  author       = {Vander Stoep, Jeff and Hines, Stephen},
+  title        = {{Rust} in the {Android} platform},
+  year         = {2021},
+  howpublished = {\url{https://security.googleblog.com/2021/04/rust-in-android-platform.html}}
+}
+
+% NOTE: Emre et al. cite both LWN articles under one key.
+@misc{lwn-rust-linux,
+  title        = {Supporting {Linux} kernel development in {Rust}},
+  howpublished = {\url{https://lwn.net/Articles/829858/} and \url{https://lwn.net/Articles/849849/}},
+}
+
+@book{klabnik2018rustbook,
+  author    = {Klabnik, Steve and Nichols, Carol},
+  title     = {The {Rust} Programming Language},
+  publisher = {No Starch Press},
+  year      = {2018},
+  url       = {https://doc.rust-lang.org/book/},
+  note      = {Online edition for Rust 1.97, accessed 2026-10-26}
+}
+
+% =====================================================================
+% METHOD-BORROW — phân tích và formalization
+% =====================================================================
+
+@inproceedings{steensgaard1996,
+  author    = {Steensgaard, Bjarne},
+  title     = {Points-to Analysis in Almost Linear Time},
+  booktitle = {Proceedings of the 23rd ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages (POPL)},
+  pages     = {32--41},
+  year      = {1996},
+  doi       = {10.1145/237721.237727}
+}
+
+@techreport{andersen1994,
+  author      = {Andersen, Lars Ole},
+  title       = {Program Analysis and Specialization for the {C} Programming Language},
+  institution = {University of Copenhagen},
+  year        = {1994},
+  type        = {PhD thesis}
+}
+
+% NOTE: Emre et al. cite Figures 4, 5, 6 for the typing, type equivalence, and subtyping constraints.
+@misc{weiss-oxide,
+  author = {Weiss, Aaron and Patterson, Daniel and Matsakis, Nicholas D. and Ahmed, Amal},
+  title  = {Oxide: The Essence of {Rust}},
+  note   = {27 pages}
+}
+
+@article{jung2017rustbelt,
+  author    = {Jung, Ralf and Jourdan, Jacques-Henri and Krebbers, Robbert and Dreyer, Derek},
+  title     = {{RustBelt}: Securing the Foundations of the {Rust} Programming Language},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  volume    = {2},
+  number    = {POPL},
+  articleno = {66},
+  numpages  = {34},
+  year      = {2017},
+  month     = dec,
+  doi       = {10.1145/3158154}
+}
+
+@inproceedings{boyapati2002,
+  author    = {Boyapati, Chandrasekhar and Lee, Robert and Rinard, Martin},
+  title     = {Ownership Types for Safe Programming: Preventing Data Races and Deadlocks},
+  booktitle = {Proceedings of the 17th ACM SIGPLAN Conference on Object-oriented Programming, Systems, Languages, and Applications (OOPSLA)},
+  pages     = {211--230},
+  year      = {2002},
+  doi       = {10.1145/582419.582440}
+}
+
+@inproceedings{boyapati2003,
+  author    = {Boyapati, Chandrasekhar and Salcianu, Alexandru and Beebee, Jr., William and Rinard, Martin},
+  title     = {Ownership Types for Safe Region-based Memory Management in Real-time {Java}},
+  booktitle = {Proceedings of the ACM SIGPLAN 2003 Conference on Programming Language Design and Implementation (PLDI)},
+  pages     = {324--337},
+  year      = {2003},
+  doi       = {10.1145/781131.781168}
+}
+
+% =====================================================================
+% STUB — chưa đủ điều kiện resolve đầy đủ.
+% Giữ key + đủ thông tin để resolve sau nếu cite thật.
+% =====================================================================
+%
+% flanagan2001          Flanagan, Joshi, Leino. Annotation inference for modular checkers.
+%                       Inform. Process. Lett. 77(2):97-108, 2001. doi 10.1016/S0020-0190(00)00196-4
+% flanaganleino2001houdini  Flanagan, Leino. Houdini, an Annotation Assistant for ESC/Java.
+%                       FME 2001, LNCS 2021, pp. 500-517. doi 10.1007/3-540-45251-6_29
+% flanagan2002escjava   Flanagan, Leino, Lillibridge, Nelson, Saxe, Stata. Extended static checking for Java.
+%                       PLDI 2002, pp. 234-245. doi 10.1145/512529.512558
+% cielecki2006canapa    Cielecki, Fulara, Jakubczyk, Jancewicz. Propagation of JML non-null annotations in Java programs.
+%                       PPPJ 2006, pp. 135-140. doi 10.1145/1168054.1168073
+% vakilian2015cascade   Vakilian, Phaosawasdi, Ernst, Johnson. Cascade: A Universal Programmer-Assisted Type Qualifier Inference Tool.
+%                       ICSE 2015, pp. 234-245. doi 10.1109/ICSE.2015.44
+% reed2015patina        Reed, Eric. Patina: A formalization of the Rust programming language.
+%                       Master's thesis, University of Washington CSE, 2015.
+% benitez2016           Benitez, Sergio. Short Paper: Rusty Types for Solid Safety.
+%                       PLAS 2016, pp. 69-75. doi 10.1145/2993600.2993604
+% baranowski2018smack   Baranowski, He, Rakamaric. Verifying Rust programs with SMACK.
+%                       ATVA 2018, Springer, pp. 528-535.
+% wang2018krust         Wang, Song, Zhang, Zhu, Zhang. KRust: A Formal Executable Semantics of Rust.
+%                       TASE 2018, pp. 44-51. doi 10.1109/TASE.2018.00014
+
+% =====================================================================
+% CITATION SO CAP CHO KHOA LUAN
+% Them 2026-09-18. Cac entry tren day la citation thu cap thu hoach
+% tu thu muc tham khao cua Laertes, giu lai de tai su dung.
+%
+% QUY UOC: entry nao co dong "% VERIFY:" la entry chua doi chieu duoc
+% voi ban goc trong phien lam viec nay. Phai kiem tra truoc khi nop.
+% Cac entry KHONG co dong do da doi chieu truc tiep voi PDF hoac
+% trang chinh thuc.
+% =====================================================================
+
+% ---------- 2.1.1 Rule-based transpilers ----------
+@article{emre2021laertes-oopsla,
+  author  = {Emre, Mehmet and Schroeder, Ryan and Dewey, Kyle and Hardekopf, Ben},
+  title   = {Translating {C} to Safer {Rust}},
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume  = {5},
+  number  = {OOPSLA},
+  year    = {2021},
+  doi     = {10.1145/3485498}
+}
+
+% ---------- 2.1.2 LLM-based, function and program level ----------
+@misc{sactor2025,
+  author       = {Zhou, Tianyang and Zhang, Ziyi and Lin, Haowen and Jha, Somesh and Christodorescu, Mihai and Levchenko, Kirill and Chandrasekaran, Varun},
+  title        = {{SACTOR}: {LLM}-Driven Correct and Idiomatic {C} to {Rust} Translation with Static Analysis and {FFI}-Based Verification},
+  howpublished = {arXiv:2503.12511},
+  year         = {2025},
+  note         = {Preprint}
+}
+
+@inproceedings{farrukh2025safetrans,
+  author    = {Farrukh, Muhammad and Coskun, Baris and Palit, Tapti and Polychronakis, Michalis},
+  title     = {{SafeTrans}: {LLM}-assisted Transpilation from {C} to {Rust}},
+  booktitle = {Proceedings of the 1st Workshop on Code Translation, Transformation, and Modernization (ReCode)},
+  year      = {2026},
+  doi       = {10.1145/3786180.3788317},
+  verify    = {VERIFY: so trang. Key giu 2025 de khong vo trich dan; nam xuat ban 2026}
+}
+
+@misc{cai2025rustmap,
+  author       = {Cai, Xuemeng and Liu, Jiakun and Huang, Xiping and Yu, Yijun and Wu, Haitao
+                  and Li, Chunmiao and Wang, Bo and Yusuf, Imam Nur Bani and Jiang, Lingxiao},
+  title        = {{RustMap}: Towards Project-Scale {C}-to-{Rust} Migration via Program Analysis and {LLM}},
+  year         = {2025},
+  eprint       = {2503.17741},
+  howpublished = {arXiv:2503.17741},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint}
+}
+
+@misc{rustify2026,
+  author       = {{Anonymous}},
+  title        = {{Rustify}: Towards Repository-Level {C} to Safer {Rust} via Workflow-Guided Multi-Agent Transpiler},
+  year         = {2026},
+  note         = {Anonymous submission to ICLR 2026, OpenReview}
+}
+
+% ---------- 2.1.3 Agentic, project level ----------
+@misc{leanh2026rustprint,
+  author       = {Le-Anh, Minh and Nguyen Hoang, Anh and Le, Bach and Bui, Nghi D. Q.},
+  title        = {Documentation-Guided Agentic Codebase Migration from {C} to {Rust}},
+  year         = {2026},
+  eprint       = {2605.14634},
+  howpublished = {arXiv:2605.14634},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint, version v3}
+}
+
+@inproceedings{wang2026evoc2rust,
+  author    = {Wang, Chaofan and Yu, Tingrui and Shen, Beijun and Wang, Jie and Chen, Dong
+               and Zhang, Wenrui and Shi, Yuling and Xie, Chen and Gu, Xiaodong},
+  title     = {{EvoC2Rust}: A Skeleton-guided Framework for Project-Level {C}-to-{Rust} Translation},
+  booktitle = {IEEE/ACM International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)},
+  year      = {2026},
+  doi       = {10.1145/3786583.3786856},
+  verify    = {VERIFY: so trang}
+}
+
+@misc{farrukh2026orbit,
+  author       = {Farrukh, Muhammad and Coskun, Baris and Palit, Tapti and Polychronakis, Michalis},
+  title        = {{ORBIT}: Guided Agentic Orchestration for Autonomous {C}-to-{Rust} Transpilation},
+  year         = {2026},
+  eprint       = {2604.12048},
+  howpublished = {arXiv:2604.12048},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint}
+}
+
+@misc{dehghan2025rustine,
+  author       = {Dehghan, Saman and Sun, Tianran and Wu, Tianxiang and Li, Zihan and Jabbarvand, Reyhaneh},
+  title        = {Translating Large-Scale {C} Repositories to Idiomatic {Rust}},
+  year         = {2025},
+  eprint       = {2511.20617},
+  howpublished = {arXiv:2511.20617},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint. The system is named Rustine in the paper}
+}
+
+@misc{yan2026c2rustxw,
+  author       = {Yan, Yanyan and Feng, Yang and Liu, Jiangshan and Liu, Di and Liu, Zixi
+                  and Teng, Hao and Xu, Baowen},
+  title        = {{C2RustXW}: Program-Structure-Aware {C}-to-{Rust} Translation via Program Analysis and {LLM}},
+  year         = {2026},
+  eprint       = {2603.28686},
+  howpublished = {arXiv:2603.28686},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint}
+}
+
+@misc{yuan2026ptrtrans,
+  author       = {Yuan, Zhiqiang and Mao, Wenjun and Chen, Zhuo and Shang, Xiyue
+                  and Wang, Chong and Lou, Yiling and Peng, Xin},
+  title        = {Project-Level {C}-to-{Rust} Translation via Pointer Knowledge Graphs},
+  year         = {2026},
+  eprint       = {2510.10956},
+  howpublished = {arXiv:2510.10956},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  doi          = {10.1145/3808169},
+  note         = {Same paper as the ACM version, doi:10.1145/3808169}
+}
+
+% TODO: tieu de His2Trans chua chot. PDF v4 trong repo: "A Knowledge-Guided Agentic Framework ..."; memory ghi v3 doi ten "Build-Aware Incremental ..."; Reboot trich "A Skeleton First Framework ...". Kiem tra trang abs arXiv 2603.02617.
+@misc{wang2026his2trans,
+  author       = {Wang, Shengbo and Liu, Mingwei and Ou, Guangsheng and Chen, Yuwen
+                  and Li, Zike and Wang, Yanlin and Zheng, Zibin},
+  title        = {{His2Trans}: A Knowledge-Guided Agentic Framework for Project-Level {C}-to-{Rust} Migration},
+  year         = {2026},
+  eprint       = {2603.02617},
+  howpublished = {arXiv:2603.02617},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint, version v4}
+}
+
+% ---------- 2.2.2 Benchmark va test-based evaluation ----------
+@inproceedings{khatry2025crustbench,
+  author    = {Khatry, Anirudh and Zhang, Robert and Pan, Jia and Wang, Ziteng
+               and Chen, Qiaochu and Durrett, Greg and Dillig, Isil},
+  title     = {{CRUST-Bench}: A Comprehensive Benchmark for {C}-to-safe-{Rust} Transpilation},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2025},
+  note      = {arXiv:2504.15254}
+}
+
+@misc{syzygy2024,
+  author       = {Shetty, Manish and Jain, Naman and Godbole, Adwait and Seshia, Sanjit A. and Sen, Koushik},
+  title        = {{Syzygy}: Dual Code-Test {C} to (safe) {Rust} Translation using {LLMs} and Dynamic Analysis},
+  howpublished = {arXiv:2412.14234},
+  year         = {2024},
+  note         = {Preprint}
+}
+
+% ---------- 2.2.3 Symbolic va formal equivalence ----------
+@misc{bai2025rustassure,
+  author       = {Bai, Yubo and Palit, Tapti},
+  title        = {{RustAssure}: Differential Symbolic Testing for {LLM}-Transpiled {C}-to-{Rust} Code},
+  year         = {2025},
+  eprint       = {2510.07604},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  howpublished = {arXiv:2510.07604},
+  note         = {Preprint}
+}
+
+% ---------- 2.2.4 LLM-as-judge va doc-based ----------
+@inproceedings{nguyen2026codewiki,
+  author    = {Nguyen Hoang, Anh and Le-Anh, Minh and Bui, Nghi D. Q. and Le, Bach},
+  title     = {{CodeWiki}: Evaluating {AI}'s Ability to Generate Holistic Documentation for Large-Scale Codebases},
+  booktitle = {Findings of the Association for Computational Linguistics (ACL)},
+  year      = {2026},
+  note      = {arXiv:2510.24428},
+  verify       = {VERIFY: thu tu tac gia va so trang trong ACL Anthology (2026.findings-acl.288).}
+}
+
+@misc{cetbench2025,
+  author       = {},
+  title        = {{CETBench}: Evaluating {LLMs} on Code Equivalence Testing},
+  year         = {2025},
+  eprint       = {2506.04019},
+  howpublished = {arXiv:2506.04019},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint},
+  verify       = {VERIFY: tieu de day du va danh sach tac gia.}
+}
+
+@misc{axiom2025,
+  author       = {},
+  title        = {{AXIOM}: {LLM}-as-Judge for Code with Rule-Based Perturbation},
+  year         = {2025},
+  eprint       = {2512.20159},
+  howpublished = {arXiv:2512.20159},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint},
+  verify       = {VERIFY: tieu de day du va danh sach tac gia.}
+}
+
+% ---------- 2.3 Threats to measurement validity ----------
+@misc{codequality2026,
+  author       = {Tadesse, Biruk and Salah, Mazin and d'Amorim, Marcelo and Assun{\c{c}}{\~a}o, Wesley K. G. and Nitin, Vikram and Ray, Baishakhi},
+  title        = {Code Quality Analysis of Translations from {C} to {Rust}},
+  year         = {2026},
+  eprint       = {2602.00840},
+  howpublished = {arXiv:2602.00840},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint},
+}
+
+% ---------- 2.4 Differential testing va oracle problem ----------
+@inproceedings{li2025userstudy,
+  author    = {Li, Ruishi and Wang, Bo and Li, Tianyu and Saxena, Prateek and Kundu, Ashish},
+  title     = {Translating {C} To {Rust}: Lessons from a User Study},
+  booktitle = {Network and Distributed System Security Symposium (NDSS)},
+  year      = {2025}
+}
+
+@misc{actor2025,
+  author       = {Li, Tianyu and Li, Ruishi and Wang, Bo and Paulsen, Brandon and Mathur, Umang and Saxena, Prateek},
+  title        = {Adversarial Agent Collaboration for Correctness Improvements of {C} to Safe {Rust} Translation},
+  howpublished = {arXiv:2510.03879},
+  year         = {2025},
+  eprint       = {2510.03879},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE},
+  note         = {Preprint, version v3. The system is named ACToR in the paper}
+}
+
+@inproceedings{yang2011csmith,
+  author    = {Yang, Xuejun and Chen, Yang and Eide, Eric and Regehr, John},
+  title     = {Finding and Understanding Bugs in {C} Compilers},
+  booktitle = {ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  year      = {2011},
+  verify       = {VERIFY: so trang va DOI.}
+}
+
+@inproceedings{le2014emi,
+  author    = {Le, Vu and Afshari, Mehrdad and Su, Zhendong},
+  title     = {Compiler Validation via Equivalence Modulo Inputs},
+  booktitle = {ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  year      = {2014},
+  verify       = {VERIFY: so trang va DOI.}
+}
+
+@inproceedings{li2023compdiff,
+  author    = {Li, Shaohua and Su, Zhendong},
+  title     = {Finding Unstable Code via Compiler-Driven Differential Testing},
+  booktitle = {International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  year      = {2023},
+  verify       = {VERIFY: danh sach tac gia day du, so trang va DOI.}
+}
+
+@inproceedings{jung2026miri,
+  author    = {Jung, Ralf},
+  title     = {{Miri}: Practical Undefined Behavior Detection for {Rust}},
+  booktitle = {Proceedings of the ACM on Programming Languages (POPL)},
+  year      = {2026},
+  doi       = {10.1145/3776690},
+  verify       = {VERIFY: danh sach dong tac gia day du.}
+}
+
+% ---------- 2.5 Re-evaluation studies ----------
+@inproceedings{dacrema2019progress,
+  author    = {Ferrari Dacrema, Maurizio and Cremonesi, Paolo and Jannach, Dietmar},
+  title     = {Are We Really Making Much Progress? A Worrying Analysis of Recent Neural Recommendation Approaches},
+  booktitle = {ACM Conference on Recommender Systems (RecSys)},
+  year      = {2019},
+  doi       = {10.1145/3298689.3347058}
+}
+
+@inproceedings{armstrong2009improvements,
+  author    = {Armstrong, Timothy G. and Moffat, Alistair and Webber, William and Zobel, Justin},
+  title     = {Improvements That Don't Add Up: Ad-Hoc Retrieval Results Since 1998},
+  booktitle = {ACM Conference on Information and Knowledge Management (CIKM)},
+  year      = {2009},
+  doi       = {10.1145/1645953.1646031}
+}
+
+@article{awi2024survey,
+  author  = {},
+  title   = {Machine Learning for Actionable Warning Identification: A Comprehensive Survey},
+  journal = {ACM Computing Surveys},
+  year    = {2024},
+  doi     = {10.1145/3696352},
+  note    = {arXiv:2312.00324},
+}
+
+% ---------- Nguon xac dinh muc tieu cua linh vuc ----------
+@misc{darpa-tractor,
+  author       = {{Defense Advanced Research Projects Agency}},
+  title        = {{TRACTOR}: Translating All {C} to {Rust}},
+  howpublished = {\url{https://www.darpa.mil/research/programs/translating-all-c-to-rust}},
+  year         = {2024},
+  note         = {Accessed 2026-09-18}
+}
+
+@misc{google-safecoding,
+  author       = {{Google Security Blog}},
+  title        = {Eliminating Memory Safety Vulnerabilities at the Source},
+  howpublished = {\url{https://security.googleblog.com/2024/09/eliminating-memory-safety-vulnerabilities-Android.html}},
+  year         = {2024},
+  note         = {Accessed 2026-09-18}
+}
+
+% =====================================================================
+% BO SUNG 2026-09-21: cum behavioral equivalence cho Chapter 2
+% =====================================================================
+
+@misc{eniser2024flourine,
+  author       = {Eniser, Hasan Ferit and Zhang, Hanliang and David, Cristina and Wang, Meng and Christakis, Maria and Paulsen, Brandon and Dodds, Joey and Kroening, Daniel},
+  title        = {Towards Translating Real-World Code with {LLMs}: A Study of Translating to {Rust}},
+  howpublished = {arXiv:2405.11514},
+  year         = {2024},
+  note         = {Preprint. The tool is named Flourine in the paper}
+}
+@misc{yang2024vert,
+  author       = {Yang, Aidan Z. H. and Takashima, Yoshiki and Paulsen, Brandon and Dodds, Josiah and Kroening, Daniel},
+  title        = {{VERT}: Verified Equivalent {Rust} Transpilation with Large Language Models as Few-Shot Learners},
+  howpublished = {arXiv:2404.18852},
+  year         = {2024},
+  note         = {Preprint}
+}
+@misc{nitin2025c2saferrust,
+  author       = {Nitin, Vikram and Krishna, Rahul and Lemos do Valle, Luiz and Ray, Baishakhi},
+  title        = {{C2SaferRust}: Transforming {C} Projects into Safer {Rust} with {NeuroSymbolic} Techniques},
+  howpublished = {arXiv:2501.14257},
+  year         = {2025},
+  note         = {Preprint}
+}
+@misc{wang2026trail,
+  author       = {Wang, Chaofan and Gu, Xiaodong and Shi, Yuling and Hu, Chao and Shen, Beijun},
+  title        = {Translator vs. Challenger: Adversarial Agentic Learning for {C}-to-{Rust} Translation},
+  howpublished = {arXiv:2609.15381},
+  year         = {2026},
+  note         = {Preprint. The system is named Trail in the paper}
+}
+@inproceedings{rabbi2026beyond,
+  author    = {Rabbi, Fazle and Saha, Soumit Kanti and Yang, Jinqiu},
+  title     = {Beyond Translation Accuracy: Addressing False Failures in {LLM}-Based Code Translation},
+  booktitle = {Proceedings of the 3rd ACM International Conference on AI-Powered Software (AIware)},
+  year      = {2026},
+  doi       = {10.1145/3805760.3814890}
+}
+@inproceedings{zhang2023crown,
+  author    = {Zhang, Hanliang and David, Cristina and Yu, Yijun and Wang, Meng},
+  title     = {Ownership Guided {C} to {Rust} Translation},
+  booktitle = {International Conference on Computer Aided Verification (CAV)},
+  pages     = {459--482},
+  year      = {2023}
+}
+@inproceedings{pan2024lost,
+  author    = {Pan, Rangeet and Ibrahimzada, Ali Reza and Krishna, Rahul and Sankar, Divya and Wassi, Lambert Pouguem and Merler, Michele and Sobolev, Boris and Pavuluri, Raju and Sinha, Saurabh and Jabbarvand, Reyhaneh},
+  title     = {Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code},
+  booktitle = {IEEE/ACM International Conference on Software Engineering (ICSE)},
+  year      = {2024}
+}
+@inproceedings{liu2023evalplus,
+  author    = {Liu, Jiawei and Xia, Chunqiu Steven and Wang, Yuyao and Zhang, Lingming},
+  title     = {Is Your Code Generated by {ChatGPT} Really Correct? Rigorous Evaluation of Large Language Models for Code Generation},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023}
+}
+@article{barr2015oracle,
+  author  = {Barr, Earl T. and Harman, Mark and McMinn, Phil and Shahbaz, Muzammil and Yoo, Shin},
+  title   = {The Oracle Problem in Software Testing: A Survey},
+  journal = {IEEE Transactions on Software Engineering},
+  volume  = {41},
+  number  = {5},
+  pages   = {507--525},
+  year    = {2015}
+}
+@article{mckeeman1998differential,
+  author  = {McKeeman, William M.},
+  title   = {Differential Testing for Software},
+  journal = {Digital Technical Journal},
+  volume  = {10},
+  number  = {1},
+  pages   = {100--107},
+  year    = {1998}
+}
+@inproceedings{pnueli1998tv,
+  author    = {Pnueli, Amir and Siegel, Michael and Singerman, Eli},
+  title     = {Translation Validation},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems (TACAS)},
+  series    = {LNCS},
+  volume    = {1384},
+  pages     = {151--166},
+  year      = {1998}
+}
+@inproceedings{necula2000tv,
+  author    = {Necula, George C.},
+  title     = {Translation Validation for an Optimizing Compiler},
+  booktitle = {ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+  pages     = {83--94},
+  year      = {2000}
+}
+@inproceedings{fioraldi2020aflpp,
+  author    = {Fioraldi, Andrea and Maier, Dominik and Ei{\ss}feldt, Heiko and Heuse, Marc},
+  title     = {{AFL++}: Combining Incremental Steps of Fuzzing Research},
+  booktitle = {USENIX Workshop on Offensive Technologies (WOOT)},
+  year      = {2020}
+}
+@misc{libfuzzer,
+  author       = {{LLVM Project}},
+  title        = {{libFuzzer}: A Library for Coverage-Guided Fuzz Testing},
+  howpublished = {\url{https://llvm.org/docs/LibFuzzer.html}},
+  note         = {Accessed 2026-09-21}
+}
+@misc{ubsan,
+  author       = {{LLVM Project}},
+  title        = {{UndefinedBehaviorSanitizer}},
+  howpublished = {\url{https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html}},
+  note         = {Clang documentation (development version). Accessed 2026-10-26}
+}
+@misc{harvest-results,
+  author       = {{UW-HARVEST}},
+  title        = {harvest-agentic-translate-results: Results from Agentic {C}-to-{Rust} Translations for {DARPA} {TRACTOR}},
+  howpublished = {\url{https://github.com/UW-HARVEST/harvest-agentic-translate-results}},
+  note         = {Commit 38352c2. Accessed 2026-09-21}
+}
+@misc{tractor-test-corpus,
+  author       = {{DARPA TRACTOR Program}},
+  title        = {{PUBLIC-Test-Corpus}: Publicly Released Test Cases and Evaluation Scripts for the {DARPA} {TRACTOR} Program},
+  howpublished = {\url{https://github.com/DARPA-TRACTOR-Program/PUBLIC-Test-Corpus}},
+  note         = {Commit 37960ee. Accessed 2026-09-21}
+}
+
+% ---------- Bo sung 2026-09-23 (venue chua xac minh) ----------
+@misc{sim2025lac2r,
+  author       = {Sim, HoHyun and Cho, Hyeonjoong and Go, Yeonghyeon and Kazemi Zarkouei, Sadegh AlMahdi and Shokri, Ali and Fu, Zhoulai and Ravindran, Binoy},
+  title        = {Search-Based Multi-Trajectory Refinement for Safe {C}-to-{Rust} Translation with Large Language Models},
+  year         = {2025},
+  howpublished = {arXiv:2505.15858},
+  note         = {Preprint}
+}
+
+@misc{sim2026encrust,
+  author       = {Sim, HoHyun and Cho, Hyeonjoong and Shokri, Ali and Fu, Zhoulai and Ravindran, Binoy},
+  title        = {{ENCRUST}: Encapsulated Substitution and Agentic Refinement on a Live Scaffold for Safe {C}-to-{Rust} Translation},
+  year         = {2026},
+  howpublished = {arXiv:2604.04527},
+  note         = {Preprint}
+}
+
+@misc{feng2026deptrans,
+  author       = {Feng, Jia and Gan, Wenjie and Gao, Cuiyun and Wang, Chaozheng and Luo, Feng and Xia, Xin and Li, Ge and Liu, Kui},
+  title        = {Dependency-Guided Repository-Level {C}-to-{Rust} Translation with Reinforcement Alignment},
+  year         = {2026},
+  howpublished = {arXiv:2604.02852},
+  note         = {Preprint}
+}
+
+@misc{bedell2026llm4c2rust,
+  author       = {Bedell, Sarah and Siavash, Nazanin and Moin, Armin},
+  title        = {{LLM4C2Rust}: Large Language Models for Automated Memory-Safe Code Transpilation},
+  year         = {2026},
+  howpublished = {arXiv:2604.15485},
+  note         = {Preprint}
+}
+
+@misc{chen2025slr,
+  author       = {Chen, Xiang and Xue, Jiacheng and Xie, Xiaofei and Liang, Caokai and Ju, Xiaolin},
+  title        = {A Systematic Literature Review on Neural Code Translation},
+  year         = {2025},
+  howpublished = {arXiv:2505.07425},
+  note         = {Preprint}
+}
+
+@techreport{tractor-first-evaluation-report,
+  author      = {Okhravi, Hamed and Luther, Noah and McQuoid, Ian and Ogden, Brandt and Mak, Howard and Strega, Nicholas and Burow, Nathan},
+  title       = {First Test and Evaluation Report for {TRACTOR} {C}-to-{Rust} Translators},
+  institution = {MIT Lincoln Laboratory},
+  year        = {2026},
+  month       = feb,
+  note        = {DARPA TRACTOR program; Distribution Statement A}
+}
+
+@inproceedings{shiraishi2026smartc2rust,
+  author    = {Shiraishi, Momoko and Cao, Yinzhi and Shinagawa, Takahiro},
+  title     = {{SmartC2Rust}: Iterative, Feedback-Driven {C}-to-{Rust} Translation via Large Language Models for Safety and Equivalence},
+  booktitle = {Proceedings of the IEEE/ACM 48th International Conference on Software Engineering (ICSE)},
+  year      = {2026},
+  note      = {arXiv:2409.10506}
+}
+
+@misc{sartakov2026shipoftheseus,
+  author       = {Sartakov, Vasily A.},
+  title        = {From {C} to Idiomatic {Rust}: A Ship-of-Theseus Agentic Translation},
+  year         = {2026},
+  howpublished = {arXiv:2607.28835},
+  note         = {Preprint}
+}
+
+@misc{wang2026reboot,
+  author       = {Wang, Bo and Paulsen, Brandon and Dodds, Joey and Kroening, Daniel and Mathur, Umang and Saxena, Prateek},
+  title        = {Mostly Automatic Translation of Language Interpreters from {C} to Safe {Rust}},
+  year         = {2026},
+  eprint       = {2606.27122},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.PL},
+  howpublished = {arXiv:2606.27122}
+}
+
+@article{schesch2026actor,
+  author  = {Schesch, Benedikt and Ernst, Michael D.},
+  title   = {Agentic {C} to {Rust} Translation},
+  journal = {IEEE Security \& Privacy},
+  year    = {2026},
+  doi     = {10.1109/MSEC.2026.3715863}
+}
+
+@misc{actor-repo,
+  author       = {{UW HARVEST}},
+  title        = {{ACTOR}: Agentic {C}-to-{Rust} Translation},
+  howpublished = {\url{https://github.com/UW-HARVEST/ACTOR}},
+  note         = {Accessed 2026-09-24}
+}
+
+@misc{crustbench-issues,
+  author       = {Schesch, Benedikt},
+  title        = {Issues \#37, \#39, \#40, \#41 on the {CRUST-Bench} repository},
+  howpublished = {\url{https://github.com/anirudhkhatry/CRUST-bench/issues}},
+  year         = {2026},
+  note         = {Opened 2026-04-06, accessed 2026-09-24}
+}
+
+@misc{okhravi2026tractorbenchmark,
+  author       = {Okhravi, Hamed and Ogden, Brandt and Luther, Noah and McQuoid, Ian and Mak, Howard and Burow, Nathan},
+  title        = {{TRACTOR} Benchmark for Evaluating {C} to {Rust} Translators},
+  howpublished = {arXiv:2609.25121},
+  year         = {2026},
+  note         = {MIT Lincoln Laboratory; version 1, 2026-09-20}
+}
+
+@misc{rust-std-env,
+  author       = {{The Rust Project Developers}},
+  title        = {Functions \texttt{std::env::args} and \texttt{std::env::args\_os}},
+  howpublished = {\url{https://doc.rust-lang.org/std/env/fn.args.html} and \url{https://doc.rust-lang.org/std/env/fn.args_os.html}},
+  note         = {Rust standard library documentation, version 1.99. Accessed 2026-10-26}
+}
+
+@inproceedings{lago2024threats,
+  author    = {Lago, Patricia and Runeson, Per and Song, Qunying and Verdecchia, Roberto},
+  title     = {Threats to Validity in Software Engineering: Hypocritical Paper Section or Essential Analysis?},
+  booktitle = {Proceedings of the 18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)},
+  pages     = {314--324},
+  year      = {2024},
+  doi       = {10.1145/3674805.3686691}
+}
+
+@manual{iso2018c,
+  organization = {{ISO/IEC}},
+  title        = {{ISO/IEC} 9899:2018 Information Technology -- Programming Languages -- {C}},
+  year         = {2018}
+}
+
+@misc{wg14n2176,
+  author       = {{ISO/IEC JTC1/SC22/WG14}},
+  title        = {Programming Languages -- {C}: Working Draft {N2176}},
+  year         = {2017},
+  howpublished = {\url{https://www.open-std.org/jtc1/sc22/wg14/www/docs/n2176.pdf}},
+  note         = {Ballot draft of ISO/IEC 9899:2018, read through the HTML conversion at \url{https://cigix.me/c17}. Accessed 2026-10-26}
+}
+
+@inproceedings{serebryany2012asan,
+  author    = {Serebryany, Konstantin and Bruening, Derek and Potapenko, Alexander and Vyukov, Dmitriy},
+  title     = {{AddressSanitizer}: A Fast Address Sanity Checker},
+  booktitle = {Proceedings of the 2012 {USENIX} Annual Technical Conference ({USENIX} {ATC} '12)},
+  year      = {2012},
+  month     = jun,
+  url       = {https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany}
+}
+
+@misc{asan-docs,
+  author       = {{LLVM Project}},
+  title        = {{AddressSanitizer}},
+  howpublished = {\url{https://clang.llvm.org/docs/AddressSanitizer.html}},
+  note         = {Clang documentation (development version). Accessed 2026-10-26}
+}
+
+@misc{aflpp-docs,
+  author       = {{AFL++ Team}},
+  title        = {{AFL++} Documentation, Release 4.09c},
+  howpublished = {\url{https://github.com/AFLplusplus/AFLplusplus/tree/v4.09c/docs}},
+  note         = {Tag v4.09c, commit 108fb0b. Accessed 2026-10-26}
+}
+
+@misc{rust-std-panic,
+  author       = {{The Rust Project Developers}},
+  title        = {Macro \texttt{std::panic}},
+  howpublished = {\url{https://doc.rust-lang.org/std/macro.panic.html}},
+  note         = {Rust standard library documentation, version 1.99.0. Accessed 2026-10-26}
+}
+
+% ---- Them 2026-11-02: nghien cuu xet lai ket qua da cong bo (Ch2 muc 2.7); card o docs/literature/cards/07-studies-and-evaluations ----
+@inproceedings{qi2015plausibility,
+  author    = {Qi, Zichao and Long, Fan and Achour, Sara and Rinard, Martin},
+  title     = {An Analysis of Patch Plausibility and Correctness for Generate-and-Validate Patch Generation Systems},
+  booktitle = {Proceedings of the 2015 International Symposium on Software Testing and Analysis (ISSTA)},
+  address   = {Baltimore, MD, USA},
+  publisher = {ACM},
+  pages     = {24--36},
+  year      = {2015},
+  doi       = {10.1145/2771783.2771791}
+}
+@inproceedings{smith2015overfitting,
+  author    = {Smith, Edward K. and Barr, Earl T. and Le Goues, Claire and Brun, Yuriy},
+  title     = {Is the Cure Worse Than the Disease? {O}verfitting in Automated Program Repair},
+  booktitle = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE)},
+  address   = {Bergamo, Italy},
+  publisher = {ACM},
+  pages     = {532--543},
+  year      = {2015},
+  doi       = {10.1145/2786805.2786825}
+}
+@inproceedings{wang2026patchdiff,
+  author    = {Wang, You and Pradel, Michael and Liu, Zhongxin},
+  title     = {Are ``Solved Issues'' in {SWE}-bench Really Solved Correctly? {An} Empirical Study},
+  booktitle = {Proceedings of the IEEE/ACM 48th International Conference on Software Engineering (ICSE)},
+  address   = {Rio de Janeiro, Brazil},
+  year      = {2026},
+  doi       = {10.1145/3744916.3764576},
+  note      = {arXiv:2503.15223v2}
+}
+@inproceedings{yu2026sweabs,
+  author    = {Yu, Boxi and Cao, Yang and Zhang, Yuzhong and Lin, Liting and Xu, Junjielong and Zhong, Zhiqing and Xu, Qinghua and Wang, Guancheng and Cao, Jialun and Cheung, Shing-Chi and He, Pinjia and Briand, Lionel},
+  title     = {{SWE-ABS}: Adversarial Benchmark Strengthening Exposes Inflated Success Rates on Test-based Benchmark},
+  booktitle = {Proceedings of the International Conference on Machine Learning (ICML)},
+  year      = {2026},
+  eprint    = {2603.00520},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  note      = {arXiv:2603.00520v1}
+}
+@misc{ren2020codebleu,
+  author       = {Ren, Shuo and Guo, Daya and Lu, Shuai and Zhou, Long and Liu, Shujie and Tang, Duyu and Sundaresan, Neel and Zhou, Ming and Blanco, Ambrosio and Ma, Shuai},
+  title        = {{CodeBLEU}: a Method for Automatic Evaluation of Code Synthesis},
+  howpublished = {arXiv:2009.10297},
+  year         = {2020},
+  eprint       = {2009.10297},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.SE}
+}

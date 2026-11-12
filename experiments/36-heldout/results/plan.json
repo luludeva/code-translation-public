@@ -1,0 +1,190 @@
+{
+ "source": [
+  "experiments/15-rq2-pilot-trial/results/rq2-exe.jsonl",
+  "experiments/15-rq2-pilot-trial/results/rq2-lib.jsonl"
+ ],
+ "n_translations": 11,
+ "units": [
+  {
+   "unit": "u00",
+   "kind": "exe",
+   "bundle": "B02_synthetic",
+   "case": "static_vars_fpts",
+   "withheld": [
+    "carriage_returns.json",
+    "empty_at_prompts.json",
+    "empty_pattern.json",
+    "long_pattern.json",
+    "nested_string_escapes.json",
+    "null_byte.json",
+    "token_255_chars.json"
+   ],
+   "systems": [
+    "kiro"
+   ]
+  },
+  {
+   "unit": "u01",
+   "kind": "exe",
+   "bundle": "B02_synthetic",
+   "case": "static_vars_fpts",
+   "withheld": [
+    "analyze_operators.json",
+    "buffer_8191_chars.json",
+    "buffer_8192_chars.json",
+    "buffer_9192_chars.json",
+    "empty_at_prompts.json",
+    "empty_pattern.json",
+    "input_over_4096.json",
+    "long_pattern.json",
+    "nested_string_escapes.json",
+    "null_byte.json",
+    "only_operators.json",
+    "operators_no_spaces.json",
+    "special_characters.json",
+    "token_255_chars.json",
+    "unicode_characters.json"
+   ],
+   "systems": [
+    "gpt-5.4"
+   ]
+  },
+  {
+   "unit": "u02",
+   "kind": "exe",
+   "bundle": "B02_synthetic",
+   "case": "tu_linkage",
+   "withheld": [
+    "test001.json",
+    "test004.json",
+    "test006.json",
+    "test009.json",
+    "test016.json",
+    "test026.json",
+    "test027.json",
+    "test032.json",
+    "test039.json",
+    "test043.json",
+    "test044.json",
+    "test045.json",
+    "test046.json",
+    "test053.json",
+    "test060.json",
+    "test063.json",
+    "test067.json",
+    "test075.json",
+    "test083.json",
+    "test086.json",
+    "test087.json",
+    "test089.json",
+    "test094.json",
+    "test103.json",
+    "test107.json",
+    "test109.json",
+    "test112.json",
+    "test130.json",
+    "test133.json",
+    "test146.json",
+    "test149.json",
+    "test156.json",
+    "test157.json",
+    "test159.json",
+    "test161.json",
+    "test163.json",
+    "test167.json",
+    "test170.json"
+   ],
+   "systems": [
+    "gemini-3.1-pro-preview",
+    "gpt-5.4"
+   ]
+  },
+  {
+   "unit": "u03",
+   "kind": "lib",
+   "bundle": "B02_organic",
+   "case": "encode_base64_lib",
+   "withheld": [
+    "test02.json",
+    "test03.json",
+    "test04.json",
+    "test05.json",
+    "test06.json",
+    "test07.json",
+    "test08.json",
+    "test09.json"
+   ],
+   "systems": [
+    "kimi"
+   ]
+  },
+  {
+   "unit": "u04",
+   "kind": "lib",
+   "bundle": "P01_sphincs_plus",
+   "case": "054_blake_128f_s_prf_addr_lib",
+   "withheld": [
+    "1.json"
+   ],
+   "systems": [
+    "codex-gpt54"
+   ]
+  },
+  {
+   "unit": "u05",
+   "kind": "lib",
+   "bundle": "B01_synthetic",
+   "case": "029_strcspn_lib",
+   "withheld": [
+    "test01.json",
+    "test02.json",
+    "test03.json",
+    "test04.json",
+    "test05.json",
+    "test06.json"
+   ],
+   "systems": [
+    "c2saferrust"
+   ]
+  },
+  {
+   "unit": "u06",
+   "kind": "lib",
+   "bundle": "B01_organic",
+   "case": "gaussian_kernel_lib",
+   "withheld": [
+    "1.json",
+    "2.json",
+    "4.json"
+   ],
+   "systems": [
+    "c2saferrust"
+   ]
+  },
+  {
+   "unit": "u07",
+   "kind": "lib",
+   "bundle": "P01_sphincs_plus",
+   "case": "055_blake_128f_s_gen_message_random_lib",
+   "withheld": [
+    "1.json"
+   ],
+   "systems": [
+    "claude",
+    "codex-gpt54"
+   ]
+  },
+  {
+   "unit": "u08",
+   "kind": "lib",
+   "bundle": "P01_sphincs_plus",
+   "case": "056_blake_128f_s_hash_message_lib",
+   "withheld": [
+    "1.json"
+   ],
+   "systems": [
+    "codex-gpt54"
+   ]
+  }
+ ]
+}

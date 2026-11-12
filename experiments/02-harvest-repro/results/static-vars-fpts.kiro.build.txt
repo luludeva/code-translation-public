@@ -1,0 +1,2 @@
+   Compiling text_analyzer v0.1.0 (/home/claude/exp02/.build/src/kiro/static-vars-fpts)
+    Finished `release` profile [optimized] target(s) in 0.75s

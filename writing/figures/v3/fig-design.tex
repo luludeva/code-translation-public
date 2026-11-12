@@ -1,0 +1,27 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  b/.style={draw, rounded corners=2pt, align=center, text width=4.7cm, minimum height=11mm, inner sep=3pt},
+  pa/.style={b, draw=passc, fill=passc!8, thick},
+  fa/.style={b, draw=failc, fill=failc!8, thick},
+  gr/.style={b, fill=black!5}]
+\node[gr] (h) at (-5.2,0) {\textbf{HARVEST}: released translations\\and published decisions};
+\node[gr] (t) at (0,0) {\textbf{TRACTOR}:\\C programs and test vectors};
+\node[b, text width=5.6cm] (rep) at (-2.6,-2.0) {\textbf{Reproduce each PASS and test-stage FAIL decision}\\with the public TRACTOR runner};
+\node[pa] (p) at (-5.2,-4.0) {Reproduced PASS:\\accepted branch};
+\node[fa] (f) at (0,-4.0) {Reproduced FAIL at the test stage:\\rejected branch};
+\node[gr] (n) at (5.2,-4.0) {Not reproduced, or\\re-evaluation not completed};
+\node[gr] (bf) at (5.2,-2.0) {Build-stage FAIL, or no translation released: published status kept};
+\node[pa] (r1) at (-5.2,-6.0) {\textbf{RQ1}: original vectors and generated inputs; search for C--Rust divergences};
+\node[fa] (r2) at (0,-6.0) {\textbf{RQ2}: replay the failing vectors; check the\\evidence for the rejection};
+\node[pa] (o1) at (-5.2,-7.8) {$D$, $P_{\mathit{test}}$, $L_P$};
+\node[fa] (o2) at (0,-7.8) {$A$, $F$, $\mathit{na}$, $L_R$};
+\node[b, text width=7.4cm, thick] (r3) at (-2.6,-9.7) {\textbf{RQ3}: combine the reclassified decisions with attrition into a success-rate interval};
+\draw[->] (h.south) -- (h.south |- rep.north); \draw[->] (t.south) -- (t.south |- rep.north);
+\draw[->, passc, thick] (rep.south -| p) -- (p.north);
+\draw[->, failc, thick] (rep.south -| f) -- (f.north);
+\draw[->] (rep.east) -- ++(0.4,0) |- ($(n.north)+(-1.2,0.45)$) -- ($(n.north)+(-1.2,0)$);
+\draw[->, passc, thick] (p) -- (r1); \draw[->, passc, thick] (r1) -- (o1);
+\draw[->, failc, thick] (f) -- (r2); \draw[->, failc, thick] (r2) -- (o2);
+\draw[->] (o1.south) -- (o1.south |- r3.north); \draw[->] (o2.south) -- (o2.south |- r3.north);
+\draw[->, dashed, black!60] (n.south) |- (r3.east);
+\draw[->, dashed, black!60] (bf.east) -- ++(0.5,0) |- ($(r3.east)+(0,-0.3)$);
+\end{tikzpicture}

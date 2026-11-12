@@ -1,0 +1,20 @@
+[1/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/hash_blake.c.o
+[2/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/__/__/app/src/utils.c.o
+[3/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/thash_blake_simple.c.o
+[4/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/address.c.o
+[5/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/fors.c.o
+[6/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/merkle.c.o
+[7/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/sign.c.o
+[8/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/utils.c.o
+[9/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/utilsx1.c.o
+[10/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/wots.c.o
+[11/20] Building C object test_case/app/CMakeFiles/sphincs_obj.dir/src/wotsx1.c.o
+[12/20] Building C object test_case/app/CMakeFiles/sphincs_core.dir/src/randombytes.c.o
+[13/20] Linking C shared library libsphincs_core.so
+[14/20] Building C object test_case/app/CMakeFiles/sphincs_core_det.dir/src/rng.c.o
+[15/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/blake256.c.o
+[16/20] Linking C shared library libsphincs_core_det.so
+[17/20] Building C object test_case/app/CMakeFiles/driver.dir/src/PQCgenKAT_sign.c.o
+[18/20] Building C object test_case/lib/blake/CMakeFiles/blake.dir/src/blake512.c.o
+[19/20] Linking C shared library libblake.so
+[20/20] Linking C executable driver

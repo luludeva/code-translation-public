@@ -1,0 +1,22 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Anh xa nhan doc duoc sang ma harness.rq2 (H6)
+\begin{tabular}{@{}lll@{}}
+\toprule
+Outcome & Label & Code \\
+\midrule
+Not adjudicable & C sanitizer reports undefined behavior & \code{ub\_in\_c} \\
+Not adjudicable & Both sides exceed the budget & \code{both\_budget} \\
+Not adjudicable & Sanitizer check inconclusive & \code{sanitizer\_inconclusive} \\
+Not adjudicable & C observation varies across runs & \code{c\_unstable} \\
+Not adjudicable & Comparison result varies across runs & \code{unstable\_comparison} \\
+Not re-examined, in $R_{\mathit{run}}$ & Recorded report lists no failing vector & \code{no\_failing\_vector} \\
+Not re-examined, in $R_{\mathit{run}}$ & Recorded report not found & \code{report\_missing} \\
+Not re-examined, in $R_{\mathit{run}}$ & Failing vectors fail only through timeouts & \code{timeout\_only\_rule\_pending} \\
+Not re-examined, in $R_{\mathit{run}}$ & C or Rust build fails in the harness & \code{build\_failed\_in\_harness} \\
+Not re-examined, in $R_{\mathit{run}}$ & Incomplete run: vector file empty & \code{incomplete\_harness\_run:vector\_unreadable} \\
+Not re-examined, in $R_{\mathit{run}}$ & Incomplete run: vector outside the runner input domain & \code{incomplete\_harness\_run:invalid\_input} \\
+Not re-examined, in $R_{\mathit{run}}$ & Incomplete run: runner wrote no report & \code{incomplete\_harness\_run:run\_unobserved} \\
+Not re-examined, in $R_{\mathit{run}}$ & Incomplete run: C sanitizer build failed & \code{incomplete\_harness\_run:san\_build\_failed} \\
+Not re-examined, in $R_{\mathit{run}}$ & Incomplete run: sanitizer infrastructure fault & \code{incomplete\_harness\_run:san\_infra} \\
+\bottomrule
+\end{tabular}

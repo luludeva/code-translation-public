@@ -1,0 +1,15 @@
+== driver
+undefined __asan_*: 0
+undefined __ubsan_*: 1
+defines __asan_init: 1
+== libsphincs_core_det.so
+undefined __asan_*: 33
+undefined __ubsan_*: 10
+defines __asan_init: 0
+== libsphincs_core.so
+undefined __asan_*: 32
+undefined __ubsan_*: 9
+defines __asan_init: 0
+== libblake.so
+undefined __asan_*: 25
+undefined __ubsan_*: 8

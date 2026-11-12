@@ -1,0 +1,26 @@
+diff --git a/src/runners/lib_runner.rs b/src/runners/lib_runner.rs
+index 6e7e4bc..f3e19bf 100644
+--- a/src/runners/lib_runner.rs
++++ b/src/runners/lib_runner.rs
+@@ -403,6 +403,21 @@ fn handle_state<
+     common_out: CommonOutput,
+ ) -> Result<TestOutcome<S, E>, CatastrophicError> {
+     if let Some(vector) = test_vector {
++        // [exp 05, khoá luận] Chế độ xuất output: khi đặt CANDO2_STATE_DUMP=<file>, ghi state_out thực tế
++        // cùng stdout/stderr (một dòng JSON, khoá bằng trường `note` của vector) trước khi so sánh.
++        // Không thay đổi logic so sánh bên dưới.
++        if let Ok(dump_path) = std::env::var("CANDO2_STATE_DUMP") {
++            let line = serde_json::json!({
++                "note": vector.note,
++                "state_out": serde_json::to_value(&state_out)?,
++                // [khoá luận, 2026-10-23] serde_json ghi NaN, inf, -inf thành null; bản Debug giữ được các giá trị này.
++                "state_debug": format!("{:?}", state_out),
++                "stdout": common_out.stdout,
++                "stderr": common_out.stderr,
++            });
++            let mut f = fs::OpenOptions::new().create(true).append(true).open(dump_path)?;
++            writeln!(f, "{}", line)?;
++        }
+         // Compare state
+         if vector.equals_expected(&state_out)? {
+             Ok(TestOutcome::Pass(common_out))

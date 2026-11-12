@@ -1,0 +1,71 @@
+% =====================================================================
+% Dinh dang theo "Quy dinh ve trinh bay khoa luan tot nghiep" - UET/VNU
+% Moi tham so duoi day deu doi chieu truc tiep voi van ban quy dinh.
+% =====================================================================
+
+% --- Le trang: tren 2.5cm, duoi 3cm, trai 3cm, phai 2cm (muc 5) ---
+\geometry{
+  a4paper,
+  top=2.5cm,
+  bottom=3cm,
+  left=3cm,
+  right=2cm
+}
+
+% Kiem chung le trang luc bien dich, doi chieu voi quy dinh muc 5
+\AtBeginDocument{%
+  \typeout{[KIEM-CHUNG-LE] textwidth=\the\textwidth\space textheight=\the\textheight}%
+  \typeout{[KIEM-CHUNG-LE] oddsidemargin=\the\oddsidemargin\space topmargin=\the\topmargin}%
+}
+
+% --- Co chu nen 13pt (muc 5) ---
+% Lop `report` chuan chi co 10/11/12pt. Goi `fontsize` cho phep dat co bat ky
+% va tu tinh lai \large, \small... theo ti le dung.
+\usepackage[fontsize=13pt]{fontsize}
+
+% --- Font: Times New Roman (muc 5) ---
+% TeX Gyre Termes la ban clone metric-compatible cua Times New Roman,
+% co san trong TeX Live va phu day du dau tieng Viet.
+% Neu may co Times New Roman that, doi dong duoi thanh:
+%   \setmainfont{Times New Roman}
+\setmainfont{TeX Gyre Termes}
+\setmonofont{TeX Gyre Cursor}[Scale=MatchLowercase]
+
+% --- Gian dong 1.3 lines (muc 5) ---
+\setstretch{1.3}
+
+% --- Cach doan 6pt, thut dau dong 1cm (muc 5) ---
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{1cm}
+
+% --- Danh so muc toi da 3 cap, so A Rap (muc 3) ---
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% --- So trang dat giua, phia duoi (muc 2) ---
+\pagestyle{plain}
+
+% --- Chu giai: bang dat TREN, hinh dat DUOI (muc 4) ---
+% Vi tri that do thu tu \caption trong moi truong quyet dinh.
+% Cac tham so duoi chi chinh khoang cach cho dung.
+\captionsetup{skip=6pt}
+\captionsetup{font=small, labelfont=bf, labelsep=period}
+
+% --- Co chu tren trang bia / phu bia, theo Phu luc 01, 02, 05 ---
+% Dat ten de dung lai o ca 3 file (01-cover, 02-title-vi, 03-title-en) thay
+% vi go {\fontsize{..}{..}\selectfont\bfseries ...} lap lai moi dong.
+\newcommand{\uetCoverHeaderFont}{\fontsize{12}{15}\selectfont\bfseries} % header ten truong, 12pt
+\newcommand{\uetCoverNameFont}{\fontsize{14}{18}\selectfont\bfseries}   % ten SV, nganh, GVHD, 14pt
+\newcommand{\uetCoverTitleFont}{\fontsize{18}{22}\selectfont\bfseries}  % ten de tai, 18pt
+\newcommand{\uetCoverYearFont}{\fontsize{12}{15}\selectfont\bfseries}   % nam bao ve, 12pt
+
+% --- Dinh dang code listing ---
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  numbers=left,
+  numberstyle=\tiny,
+  captionpos=t,
+  showstringspaces=false
+}

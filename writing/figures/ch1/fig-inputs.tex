@@ -1,0 +1,25 @@
+\begin{tikzpicture}[font=\footnotesize,
+  ex/.style={circle, fill=black!70, inner sep=1.3pt},
+  hit/.style={circle, fill=passc, draw=white, inner sep=2.2pt},
+  ub/.style={font=\small\bfseries, text=black!70}]
+\draw[rounded corners=4pt, thick] (0,0) rectangle (13,5.2);
+\node[anchor=north west, font=\small\bfseries] at (0.15,5.1) {All inputs of $C_c$, for one accepted translation $t$};
+% UB region
+\fill[pattern=north east lines, pattern color=black!35] (9.8,0.4) rectangle (12.6,3.1);
+\draw[black!50] (9.8,0.4) rectangle (12.6,3.1);
+\node[align=center, fill=white, inner sep=1.5pt, font=\scriptsize] at (11.2,3.75) {sanitizer reports undefined\\behavior in $C_c$: not\\counted as evidence};
+\foreach \p in {(10.5,1.2),(11.6,2.3),(10.9,2.6),(12.0,0.9)} \node[ub] at \p {$\times$};
+% divergence region
+\fill[black!8] (4.6,2.4) ellipse (2.6 and 1.5);
+\draw[dashed, thick] (4.6,2.4) ellipse (2.6 and 1.5);
+\node[align=center, font=\scriptsize, anchor=south] at (4.6,3.92) {inputs on which $t$ behaves differently from $C_c$ (size unknown)};
+% executed inputs
+\foreach \p in {(0.7,3.9),(2.2,0.7),(9.0,4.55),(8.6,1.2),(1.0,1.6),(8.9,3.5),(6.9,0.6),(0.9,3.1),(8.1,2.6),(3.4,0.45)}
+  \node[ex] at \p {};
+\foreach \p in {(3.6,2.9),(5.5,1.8)} \node[hit] at \p {};
+% legend
+\node[ex] at (0.5,-0.55) {}; \node[anchor=west] at (0.65,-0.55) {executed input (test vector or generated)};
+\node[hit] at (7.4,-0.55) {}; \node[anchor=west] at (7.6,-0.55) {executed input that reveals a divergence};
+\node[ub] at (0.5,-1.05) {$\times$}; \node[anchor=west] at (0.65,-1.05) {input with a sanitizer report in $C_c$};
+\node[anchor=west, font=\footnotesize\bfseries] at (7.25,-1.05) {detected $\subseteq$ actual: a lower bound};
+\end{tikzpicture}

@@ -1,0 +1,13 @@
+Điều kiện 3, sơ bộ, chưa kiểm tay. distinct_observations > 1 nghĩa là (result, state_out, stdout) đổi giữa các lần chạy.
+betagamma_lib vector 1.json: 24 lần, 0 lỗi chạy, 1 quan sát khác nhau
+  ["Pass", {"a": 0, "b": 0, "c": 0, "d": 0, "returns": 464}, ""]
+    ô: aslr-off.perturb-165.glibc, aslr-off.perturb-165.jemalloc, aslr-off.perturb-unset.glibc, aslr-off.perturb-unset.jemalloc, aslr-on.perturb-165.glibc, aslr-on.perturb-165.jemalloc, aslr-on.perturb-unset.glibc, aslr-on.perturb-unset.jemalloc (24 lần)
+betagamma_lib vector 2.json: 24 lần, 0 lỗi chạy, 1 quan sát khác nhau
+  ["Pass", {"a": 10, "b": 20, "c": 30, "d": 40, "returns": 989}, ""]
+    ô: aslr-off.perturb-165.glibc, aslr-off.perturb-165.jemalloc, aslr-off.perturb-unset.glibc, aslr-off.perturb-unset.jemalloc, aslr-on.perturb-165.glibc, aslr-on.perturb-165.jemalloc, aslr-on.perturb-unset.glibc, aslr-on.perturb-unset.jemalloc (24 lần)
+betagamma_lib vector 3.json: 24 lần, 0 lỗi chạy, 1 quan sát khác nhau
+  ["Pass", {"a": 5, "b": 15, "c": 25, "d": 35, "returns": 884}, ""]
+    ô: aslr-off.perturb-165.glibc, aslr-off.perturb-165.jemalloc, aslr-off.perturb-unset.glibc, aslr-off.perturb-unset.jemalloc, aslr-on.perturb-165.glibc, aslr-on.perturb-165.jemalloc, aslr-on.perturb-unset.glibc, aslr-on.perturb-unset.jemalloc (24 lần)
+betagamma_lib vector 4.json: 24 lần, 0 lỗi chạy, 1 quan sát khác nhau
+  ["Pass", {"a": 100, "b": 200, "c": 300, "d": 400, "returns": 5714}, ""]
+    ô: aslr-off.perturb-165.glibc, aslr-off.perturb-165.jemalloc, aslr-off.perturb-unset.glibc, aslr-off.perturb-unset.jemalloc, aslr-on.perturb-165.glibc, aslr-on.perturb-165.jemalloc, aslr-on.perturb-unset.glibc, aslr-on.perturb-unset.jemalloc (24 lần)

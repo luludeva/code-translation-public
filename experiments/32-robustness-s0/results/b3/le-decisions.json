@@ -1,0 +1,11 @@
+{
+ "date": "2026-11-03",
+ "note": "Le chốt theo đa số phiếu cho 5 case bất đồng",
+ "override": {
+  "exe:B01_synthetic/007_errno_pow": "yes",
+  "lib:B01_synthetic/007_errno_pow_lib": "yes",
+  "exe:B02_synthetic/strcmp": "yes",
+  "exe:B02_organic/underhanded_c_luggage": "no",
+  "lib:B02_organic/pinflate_lib": "yes"
+ }
+}

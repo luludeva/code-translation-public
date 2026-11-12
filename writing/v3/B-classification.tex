@@ -1,0 +1,39 @@
+% Thesis v3, Phu luc B (dan y Le duyet 12/11; khong co muc dem theo luat).
+\chapter{Classification of Retained Divergences}\label{app:classes}
+
+This appendix states the rules by which Section~\ref{sec:m-rq1} assigns a retained divergence to the class benign, non-benign or undecided.
+
+\section{Rules}\label{app:c-rules}
+
+The rules are checked in the order of Table~\ref{tab:app-rules}, and the first rule that matches decides. The codes are those used in the records of the harness.
+
+
+\section{Definitions}\label{app:c-definitions}
+
+Under rule B2, two integer tokens are equivalent only when they are equal. Two decimal tokens are equivalent when they differ by at most one unit in the last decimal digit of the token with fewer digits, or by at most a relative $10^{\pFloatRelTolExp}$; tokens in exponent form are compared by the relative tolerance alone, and a negative zero is equivalent to zero. Rule N4 applies to libraries only, and rules B1, B2, N3 and U-residual apply to the standard output of a library call once its state agrees. When both sides exceed a limit, rules B1, B2 and N3 are applied to the lines of the common prefix of the two outputs, and rule U-residual is not applied.
+
+\section{Classification of a Translation}\label{app:c-aggregation}
+
+A translation is classified from all of its retained divergences over the seeds of the main run. It is non-benign when at least one retained divergence is non-benign, undecided when none is non-benign and at least one is undecided, and benign when all are benign. The range reported in Chapter~\ref{ch:results} counts the non-benign translations at its lower end and adds the undecided translations at its upper end.
+
+\begin{table}[!htb]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Rules for one retained divergence, in the order in which they are checked.}
+\label{tab:app-rules}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}p{0.19\linewidth}>{\raggedright\arraybackslash}Xl@{}}
+\toprule
+Code & Name & Condition & Class \\
+\midrule
+U-stderr & Standard error only & Termination and standard output agree, and for a library the state agrees; standard error differs & Undecided \\
+N2 & Limit on one side & One side exceeds a limit, the other ends, and the rerun with the longer limit confirms it & Non-benign \\
+N1 & Termination & The exit codes differ, one side ends with a signal, or the signals differ; for a library, one side returns a result and the other does not & Non-benign \\
+N4 & State field & A field of the library state after the call differs & Non-benign \\
+B1 & Layout whitespace & Standard output agrees once trailing white space on each line and empty lines at the end are removed & Benign \\
+B2 & Number formatting & Standard output has the same number of lines, the text of each line agrees, and every pair of printed numbers is equivalent & Benign \\
+N3 & Line & At some line position both outputs have a line, and the two lines are not equivalent under B1 and B2 & Non-benign \\
+U-residual & Remainder & Every line at a common position is equivalent, and one output is longer than the other & Undecided \\
+\bottomrule
+\end{tabularx}
+\end{table}

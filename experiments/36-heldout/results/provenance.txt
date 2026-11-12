@@ -1,0 +1,43 @@
+== 2026-11-05T04:06:10Z v2 harness fc98695cb37832c38ef491fd48b21f0f4f3b7f29 dirty=0
+rustc 1.97.0 (2d8144b78 2026-07-07)
+Ubuntu clang version 18.1.3 (1ubuntu1)
+afl-fuzz++4.09c
+2
+Linux 6.18.44-fc-v236 x86_64
+tractor 37960ee08a7c644ee66e29855eca33903f702e67 harvest 38352c21068c8ebcf58457ee246cd97feefeea86
+04:06:12 u00 exe B02_synthetic/static_vars_fpts {"unit": "u00", "case": "B02_synthetic/static_vars_fpts", "withheld": 7, "kept_json": 88, "kept": ["all_keywords.json", "all_token_types.json", "alternating_types.json", "analyze_comments.json", "anal
+u00 pair_status đích: [(0, 'done', {'kiro': 'P_test'}), (1, 'done', {'kiro': 'P_test'}), (2, 'done', {'kiro': 'P_test'})]
+04:40:00 u00: 2028 giây
+04:40:00 u01 exe B02_synthetic/static_vars_fpts {"unit": "u01", "case": "B02_synthetic/static_vars_fpts", "withheld": 15, "kept_json": 80, "kept": ["all_keywords.json", "all_token_types.json", "alternating_types.json", "analyze_comments.json", "ana
+u01 pair_status đích: [(1, 'done', {'gpt-5.4': 'P_test'}), (0, 'done', {'gpt-5.4': 'P_test'}), (2, 'done', {'gpt-5.4': 'P_test'})]
+05:13:24 u01: 2004 giây
+05:13:24 u02 exe B02_synthetic/tu_linkage {"unit": "u02", "case": "B02_synthetic/tu_linkage", "withheld": 38, "kept_json": 132, "kept": ["test002.json", "test003.json", "test005.json", "test007.json", "test008.json", "test010.json", "test011.
+== 2026-11-05T09:20:35Z v2 harness fc98695cb37832c38ef491fd48b21f0f4f3b7f29 dirty=0
+rustc 1.97.0 (2d8144b78 2026-07-07)
+Ubuntu clang version 18.1.3 (1ubuntu1)
+afl-fuzz++4.09c
+2
+Linux 6.18.44-fc-v236 x86_64
+tractor 37960ee08a7c644ee66e29855eca33903f702e67 harvest 38352c21068c8ebcf58457ee246cd97feefeea86
+09:20:50 u02 exe B02_synthetic/tu_linkage {"unit": "u02", "case": "B02_synthetic/tu_linkage", "withheld": 38, "kept_json": 132, "kept": ["test002.json", "test003.json", "test005.json", "test007.json", "test008.json", "test010.json", "test011.
+u02 pair_status đích: [(1, 'done', {'gemini-3.1-pro-preview': 'P_test', 'gpt-5.4': 'P_test'}), (2, 'done', {'gemini-3.1-pro-preview': 'P_test', 'gpt-5.4': 'P_test'}), (0, 'done', {'gemini-3.1-pro-preview': 'P_test', 'gpt-5.4': 'P_test'})]
+10:19:16 u02: 3506 giây
+10:19:17 u03 lib B02_organic/encode_base64_lib {"unit": "u03", "case": "B02_organic/encode_base64_lib", "withheld": 8, "kept_json": 2, "kept": ["test01.json", "test10.json"]}
+u03 pair_status đích: [(0, 'done', {'kimi': 'P_test'}), (1, 'done', {'kimi': 'P_test'}), (2, 'done', {'kimi': 'P_test'})]
+10:27:51 u03: 514 giây
+10:27:52 u04 lib P01_sphincs_plus/054_blake_128f_s_prf_addr_lib {"unit": "u04", "case": "P01_sphincs_plus/054_blake_128f_s_prf_addr_lib", "withheld": 1, "kept_json": 0, "kept": []}
+u04 pair_status đích: [(0, 'harness_error', {'codex-gpt54': 'harness_error'}), (1, 'done', {'codex-gpt54': 'P_test'}), (2, 'done', {'codex-gpt54': 'P_test'})]
+10:31:52 u04: 240 giây
+10:31:53 u05 lib B01_synthetic/029_strcspn_lib {"unit": "u05", "case": "B01_synthetic/029_strcspn_lib", "withheld": 6, "kept_json": 0, "kept": []}
+u05 pair_status đích: [(1, 'done', {'c2saferrust': 'P_test'}), (0, 'done', {'c2saferrust': 'P_test'}), (2, 'done', {'c2saferrust': 'P_test'})]
+10:38:05 u05: 372 giây
+10:38:06 u06 lib B01_organic/gaussian_kernel_lib {"unit": "u06", "case": "B01_organic/gaussian_kernel_lib", "withheld": 3, "kept_json": 2, "kept": ["3.json", "5.json"]}
+u06 pair_status đích: [(1, 'harness_error', {'c2saferrust': 'harness_error'}), (0, 'harness_error', {'c2saferrust': 'harness_error'}), (2, 'done', {'c2saferrust': 'P_test'})]
+10:43:20 u06: 314 giây
+10:43:22 u07 lib P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib {"unit": "u07", "case": "P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib", "withheld": 1, "kept_json": 0, "kept": []}
+u07 pair_status đích: [(1, 'done', {'claude': 'P_test', 'codex-gpt54': 'P_test'}), (0, 'done', {'claude': 'P_test', 'codex-gpt54': 'P_test'}), (2, 'done', {'claude': 'P_test', 'codex-gpt54': 'P_test'})]
+10:52:35 u07: 553 giây
+10:52:36 u08 lib P01_sphincs_plus/056_blake_128f_s_hash_message_lib {"unit": "u08", "case": "P01_sphincs_plus/056_blake_128f_s_hash_message_lib", "withheld": 1, "kept_json": 0, "kept": []}
+u08 pair_status đích: [(1, 'done', {'codex-gpt54': 'P_test'}), (0, 'done', {'codex-gpt54': 'P_test'}), (2, 'done', {'codex-gpt54': 'P_test'})]
+10:59:31 u08: 415 giây
+EVALUATED

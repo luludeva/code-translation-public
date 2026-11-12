@@ -1,0 +1,13 @@
+case	system	source_dir	vectors	ours_pass	ours_fail	ours_case	pub_case	pub_vectors_failed	pub_placeholder	case_match
+qmath	C(oracle)	tractor/test_case	4	4	0	P	-	-	-	-
+qmath	kiro	verified	4	4	0	P	P	0	no	yes
+qmath	claude	verified	4	4	0	P	P	0	no	yes
+qmath	c2rust	translated	4	4	0	P	P	0	no	yes
+tu_linkage	C(oracle)	tractor/test_case	170	170	0	P	-	-	-	-
+tu_linkage	kiro	verified	170	170	0	P	P	0	no	yes
+tu_linkage	claude	verified	170	170	0	P	P	0	no	yes
+tu_linkage	c2rust	translated	170	170	0	P	P	0	no	yes
+static-vars-fpts	C(oracle)	tractor/test_case	95	95	0	P	-	-	-	-
+static-vars-fpts	kiro	verified	95	88	7	F	F	1	yes	yes
+static-vars-fpts	claude	verified	95	95	0	P	P	0	no	yes
+static-vars-fpts	c2rust	translated	95	95	0	P	P	0	no	yes

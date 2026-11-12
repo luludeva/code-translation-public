@@ -1,0 +1,122 @@
+{
+ "mode": "main",
+ "kind": "lib",
+ "rule": "amendment 2026-11-01 L2, L5, L6",
+ "priority": [
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-1of2/ci-out/rq1-main-lib-1of2",
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2/ci-out/rq1-main-lib-2of2",
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-shgeti/ci-out/rq1-main-lib-shgeti",
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2-light/ci-out/rq1-main-lib-2of2-light"
+ ],
+ "freeze": {
+  "tag": "protocol-freeze-r1",
+  "rule": "tag là HEAD hoặc tổ tiên; git diff --no-renames --name-status <tag> HEAD -- harness/ chỉ có trạng thái A; harness/ không có thay đổi chưa commit",
+  "ok": true,
+  "tag_commit": "bc82907c053f84438a735cd4fa890bb074703f01",
+  "head": "1bdc1ff0a1a504d03c45789f5e36f76e48c9917d",
+  "harness_diff": [
+   "A\tharness/analysis.py",
+   "A\tharness/main_merge.py",
+   "A\tharness/main_merge_v2.py",
+   "A\tharness/main_run.py"
+  ],
+  "harness_added": [
+   "harness/analysis.py",
+   "harness/main_merge.py",
+   "harness/main_merge_v2.py",
+   "harness/main_run.py"
+  ],
+  "reason": "ok"
+ },
+ "mode_problems": [],
+ "code_identity": {
+  "shards": {
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-1of2/ci-out/rq1-main-lib-1of2": {
+    "repo_commit": "7011dbbc27bbcbde396de317ef9ea8f9cbe86682",
+    "n_files": 38
+   },
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2/ci-out/rq1-main-lib-2of2": {
+    "repo_commit": "446cadfd65e9c3e93cccf03afc415f8675b411e8",
+    "n_files": 38
+   },
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-shgeti/ci-out/rq1-main-lib-shgeti": {
+    "repo_commit": "a3de05b3d7606e36f2edad380d66145bdd6e075b",
+    "n_files": 38
+   },
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2-light/ci-out/rq1-main-lib-2of2-light": {
+    "repo_commit": "d5eea6a28e9dc2ddb780bf25c2b8852a06ce5d98",
+    "n_files": 39
+   }
+  },
+  "common_files": 38,
+  "identity": "257cb5a651b8778f82270893b4e0bb11c9515f843b71f1df886f5efd8874adfb"
+ },
+ "merge": {
+  "kind": "lib",
+  "shards": [
+   "/home/ubuntu/work/metrics-main-v2/merged-lib/_view/0",
+   "/home/ubuntu/work/metrics-main-v2/merged-lib/_view/1",
+   "/home/ubuntu/work/metrics-main-v2/merged-lib/_view/2",
+   "/home/ubuntu/work/metrics-main-v2/merged-lib/_view/3"
+  ],
+  "n_records": 625,
+  "problems": [],
+  "ok": true,
+  "n_harness_error_resolved": 0,
+  "harness_error_resolved": []
+ },
+ "selection": [
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-1of2/ci-out/rq1-main-lib-1of2",
+   "records": 186,
+   "chosen": 185
+  },
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2/ci-out/rq1-main-lib-2of2",
+   "records": 209,
+   "chosen": 208
+  },
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-shgeti/ci-out/rq1-main-lib-shgeti",
+   "records": 0,
+   "chosen": 0
+  },
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-lib-2of2-light/ci-out/rq1-main-lib-2of2-light",
+   "records": 429,
+   "chosen": 232
+  }
+ ],
+ "harness_error_unresolved": [
+  "B02_organic/sh_geti_lib/s1"
+ ],
+ "n_harness_error_unresolved": 1,
+ "missing": [
+  "B01_organic/pow43_lib/s2",
+  "B01_synthetic/004_nineality_sieve_lib/s2",
+  "B01_synthetic/006_static_alias_lib/s2",
+  "B01_synthetic/008_long_run_lib/s1",
+  "B01_synthetic/008_long_run_lib/s2",
+  "B01_synthetic/021_complex_goto_lib/s1",
+  "B01_synthetic/021_complex_goto_lib/s2",
+  "B01_synthetic/032_comma_operator_lib/s1",
+  "B01_synthetic/032_comma_operator_lib/s2",
+  "B02_organic/arr_push_lib/s1",
+  "B02_organic/arr_push_lib/s2",
+  "B02_organic/hm_geti_lib/s1",
+  "B02_organic/hm_geti_lib/s2",
+  "B02_organic/sh_geti_lib/s1",
+  "B02_organic/sh_puts_lib/s0",
+  "B02_organic/sh_puts_lib/s1",
+  "B02_organic/sh_puts_lib/s2",
+  "B02_organic/str_dups_lib/s0",
+  "B02_organic/str_dups_lib/s1",
+  "B02_organic/str_dups_lib/s2",
+  "B02_organic/str_put_lib/s0",
+  "B02_organic/str_put_lib/s1",
+  "B02_organic/str_put_lib/s2"
+ ],
+ "n_missing": 23,
+ "extra": [],
+ "ok": true
+}

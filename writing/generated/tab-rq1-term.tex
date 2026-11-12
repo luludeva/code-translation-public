@@ -1,0 +1,31 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Don vi: input x ban dich trong P_test, cong qua seed (Q-T1)
+\begin{tabular}{@{}l rr rr@{}}
+\toprule
+ & \multicolumn{2}{c}{C} & \multicolumn{2}{c}{Rust} \\
+\cmidrule(lr){2-3} \cmidrule(l){4-5}
+Status & Inputs & \% & Inputs & \% \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Executable programs}} \\
+\quad \code{exit} & \rqTermCExitExeAllNum & \rqTermCExitExeAllPct & \rqTermRExitExeAllNum & \rqTermRExitExeAllPct \\
+\quad \code{signal} & \rqTermCSignalExeAllNum & \rqTermCSignalExeAllPct & \rqTermRSignalExeAllNum & \rqTermRSignalExeAllPct \\
+\quad \code{timeout} & \rqTermCTimeoutExeAllNum & \rqTermCTimeoutExeAllPct & \rqTermRTimeoutExeAllNum & \rqTermRTimeoutExeAllPct \\
+\quad \code{output\_limit} & \rqTermCOutputLimitExeAllNum & \rqTermCOutputLimitExeAllPct & \rqTermROutputLimitExeAllNum & \rqTermROutputLimitExeAllPct \\
+\quad \code{mem\_limit} & \rqTermCMemLimitExeAllNum & \rqTermCMemLimitExeAllPct & \rqTermRMemLimitExeAllNum & \rqTermRMemLimitExeAllPct \\
+\quad \code{invalid\_input} & \rqTermCInvalidInputExeAllNum & \rqTermCInvalidInputExeAllPct & \rqTermRInvalidInputExeAllNum & \rqTermRInvalidInputExeAllPct \\
+\quad Total & \rqTermTotalCExeAllNum &  & \rqTermTotalRExeAllNum &  \\
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Libraries}} \\
+\quad \code{Pass} & \rqTermCPassLibAllNum & \rqTermCPassLibAllPct & \rqTermRPassLibAllNum & \rqTermRPassLibAllPct \\
+\quad \code{VectorComparisonFailed} & \rqTermCVectorComparisonFailedLibAllNum & \rqTermCVectorComparisonFailedLibAllPct & \rqTermRVectorComparisonFailedLibAllNum & \rqTermRVectorComparisonFailedLibAllPct \\
+\quad \code{Panic} & \rqTermCPanicLibAllNum & \rqTermCPanicLibAllPct & \rqTermRPanicLibAllNum & \rqTermRPanicLibAllPct \\
+\quad \code{SegmentationFault} & \rqTermCSegmentationFaultLibAllNum & \rqTermCSegmentationFaultLibAllPct & \rqTermRSegmentationFaultLibAllNum & \rqTermRSegmentationFaultLibAllPct \\
+\quad \code{UnknownFailure} & \rqTermCUnknownFailureLibAllNum & \rqTermCUnknownFailureLibAllPct & \rqTermRUnknownFailureLibAllNum & \rqTermRUnknownFailureLibAllPct \\
+\quad \code{Timeout} & \rqTermCTimeoutLibAllNum & \rqTermCTimeoutLibAllPct & \rqTermRTimeoutLibAllNum & \rqTermRTimeoutLibAllPct \\
+\quad \code{OutputLimit} & \rqTermCOutputLimitLibAllNum & \rqTermCOutputLimitLibAllPct & \rqTermROutputLimitLibAllNum & \rqTermROutputLimitLibAllPct \\
+\quad \code{MemLimit} & \rqTermCMemLimitLibAllNum & \rqTermCMemLimitLibAllPct & \rqTermRMemLimitLibAllNum & \rqTermRMemLimitLibAllPct \\
+\quad \code{infra} & \rqTermCInfraLibAllNum & \rqTermCInfraLibAllPct & \rqTermRInfraLibAllNum & \rqTermRInfraLibAllPct \\
+\quad \code{invalid\_input} & \rqTermCInvalidInputLibAllNum & \rqTermCInvalidInputLibAllPct & \rqTermRInvalidInputLibAllNum & \rqTermRInvalidInputLibAllPct \\
+\quad Total & \rqTermTotalCLibAllNum &  & \rqTermTotalRLibAllNum &  \\
+\bottomrule
+\end{tabular}

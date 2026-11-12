@@ -1,0 +1,23 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% Don vi: (input, ban dich, seed) tren P_test; input phan biet (case, seed, idx); ngoai mien tren input sinh ra (Q-G1)
+\begin{tabular}{@{}l rrr rr r rr@{}}
+\toprule
+ & \multicolumn{3}{c}{Retained divergences} & \multicolumn{2}{c}{Distinct inputs} & & \multicolumn{2}{c}{Out of domain} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(l){8-9}
+Layer & Div. & Obs. & \% & Div. & Inputs & $D$ & Inputs & Generated \\
+\midrule
+\multicolumn{9}{@{}l}{\textit{Executable programs}} \\
+\quad \code{S} & \rqDivLayerSExeAllNum & \rqDivLayerSExeAllDen & \rqDivLayerSExeAllPct & \rqDivInputsLayerSExeAllNum & \rqDivInputsLayerSExeAllDen & \rqDivTransLayerSExeAllNum & \rqOutOfDomainSExeAllNum & \rqOutOfDomainSExeAllDen \\
+\quad \code{M} & \rqDivLayerMExeAllNum & \rqDivLayerMExeAllDen & \rqDivLayerMExeAllPct & \rqDivInputsLayerMExeAllNum & \rqDivInputsLayerMExeAllDen & \rqDivTransLayerMExeAllNum & \rqOutOfDomainMExeAllNum & \rqOutOfDomainMExeAllDen \\
+\quad \code{MS} & \rqDivLayerMSExeAllNum & \rqDivLayerMSExeAllDen & \rqDivLayerMSExeAllPct & \rqDivInputsLayerMSExeAllNum & \rqDivInputsLayerMSExeAllDen & \rqDivTransLayerMSExeAllNum & \rqOutOfDomainMSExeAllNum & \rqOutOfDomainMSExeAllDen \\
+\quad \code{A} & \rqDivLayerAExeAllNum & \rqDivLayerAExeAllDen & \rqDivLayerAExeAllPct & \rqDivInputsLayerAExeAllNum & \rqDivInputsLayerAExeAllDen & \rqDivTransLayerAExeAllNum & \rqOutOfDomainAExeAllNum & \rqOutOfDomainAExeAllDen \\
+\quad \code{generated} & \rqDivLayerGeneratedExeAllNum & \rqDivLayerGeneratedExeAllDen & \rqDivLayerGeneratedExeAllPct & \rqDivInputsLayerGeneratedExeAllNum & \rqDivInputsLayerGeneratedExeAllDen & \rqDivTransLayerGeneratedExeAllNum & \rqOutOfDomainGeneratedExeAllNum & \rqOutOfDomainGeneratedExeAllDen \\
+\addlinespace
+\multicolumn{9}{@{}l}{\textit{Libraries}} \\
+\quad \code{vector} & \rqDivLayerVectorLibAllNum & \rqDivLayerVectorLibAllDen & \rqDivLayerVectorLibAllPct & \rqDivInputsLayerVectorLibAllNum & \rqDivInputsLayerVectorLibAllDen & \rqDivTransLayerVectorLibAllNum & \rqOutOfDomainVectorLibAllNum & \rqOutOfDomainVectorLibAllDen \\
+\quad \code{random} & \rqDivLayerRandomLibAllNum & \rqDivLayerRandomLibAllDen & \rqDivLayerRandomLibAllPct & \rqDivInputsLayerRandomLibAllNum & \rqDivInputsLayerRandomLibAllDen & \rqDivTransLayerRandomLibAllNum & \rqOutOfDomainRandomLibAllNum & \rqOutOfDomainRandomLibAllDen \\
+\quad \code{dict} & \rqDivLayerDictLibAllNum & \rqDivLayerDictLibAllDen & \rqDivLayerDictLibAllPct & \rqDivInputsLayerDictLibAllNum & \rqDivInputsLayerDictLibAllDen & \rqDivTransLayerDictLibAllNum & \rqOutOfDomainDictLibAllNum & \rqOutOfDomainDictLibAllDen \\
+\quad \code{sweep} & \rqDivLayerSweepLibAllNum & \rqDivLayerSweepLibAllDen & \rqDivLayerSweepLibAllPct & \rqDivInputsLayerSweepLibAllNum & \rqDivInputsLayerSweepLibAllDen & \rqDivTransLayerSweepLibAllNum & \rqOutOfDomainSweepLibAllNum & \rqOutOfDomainSweepLibAllDen \\
+\quad \code{generated} & \rqDivLayerGeneratedLibAllNum & \rqDivLayerGeneratedLibAllDen & \rqDivLayerGeneratedLibAllPct & \rqDivInputsLayerGeneratedLibAllNum & \rqDivInputsLayerGeneratedLibAllDen & \rqDivTransLayerGeneratedLibAllNum & \rqOutOfDomainGeneratedLibAllNum & \rqOutOfDomainGeneratedLibAllDen \\
+\bottomrule
+\end{tabular}

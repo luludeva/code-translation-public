@@ -1,0 +1,40 @@
+Cặp: gốc 2290, c7i 2290, cùng tập: True
+Trường population lệch: {'pilot': 0, 'pub_passed': 0, 'pub_error': 0, 'stage': 0, 'pub_vectors_failed': 0, 'source_dir': 0, 'harvest_case': 0, 'no_input': 0, 'rustc_bootstrap': 0}
+Phía C: case 229 229 | c_results khác: []
+
+== accepted (n=1281)
+  gốc: {'build_fail': 13, 'fail:SegmentationFault': 4, 'fail:VectorComparisonFailed': 2, 'pass': 1251, 'pass_0_vectors': 8, 'timeout_only': 3}
+  c7i: {'build_fail': 13, 'fail:SegmentationFault': 4, 'fail:VectorComparisonFailed': 2, 'pass': 1251, 'pass_0_vectors': 8, 'timeout_only': 3}
+  cùng nhóm nhưng khác kết quả cấp vector: 0 []
+
+== rejected (n=833)
+  gốc: {'build_fail': 707, 'fail:Panic': 1, 'fail:SegmentationFault': 17, 'fail:SegmentationFault+UnknownFailure': 1, 'fail:SegmentationFault+VectorComparisonFailed': 3, 'fail:UnknownFailure': 4, 'fail:VectorComparisonFailed': 85, 'pass': 15}
+  c7i: {'build_fail': 707, 'fail:Panic': 1, 'fail:SegmentationFault': 17, 'fail:SegmentationFault+VectorComparisonFailed': 3, 'fail:UnknownFailure': 5, 'fail:VectorComparisonFailed': 85, 'pass': 15}
+  đổi fail:SegmentationFault+UnknownFailure -> fail:UnknownFailure: 1
+     ('B01_organic', 'merge_sort_lib', 'c2saferrust') {'Skip': 1, 'SegmentationFault': 3, 'UnknownFailure': 1} -> {'Skip': 1, 'UnknownFailure': 4}
+  cùng nhóm nhưng khác kết quả cấp vector: 4 [('B02_organic', 'sh_geti_lib', 'kimi'), ('B01_organic', 'tfm_lib', 'c2saferrust'), ('B01_synthetic', '003_string_slicing_lib', 'c2saferrust'), ('B02_organic', 'sh_geti_lib', 'gpt-5.4')]
+
+== P_rep gốc: 1264 (1243 không tính 21 cặp không input); qua kiểm lại 5; kiểm lại 22 cặp: {(False, True, False): 9, (True, True, True): 5, (False, True, True): 8}
+
+== P_rep c7i: 1264 (1243 không tính 21 cặp không input); qua kiểm lại 5; kiểm lại 22 cặp: {(False, True, False): 9, (True, True, True): 5, (False, True, True): 8}
+Chỉ có trong P_rep gốc: []
+Chỉ có trong P_rep c7i: []
+
+== Hao hụt accepted (không tính library không input) trên c7i: 17
+    ('B01_organic', 'hex2bin_lib', 'c2saferrust') fail:SegmentationFault {'SegmentationFault': 5} | kiểm lại: (False, True, None, [{'1.json': 'SegmentationFault', '2.json': 'SegmentationFault', '3.json': 'SegmentationFault', '4.json': 'SegmentationFault', '5.json': 'SegmentationFault'}])
+    ('B02_synthetic', 'betagamma_lib', 'gemini-3.1-pro-preview') fail:VectorComparisonFailed {'Pass': 3, 'VectorComparisonFailed': 1} | kiểm lại: (False, True, None, [{'1.json': 'Pass', '2.json': 'Pass', '3.json': 'VectorComparisonFailed', '4.json': 'Pass'}])
+    ('B02_synthetic', 'betagamma_lib', 'gpt-5.4') fail:VectorComparisonFailed {'Pass': 3, 'VectorComparisonFailed': 1} | kiểm lại: (False, True, None, [{'1.json': 'Pass', '2.json': 'Pass', '3.json': 'VectorComparisonFailed', '4.json': 'Pass'}])
+    ('B02_synthetic', 'findrep_lib', 'kimi') timeout_only {'Pass': 1, 'Timeout': 3} | kiểm lại: (False, True, None, [{'1.json': 'Pass', '2.json': 'Timeout', '3.json': 'Timeout', '4.json': 'Timeout'}])
+    ('B02_synthetic', 'inreftree_lib', 'kimi') timeout_only {'Timeout': 4} | kiểm lại: (False, True, None, [{'1.json': 'Timeout', '2.json': 'Timeout', '3.json': 'Timeout', '4.json': 'Timeout'}])
+    ('B02_synthetic', 'matrix_sum_lib', 'c2rust') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'c2saferrust') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'claude') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'codex-gpt54') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'gemini-3.1-pro-preview') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'gpt-5.4') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'kiro') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'matrix_sum_lib', 'laertes') build_fail None | kiểm lại: (False, True, 'libmatrixsum_lib.so -> libmatrix_sum_lib.so', [None])
+    ('B02_synthetic', 'task_manager_lib', 'gpt-5.4') timeout_only {'Timeout': 3, 'Skip': 2} | kiểm lại: (False, True, None, [{'test01.json': 'Skip', 'test02.json': 'Timeout', 'test03.json': 'Timeout', 'test04.json': 'Timeout', 'test07.json': 'Skip'}])
+    ('P01_sphincs_plus', '057_blake_128f_r_initialize_hash_function_lib', 'codex-gpt54') fail:SegmentationFault {'SegmentationFault': 1} | kiểm lại: (False, True, None, [{'1.json': 'SegmentationFault'}])
+    ('P01_sphincs_plus', '061_blake_128s_s_initialize_hash_function_lib', 'codex-gpt54') fail:SegmentationFault {'SegmentationFault': 1} | kiểm lại: (False, True, None, [{'1.json': 'SegmentationFault'}])
+    ('P01_sphincs_plus', '065_blake_128s_r_initialize_hash_function_lib', 'codex-gpt54') fail:SegmentationFault {'SegmentationFault': 1} | kiểm lại: (False, True, None, [{'1.json': 'SegmentationFault'}])

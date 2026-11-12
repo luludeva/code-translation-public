@@ -1,0 +1,9 @@
+{
+ "randomize_va_space": "2",
+ "jemalloc_path": "/usr/lib/x86_64-linux-gnu/libjemalloc.so.2",
+ "aslr_on_1": "5c17658fe000-5c1765942000 rw-p 00000000 00:00 0                          [heap]\n7ffcb3b2d000-7ffcb3b4e000 rw-p 00000000 00:00 0                          [stack]\n",
+ "aslr_on_2": "5b91cb65a000-5b91cb69e000 rw-p 00000000 00:00 0                          [heap]\n7ffdbd775000-7ffdbd796000 rw-p 00000000 00:00 0                          [stack]\n",
+ "aslr_off_1": "555555593000-5555555d7000 rw-p 00000000 00:00 0                          [heap]\n7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]\n",
+ "aslr_off_2": "555555593000-5555555d7000 rw-p 00000000 00:00 0                          [heap]\n7ffffffde000-7ffffffff000 rw-p 00000000 00:00 0                          [stack]\n",
+ "jemalloc": "7a4f16400000-7a4f16409000 r--p 00000000 103:01 5008                      /usr/lib/x86_64-linux-gnu/libjemalloc.so.2\n7a4f16409000-7a4f164b6000 r-xp 00009000 103:01 5008                      /usr/lib/x86_64-linux-gnu/libjemalloc.so.2\n7a4f164b6000-7a4f164c4000 r--p 000b6000 103:01 5008                      /usr/lib/x86_64-linux-gnu/libjemalloc.so.2\n7a4f164c4000-7a4f164ca000 r--p 000c4000 103:01 5008                      /usr/lib/x86_64-linux-gnu/libjemalloc.so.2\n7a4f164ca000-7a4f164cb000 rw-p 000ca000 103:01 5008                      /usr/lib/x86_64-linux-gnu/libjemalloc.so.2\n7ffd6ceb2000-7ffd6ced3000 rw-p 00000000 00:00 0                          [stack]\n"
+}

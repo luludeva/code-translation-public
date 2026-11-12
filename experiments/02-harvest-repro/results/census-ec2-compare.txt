@@ -1,0 +1,29 @@
+Cặp: cũ 1090, EC2 1090, cùng tập: True
+Trường population lệch (cũ so với EC2): {'pilot': 0, 'pub_passed': 0, 'stage': 0, 'pub_vectors_failed': 0, 'pub_placeholder': 0, 'source_dir': 0, 'harvest_case': 0, 'rustc_bootstrap': 0}
+Cặp có ours_passed cũ khác kết quả tính lại từ results: 91
+Phía C: case 109 109 | tally khác nhau: []
+
+== accepted (n=559)
+  cũ : {'build_fail': 7, 'fail:Timeout+VectorComparisonFailed': 3, 'pass': 486, 'pass_0_vectors': 8, 'timeout_only': 55}
+  EC2: {'build_fail': 7, 'fail:Timeout+VectorComparisonFailed': 3, 'pass': 512, 'pass_0_vectors': 8, 'timeout_only': 29}
+  đổi timeout_only -> pass: 26
+  cùng nhóm nhưng khác kết quả cấp vector: 0
+
+== rejected (n=454)
+  cũ : {'build_fail': 326, 'fail:Panic': 6, 'fail:VectorComparisonFailed': 112, 'no_results': 1, 'timeout_only': 9}
+  EC2: {'build_fail': 326, 'fail:Panic': 6, 'fail:VectorComparisonFailed': 122}
+  đổi no_results -> fail:VectorComparisonFailed: 1
+  đổi timeout_only -> fail:VectorComparisonFailed: 9
+  cùng nhóm nhưng khác kết quả cấp vector: 0
+
+== Luật 3/3 trên EC2: 29 cặp accepted chỉ trượt vì Timeout, 29 dòng chạy lại
+  không vào P_rep: ('B01_synthetic', '025_struct_and_errno_and_static', 'codex-gpt54') {'test01.json': 'Pass', 'test03.json': 'Timeout', 'test04.json': 'Timeout', 'test05.json': 'Timeout', 'test06.json': 'Pass', 'test07.json': 'Timeout'} stable True
+  {'3/3 trượt cùng tập vector': 1, '3/3 pass': 28}
+
+== Phễu accepted executable trên EC2: P_acc 559 -> P_rep 540 có vector; thêm 8 cặp đỗ với 0 vector (008_long_run, vector duy nhất đổi tên .bak) chưa có quyết định phía executable; nếu áp luật library 2026-10-14 thì P_rep 548
+  hao hụt: không build (không có bin target) 7, timeout 1, không ổn định 0, output khác 3
+    ('B02_synthetic', 'generic_foreach', 'gpt-5.4') {'Pass': 73, 'VectorComparisonFailed': 19, 'Timeout': 8}
+    ('B02_synthetic', 'generic_foreach', 'kimi') {'Pass': 73, 'VectorComparisonFailed': 19, 'Timeout': 8}
+    ('B02_synthetic', 'pointer_comparison_ascii_art', 'gemini-3.1-pro-preview') {'VectorComparisonFailed': 20, 'Skip': 31, 'Pass': 42, 'Timeout': 4}
+
+== Rejected executable trên EC2: 454; tái lập ra đỗ: 0

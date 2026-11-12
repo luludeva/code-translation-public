@@ -1,0 +1,32 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  cell/.style={draw, minimum width=4.9cm, minimum height=2.3cm, align=center, inner sep=4pt}]
+\def\xa{3.2} \def\xb{8.2} \def\xc{13.2} \def\xd{18.2}
+% column headers
+\node[font=\small\bfseries] at ({(\xa+\xd)/2},1.25) {Independent oracle, on the executed inputs};
+\node[align=center] at ({(\xa+\xb)/2},0.45) {at least one retained\\divergence from $C_c$};
+\node[align=center] at ({(\xb+\xc)/2},0.45) {no retained\\divergence};
+\node[align=center] at ({(\xc+\xd)/2},0.45) {no decided\\outcome};
+% row headers
+\node[font=\small\bfseries, rotate=90] at (-0.5,-2.3) {Original decision};
+\node[align=center, text=passc, font=\small\bfseries] at (1.7,-1.15) {Accepted\\(PASS)};
+\node[align=center, text=failc, font=\small\bfseries] at (1.7,-3.45) {Rejected at\\the test stage\\(FAIL)};
+% cells, accepted row
+\node[cell, fill=passc!12, draw=passc, thick] at ({(\xa+\xb)/2},-1.15)
+  {\textbf{False pass}, counted in $D$\\[3pt]RQ1:\ $r_{\mathit{FP}} = D \,/\, |P_{\mathit{test}}|$};
+\node[cell, fill=black!4] at ({(\xb+\xc)/2},-1.15)
+  {\textbf{No divergence detected}\\[3pt]equivalence remains\\unshown};
+\node[cell, fill=white, dashed] at ({(\xc+\xd)/2},-1.15)
+  {\textbf{Re-evaluation incomplete}\\[3pt]outside $P_{\mathit{test}}$;\\attrition $L_P$};
+% cells, rejected row
+\node[cell, fill=black!4] at ({(\xa+\xb)/2},-3.45)
+  {\textbf{Rejection supported}\\[3pt]a failing vector\\diverges from $C_c$};
+\node[cell, fill=failc!12, draw=failc, thick] at ({(\xb+\xc)/2},-3.45)
+  {\textbf{False failure}, counted in $F$\\[1pt]every failing vector\\confirmed to agree with $C_c$\\[3pt]RQ2:\ $r_{\mathit{FF}} = F \,/\, |R_{\mathit{test}}|$};
+\node[cell, fill=white, dashed] at ({(\xc+\xd)/2},-3.45)
+  {\textbf{Not adjudicable}\\[3pt]stays in $|R_{\mathit{test}}|$,\\reported separately};
+% RQ3
+\node[draw, thick, rounded corners=3pt, fill=black!4, align=center, inner sep=6pt] at ({(\xa+\xd)/2},-6.05)
+  {\textbf{RQ3}:\ \ $s_{\mathit{rec}} = \dfrac{|P_{\mathit{acc}}| - \textcolor{passc}{D} + \textcolor{failc}{F}}{|P_0|}$\\[3pt]
+   {\scriptsize detected false passes leave the accepted count, false failures join it;}\\[-1pt]
+   {\scriptsize the cases without a decided outcome turn this value into bounds}};
+\end{tikzpicture}

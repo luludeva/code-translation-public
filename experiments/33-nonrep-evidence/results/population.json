@@ -1,0 +1,170 @@
+[
+ {
+  "bundle": "B02_synthetic",
+  "case": "generic_foreach",
+  "system": "gpt-5.4",
+  "path": "accepted",
+  "kind": "exe"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "generic_foreach",
+  "system": "kimi",
+  "path": "accepted",
+  "kind": "exe"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "pointer_comparison_ascii_art",
+  "system": "gemini-3.1-pro-preview",
+  "path": "accepted",
+  "kind": "exe"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "contrast_ratio_lib",
+  "system": "gpt-5.4",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "contrast_ratio_lib",
+  "system": "kimi",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "contrast_ratio_lib",
+  "system": "gemini-3.1-pro-preview",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "contrast_ratio_lib",
+  "system": "c2saferrust",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "hex2bin_lib",
+  "system": "c2saferrust",
+  "path": "accepted",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B01_organic",
+  "case": "pow43_lib",
+  "system": "gpt-5.4",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_organic",
+  "case": "underhanded_c_nuke_lib",
+  "system": "kiro",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_organic",
+  "case": "underhanded_c_nuke_lib",
+  "system": "claude",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "betagamma_lib",
+  "system": "gpt-5.4",
+  "path": "accepted",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "betagamma_lib",
+  "system": "gemini-3.1-pro-preview",
+  "path": "accepted",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "kiro",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "claude",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "codex-gpt54",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "c2rust",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "laertes",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "c2saferrust",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "kimi",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "system": "gemini-3.1-pro-preview",
+  "path": "rejected",
+  "kind": "lib"
+ },
+ {
+  "bundle": "P01_sphincs_plus",
+  "case": "057_blake_128f_r_initialize_hash_function_lib",
+  "system": "codex-gpt54",
+  "path": "accepted",
+  "kind": "lib"
+ },
+ {
+  "bundle": "P01_sphincs_plus",
+  "case": "061_blake_128s_s_initialize_hash_function_lib",
+  "system": "codex-gpt54",
+  "path": "accepted",
+  "kind": "lib"
+ },
+ {
+  "bundle": "P01_sphincs_plus",
+  "case": "065_blake_128s_r_initialize_hash_function_lib",
+  "system": "codex-gpt54",
+  "path": "accepted",
+  "kind": "lib"
+ }
+]

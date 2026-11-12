@@ -1,0 +1,455 @@
+{
+ "actions": {
+  "hours_after_freeze": 358.11,
+  "hours_by_runner": {
+   "thesis-i-008297ff952e9b5b3": 51.83,
+   "thesis-i-01773fe09af1a559c": 30.13,
+   "thesis-i-04c817afe6511fb37": 51.28,
+   "thesis-i-0f1afa3b7cba2e2ed": 100.46,
+   "thesis-runner": 124.42
+  },
+  "hours_total": 358.13,
+  "jobs": [
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-1of2",
+    "completed": "2026-10-27T17:44:44Z",
+    "conclusion": "cancelled",
+    "hours": 24.08,
+    "run": 40370695046,
+    "runner": "thesis-runner",
+    "started": "2026-10-26T17:39:42Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-2of2",
+    "completed": "2026-10-28T05:04:43Z",
+    "conclusion": "failure",
+    "hours": 11.17,
+    "run": 40522665691,
+    "runner": "thesis-runner",
+    "started": "2026-10-27T17:54:46Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-2of2",
+    "completed": "2026-10-29T17:45:38Z",
+    "conclusion": "failure",
+    "hours": 36.68,
+    "run": 40522676059,
+    "runner": "thesis-runner",
+    "started": "2026-10-28T05:04:44Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-1of2",
+    "completed": "2026-10-30T05:15:28Z",
+    "conclusion": "cancelled",
+    "hours": 43.18,
+    "run": 40662300872,
+    "runner": "thesis-i-0f1afa3b7cba2e2ed",
+    "started": "2026-10-28T10:04:41Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-1of2",
+    "completed": "2026-10-31T18:43:15Z",
+    "conclusion": "failure",
+    "hours": 37.55,
+    "run": 41006922464,
+    "runner": "thesis-runner",
+    "started": "2026-10-30T05:10:22Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-2of2",
+    "completed": "2026-11-01T14:34:24Z",
+    "conclusion": "cancelled",
+    "hours": 57.28,
+    "run": 41007606953,
+    "runner": "thesis-i-0f1afa3b7cba2e2ed",
+    "started": "2026-10-30T05:17:31Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-2of2",
+    "completed": "2026-11-01T09:07:07Z",
+    "conclusion": "failure",
+    "hours": 44.32,
+    "run": 41058045900,
+    "runner": "thesis-i-04c817afe6511fb37",
+    "started": "2026-10-30T12:47:44Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-1of2",
+    "completed": "2026-11-01T16:37:45Z",
+    "conclusion": "success",
+    "hours": 51.83,
+    "run": 41058048416,
+    "runner": "thesis-i-008297ff952e9b5b3",
+    "started": "2026-10-30T12:47:45Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq2-main",
+    "completed": "2026-10-30T13:07:11Z",
+    "conclusion": "success",
+    "hours": 0.32,
+    "run": 41058051181,
+    "runner": "thesis-i-01773fe09af1a559c",
+    "started": "2026-10-30T12:47:46Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-shgeti",
+    "completed": "2026-11-01T14:35:26Z",
+    "conclusion": "cancelled",
+    "hours": 21.59,
+    "run": 41122450398,
+    "runner": "thesis-i-01773fe09af1a559c",
+    "started": "2026-10-31T16:59:51Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-1of2",
+    "completed": "2026-10-31T23:06:52Z",
+    "conclusion": "failure",
+    "hours": 0.0,
+    "run": 41251115456,
+    "runner": "thesis-runner",
+    "started": "2026-10-31T23:06:38Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-1of2",
+    "completed": "2026-11-01T14:38:29Z",
+    "conclusion": "cancelled",
+    "hours": 14.94,
+    "run": 41253619381,
+    "runner": "thesis-runner",
+    "started": "2026-10-31T23:42:08Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-exe-light",
+    "completed": "2026-11-01T16:04:18Z",
+    "conclusion": "success",
+    "hours": 6.95,
+    "run": 41279329886,
+    "runner": "thesis-i-04c817afe6511fb37",
+    "started": "2026-11-01T09:07:07Z"
+   },
+   {
+    "after_freeze": true,
+    "branch": "jobs/rq1-main-lib-2of2-light",
+    "completed": "2026-11-01T22:48:56Z",
+    "conclusion": "success",
+    "hours": 8.22,
+    "run": 41304491508,
+    "runner": "thesis-i-01773fe09af1a559c",
+    "started": "2026-11-01T14:35:54Z"
+   }
+  ],
+  "n_runners": 5
+ },
+ "freeze_tag_commit_time": "2026-10-25T21:14:38+00:00",
+ "merged_inputs_exe": {
+  "afl_status_by_record": {
+   "None": 102,
+   "afl_build_failed": 3,
+   "afl_error": 6,
+   "done": 129,
+   "skipped": 51
+  },
+  "duplicates_by_layer": {
+   "A": 2286,
+   "M": 2226,
+   "MS": 914502,
+   "S": 35
+  },
+  "executed_by_layer": {
+   "A": 2542,
+   "M": 2938068,
+   "MS": 2117746,
+   "S": 2293
+  },
+  "generated_by_layer": {
+   "A": 7171,
+   "M": 3688565,
+   "MS": 3738007,
+   "S": 2328
+  },
+  "out_of_domain_by_layer": {
+   "A": 2343,
+   "M": 748271,
+   "MS": 705759
+  },
+  "records_chosen": {
+   "exe": 291,
+   "lib": 625
+  }
+ },
+ "note": "RAM đỉnh không có trong bản ghi; giờ máy dưới đây là giờ job trên runner, không phải giờ máy bật (tính tiền theo giờ bật)",
+ "shards": {
+  "rq1-main-exe-1of2": {
+   "bytes": {
+    "div": 156292398,
+    "inputs": 15146596,
+    "other": 782266
+   },
+   "commit": "1fa636f50daa8cbfc1be127aaa678ca9b0ba5772",
+   "created_utc": "2026-10-31T23:42:35Z",
+   "finished_utc": null,
+   "instance": "i-094e7da9f40a3fc38",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 55,
+   "n_pairs": 287,
+   "record_status": {
+    "done": 65
+   },
+   "runner_env": null,
+   "theta": {
+    "afl_execs": 100000,
+    "budget": 30000
+   },
+   "wall_file": null,
+   "wall_secs": null,
+   "workers": 6
+  },
+  "rq1-main-exe-2of2": {
+   "bytes": {
+    "div": 64270186484,
+    "inputs": 22190456,
+    "other": 916023
+   },
+   "commit": "c867337c1f87489d876daa4800bf5319ad162572",
+   "created_utc": "2026-10-30T12:57:23Z",
+   "finished_utc": null,
+   "instance": "i-04c817afe6511fb37",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 49,
+   "n_pairs": 261,
+   "record_status": {
+    "done": 77,
+    "insensitive_other_seed": 26
+   },
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-04c817afe6511fb37",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16076992,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "afl_execs": 100000,
+    "budget": 30000
+   },
+   "wall_file": null,
+   "wall_secs": null,
+   "workers": 6
+  },
+  "rq1-main-exe-light": {
+   "bytes": {
+    "div": 575065770,
+    "inputs": 42663207,
+    "other": 813929
+   },
+   "commit": "40fedd1b50d011177233cd1a40adfcd844b3fdb8",
+   "created_utc": "2026-11-01T08:09:39Z",
+   "finished_utc": "2026-11-01T16:03:35Z",
+   "instance": "i-04c817afe6511fb37",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 86,
+   "n_pairs": 401,
+   "record_status": {
+    "done": 160,
+    "insensitive_other_seed": 98
+   },
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-04c817afe6511fb37",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16076992,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "afl_execs": 100000,
+    "budget": 30000
+   },
+   "wall_file": {
+    "n_jobs": 258,
+    "wall_secs": 28436.0,
+    "workers": 6
+   },
+   "wall_secs": 28436.0,
+   "workers": 6
+  },
+  "rq1-main-lib-1of2": {
+   "bytes": {
+    "div": 1209703,
+    "inputs": 6194898,
+    "other": 1522306
+   },
+   "commit": "a980c526423742d8204e93f133fd8e53630d53f7",
+   "created_utc": "2026-10-30T12:57:23Z",
+   "finished_utc": "2026-11-01T16:37:38Z",
+   "instance": "i-008297ff952e9b5b3",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 62,
+   "n_pairs": 240,
+   "record_status": {
+    "done": 185,
+    "harness_error": 1
+   },
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-008297ff952e9b5b3",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16077000,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "n_inputs": 2000
+   },
+   "wall_file": {
+    "n_jobs": 3,
+    "wall_secs": 186014.32,
+    "workers": 6
+   },
+   "wall_secs": 186014.32,
+   "workers": 6
+  },
+  "rq1-main-lib-2of2": {
+   "bytes": {
+    "div": 19509347,
+    "inputs": 49479346,
+    "other": 1828585
+   },
+   "commit": "97f80c58521d051b88ffc7aa0c0d492d3f977d5d",
+   "created_utc": "2026-10-30T05:18:11Z",
+   "finished_utc": null,
+   "instance": "i-0f1afa3b7cba2e2ed",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 154,
+   "n_pairs": 1024,
+   "record_status": {
+    "done": 208,
+    "harness_error": 1
+   },
+   "runner_env": {
+    "ami_id": "ami-056f3c04387e2cc17",
+    "availability_zone": "us-west-2d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-0f1afa3b7cba2e2ed",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16076996,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "n_inputs": 2000
+   },
+   "wall_file": null,
+   "wall_secs": null,
+   "workers": 6
+  },
+  "rq1-main-lib-2of2-light": {
+   "bytes": {
+    "div": 1376678326,
+    "inputs": 78788835,
+    "other": 1522825
+   },
+   "commit": "e8f97047ff01ab618a80ec3aaf7c1efb91eae337",
+   "created_utc": "2026-11-01T14:36:02Z",
+   "finished_utc": "2026-11-01T22:48:10Z",
+   "instance": "i-01773fe09af1a559c",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 143,
+   "n_pairs": 940,
+   "record_status": {
+    "done": 429
+   },
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-01773fe09af1a559c",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16076996,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "n_inputs": 2000
+   },
+   "wall_file": {
+    "n_jobs": 429,
+    "wall_secs": 29527.25,
+    "workers": 6
+   },
+   "wall_secs": 29527.25,
+   "workers": 6
+  },
+  "rq1-main-lib-shgeti": {
+   "bytes": {
+    "div": 2049931,
+    "inputs": 73333,
+    "other": 231494
+   },
+   "commit": "c8c41a3a9210a5b2ee4869b5d8a4f6fa00456a3b",
+   "created_utc": "2026-10-31T17:02:34Z",
+   "finished_utc": null,
+   "instance": "i-01773fe09af1a559c",
+   "instance_type": "c7i.2xlarge",
+   "n_cases": 1,
+   "n_pairs": 7,
+   "record_status": {},
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-01773fe09af1a559c",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16076996,
+    "source": "ec2-imds"
+   },
+   "theta": {
+    "n_inputs": 2000
+   },
+   "wall_file": null,
+   "wall_secs": null,
+   "workers": 3
+  },
+  "rq2-main": {
+   "bytes": {
+    "other": 8528669
+   },
+   "commit": "b757f4da7c979623c2e0878c6a644f277d9a8be4",
+   "created_utc": null,
+   "finished_utc": null,
+   "instance": null,
+   "instance_type": null,
+   "n_cases": null,
+   "n_pairs": null,
+   "record_status": {},
+   "runner_env": {
+    "ami_id": "ami-0c4ae4cba162bf697",
+    "availability_zone": "us-east-1d",
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8488C",
+    "instance_id": "i-01773fe09af1a559c",
+    "instance_type": "c7i.2xlarge",
+    "mem_total_kb": 16077000,
+    "source": "ec2-imds"
+   },
+   "theta": null,
+   "wall_file": null,
+   "wall_secs": null,
+   "workers": null
+  }
+ }
+}

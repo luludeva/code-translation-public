@@ -1,0 +1,76 @@
+{"id": "pilot/exe/tu_linkage/claude/255", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/484", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/claude/618", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/621", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/785", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/939", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1091", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1148", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/claude/1400", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1449", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1593", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '2\"'", "r_norm": "skip ''\nskip '2\"'"}
+{"id": "pilot/exe/tu_linkage/claude/1681", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1742", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1920", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/1945", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '0x'", "r_norm": "skip ''\nskip '0x'"}
+{"id": "pilot/exe/tu_linkage/claude/2090", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-19-19'", "r_norm": "skip '-19-19'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/3164", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-856792-856792'", "r_norm": "skip ''\nskip '-856792-856792'"}
+{"id": "pilot/exe/tu_linkage/claude/3300", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/3335", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/claude/3503", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/claude/3521", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/3595", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/3656", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-609-609'", "r_norm": "skip ''\nskip '-609-609'"}
+{"id": "pilot/exe/tu_linkage/claude/3701", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '5\"'", "r_norm": "skip '5\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/3951", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/4069", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '-739110-739110'", "r_norm": "skip ''\nskip '-739110-739110'"}
+{"id": "pilot/exe/tu_linkage/claude/4141", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/claude/4311", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '6x'", "r_norm": "skip '6x'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/4433", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'\nskip '-0.0'", "r_norm": "skip '1e308'\nskip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/claude/4466", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1 '", "r_norm": "skip '1 '\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/4473", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '8\\'", "r_norm": "skip '8\\'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/4618", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip 'nan'", "r_norm": "skip ''\nskip 'nan'"}
+{"id": "pilot/exe/tu_linkage/claude/4729", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/claude/4963", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/claude/5202", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "claude", "c_norm": "skip '0-2147483659'", "r_norm": "skip '0-2147483659'\nskip ''\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/255", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/484", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/kiro/618", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/621", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/785", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/939", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1091", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1148", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/kiro/1400", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '3\"'", "r_norm": "skip '3\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1449", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1593", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '2\"'", "r_norm": "skip ''\nskip '2\"'"}
+{"id": "pilot/exe/tu_linkage/kiro/1681", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1742", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1920", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/1945", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '0x'", "r_norm": "skip ''\nskip '0x'"}
+{"id": "pilot/exe/tu_linkage/kiro/2090", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-19-19'", "r_norm": "skip '-19-19'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/3164", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-856792-856792'", "r_norm": "skip ''\nskip '-856792-856792'"}
+{"id": "pilot/exe/tu_linkage/kiro/3300", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip 'nan'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/3335", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/kiro/3503", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/kiro/3521", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/3595", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/3656", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-609-609'", "r_norm": "skip ''\nskip '-609-609'"}
+{"id": "pilot/exe/tu_linkage/kiro/3701", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '5\"'", "r_norm": "skip '5\"'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/3951", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-0.0'", "r_norm": "skip '-0.0'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/4069", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '-739110-739110'", "r_norm": "skip ''\nskip '-739110-739110'"}
+{"id": "pilot/exe/tu_linkage/kiro/4141", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/kiro/4311", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '6x'", "r_norm": "skip '6x'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/4433", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'\nskip '-0.0'", "r_norm": "skip '1e308'\nskip ''\nskip '-0.0'"}
+{"id": "pilot/exe/tu_linkage/kiro/4466", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1 '", "r_norm": "skip '1 '\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/4473", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '8\\'", "r_norm": "skip '8\\'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/4618", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip 'nan'", "r_norm": "skip ''\nskip 'nan'"}
+{"id": "pilot/exe/tu_linkage/kiro/4729", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip '1e308'\nskip ''"}
+{"id": "pilot/exe/tu_linkage/kiro/4963", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '1e308'", "r_norm": "skip ''\nskip '1e308'"}
+{"id": "pilot/exe/tu_linkage/kiro/5202", "src": "pilot", "kind": "exe", "case": "tu_linkage", "system": "kiro", "c_norm": "skip '0-2147483659'", "r_norm": "skip '0-2147483659'\nskip ''\nskip ''"}
+{"id": "rq2/exe/007_errno_pow/c2saferrust/test7.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "c2saferrust", "c_norm": "range error while converting base '1e500'", "r_norm": "range error: pow(inf, 2.00) caused overflow or underflow."}
+{"id": "rq2/exe/007_errno_pow/c2saferrust/test9.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "c2saferrust", "c_norm": "range error while converting exponent '1e500'", "r_norm": "range error: pow(2.00, inf) caused overflow or underflow."}
+{"id": "rq2/exe/007_errno_pow/gpt-5.4/test7.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "gpt-5.4", "c_norm": "range error while converting base '1e500'", "r_norm": "range error: pow(inf, 2.00) caused overflow or underflow."}
+{"id": "rq2/exe/007_errno_pow/gpt-5.4/test9.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "gpt-5.4", "c_norm": "range error while converting exponent '1e500'", "r_norm": "range error: pow(2.00, inf) caused overflow or underflow."}
+{"id": "rq2/exe/007_errno_pow/kimi/test7.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "kimi", "c_norm": "range error while converting base '1e500'", "r_norm": "range error: pow(inf, 2.00) caused overflow or underflow."}
+{"id": "rq2/exe/007_errno_pow/kimi/test9.json", "src": "rq2", "kind": "exe", "bundle": "B01_synthetic", "case": "007_errno_pow", "system": "kimi", "c_norm": "range error while converting exponent '1e500'", "r_norm": "range error: pow(2.00, inf) caused overflow or underflow."}

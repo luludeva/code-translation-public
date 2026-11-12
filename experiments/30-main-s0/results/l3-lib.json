@@ -1,0 +1,2011 @@
+{
+ "by_group": {
+  "B01": {
+   "D_all": 38,
+   "D_stderr_only": 0,
+   "D_with_inconclusive": 38,
+   "NB_L": 30,
+   "NB_U": 32,
+   "P_test": 588,
+   "SA1": 38,
+   "SA2": 62,
+   "bnu_rule_div": {
+    "B1-whitespace": 18,
+    "N1-status": 5004,
+    "N3-line": 1688,
+    "N4-field": 3791,
+    "U-residual": 6
+   },
+   "bnu_rule_translations": {
+    "B1-whitespace": 6,
+    "N1-status": 11,
+    "N3-line": 6,
+    "N4-field": 16,
+    "U-residual": 2
+   },
+   "both_nt_match": 58422,
+   "both_nt_prefix_bytes": 0,
+   "both_nt_prefix_zero": 0,
+   "c_status": {
+    "OutputLimit": 42422,
+    "Pass": 1821221,
+    "SegmentationFault": 91874,
+    "Timeout": 16027,
+    "UnknownFailure": 19857,
+    "VectorComparisonFailed": 1412252
+   },
+   "cap8": 38,
+   "cap_both": 42248,
+   "cap_c_only": 174,
+   "cap_hit_div": 0,
+   "cap_hit_match": 42422,
+   "cap_hit_total": 42422,
+   "cap_one_side_match": 174,
+   "cap_one_side_translations": 6,
+   "cap_r_only": 0,
+   "cap_sens_infra_div": 0,
+   "cap_sens_infra_match": 460,
+   "cap_sens_new_div": 0,
+   "cap_sens_timeout_rerun": 20,
+   "div_stable_san_inconclusive": 0,
+   "div_stderr_only": 0,
+   "exact_translations": 0,
+   "funnel_ok": true,
+   "inconclusive_and_unstable_only": 0,
+   "inconclusive_any": 0,
+   "inconclusive_only": 0,
+   "leave": {
+    "c_build_failed": 0,
+    "harness_error": 0,
+    "incomplete": 32,
+    "missing_record": 0,
+    "missing_seed": 0,
+    "no_input_fields": 16,
+    "no_inputs": 0,
+    "rust_build_failed": 0,
+    "san_infra": 0
+   },
+   "leave_other": {},
+   "match_tol_not_exact": 0,
+   "n_div_retained": 10507,
+   "n_stderr_only_retained": 0,
+   "n_translations": 636,
+   "n_unexpected": 0,
+   "no_stderr": 38,
+   "r_status": {
+    "MemLimit": 3808,
+    "OutputLimit": 42248,
+    "Panic": 49410,
+    "Pass": 1803803,
+    "SegmentationFault": 44788,
+    "Timeout": 16174,
+    "UnknownFailure": 21825,
+    "VectorComparisonFailed": 1421597
+   },
+   "seeds_detect": {
+    "1": 3,
+    "3": 35
+   },
+   "ub_R22": {
+    "inputs_div": 27487,
+    "inputs_div_stable": 23597,
+    "inputs_stable_ub": 17487,
+    "inputs_ub": 19333,
+    "n_div_all": 129371,
+    "n_div_stable": 94019,
+    "n_div_stable_ub": 83512,
+    "n_div_ub": 102479,
+    "translations_with_div": 146,
+    "translations_with_ub": 105
+   },
+   "unstable_only": 65
+  },
+  "B02": {
+   "D_all": 28,
+   "D_stderr_only": 0,
+   "D_with_inconclusive": 38,
+   "NB_L": 27,
+   "NB_U": 28,
+   "P_test": 399,
+   "SA1": 18,
+   "SA2": 30,
+   "bnu_rule_div": {
+    "N1-status": 798,
+    "N4-field": 4240,
+    "U-residual": 1855,
+    "U-stderr": 798
+   },
+   "bnu_rule_translations": {
+    "N1-status": 15,
+    "N4-field": 14,
+    "U-residual": 1,
+    "U-stderr": 3
+   },
+   "both_nt_match": 24922,
+   "both_nt_prefix_bytes": 0,
+   "both_nt_prefix_zero": 0,
+   "c_status": {
+    "MemLimit": 7881,
+    "OutputLimit": 189,
+    "Pass": 1703673,
+    "SegmentationFault": 39066,
+    "Timeout": 17798,
+    "UnknownFailure": 3590,
+    "VectorComparisonFailed": 562133
+   },
+   "cap8": 28,
+   "cap_both": 174,
+   "cap_c_only": 15,
+   "cap_hit_div": 0,
+   "cap_hit_match": 225,
+   "cap_hit_total": 225,
+   "cap_one_side_match": 51,
+   "cap_one_side_translations": 7,
+   "cap_r_only": 36,
+   "cap_sens_infra_div": 0,
+   "cap_sens_infra_match": 0,
+   "cap_sens_new_div": 0,
+   "cap_sens_timeout_rerun": 6,
+   "div_stable_san_inconclusive": 10025,
+   "div_stderr_only": 3774,
+   "exact_translations": 1,
+   "funnel_ok": true,
+   "inconclusive_and_unstable_only": 0,
+   "inconclusive_any": 14,
+   "inconclusive_only": 10,
+   "leave": {
+    "c_build_failed": 0,
+    "harness_error": 0,
+    "incomplete": 32,
+    "missing_record": 23,
+    "missing_seed": 0,
+    "no_input_fields": 5,
+    "no_inputs": 0,
+    "rust_build_failed": 0,
+    "san_infra": 0
+   },
+   "leave_other": {},
+   "match_tol_not_exact": 1,
+   "n_div_retained": 7691,
+   "n_stderr_only_retained": 798,
+   "n_translations": 459,
+   "n_unexpected": 0,
+   "no_stderr": 28,
+   "r_status": {
+    "MemLimit": 12113,
+    "OutputLimit": 210,
+    "Panic": 6720,
+    "Pass": 1700329,
+    "SegmentationFault": 30621,
+    "Timeout": 17635,
+    "UnknownFailure": 4482,
+    "VectorComparisonFailed": 562220
+   },
+   "seeds_detect": {
+    "1": 2,
+    "2": 1,
+    "3": 25
+   },
+   "ub_R22": {
+    "inputs_div": 29127,
+    "inputs_div_stable": 27374,
+    "inputs_stable_ub": 16358,
+    "inputs_ub": 18109,
+    "n_div_all": 96582,
+    "n_div_stable": 84535,
+    "n_div_stable_ub": 66819,
+    "n_div_ub": 78864,
+    "translations_with_div": 120,
+    "translations_with_ub": 100
+   },
+   "unstable_only": 33
+  },
+  "P01": {
+   "D_all": 0,
+   "D_stderr_only": 0,
+   "D_with_inconclusive": 0,
+   "NB_L": 0,
+   "NB_U": 0,
+   "P_test": 169,
+   "SA1": 0,
+   "SA2": 0,
+   "bnu_rule_div": {},
+   "bnu_rule_translations": {},
+   "both_nt_match": 0,
+   "both_nt_prefix_bytes": 0,
+   "both_nt_prefix_zero": 0,
+   "c_status": {
+    "Pass": 1014507
+   },
+   "cap8": 0,
+   "cap_both": 0,
+   "cap_c_only": 0,
+   "cap_hit_div": 0,
+   "cap_hit_match": 0,
+   "cap_hit_total": 0,
+   "cap_one_side_match": 0,
+   "cap_one_side_translations": 0,
+   "cap_r_only": 0,
+   "cap_sens_infra_div": 0,
+   "cap_sens_infra_match": 0,
+   "cap_sens_new_div": 0,
+   "cap_sens_timeout_rerun": 0,
+   "div_stable_san_inconclusive": 0,
+   "div_stderr_only": 0,
+   "exact_translations": 0,
+   "funnel_ok": true,
+   "inconclusive_and_unstable_only": 0,
+   "inconclusive_any": 0,
+   "inconclusive_only": 0,
+   "leave": {
+    "c_build_failed": 0,
+    "harness_error": 0,
+    "incomplete": 0,
+    "missing_record": 0,
+    "missing_seed": 0,
+    "no_input_fields": 0,
+    "no_inputs": 0,
+    "rust_build_failed": 0,
+    "san_infra": 0
+   },
+   "leave_other": {},
+   "match_tol_not_exact": 0,
+   "n_div_retained": 0,
+   "n_stderr_only_retained": 0,
+   "n_translations": 169,
+   "n_unexpected": 0,
+   "no_stderr": 0,
+   "r_status": {
+    "Pass": 1014507
+   },
+   "seeds_detect": {},
+   "ub_R22": {
+    "inputs_div": 0,
+    "inputs_div_stable": 0,
+    "inputs_stable_ub": 0,
+    "inputs_ub": 0,
+    "n_div_all": 0,
+    "n_div_stable": 0,
+    "n_div_stable_ub": 0,
+    "n_div_ub": 0,
+    "translations_with_div": 0,
+    "translations_with_ub": 0
+   },
+   "unstable_only": 0
+  },
+  "all": {
+   "D_all": 66,
+   "D_stderr_only": 0,
+   "D_with_inconclusive": 76,
+   "NB_L": 57,
+   "NB_U": 60,
+   "P_test": 1156,
+   "SA1": 56,
+   "SA2": 92,
+   "bnu_rule_div": {
+    "B1-whitespace": 18,
+    "N1-status": 5802,
+    "N3-line": 1688,
+    "N4-field": 8031,
+    "U-residual": 1861,
+    "U-stderr": 798
+   },
+   "bnu_rule_translations": {
+    "B1-whitespace": 6,
+    "N1-status": 26,
+    "N3-line": 6,
+    "N4-field": 30,
+    "U-residual": 3,
+    "U-stderr": 3
+   },
+   "both_nt_match": 83344,
+   "both_nt_prefix_bytes": 0,
+   "both_nt_prefix_zero": 0,
+   "c_status": {
+    "MemLimit": 7881,
+    "OutputLimit": 42611,
+    "Pass": 4539401,
+    "SegmentationFault": 130940,
+    "Timeout": 33825,
+    "UnknownFailure": 23447,
+    "VectorComparisonFailed": 1974385
+   },
+   "cap8": 66,
+   "cap_both": 42422,
+   "cap_c_only": 189,
+   "cap_hit_div": 0,
+   "cap_hit_match": 42647,
+   "cap_hit_total": 42647,
+   "cap_one_side_match": 225,
+   "cap_one_side_translations": 13,
+   "cap_r_only": 36,
+   "cap_sens_infra_div": 0,
+   "cap_sens_infra_match": 460,
+   "cap_sens_new_div": 0,
+   "cap_sens_timeout_rerun": 26,
+   "div_stable_san_inconclusive": 10025,
+   "div_stderr_only": 3774,
+   "exact_translations": 1,
+   "funnel_ok": true,
+   "inconclusive_and_unstable_only": 0,
+   "inconclusive_any": 14,
+   "inconclusive_only": 10,
+   "leave": {
+    "c_build_failed": 0,
+    "harness_error": 0,
+    "incomplete": 64,
+    "missing_record": 23,
+    "missing_seed": 0,
+    "no_input_fields": 21,
+    "no_inputs": 0,
+    "rust_build_failed": 0,
+    "san_infra": 0
+   },
+   "leave_other": {},
+   "match_tol_not_exact": 1,
+   "n_div_retained": 18198,
+   "n_stderr_only_retained": 798,
+   "n_translations": 1264,
+   "n_unexpected": 0,
+   "no_stderr": 66,
+   "r_status": {
+    "MemLimit": 15921,
+    "OutputLimit": 42458,
+    "Panic": 56130,
+    "Pass": 4518639,
+    "SegmentationFault": 75409,
+    "Timeout": 33809,
+    "UnknownFailure": 26307,
+    "VectorComparisonFailed": 1983817
+   },
+   "seeds_detect": {
+    "1": 5,
+    "2": 1,
+    "3": 60
+   },
+   "ub_R22": {
+    "inputs_div": 56614,
+    "inputs_div_stable": 50971,
+    "inputs_stable_ub": 33845,
+    "inputs_ub": 37442,
+    "n_div_all": 225953,
+    "n_div_stable": 178554,
+    "n_div_stable_ub": 150331,
+    "n_div_ub": 181343,
+    "translations_with_div": 266,
+    "translations_with_ub": 205
+   },
+   "ub_R22_by_pair": {
+    "B01_organic/bitwriter_add_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 2862,
+     "n_div_stable": 2862,
+     "n_div_stable_ub": 2862,
+     "n_div_ub": 2862
+    },
+    "B01_organic/bitwriter_add_lib/kiro": {
+     "n_div_all": 142,
+     "n_div_stable": 142,
+     "n_div_stable_ub": 142,
+     "n_div_ub": 142
+    },
+    "B01_organic/collided_lib/gpt-5.4": {
+     "n_div_all": 864,
+     "n_div_stable": 864,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/collided_lib/kimi": {
+     "n_div_all": 877,
+     "n_div_stable": 877,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/dequantize_granule_lib/c2rust": {
+     "n_div_all": 167,
+     "n_div_stable": 33,
+     "n_div_stable_ub": 33,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/claude": {
+     "n_div_all": 167,
+     "n_div_stable": 29,
+     "n_div_stable_ub": 29,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/codex-gpt54": {
+     "n_div_all": 167,
+     "n_div_stable": 31,
+     "n_div_stable_ub": 31,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 167,
+     "n_div_stable": 34,
+     "n_div_stable_ub": 34,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/gpt-5.4": {
+     "n_div_all": 859,
+     "n_div_stable": 732,
+     "n_div_stable_ub": 213,
+     "n_div_ub": 340
+    },
+    "B01_organic/dequantize_granule_lib/kimi": {
+     "n_div_all": 168,
+     "n_div_stable": 29,
+     "n_div_stable_ub": 28,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/kiro": {
+     "n_div_all": 167,
+     "n_div_stable": 37,
+     "n_div_stable_ub": 37,
+     "n_div_ub": 167
+    },
+    "B01_organic/dequantize_granule_lib/laertes": {
+     "n_div_all": 167,
+     "n_div_stable": 25,
+     "n_div_stable_ub": 25,
+     "n_div_ub": 167
+    },
+    "B01_organic/div_euclid_lib/gpt-5.4": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_organic/flip_horizontal_lib/c2rust": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/c2saferrust": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/claude": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/codex-gpt54": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/gpt-5.4": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/kimi": {
+     "n_div_all": 1298,
+     "n_div_stable": 1258,
+     "n_div_stable_ub": 162,
+     "n_div_ub": 162
+    },
+    "B01_organic/flip_horizontal_lib/kiro": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/flip_horizontal_lib/laertes": {
+     "n_div_all": 40,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/hdr_bitrate_lib/c2rust": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/c2saferrust": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/claude": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/codex-gpt54": {
+     "n_div_all": 73,
+     "n_div_stable": 73,
+     "n_div_stable_ub": 73,
+     "n_div_ub": 73
+    },
+    "B01_organic/hdr_bitrate_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/gpt-5.4": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/kimi": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/kiro": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/hdr_bitrate_lib/laertes": {
+     "n_div_all": 1726,
+     "n_div_stable": 1726,
+     "n_div_stable_ub": 1726,
+     "n_div_ub": 1726
+    },
+    "B01_organic/ldexp_q2_lib/c2saferrust": {
+     "n_div_all": 762,
+     "n_div_stable": 762,
+     "n_div_stable_ub": 762,
+     "n_div_ub": 762
+    },
+    "B01_organic/pow43_lib/c2rust": {
+     "n_div_all": 3234,
+     "n_div_stable": 3232,
+     "n_div_stable_ub": 3232,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/c2saferrust": {
+     "n_div_all": 3234,
+     "n_div_stable": 3234,
+     "n_div_stable_ub": 3234,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/claude": {
+     "n_div_all": 3234,
+     "n_div_stable": 3232,
+     "n_div_stable_ub": 3232,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/codex-gpt54": {
+     "n_div_all": 38,
+     "n_div_stable": 28,
+     "n_div_stable_ub": 28,
+     "n_div_ub": 38
+    },
+    "B01_organic/pow43_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 3234,
+     "n_div_stable": 3234,
+     "n_div_stable_ub": 3234,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/kimi": {
+     "n_div_all": 3234,
+     "n_div_stable": 3233,
+     "n_div_stable_ub": 3233,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/kiro": {
+     "n_div_all": 3234,
+     "n_div_stable": 3232,
+     "n_div_stable_ub": 3232,
+     "n_div_ub": 3234
+    },
+    "B01_organic/pow43_lib/laertes": {
+     "n_div_all": 3234,
+     "n_div_stable": 3233,
+     "n_div_stable_ub": 3233,
+     "n_div_ub": 3234
+    },
+    "B01_organic/premultiply_lib/c2saferrust": {
+     "n_div_all": 1766,
+     "n_div_stable": 1765,
+     "n_div_stable_ub": 558,
+     "n_div_ub": 558
+    },
+    "B01_organic/premultiply_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 632,
+     "n_div_stable": 632,
+     "n_div_stable_ub": 419,
+     "n_div_ub": 419
+    },
+    "B01_organic/premultiply_lib/gpt-5.4": {
+     "n_div_all": 643,
+     "n_div_stable": 643,
+     "n_div_stable_ub": 430,
+     "n_div_ub": 430
+    },
+    "B01_organic/premultiply_lib/kimi": {
+     "n_div_all": 1745,
+     "n_div_stable": 1745,
+     "n_div_stable_ub": 558,
+     "n_div_ub": 558
+    },
+    "B01_organic/read_side_info_lib/c2rust": {
+     "n_div_all": 288,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 57
+    },
+    "B01_organic/read_side_info_lib/c2saferrust": {
+     "n_div_all": 288,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 57
+    },
+    "B01_organic/read_side_info_lib/claude": {
+     "n_div_all": 288,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 57
+    },
+    "B01_organic/read_side_info_lib/codex-gpt54": {
+     "n_div_all": 289,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 58
+    },
+    "B01_organic/read_side_info_lib/gpt-5.4": {
+     "n_div_all": 289,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 58
+    },
+    "B01_organic/read_side_info_lib/kimi": {
+     "n_div_all": 328,
+     "n_div_stable": 272,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 65
+    },
+    "B01_organic/read_side_info_lib/kiro": {
+     "n_div_all": 288,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 57
+    },
+    "B01_organic/read_side_info_lib/laertes": {
+     "n_div_all": 289,
+     "n_div_stable": 233,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 58
+    },
+    "B01_organic/tfm_lib/c2rust": {
+     "n_div_all": 1236,
+     "n_div_stable": 9,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 1236
+    },
+    "B01_organic/tfm_lib/claude": {
+     "n_div_all": 1236,
+     "n_div_stable": 9,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 1236
+    },
+    "B01_organic/tfm_lib/codex-gpt54": {
+     "n_div_all": 1236,
+     "n_div_stable": 9,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 1236
+    },
+    "B01_organic/tfm_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1234,
+     "n_div_stable": 7,
+     "n_div_stable_ub": 7,
+     "n_div_ub": 1234
+    },
+    "B01_organic/tfm_lib/gpt-5.4": {
+     "n_div_all": 1313,
+     "n_div_stable": 86,
+     "n_div_stable_ub": 85,
+     "n_div_ub": 1312
+    },
+    "B01_organic/tfm_lib/kimi": {
+     "n_div_all": 1238,
+     "n_div_stable": 11,
+     "n_div_stable_ub": 10,
+     "n_div_ub": 1237
+    },
+    "B01_organic/tfm_lib/kiro": {
+     "n_div_all": 1236,
+     "n_div_stable": 9,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 1236
+    },
+    "B01_organic/tfm_lib/laertes": {
+     "n_div_all": 1236,
+     "n_div_stable": 9,
+     "n_div_stable_ub": 9,
+     "n_div_ub": 1236
+    },
+    "B01_organic/tritanopia_lib/c2rust": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/c2saferrust": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/gpt-5.4": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/kimi": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/kiro": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/tritanopia_lib/laertes": {
+     "n_div_all": 1145,
+     "n_div_stable": 1145,
+     "n_div_stable_ub": 1145,
+     "n_div_ub": 1145
+    },
+    "B01_organic/update_md5_lib/c2rust": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/c2saferrust": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/claude": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/codex-gpt54": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/gpt-5.4": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/kimi": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/update_md5_lib/kiro": {
+     "n_div_all": 2000,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_organic/wcscat_lib/c2rust": {
+     "n_div_all": 96,
+     "n_div_stable": 75,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 83
+    },
+    "B01_organic/wcscat_lib/claude": {
+     "n_div_all": 25,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 25
+    },
+    "B01_organic/wcscat_lib/codex-gpt54": {
+     "n_div_all": 42,
+     "n_div_stable": 13,
+     "n_div_stable_ub": 13,
+     "n_div_ub": 42
+    },
+    "B01_organic/wcscat_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 38,
+     "n_div_stable": 13,
+     "n_div_stable_ub": 13,
+     "n_div_ub": 38
+    },
+    "B01_organic/wcscat_lib/gpt-5.4": {
+     "n_div_all": 24,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 24
+    },
+    "B01_organic/wcscat_lib/kimi": {
+     "n_div_all": 24,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 24
+    },
+    "B01_organic/wcscat_lib/kiro": {
+     "n_div_all": 27,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 27
+    },
+    "B01_organic/wcscat_lib/laertes": {
+     "n_div_all": 92,
+     "n_div_stable": 74,
+     "n_div_stable_ub": 61,
+     "n_div_ub": 79
+    },
+    "B01_synthetic/007_errno_pow_lib/c2saferrust": {
+     "n_div_all": 58,
+     "n_div_stable": 58,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/007_errno_pow_lib/kimi": {
+     "n_div_all": 299,
+     "n_div_stable": 299,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/c2rust": {
+     "n_div_all": 1574,
+     "n_div_stable": 909,
+     "n_div_stable_ub": 909,
+     "n_div_ub": 1574
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/c2saferrust": {
+     "n_div_all": 1574,
+     "n_div_stable": 926,
+     "n_div_stable_ub": 926,
+     "n_div_ub": 1574
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/claude": {
+     "n_div_all": 479,
+     "n_div_stable": 50,
+     "n_div_stable_ub": 50,
+     "n_div_ub": 479
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/codex-gpt54": {
+     "n_div_all": 471,
+     "n_div_stable": 48,
+     "n_div_stable_ub": 48,
+     "n_div_ub": 471
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1574,
+     "n_div_stable": 898,
+     "n_div_stable_ub": 898,
+     "n_div_ub": 1574
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/gpt-5.4": {
+     "n_div_all": 1574,
+     "n_div_stable": 904,
+     "n_div_stable_ub": 904,
+     "n_div_ub": 1574
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/kimi": {
+     "n_div_all": 1255,
+     "n_div_stable": 582,
+     "n_div_stable_ub": 582,
+     "n_div_ub": 1255
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/kiro": {
+     "n_div_all": 462,
+     "n_div_stable": 50,
+     "n_div_stable_ub": 50,
+     "n_div_ub": 462
+    },
+    "B01_synthetic/009_stack_buffer_overflow_lib/laertes": {
+     "n_div_all": 1574,
+     "n_div_stable": 897,
+     "n_div_stable_ub": 897,
+     "n_div_ub": 1574
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/c2rust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/claude": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/codex-gpt54": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/gpt-5.4": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/kimi": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/kiro": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/011_uninit_char_ptr_lib/laertes": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/c2rust": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/c2saferrust": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/claude": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/codex-gpt54": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/gpt-5.4": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/kimi": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/012_uninit_int_ptr_lib/kiro": {
+     "n_div_all": 3,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/c2rust": {
+     "n_div_all": 355,
+     "n_div_stable": 355,
+     "n_div_stable_ub": 355,
+     "n_div_ub": 355
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/c2saferrust": {
+     "n_div_all": 355,
+     "n_div_stable": 355,
+     "n_div_stable_ub": 355,
+     "n_div_ub": 355
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 570,
+     "n_div_stable": 570,
+     "n_div_stable_ub": 359,
+     "n_div_ub": 359
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/gpt-5.4": {
+     "n_div_all": 570,
+     "n_div_stable": 570,
+     "n_div_stable_ub": 359,
+     "n_div_ub": 359
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/kiro": {
+     "n_div_all": 355,
+     "n_div_stable": 355,
+     "n_div_stable_ub": 355,
+     "n_div_ub": 355
+    },
+    "B01_synthetic/016_divide_by_zero_float_lib/laertes": {
+     "n_div_all": 355,
+     "n_div_stable": 355,
+     "n_div_stable_ub": 355,
+     "n_div_ub": 355
+    },
+    "B01_synthetic/017_signed_length_confusion_lib/c2saferrust": {
+     "n_div_all": 2897,
+     "n_div_stable": 2897,
+     "n_div_stable_ub": 2897,
+     "n_div_ub": 2897
+    },
+    "B01_synthetic/017_signed_length_confusion_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 2897,
+     "n_div_stable": 2897,
+     "n_div_stable_ub": 2897,
+     "n_div_ub": 2897
+    },
+    "B01_synthetic/017_signed_length_confusion_lib/gpt-5.4": {
+     "n_div_all": 2897,
+     "n_div_stable": 2897,
+     "n_div_stable_ub": 2897,
+     "n_div_ub": 2897
+    },
+    "B01_synthetic/017_signed_length_confusion_lib/kiro": {
+     "n_div_all": 2897,
+     "n_div_stable": 2897,
+     "n_div_stable_ub": 2897,
+     "n_div_ub": 2897
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/c2rust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/c2saferrust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/claude": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/codex-gpt54": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/gpt-5.4": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/kimi": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/kiro": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/018_stack_buffer_overflow_loop1_lib/laertes": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B01_synthetic/019_integer_overflow_char_max_multiply_lib/c2saferrust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/019_integer_overflow_char_max_multiply_lib/gpt-5.4": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/019_integer_overflow_char_max_multiply_lib/kimi": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/020_stack_linked_list_lib/c2saferrust": {
+     "n_div_all": 353,
+     "n_div_stable": 353,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B01_synthetic/022_stdlib_div_lib/claude": {
+     "n_div_all": 214,
+     "n_div_stable": 214,
+     "n_div_stable_ub": 214,
+     "n_div_ub": 214
+    },
+    "B01_synthetic/022_stdlib_div_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 214,
+     "n_div_stable": 214,
+     "n_div_stable_ub": 214,
+     "n_div_ub": 214
+    },
+    "B01_synthetic/022_stdlib_div_lib/gpt-5.4": {
+     "n_div_all": 214,
+     "n_div_stable": 214,
+     "n_div_stable_ub": 214,
+     "n_div_ub": 214
+    },
+    "B01_synthetic/022_stdlib_div_lib/kimi": {
+     "n_div_all": 214,
+     "n_div_stable": 214,
+     "n_div_stable_ub": 214,
+     "n_div_ub": 214
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/c2rust": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/c2saferrust": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/claude": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/codex-gpt54": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/gpt-5.4": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/kiro": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib/laertes": {
+     "n_div_all": 1823,
+     "n_div_stable": 1555,
+     "n_div_stable_ub": 1555,
+     "n_div_ub": 1823
+    },
+    "B01_synthetic/031_disjoint_arrays_lib/gpt-5.4": {
+     "n_div_all": 1257,
+     "n_div_stable": 1257,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/decode_base64_lib/c2rust": {
+     "n_div_all": 693,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 693
+    },
+    "B02_organic/decode_base64_lib/claude": {
+     "n_div_all": 705,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 705
+    },
+    "B02_organic/decode_base64_lib/codex-gpt54": {
+     "n_div_all": 704,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 704
+    },
+    "B02_organic/decode_base64_lib/gpt-5.4": {
+     "n_div_all": 694,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 694
+    },
+    "B02_organic/decode_base64_lib/kimi": {
+     "n_div_all": 2145,
+     "n_div_stable": 1423,
+     "n_div_stable_ub": 273,
+     "n_div_ub": 995
+    },
+    "B02_organic/decode_base64_lib/kiro": {
+     "n_div_all": 702,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 702
+    },
+    "B02_organic/decode_base64_lib/laertes": {
+     "n_div_all": 698,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 1,
+     "n_div_ub": 698
+    },
+    "B02_organic/file_queue_lib/c2rust": {
+     "n_div_all": 998,
+     "n_div_stable": 998,
+     "n_div_stable_ub": 998,
+     "n_div_ub": 998
+    },
+    "B02_organic/file_queue_lib/claude": {
+     "n_div_all": 998,
+     "n_div_stable": 998,
+     "n_div_stable_ub": 998,
+     "n_div_ub": 998
+    },
+    "B02_organic/file_queue_lib/codex-gpt54": {
+     "n_div_all": 998,
+     "n_div_stable": 998,
+     "n_div_stable_ub": 998,
+     "n_div_ub": 998
+    },
+    "B02_organic/file_queue_lib/kiro": {
+     "n_div_all": 998,
+     "n_div_stable": 998,
+     "n_div_stable_ub": 998,
+     "n_div_ub": 998
+    },
+    "B02_organic/file_queue_lib/laertes": {
+     "n_div_all": 998,
+     "n_div_stable": 998,
+     "n_div_stable_ub": 998,
+     "n_div_ub": 998
+    },
+    "B02_organic/gen_ray_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1,
+     "n_div_stable": 1,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/hm_geti_lib/codex-gpt54": {
+     "n_div_all": 4,
+     "n_div_stable": 4,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/intput_lib/claude": {
+     "n_div_all": 6,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/intput_lib/gpt-5.4": {
+     "n_div_all": 6,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/intput_lib/kimi": {
+     "n_div_all": 6,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/intput_lib/kiro": {
+     "n_div_all": 6,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/lines_in_buffer_lib/c2rust": {
+     "n_div_all": 283,
+     "n_div_stable": 36,
+     "n_div_stable_ub": 36,
+     "n_div_ub": 283
+    },
+    "B02_organic/lines_in_buffer_lib/claude": {
+     "n_div_all": 282,
+     "n_div_stable": 35,
+     "n_div_stable_ub": 35,
+     "n_div_ub": 282
+    },
+    "B02_organic/lines_in_buffer_lib/codex-gpt54": {
+     "n_div_all": 284,
+     "n_div_stable": 36,
+     "n_div_stable_ub": 36,
+     "n_div_ub": 284
+    },
+    "B02_organic/lines_in_buffer_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 276,
+     "n_div_stable": 35,
+     "n_div_stable_ub": 35,
+     "n_div_ub": 276
+    },
+    "B02_organic/lines_in_buffer_lib/gpt-5.4": {
+     "n_div_all": 278,
+     "n_div_stable": 36,
+     "n_div_stable_ub": 36,
+     "n_div_ub": 278
+    },
+    "B02_organic/lines_in_buffer_lib/kiro": {
+     "n_div_all": 282,
+     "n_div_stable": 36,
+     "n_div_stable_ub": 36,
+     "n_div_ub": 282
+    },
+    "B02_organic/lines_in_buffer_lib/laertes": {
+     "n_div_all": 280,
+     "n_div_stable": 35,
+     "n_div_stable_ub": 35,
+     "n_div_ub": 280
+    },
+    "B02_organic/omni_collide_lib/kimi": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/omni_manifold_lib/c2rust": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/c2saferrust": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/claude": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/codex-gpt54": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/gpt-5.4": {
+     "n_div_all": 110,
+     "n_div_stable": 110,
+     "n_div_stable_ub": 17,
+     "n_div_ub": 17
+    },
+    "B02_organic/omni_manifold_lib/kimi": {
+     "n_div_all": 236,
+     "n_div_stable": 236,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/omni_manifold_lib/kiro": {
+     "n_div_all": 61,
+     "n_div_stable": 61,
+     "n_div_stable_ub": 61,
+     "n_div_ub": 61
+    },
+    "B02_organic/omni_manifold_lib/laertes": {
+     "n_div_all": 62,
+     "n_div_stable": 62,
+     "n_div_stable_ub": 62,
+     "n_div_ub": 62
+    },
+    "B02_organic/parse_number_lib/c2rust": {
+     "n_div_all": 1,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 1
+    },
+    "B02_organic/parse_number_lib/gpt-5.4": {
+     "n_div_all": 267,
+     "n_div_stable": 267,
+     "n_div_stable_ub": 205,
+     "n_div_ub": 205
+    },
+    "B02_organic/parse_number_lib/kimi": {
+     "n_div_all": 1,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 1
+    },
+    "B02_organic/parse_number_lib/kiro": {
+     "n_div_all": 1,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/pinflate_lib/c2rust": {
+     "n_div_all": 25,
+     "n_div_stable": 25,
+     "n_div_stable_ub": 25,
+     "n_div_ub": 25
+    },
+    "B02_organic/pinflate_lib/c2saferrust": {
+     "n_div_all": 25,
+     "n_div_stable": 25,
+     "n_div_stable_ub": 25,
+     "n_div_ub": 25
+    },
+    "B02_organic/pinflate_lib/claude": {
+     "n_div_all": 556,
+     "n_div_stable": 556,
+     "n_div_stable_ub": 281,
+     "n_div_ub": 281
+    },
+    "B02_organic/pinflate_lib/codex-gpt54": {
+     "n_div_all": 20,
+     "n_div_stable": 20,
+     "n_div_stable_ub": 20,
+     "n_div_ub": 20
+    },
+    "B02_organic/pinflate_lib/kiro": {
+     "n_div_all": 556,
+     "n_div_stable": 556,
+     "n_div_stable_ub": 281,
+     "n_div_ub": 281
+    },
+    "B02_organic/pinflate_lib/laertes": {
+     "n_div_all": 25,
+     "n_div_stable": 25,
+     "n_div_stable_ub": 25,
+     "n_div_ub": 25
+    },
+    "B02_organic/rdg_genstdout_lib/c2rust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/c2saferrust": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/claude": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/codex-gpt54": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/gpt-5.4": {
+     "n_div_all": 394,
+     "n_div_stable": 394,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/kiro": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/rdg_genstdout_lib/laertes": {
+     "n_div_all": 3,
+     "n_div_stable": 3,
+     "n_div_stable_ub": 3,
+     "n_div_ub": 3
+    },
+    "B02_organic/search_and_replace_lib/c2rust": {
+     "n_div_all": 279,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 279
+    },
+    "B02_organic/search_and_replace_lib/c2saferrust": {
+     "n_div_all": 281,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 281
+    },
+    "B02_organic/search_and_replace_lib/claude": {
+     "n_div_all": 280,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 280
+    },
+    "B02_organic/search_and_replace_lib/codex-gpt54": {
+     "n_div_all": 279,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 279
+    },
+    "B02_organic/search_and_replace_lib/kimi": {
+     "n_div_all": 1016,
+     "n_div_stable": 733,
+     "n_div_stable_ub": 93,
+     "n_div_ub": 376
+    },
+    "B02_organic/search_and_replace_lib/kiro": {
+     "n_div_all": 280,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 280
+    },
+    "B02_organic/search_and_replace_lib/laertes": {
+     "n_div_all": 281,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 281
+    },
+    "B02_organic/sh_geti_lib/claude": {
+     "n_div_all": 1,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/sh_geti_lib/codex-gpt54": {
+     "n_div_all": 1739,
+     "n_div_stable": 1739,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/sh_geti_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1739,
+     "n_div_stable": 1739,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_organic/siphash_lib/codex-gpt54": {
+     "n_div_all": 4183,
+     "n_div_stable": 4183,
+     "n_div_stable_ub": 4183,
+     "n_div_ub": 4183
+    },
+    "B02_organic/siphash_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 4183,
+     "n_div_stable": 4183,
+     "n_div_stable_ub": 4183,
+     "n_div_ub": 4183
+    },
+    "B02_organic/siphash_lib/gpt-5.4": {
+     "n_div_all": 4183,
+     "n_div_stable": 4183,
+     "n_div_stable_ub": 4183,
+     "n_div_ub": 4183
+    },
+    "B02_organic/unfilter_lib/c2rust": {
+     "n_div_all": 13,
+     "n_div_stable": 10,
+     "n_div_stable_ub": 10,
+     "n_div_ub": 13
+    },
+    "B02_organic/unfilter_lib/c2saferrust": {
+     "n_div_all": 23,
+     "n_div_stable": 19,
+     "n_div_stable_ub": 19,
+     "n_div_ub": 23
+    },
+    "B02_organic/unfilter_lib/claude": {
+     "n_div_all": 273,
+     "n_div_stable": 266,
+     "n_div_stable_ub": 266,
+     "n_div_ub": 273
+    },
+    "B02_organic/unfilter_lib/codex-gpt54": {
+     "n_div_all": 23,
+     "n_div_stable": 19,
+     "n_div_stable_ub": 19,
+     "n_div_ub": 23
+    },
+    "B02_organic/unfilter_lib/kiro": {
+     "n_div_all": 21,
+     "n_div_stable": 7,
+     "n_div_stable_ub": 7,
+     "n_div_ub": 21
+    },
+    "B02_organic/unfilter_lib/laertes": {
+     "n_div_all": 16,
+     "n_div_stable": 10,
+     "n_div_stable_ub": 10,
+     "n_div_ub": 16
+    },
+    "B02_organic/utf8_lib/c2rust": {
+     "n_div_all": 430,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 430
+    },
+    "B02_organic/utf8_lib/c2saferrust": {
+     "n_div_all": 428,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 428
+    },
+    "B02_organic/utf8_lib/claude": {
+     "n_div_all": 436,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 430
+    },
+    "B02_organic/utf8_lib/codex-gpt54": {
+     "n_div_all": 427,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 427
+    },
+    "B02_organic/utf8_lib/gpt-5.4": {
+     "n_div_all": 428,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 422
+    },
+    "B02_organic/utf8_lib/kimi": {
+     "n_div_all": 430,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 424
+    },
+    "B02_organic/utf8_lib/kiro": {
+     "n_div_all": 435,
+     "n_div_stable": 6,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 429
+    },
+    "B02_organic/utf8_lib/laertes": {
+     "n_div_all": 424,
+     "n_div_stable": 0,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 424
+    },
+    "B02_synthetic/betagamma_lib/kimi": {
+     "n_div_all": 332,
+     "n_div_stable": 332,
+     "n_div_stable_ub": 332,
+     "n_div_ub": 332
+    },
+    "B02_synthetic/charinbuf_lib/c2saferrust": {
+     "n_div_all": 1855,
+     "n_div_stable": 1855,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/checkshift_lib/gpt-5.4": {
+     "n_div_all": 701,
+     "n_div_stable": 701,
+     "n_div_stable_ub": 415,
+     "n_div_ub": 415
+    },
+    "B02_synthetic/checkshift_lib/kiro": {
+     "n_div_all": 701,
+     "n_div_stable": 701,
+     "n_div_stable_ub": 415,
+     "n_div_ub": 415
+    },
+    "B02_synthetic/confusion_lib/c2rust": {
+     "n_div_all": 184,
+     "n_div_stable": 184,
+     "n_div_stable_ub": 184,
+     "n_div_ub": 184
+    },
+    "B02_synthetic/confusion_lib/claude": {
+     "n_div_all": 184,
+     "n_div_stable": 184,
+     "n_div_stable_ub": 184,
+     "n_div_ub": 184
+    },
+    "B02_synthetic/confusion_lib/codex-gpt54": {
+     "n_div_all": 184,
+     "n_div_stable": 184,
+     "n_div_stable_ub": 184,
+     "n_div_ub": 184
+    },
+    "B02_synthetic/confusion_lib/laertes": {
+     "n_div_all": 184,
+     "n_div_stable": 184,
+     "n_div_stable_ub": 184,
+     "n_div_ub": 184
+    },
+    "B02_synthetic/dataentry_lib/c2saferrust": {
+     "n_div_all": 156,
+     "n_div_stable": 156,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/dataentry_lib/claude": {
+     "n_div_all": 156,
+     "n_div_stable": 156,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/dataentry_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 156,
+     "n_div_stable": 156,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/dataentry_lib/gpt-5.4": {
+     "n_div_all": 156,
+     "n_div_stable": 156,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/dataentry_lib/kimi": {
+     "n_div_all": 124,
+     "n_div_stable": 124,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/dataentry_lib/kiro": {
+     "n_div_all": 156,
+     "n_div_stable": 156,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/doubleneg_lib/c2rust": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/doubleneg_lib/c2saferrust": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/doubleneg_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/doubleneg_lib/gpt-5.4": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/doubleneg_lib/kimi": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/doubleneg_lib/laertes": {
+     "n_div_all": 6000,
+     "n_div_stable": 6000,
+     "n_div_stable_ub": 6000,
+     "n_div_ub": 6000
+    },
+    "B02_synthetic/fallcalc_lib/c2saferrust": {
+     "n_div_all": 606,
+     "n_div_stable": 606,
+     "n_div_stable_ub": 82,
+     "n_div_ub": 82
+    },
+    "B02_synthetic/fallcalc_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 253,
+     "n_div_stable": 253,
+     "n_div_stable_ub": 69,
+     "n_div_ub": 69
+    },
+    "B02_synthetic/fallcalc_lib/kimi": {
+     "n_div_all": 606,
+     "n_div_stable": 606,
+     "n_div_stable_ub": 82,
+     "n_div_ub": 82
+    },
+    "B02_synthetic/hatch_lib/c2saferrust": {
+     "n_div_all": 807,
+     "n_div_stable": 807,
+     "n_div_stable_ub": 807,
+     "n_div_ub": 807
+    },
+    "B02_synthetic/hatch_lib/claude": {
+     "n_div_all": 399,
+     "n_div_stable": 399,
+     "n_div_stable_ub": 399,
+     "n_div_ub": 399
+    },
+    "B02_synthetic/hatch_lib/kiro": {
+     "n_div_all": 807,
+     "n_div_stable": 807,
+     "n_div_stable_ub": 807,
+     "n_div_ub": 807
+    },
+    "B02_synthetic/inreftree_lib/claude": {
+     "n_div_all": 1542,
+     "n_div_stable": 1542,
+     "n_div_stable_ub": 1542,
+     "n_div_ub": 1542
+    },
+    "B02_synthetic/inreftree_lib/codex-gpt54": {
+     "n_div_all": 1561,
+     "n_div_stable": 1561,
+     "n_div_stable_ub": 1561,
+     "n_div_ub": 1561
+    },
+    "B02_synthetic/inreftree_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 1556,
+     "n_div_stable": 1556,
+     "n_div_stable_ub": 1556,
+     "n_div_ub": 1556
+    },
+    "B02_synthetic/inreftree_lib/gpt-5.4": {
+     "n_div_all": 1542,
+     "n_div_stable": 1542,
+     "n_div_stable_ub": 1542,
+     "n_div_ub": 1542
+    },
+    "B02_synthetic/mathop_lib/c2rust": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 2
+    },
+    "B02_synthetic/mathop_lib/c2saferrust": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 2
+    },
+    "B02_synthetic/mathop_lib/claude": {
+     "n_div_all": 801,
+     "n_div_stable": 801,
+     "n_div_stable_ub": 83,
+     "n_div_ub": 83
+    },
+    "B02_synthetic/mathop_lib/codex-gpt54": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 2
+    },
+    "B02_synthetic/mathop_lib/gemini-3.1-pro-preview": {
+     "n_div_all": 801,
+     "n_div_stable": 801,
+     "n_div_stable_ub": 83,
+     "n_div_ub": 83
+    },
+    "B02_synthetic/mathop_lib/kiro": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 2
+    },
+    "B02_synthetic/mathop_lib/laertes": {
+     "n_div_all": 2,
+     "n_div_stable": 2,
+     "n_div_stable_ub": 2,
+     "n_div_ub": 2
+    },
+    "B02_synthetic/matrix_mult_lib/c2saferrust": {
+     "n_div_all": 1583,
+     "n_div_stable": 1583,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    },
+    "B02_synthetic/matrix_mult_lib/gpt-5.4": {
+     "n_div_all": 2836,
+     "n_div_stable": 2836,
+     "n_div_stable_ub": 409,
+     "n_div_ub": 409
+    },
+    "B02_synthetic/matrix_mult_lib/kiro": {
+     "n_div_all": 1114,
+     "n_div_stable": 1114,
+     "n_div_stable_ub": 0,
+     "n_div_ub": 0
+    }
+   },
+   "unstable_only": 98
+  }
+ },
+ "expected": 1264,
+ "gaps": [
+  "R21: match_tol_not_exact là số input khớp theo sai số nhưng khác khi so chính xác, chưa qua kiểm ổn định và sanitizer; bản dịch có số này > 0 là cận trên của phần tăng thêm khi so chính xác",
+  "Bản ghi trước bộ đếm 2026-10-23 (rà soát kỹ thuật) không có R21, R23, R28: các trường đó bằng 0",
+  "Bản ghi trước F7 không có cap_c_only, cap_r_only, cap_both, cap_one_side_match: các trường đó và cap_one_side_translations bằng 0",
+  "Không truyền danh sách cặp mong đợi (--expect): bản dịch không có bản ghi nào không được đếm (missing_record bằng 0), và bản ghi c_build_failed, harness_error cũ không có pair_status, rust_build chỉ được đếm ở unattributed_case_records",
+  "Bản ghi trước F4 (2026-10-25) không có cap_hit_div, cap_sens_infra_match, cap_sens_infra_div, cap_sens_timeout_rerun: các trường đó bằng 0, và cap_hit_total chỉ gồm cap_hit_match",
+  "Dòng 5 (F3, 26/10): bản ghi case không đọc input trước 26/10 không có rust_input_syms: bản dịch đếm ở insensitive_rust.not_recorded. Runtime của Rust std nhập getenv, read, open64, mmap64 ngay cả khi chương trình không đọc input, nên with_input_syms là cận trên thô, không phải bằng chứng bản Rust đọc input",
+  "Dòng 22 (F7, R22 thu hẹp): C-san chỉ chạy trên input divergence của lượt chính, nên ub_R22 chỉ có mẫu số là divergence (mọi divergence, divergence ổn định); không có tỉ lệ UB trên mọi input. Cấp cặp đếm (input, bản dịch); inputs_* đếm input phân biệt (case, seed, idx); bản ghi không có idx gộp các input cùng seed"
+ ],
+ "kind": "lib",
+ "l3": {
+  "cases_reduced": [
+   "B01_organic/pow43_lib:0,1",
+   "B01_synthetic/004_nineality_sieve_lib:0,1",
+   "B01_synthetic/006_static_alias_lib:0,1",
+   "B01_synthetic/008_long_run_lib:0",
+   "B01_synthetic/021_complex_goto_lib:0",
+   "B01_synthetic/032_comma_operator_lib:0",
+   "B02_organic/arr_push_lib:0",
+   "B02_organic/hm_geti_lib:0",
+   "B02_organic/sh_geti_lib:0,2"
+  ],
+  "rule": "amendment 2026-11-01 L3 (post-freeze, phân tích phụ)",
+  "seedsets": {
+   "0": 5,
+   "0,1": 3,
+   "0,1,2": 207,
+   "0,2": 1
+  }
+ },
+ "unattributed_case_records": {}
+}

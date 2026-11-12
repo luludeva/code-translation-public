@@ -1,0 +1,228 @@
+% Thesis v3, Chuong 4 (viet tu thesis loi V3). Moi muc chi coi la xong khi Le duyet.
+\IfFileExists{generated/rq-numbers.tex}{\input{generated/rq-numbers.tex}}{}
+\IfFileExists{generated/ax-numbers.tex}{\input{generated/ax-numbers.tex}}{}
+\IfFileExists{generated/extra-numbers.tex}{\input{generated/extra-numbers.tex}}{}
+\IfFileExists{generated/setup-numbers.tex}{\input{generated/setup-numbers.tex}}{}
+\IfFileExists{generated/sanbound-numbers.tex}{\input{generated/sanbound-numbers.tex}}{}
+\IfFileExists{generated/robust-numbers.tex}{\input{generated/robust-numbers.tex}}{}
+\newcommand{\fmtn}[1]{\expandafter\num\expandafter{\romannumeral-`0\csname #1\endcsname}}
+\newcommand{\frc}[1]{\fmtn{#1Num}/\fmtn{#1Den}}
+\newcommand{\frp}[1]{\fmtn{#1Num}/\fmtn{#1Den} (\csname #1Pct\endcsname\%)}
+\newcommand{\frz}[1]{\ifnum\csname #1Den\endcsname=0 n/a\else\frc{#1}\fi}
+\newcommand{\srrow}[2]{\csname rqSR#1All#2Pct\endcsname{} $\rightarrow$ \csname rqSRLo#1All#2Pct\endcsname--\srup{#1}{#2}}
+% So dan xuat cua RQ3 (dau tren chat, so quyet dinh con mo, do rong) lay tu generated/v3-numbers.tex (scripts/gen-v3-macros.py).
+\IfFileExists{generated/v3-numbers.tex}{\input{generated/v3-numbers.tex}}{}
+\newcommand{\srup}[2]{\csname rqSRUp#1All#2Pct\endcsname}
+\newcommand{\openE}{\rqOpenExeAllNum}
+\newcommand{\widthE}{\rqSRWidthTightExeAllPct}
+\newcommand{\lossE}{\rqLossTotalExeAllNum}
+\newcommand{\lossL}{\rqLossTotalLibAllNum}
+\chapter{Results}\label{ch:results}
+
+This chapter presents the empirical findings obtained by applying the methodology described in Chapter~\ref{ch:methodology} to the published C-to-Rust translations. The analysis examines the extent to which the original PASS/FAIL decisions are supported by independently collected behavioral evidence and how the resulting reassessments affect reported success rates. Alongside the findings, the chapter reports the actual execution coverage and the decisions without a result that influence their interpretation. The discussion of the findings and the threats to their validity follow in Chapter~\ref{ch:discussion}.
+
+The results are obtained with a harness whose basic reliability was checked by the controls of Section~\ref{sec:m-evidence}. Of the \sUnitRun{} unit tests of the harness, \sUnitPass{} passed and \sUnitSkip{} were skipped; the skipped tests concern the handling of core dumps and the compilation of generated tables, whose prerequisites were absent on the test machine, and none of them tests a comparison or evidence rule. The replay of the original vectors agreed with the acceptances of the runner except in one case, \code{027\_ctype\_ascii}, where the two checks compare the output differently. The held-out check found a retained divergence again for \frc{rqHeldOutAll} translations, and the mutant-based check detected \sMutExeK{} of \sMutExeN{} non-equivalent executable mutants and \sMutLibK{} of \sMutLibN{} non-equivalent library mutants. Four checks departed from the plan: the pilot cases were not measured again on the final harness, the check of the input domain was run only afterwards on the stored records, the audit of the library divergences was not completed, and the held-out check was run after the main run on a machine of a different type. Section~\ref{sec:d-threats} relates each check to the risk it controls and to the limit that remains.
+
+\section{Evidence against Published Acceptances (RQ1)}\label{sec:r-rq1}
+
+Of the \rqPaccExeAllNum{} executable and \rqPaccLibAllNum{} library translations that the original evaluation accepted, the re-evaluation is complete for \rqPtestExeAllNum{} and \rqPtestLibAllNum{}. Among these, the harness retains at least one divergence for \frp{rqFPExeAll} executable and \frp{rqFPLibAll} library translations. A retained divergence is a stable difference from the C program on an input for which the sanitizer check completes without a report (Section~\ref{sec:m-evidence}). The proportion therefore counts the accepted translations with behavioral evidence against their acceptance. Whether each difference is an error of the translation is a separate question that the count leaves open. The denominator for executables includes \rqInsensPtestExeAllNum{} translations of cases whose C program reads no input. These translations were run on their original vectors only, and \rqInsensDExeAllNum{} of them are in $D$. Among the remaining translations, which received generated inputs, \frp{rqSensFPExeAll} have a retained divergence.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{RQ1 by system: translations with a retained divergence out of the accepted translations with a complete re-evaluation, $D/|P_{\mathit{test}}|$. SmartC2Rust has no accepted library translation.}
+\label{tab:r-rq1}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Group & System & Executable & Library \\
+\midrule
+Agentic & Kiro & \frp{rqFPExeAllKiro} & \frp{rqFPLibAllKiro} \\
+ & Claude Code & \frp{rqFPExeAllClaude} & \frp{rqFPLibAllClaude} \\
+ & Codex (GPT-5.4) & \frp{rqFPExeAllCodex} & \frp{rqFPLibAllCodex} \\
+Rule-based & C2Rust & \frp{rqFPExeAllCTwoRust} & \frp{rqFPLibAllCTwoRust} \\
+ & Laertes & \frp{rqFPExeAllLaertes} & \frp{rqFPLibAllLaertes} \\
+LLM-assisted & C2SaferRust & \frp{rqFPExeAllCTwoSaferRust} & \frp{rqFPLibAllCTwoSaferRust} \\
+ & SmartC2Rust & \frp{rqFPExeAllSmartCTwoRust} & n/a \\
+One-shot & Kimi K2.5 & \frp{rqFPExeAllKimi} & \frp{rqFPLibAllKimi} \\
+ & GPT-5.4 & \frp{rqFPExeAllGptFive} & \frp{rqFPLibAllGptFive} \\
+ & Gemini 3.1 Pro & \frp{rqFPExeAllGemini} & \frp{rqFPLibAllGemini} \\
+\midrule
+All & Ten systems & \frp{rqFPExeAll} & \frp{rqFPLibAll} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The proportion is uneven across systems (Table~\ref{tab:r-rq1}): for executables it ranges from \rqFPExeAllCTwoRustPct\% to \rqFPExeAllGptFivePct\%. The systems differ in the number of acceptances that were fully re-evaluated and in the cases that these acceptances cover, so the proportions of two systems are computed over different translations and do not order the systems. The three properties of $D$ named in Section~\ref{sec:m-rq1} are examined next: where the divergences come from, how much they weigh, and what the count leaves out.
+
+\paragraph{Origin of the divergences.} The divergences lie almost entirely outside the original tests. All \rqDivTransLayerGeneratedExeAllNum{} executable and all \rqDivTransLayerGeneratedLibAllNum{} library translations in $D$ have a retained divergence on a generated input. On the original vectors, a retained divergence appears for \rqDivTransLayerSExeAllNum{} executable translations, all of the case \code{027\_ctype\_ascii}, and for \rqDivTransLayerVectorLibAllNum{} library translations. By source, retained divergences on mutated inputs, on structurally changed inputs and on inputs from the fuzzer occur for \rqDivTransLayerMExeAllNum{}, \rqDivTransLayerMSExeAllNum{} and \rqDivTransLayerAExeAllNum{} executable translations, and on states from typed mutation and from constants for \rqDivTransLayerRandomLibAllNum{} and \rqDivTransLayerDictLibAllNum{} library translations; a translation can diverge on inputs from several sources. The search is consistent across seeds: \rqSeedDetThreeExeAllNum{} of the \rqFPExeAllNum{} executable and \rqSeedDetThreeLibAllNum{} of the \rqFPLibAllNum{} library translations in $D$ have a retained divergence under every seed. Within $P_{\mathit{test}}$, the acceptances were therefore consistent with the vectors on which they were decided, and the evidence against them comes from inputs that these vectors do not contain. The divergences are also concentrated in a part of the corpus. The translations in $D$ belong to \frp{rqAxTwoCasesExe} of the executable cases and \frp{rqAxTwoCasesLib} of the library cases that have a translation in $P_{\mathit{test}}$, and the five cases with the most translations in $D$ hold \frp{rqAxTwoTopFiveExe} of the executable and \frp{rqAxTwoTopFiveLib} of the library translations in $D$. A part of the result, larger for libraries, thus comes from a small number of source programs that several systems translated. No translation in $D$ belongs to the SPHINCS+ bundle, whose \rqPtestExePOneNum{} executable and \rqPtestLibPOneNum{} library translations in $P_{\mathit{test}}$ show no retained divergence.
+
+\paragraph{Weight of the divergences.} Under the classification of retained divergences, between \frp{rqNBLoExeAll} and \frp{rqNBHiExeAll} of the fully re-evaluated executable acceptances have a non-benign divergence, and between \frp{rqNBLoLibAll} and \frp{rqNBHiLibAll} of the library acceptances. The lower end of each range stays close to the main metric, so the result of RQ1 rests mainly on divergences that are classified as non-benign. Table~\ref{tab:r-channels} shows in which part of the observation the divergences lie. Every executable translation in $D$ differs in standard output, and \rqAxOneTransStatusExeNum{} also differ in termination status. For libraries the largest part, \frc{rqAxOneTransStateLib}, differs in the state after the call. No translation in $D$ differs in standard error alone: \rqAxOneTransStderrOnlyExeNum{} executable and \rqAxOneTransStderrOnlyLibNum{} library translations have at least one retained divergence that is confined to standard error, and each of them also differs in another part of the observation.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Translations in $D$ by the part of the observation in which a retained divergence lies. A translation can differ in several parts, so the rows do not add up to $D$.}
+\label{tab:r-channels}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Part of the observation & Executable & Library \\
+\midrule
+Termination status & \frp{rqAxOneTransStatusExe} & \frp{rqAxOneTransStatusLib} \\
+Standard output & \frp{rqAxOneTransStdoutExe} & \frp{rqAxOneTransStdoutLib} \\
+A divergence in standard error only & \frp{rqAxOneTransStderrOnlyExe} & \frp{rqAxOneTransStderrOnlyLib} \\
+State after the call & not applicable & \frp{rqAxOneTransStateLib} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:r-examples} shows four retained divergences drawn from the inspected samples. They include a difference on an error path, an input that one side rejects, a case built around implementation-defined behavior, and a library call that returns a value on one side only.
+
+\begin{table}[!htb]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Examples of retained divergences from the inspected samples, with the rule that classifies each one (Appendix~\ref{app:classes}).}
+\footnotesize
+\label{tab:r-examples}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.3\linewidth}>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{0.05\linewidth}@{}}
+\toprule
+Case, system & Input & C and Rust observations & Rule \\
+\midrule
+\code{003\_string\_slicing}\newline SmartC2Rust & Three arguments: a string, \code{-2147483648} and \code{100} & Both exit with code 1; C reports that the start index is off the end of the string, the translation that the stop index is & N3 \\
+\code{macrodepth\_add\_5}\newline GPT-5.4 & Arguments \code{-5} and \code{-3}, each followed by a space & C exits with code 0 and prints its results; the translation exits with code 2 and prints a usage message & N1 \\
+\code{010\_integer\_overflow}\newline C2SaferRust & One non-ASCII character on standard input & C prints \code{ffffffd5}, the translation prints \code{d5}; the case is labeled as designed around such behavior & N3 \\
+\code{decode\_base64\_lib}\newline Kimi K2.5 & Base64 text that contains one byte outside the Base64 alphabet & C returns a decoded byte string; the translation returns no value & N4 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Evidence set aside.} The sanitizers report undefined behavior for \frp{rqUbDivExeAll} of the executable and \frp{rqUbDivLibAll} of the library pairs of a translation and an input that show a divergence; counted over distinct inputs, the shares are \rqUbInputsExeAllPct\% and \rqUbInputsLibAllPct\%. These pairs are not used as evidence. For libraries they are the majority of the divergent pairs, so the low proportion of RQ1 for libraries is reached after most observed differences have been set aside. Besides them, \rqUnstableOnlyExeAllNum{} executable and \rqUnstableOnlyLibAllNum{} library translations in $P_{\mathit{test}}$ have only unstable divergences, and \rqInconclOnlyLibAllNum{} library translations only divergences whose sanitizer check is inconclusive; all of them are counted as showing no retained divergence.
+
+The reference is also uncertain beyond what the sanitizers report. Each case with a translation in $D$ was labeled by whether it is designed around undefined, implementation-defined or unspecified behavior of C, such as \code{010\_integer\_overflow}; the labels were assigned from the C source in three passes of a language model, and the author resolved the disagreements (Appendix~\ref{app:s-labeling}). Of the translations in $D$, \rqBThreeDYesExeAllNum{} executable and \rqBThreeDYesLibAllNum{} library translations lie in cases labeled as designed around such behavior, and \rqBThreeDUnclearExeAllNum{} executable translation lies in a case whose label is unclear. The remaining \frp{rqBThreeNotUbExeAll} executable and \frp{rqBThreeNotUbLibAll} library translations lie in the other cases. When the C program is built with a second compiler, the number of translations that leave $D$ is \rqBOneLeaveExeAllNum{} for executables and \rqBOneLeaveLibAllNum{} for libraries. The controls of the harness also point to a lower sensitivity for libraries: the mutant-based check detected \sMutLibK{} of \sMutLibN{} non-equivalent library mutants and \sMutExeK{} of \sMutExeN{} executable mutants. These mutants come from \sMutLibNCases{} library and \sMutExeNCases{} executable pilot cases, so the comparison is indicative, and the two proportions of RQ1 are not directly comparable. The tolerance for floating-point fields matters little for $D$: when these fields are compared exactly, \rqExactTransLibAllNum{} further library translation has an input that differs, and that input was not checked for stability or by the sanitizers.
+
+\paragraph{Answer to RQ1.} Among the accepted translations that were fully re-evaluated on this corpus, \rqFPExeAllPct\% of the executable and \rqFPLibAllPct\% of the library translations have a retained divergence from the C program. The divergences are found almost entirely on generated inputs, they are mostly non-benign under the classification of the study, and they are unevenly distributed over cases.
+
+\section{Evidence behind Published Rejections (RQ2)}\label{sec:r-rq2}
+
+Of the \rqRZeroTestExeAllNum{} executable and \rqRZeroTestLibAllNum{} library translations that the original evaluation rejected at the test stage, the re-evaluation reaches an outcome for \rqFFExeAllDen{} and \rqFFLibAllDen{}. Among these, the rejection is unsupported for \frc{rqFFExeAll} executable and \frc{rqFFLibAll} library translations (Table~\ref{tab:r-rq2}). Every other rejection with an outcome has at least one failing vector on which the translation differs from the C program in every run. The one unsupported rejection concerns a library translation of GPT-5.4: all of its failing vectors agree with the C program under the comparison of the harness. The translation, of the case \code{agglom\_lib}, returns 33012.30000209808 where the C program returns 33012.30000025034. The two values agree within the relative tolerance of the harness and differ under the rule of the runner.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{RQ2 by system: unsupported rejections out of the test-stage rejections that reached an outcome, $F/|R_{\mathit{test}}|$. The entry n/a marks a system without a test-stage rejection that reached an outcome.}
+\label{tab:r-rq2}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Group & System & Executable & Library \\
+\midrule
+Agentic & Kiro & \frz{rqFFExeAllKiro} & \frz{rqFFLibAllKiro} \\
+ & Claude Code & \frz{rqFFExeAllClaude} & \frz{rqFFLibAllClaude} \\
+ & Codex (GPT-5.4) & \frz{rqFFExeAllCodex} & \frz{rqFFLibAllCodex} \\
+Rule-based & C2Rust & \frz{rqFFExeAllCTwoRust} & \frz{rqFFLibAllCTwoRust} \\
+ & Laertes & \frz{rqFFExeAllLaertes} & \frz{rqFFLibAllLaertes} \\
+LLM-assisted & C2SaferRust & \frz{rqFFExeAllCTwoSaferRust} & \frz{rqFFLibAllCTwoSaferRust} \\
+ & SmartC2Rust & \frz{rqFFExeAllSmartCTwoRust} & \frz{rqFFLibAllSmartCTwoRust} \\
+One-shot & Kimi K2.5 & \frz{rqFFExeAllKimi} & \frz{rqFFLibAllKimi} \\
+ & GPT-5.4 & \frz{rqFFExeAllGptFive} & \frz{rqFFLibAllGptFive} \\
+ & Gemini 3.1 Pro & \frz{rqFFExeAllGemini} & \frz{rqFFLibAllGemini} \\
+\midrule
+All & Ten systems & \frc{rqFFExeAll} & \frc{rqFFLibAll} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Where the rejections end.} The proportion is stated over the rejections that reached an outcome, so its reach depends on the rejections that did not (Table~\ref{tab:r-rq2-outcomes}). On the executable side, \rqFFNotReexExeAllNum{} rejections have no outcome because the C program could not be built with the sanitizers; all of them belong to one group of SPHINCS+ cases translated by Codex. Their recorded runs nevertheless show, for all \rqSanBoundNoReportDisagreeExeNum{} translations, a failing vector on which the translation differs from the C program in every run, so none of these rejections can be unsupported. The accepted translations of the same cases are not affected: these C programs read no input, so the accepted translations run on their original vectors only, where no divergence arises and no sanitizer check is needed. On the library side, \rqRZeroTestRNonrepLibAllNum{} rejections are not reproduced by the public runner and \rqRZeroTestRNobuildLibAllNum{} translations could not be built when the decision was reproduced. An inspection of the records, labeled in the same way as the samples of Section~\ref{sec:m-evidence}, attributes \rqNonRepRejOracleDriftLibAllNum{} of the non-reproduced library rejections to the difference between the runner revisions and finds no established cause for the other \rqNonRepRejUnknownLibAllNum{}. No rejection ends as not adjudicable. The value that the not adjudicable rejections allow, $(F+\mathit{na})/|R_{\mathit{test}}|$, therefore coincides with the main metric for both kinds. The rejections without an outcome are carried to RQ3.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Outcome of every rejection at the test stage. Each rejection appears in exactly one row.}
+\label{tab:r-rq2-outcomes}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Outcome & Executable & Library \\
+\midrule
+Supported ($A$) & \rqFFDisagreeExeAllNum & \rqFFDisagreeLibAllNum \\
+Unsupported ($F$) & \rqFFExeAllNum & \rqFFLibAllNum \\
+Not adjudicable ($\mathit{na}$) & \rqFFNotAdjExeAllNum & \rqFFNotAdjLibAllNum \\
+No outcome: decision not reproduced & \rqRZeroTestRNonrepExeAllNum & \rqRZeroTestRNonrepLibAllNum \\
+No outcome: translation not built at reproduction & \rqRZeroTestRNobuildExeAllNum & \rqRZeroTestRNobuildLibAllNum \\
+No outcome: C program not built with sanitizers & \rqFFNotReexExeAllNum & \rqFFNotReexLibAllNum \\
+\midrule
+Rejections at the test stage, $|R_0^{\mathit{test}}|$ & \rqRZeroTestExeAllNum & \rqRZeroTestLibAllNum \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Dependence on the comparison rule.} Whether a failing vector agrees with the C program depends on what the comparison includes. When standard error is ignored, the unsupported executable rejections rise from \frc{rqFFExeAll} to \frc{rqRobFFNoStderrExeAll}, and the library result stays at \frc{rqRobFFNoStderrLibAll}. When the floating-point fields of a library state are compared exactly, or by the rule of the runner, the one unsupported library rejection becomes supported and the result is \frc{rqRobFFExactLibAll}. Under every rule examined, the unsupported rejections remain a small fraction of the rejections that reached an outcome.
+
+\paragraph{Answer to RQ2.} Among the rejections at the test stage that reached an outcome on this corpus, \frc{rqFFExeAll} executable and \frc{rqFFLibAll} library rejections lack supporting evidence. All of these rejections but one are backed by a behavioral difference from the C program on at least one failing vector. The \rqRZeroTestRNonrepLibAllNum{} library rejections that the public runner does not reproduce lie outside this proportion and are carried to RQ3.
+
+\section{Effect on Published Success Rates (RQ3)}\label{sec:r-rq3}
+
+The outcomes of RQ1 and RQ2 are now placed back into the study population $P_0$, in which rejections at the build stage keep their status and pairs without a released translation stay in the denominator. The published success rate is the rate that the published decisions imply on $P_0$ (Section~\ref{sec:m-rq3}). For executables, it is \frp{rqSRExeAll}. After reclassification it lies between \frp{rqSRLoExeAll} and \frp{rqSRUpExeAll}. For libraries, the published rate is \frp{rqSRLibAll}, and the interval after reclassification runs from \frp{rqSRLoLibAll} to \frp{rqSRUpLibAll}. Table~\ref{tab:r-rq3} and Figure~\ref{fig:r-intervals} give the published rate and the interval of each system. The interval follows from the classification rules and from the attrition of this study. It carries no confidence level, and it does not state how many translations are semantically correct.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{RQ3 by system: published success rate $\rightarrow$ interval after reclassification, in percent of the pairs in $P_0$. Each system has \rqPzeroExeAllKiroNum{} executable and \rqPzeroLibAllKiroNum{} library pairs.}
+\label{tab:r-rq3}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Group & System & Executable & Library \\
+\midrule
+Agentic & Kiro & \srrow{Exe}{Kiro} & \srrow{Lib}{Kiro} \\
+ & Claude Code & \srrow{Exe}{Claude} & \srrow{Lib}{Claude} \\
+ & Codex (GPT-5.4) & \srrow{Exe}{Codex} & \srrow{Lib}{Codex} \\
+Rule-based & C2Rust & \srrow{Exe}{CTwoRust} & \srrow{Lib}{CTwoRust} \\
+ & Laertes & \srrow{Exe}{Laertes} & \srrow{Lib}{Laertes} \\
+LLM-assisted & C2SaferRust & \srrow{Exe}{CTwoSaferRust} & \srrow{Lib}{CTwoSaferRust} \\
+ & SmartC2Rust & \srrow{Exe}{SmartCTwoRust} & \srrow{Lib}{SmartCTwoRust} \\
+One-shot & Kimi K2.5 & \srrow{Exe}{Kimi} & \srrow{Lib}{Kimi} \\
+ & GPT-5.4 & \srrow{Exe}{GptFive} & \srrow{Lib}{GptFive} \\
+ & Gemini 3.1 Pro & \srrow{Exe}{Gemini} & \srrow{Lib}{Gemini} \\
+\midrule
+All & Ten systems & \srrow{Exe}{} & \srrow{Lib}{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!htb]
+\centering
+\resizebox{\linewidth}{!}{\input{figures/v3/fig-intervals}}
+\caption{Published success rate and interval after reclassification, by system. The circle marks the published rate and the bar the interval $[s_{\mathit{low}}, s_{\mathit{up}}]$.}
+\label{fig:r-intervals}
+\end{figure}
+
+\paragraph{Intervals by system.} For executables, the whole interval lies below the published rate for every system (Table~\ref{tab:r-rq3} and Figure~\ref{fig:r-intervals}). The upper end of Codex depends on the rule for rejections without an outcome. Its \rqSanBoundExeNNum{} rejections without an outcome all have a failing vector on which the translation differs from the C program, so they are outside $L_R^{\ast}$ and are not counted as unsupported. If they were counted, the upper end would be \rqSRUpNoLrStarExeAllCodexPct\% for Codex and \rqSRUpNoLrStarExeAllPct\% for all systems. For libraries, no rejection in $L_R$ has a recorded failing vector that differs, so all of them remain open. In the accepted branch, \rqLpStarRetExeAllNum{} executable translations and \rqLpStarRetLibAllNum{} library translation without a result already have a retained divergence on a completed seed, so they are not counted as successes at the upper end. For libraries, the interval lies below the published rate for eight systems; the upper end exceeds the published rate for Gemini 3.1 Pro, and SmartC2Rust has no accepted library translation.
+
+\paragraph{Width of the interval.} The interval is \widthE{} percentage points wide for executables and \rqSRWidthTightLibAllPct{} for libraries. This width is the share of decisions whose result is still open: \openE{} of \rqPzeroExeAllNum{} executable and \rqOpenLibAllNum{} of \rqPzeroLibAllNum{} library pairs. In the accepted branch the re-evaluation is complete for \frp{rqPtestExeAll} executable and \frp{rqPtestLibAll} library translations, and in the rejected branch it reaches an outcome for \rqFFExeAllDen{} of \rqRZeroTestExeAllNum{} and \rqFFLibAllDen{} of \rqRZeroTestLibAllNum{} rejections. Table~\ref{tab:r-loss} gives the causes for which the remaining decisions have no result.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Causes of the decisions without a result. Each decision is counted under one cause, and causes without a case are omitted.}
+\label{tab:r-loss}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Branch & Cause & Executable & Library \\
+\midrule
+Accepted, at reproduction & Translation not built & \rqPreRepBuildExeAllNum & \rqPreRepBuildLibAllNum \\
+ & Time limit exceeded & \rqPreRepTimeoutExeAllNum & \rqPreRepTimeoutLibAllNum \\
+ & Decision not reproduced & \rqPreRepNonReproducedExeAllNum & \rqPreRepNonReproducedLibAllNum \\
+Accepted, in the re-evaluation & Case without an input field & \rqLeaveNoInputFieldsExeAllNum & \rqLeaveNoInputFieldsLibAllNum \\
+ & Run of the harness incomplete & \rqLeaveIncompleteExeAllNum & \rqLeaveIncompleteLibAllNum \\
+ & Seed missing & \rqLeaveMissingSeedExeAllNum & \rqLeaveMissingSeedLibAllNum \\
+ & Record missing & \rqLeaveMissingRecordExeAllNum & \rqLeaveMissingRecordLibAllNum \\
+Rejected at the test stage & C program not built with sanitizers & \rqFFNotReexExeAllNum & \rqFFNotReexLibAllNum \\
+ & Decision not reproduced & \rqRZeroTestRNonrepExeAllNum & \rqRZeroTestRNonrepLibAllNum \\
+ & Translation not built at reproduction & \rqRZeroTestRNobuildExeAllNum & \rqRZeroTestRNobuildLibAllNum \\
+\midrule
+All & Decisions without a result, $L_P + L_R$ & \lossE & \lossL \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For executables, the open decisions all lie in the accepted branch, since the \rqFFNotReexExeAllNum{} rejections that share a single failure of the sanitizer build cannot be unsupported. Missing seeds and missing records, which arise when a run does not finish, cover \rqUnfinishedOpenExeAllNum{} of the \openE{} open decisions. For libraries the causes are spread more widely: inputs of the case that could not be observed on any seed, missing seeds and records, cases whose function takes no input, and rejections that could not be reproduced or built. The width therefore does not come from decisions that are missing at random. It is concentrated in the cases whose runs did not finish and in a few specific failures.
+
+\paragraph{Answer to RQ3.} After reclassification, the success rate on this corpus falls from \rqSRExeAllPct\% to between \rqSRLoExeAllPct\% and \srup{Exe}{}\% for executables, and from \rqSRLibAllPct\% to between \rqSRLoLibAllPct\% and \rqSRUpLibAllPct\% for libraries. The decrease comes from the accepted translations with a retained divergence and, at the lower end, from the acceptances without a result; only one rejection is reclassified in the other direction. The width of the intervals, \widthE{} and \rqSRWidthTightLibAllPct{} percentage points, shows that the decisions without a result still affect the final rate materially.

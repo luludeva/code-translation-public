@@ -1,0 +1,889 @@
+{
+ "B01_synthetic/001_helloworld": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/001_helloworld_with_header": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/002_stdin_echo": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/003_string_slicing": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 12
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/004_nineality_sieve": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/005_static_loop": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/006_static_alias": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/007_errno_pow": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 12
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/008_long_run": {
+  "preset": false,
+  "build_ok": true,
+  "results": {},
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/009_stack_buffer_overflow": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 2,
+   "Pass": 7
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/010_integer_overflow": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/011_uninit_char_ptr": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/012_uninit_int_ptr": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/013_poor_quality_addition": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/014_dead_code": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/015_return_stack_buffer": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 1,
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/016_divide_by_zero_float": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 3,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/017_signed_length_confusion": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6,
+   "Skip": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/018_stack_buffer_overflow_loop1": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/019_integer_overflow_char_max_multiply": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 1,
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/021_complex_goto": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 30
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/022_stdlib_div": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 5,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/023_struct_and_errno": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/024_struct_and_static": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/025_struct_and_errno_and_static": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/026_goto_and_static": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/027_ctype_ascii": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 21
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/028_strchr": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/029_strcspn": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/030_mutable_buffer_overlap_extrahard": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6,
+   "Skip": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/031_disjoint_arrays": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/032_comma_operator": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/033_bitfield": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/034_cast_to_char_ptr_int": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/035_cast_to_char_ptr_float": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/036_cast_to_char_ptr_struct": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/037_cast_to_char_ptr_int_no_strict_aliasing": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/038_cast_to_char_ptr_float_no_strict_aliasing": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 6
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/039_cast_to_char_ptr_struct_no_strict_aliasing": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/040_storage_class_auto": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/041_storage_class_register": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/042_float_union": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 5
+  },
+  "c_passes_own_vectors": true
+ },
+ "B01_synthetic/043_iso646_and_digraphs": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 8
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_organic/qmath": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 4
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_organic/underhanded_c_luggage": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 7
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/char_to_bool": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 69,
+   "Skip": 14
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/container_of": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/generic_foreach": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 100
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/hashmap_tree": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/macrodepth_add_5": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 12
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/macrodepth_mul_4": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 12
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/macrodepth_sub_6": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 12
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/memcpy_fun_buffers": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 69,
+   "Skip": 2
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/memmove": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 82,
+   "Skip": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/mutable_duplication_dag": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 2,
+   "Pass": 43
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/pointer_comparison_ascii_art": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 66,
+   "Skip": 31
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/static_vars_fpts": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 95
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/strcmp": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 120,
+   "Skip": 5
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/strcpy": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Skip": 13,
+   "Pass": 64
+  },
+  "c_passes_own_vectors": true
+ },
+ "B02_synthetic/tu_linkage": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 170
+  },
+  "c_passes_own_vectors": true
+ },
+ "P00_perlin_noise/001_perlin_noise": {
+  "preset": false,
+  "build_ok": true,
+  "results": {
+   "Pass": 30
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/005_sphincs_PQCgenKAT_sign_blake_128f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/006_sphincs_PQCgenKAT_sign_blake_128f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/007_sphincs_PQCgenKAT_sign_blake_128s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/008_sphincs_PQCgenKAT_sign_blake_128s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/009_sphincs_PQCgenKAT_sign_blake_192f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/010_sphincs_PQCgenKAT_sign_blake_192f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/011_sphincs_PQCgenKAT_sign_blake_192s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/012_sphincs_PQCgenKAT_sign_blake_192s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/013_sphincs_PQCgenKAT_sign_blake_256f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/014_sphincs_PQCgenKAT_sign_blake_256f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/015_sphincs_PQCgenKAT_sign_blake_256s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/016_sphincs_PQCgenKAT_sign_blake_256s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/017_sphincs_PQCgenKAT_sign_sha2_128f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/018_sphincs_PQCgenKAT_sign_sha2_128f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/019_sphincs_PQCgenKAT_sign_sha2_128s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/020_sphincs_PQCgenKAT_sign_sha2_128s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/021_sphincs_PQCgenKAT_sign_sha2_192f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/022_sphincs_PQCgenKAT_sign_sha2_192f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/023_sphincs_PQCgenKAT_sign_sha2_192s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/024_sphincs_PQCgenKAT_sign_sha2_192s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/025_sphincs_PQCgenKAT_sign_sha2_256f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/026_sphincs_PQCgenKAT_sign_sha2_256f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/027_sphincs_PQCgenKAT_sign_sha2_256s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/028_sphincs_PQCgenKAT_sign_sha2_256s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/029_sphincs_PQCgenKAT_sign_shake_128f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/030_sphincs_PQCgenKAT_sign_shake_128f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/031_sphincs_PQCgenKAT_sign_shake_128s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/032_sphincs_PQCgenKAT_sign_shake_128s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/033_sphincs_PQCgenKAT_sign_shake_192f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/034_sphincs_PQCgenKAT_sign_shake_192f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/035_sphincs_PQCgenKAT_sign_shake_192s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/036_sphincs_PQCgenKAT_sign_shake_192s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/037_sphincs_PQCgenKAT_sign_shake_256f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/038_sphincs_PQCgenKAT_sign_shake_256f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/039_sphincs_PQCgenKAT_sign_shake_256s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/040_sphincs_PQCgenKAT_sign_shake_256s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/041_sphincs_PQCgenKAT_sign_haraka_128f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/042_sphincs_PQCgenKAT_sign_haraka_128f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/043_sphincs_PQCgenKAT_sign_haraka_128s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/044_sphincs_PQCgenKAT_sign_haraka_128s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/045_sphincs_PQCgenKAT_sign_haraka_192f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/046_sphincs_PQCgenKAT_sign_haraka_192f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/047_sphincs_PQCgenKAT_sign_haraka_192s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/048_sphincs_PQCgenKAT_sign_haraka_192s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/049_sphincs_PQCgenKAT_sign_haraka_256f_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/050_sphincs_PQCgenKAT_sign_haraka_256f_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/051_sphincs_PQCgenKAT_sign_haraka_256s_simple": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ },
+ "P01_sphincs_plus/052_sphincs_PQCgenKAT_sign_haraka_256s_robust": {
+  "preset": true,
+  "build_ok": true,
+  "results": {
+   "Pass": 1
+  },
+  "c_passes_own_vectors": true
+ }
+}

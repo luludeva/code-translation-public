@@ -1,0 +1,29 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% RQ1 exe: Unst. = moi divergence khong on dinh; Inc. = sanitizer inconclusive (overlap: macro InconclUnstable)
+\begin{tabular}{@{}l rrrr rrr rr rr@{}}
+\toprule
+ & & & & & \multicolumn{3}{c}{Seeds detecting} & & & \multicolumn{2}{c}{Bounds (\%)} \\
+\cmidrule(lr){6-8} \cmidrule(l){11-12}
+System & $P_{\mathit{acc}}$ & $P_{\mathit{test}}$ & $D$ & $r_{\mathit{FP}}$ (\%) & 1 & 2 & 3 & Unst. & Inc. & $D/P_{\mathit{acc}}$ & $(D{+}L_P)/P_{\mathit{acc}}$ \\
+\midrule
+\multicolumn{12}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & \rqPaccExeAllKiroNum & \rqPtestExeAllKiroNum & \rqFPExeAllKiroNum & \rqFPExeAllKiroPct & \rqSeedDetOneExeAllKiroNum & \rqSeedDetTwoExeAllKiroNum & \rqSeedDetThreeExeAllKiroNum & \rqUnstableOnlyExeAllKiroNum & \rqInconclOnlyExeAllKiroNum & \rqFPBoundLoExeAllKiroPct & \rqFPBoundHiExeAllKiroPct \\
+\quad Claude Code & \rqPaccExeAllClaudeNum & \rqPtestExeAllClaudeNum & \rqFPExeAllClaudeNum & \rqFPExeAllClaudePct & \rqSeedDetOneExeAllClaudeNum & \rqSeedDetTwoExeAllClaudeNum & \rqSeedDetThreeExeAllClaudeNum & \rqUnstableOnlyExeAllClaudeNum & \rqInconclOnlyExeAllClaudeNum & \rqFPBoundLoExeAllClaudePct & \rqFPBoundHiExeAllClaudePct \\
+\quad Codex (GPT-5.4) & \rqPaccExeAllCodexNum & \rqPtestExeAllCodexNum & \rqFPExeAllCodexNum & \rqFPExeAllCodexPct & \rqSeedDetOneExeAllCodexNum & \rqSeedDetTwoExeAllCodexNum & \rqSeedDetThreeExeAllCodexNum & \rqUnstableOnlyExeAllCodexNum & \rqInconclOnlyExeAllCodexNum & \rqFPBoundLoExeAllCodexPct & \rqFPBoundHiExeAllCodexPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & \rqPaccExeAllCTwoRustNum & \rqPtestExeAllCTwoRustNum & \rqFPExeAllCTwoRustNum & \rqFPExeAllCTwoRustPct & \rqSeedDetOneExeAllCTwoRustNum & \rqSeedDetTwoExeAllCTwoRustNum & \rqSeedDetThreeExeAllCTwoRustNum & \rqUnstableOnlyExeAllCTwoRustNum & \rqInconclOnlyExeAllCTwoRustNum & \rqFPBoundLoExeAllCTwoRustPct & \rqFPBoundHiExeAllCTwoRustPct \\
+\quad Laertes & \rqPaccExeAllLaertesNum & \rqPtestExeAllLaertesNum & \rqFPExeAllLaertesNum & \rqFPExeAllLaertesPct & \rqSeedDetOneExeAllLaertesNum & \rqSeedDetTwoExeAllLaertesNum & \rqSeedDetThreeExeAllLaertesNum & \rqUnstableOnlyExeAllLaertesNum & \rqInconclOnlyExeAllLaertesNum & \rqFPBoundLoExeAllLaertesPct & \rqFPBoundHiExeAllLaertesPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & \rqPaccExeAllCTwoSaferRustNum & \rqPtestExeAllCTwoSaferRustNum & \rqFPExeAllCTwoSaferRustNum & \rqFPExeAllCTwoSaferRustPct & \rqSeedDetOneExeAllCTwoSaferRustNum & \rqSeedDetTwoExeAllCTwoSaferRustNum & \rqSeedDetThreeExeAllCTwoSaferRustNum & \rqUnstableOnlyExeAllCTwoSaferRustNum & \rqInconclOnlyExeAllCTwoSaferRustNum & \rqFPBoundLoExeAllCTwoSaferRustPct & \rqFPBoundHiExeAllCTwoSaferRustPct \\
+\quad SmartC2Rust & \rqPaccExeAllSmartCTwoRustNum & \rqPtestExeAllSmartCTwoRustNum & \rqFPExeAllSmartCTwoRustNum & \rqFPExeAllSmartCTwoRustPct & \rqSeedDetOneExeAllSmartCTwoRustNum & \rqSeedDetTwoExeAllSmartCTwoRustNum & \rqSeedDetThreeExeAllSmartCTwoRustNum & \rqUnstableOnlyExeAllSmartCTwoRustNum & \rqInconclOnlyExeAllSmartCTwoRustNum & \rqFPBoundLoExeAllSmartCTwoRustPct & \rqFPBoundHiExeAllSmartCTwoRustPct \\
+\addlinespace
+\multicolumn{12}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & \rqPaccExeAllKimiNum & \rqPtestExeAllKimiNum & \rqFPExeAllKimiNum & \rqFPExeAllKimiPct & \rqSeedDetOneExeAllKimiNum & \rqSeedDetTwoExeAllKimiNum & \rqSeedDetThreeExeAllKimiNum & \rqUnstableOnlyExeAllKimiNum & \rqInconclOnlyExeAllKimiNum & \rqFPBoundLoExeAllKimiPct & \rqFPBoundHiExeAllKimiPct \\
+\quad GPT-5.4 & \rqPaccExeAllGptFiveNum & \rqPtestExeAllGptFiveNum & \rqFPExeAllGptFiveNum & \rqFPExeAllGptFivePct & \rqSeedDetOneExeAllGptFiveNum & \rqSeedDetTwoExeAllGptFiveNum & \rqSeedDetThreeExeAllGptFiveNum & \rqUnstableOnlyExeAllGptFiveNum & \rqInconclOnlyExeAllGptFiveNum & \rqFPBoundLoExeAllGptFivePct & \rqFPBoundHiExeAllGptFivePct \\
+\quad Gemini 3.1 Pro & \rqPaccExeAllGeminiNum & \rqPtestExeAllGeminiNum & \rqFPExeAllGeminiNum & \rqFPExeAllGeminiPct & \rqSeedDetOneExeAllGeminiNum & \rqSeedDetTwoExeAllGeminiNum & \rqSeedDetThreeExeAllGeminiNum & \rqUnstableOnlyExeAllGeminiNum & \rqInconclOnlyExeAllGeminiNum & \rqFPBoundLoExeAllGeminiPct & \rqFPBoundHiExeAllGeminiPct \\
+\midrule
+Total & \rqPaccExeAllNum & \rqPtestExeAllNum & \rqFPExeAllNum & \rqFPExeAllPct & \rqSeedDetOneExeAllNum & \rqSeedDetTwoExeAllNum & \rqSeedDetThreeExeAllNum & \rqUnstableOnlyExeAllNum & \rqInconclOnlyExeAllNum & \rqFPBoundLoExeAllPct & \rqFPBoundHiExeAllPct \\
+\bottomrule
+\end{tabular}

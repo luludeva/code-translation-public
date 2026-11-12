@@ -1,0 +1,55 @@
+{
+ "exe": {
+  "n": 60,
+  "n_unclear": 0,
+  "unclear": [],
+  "n_det": 60,
+  "false_div": {
+   "k": 0,
+   "ids": [],
+   "wilson95": [
+    0,
+    0.0602
+   ]
+  },
+  "bnu_wrong": {
+   "k": 0,
+   "ids": [],
+   "wilson95": [
+    0,
+    0.0602
+   ]
+  }
+ },
+ "lib": {
+  "n": 62,
+  "n_unclear": 8,
+  "unclear": [
+   "lib-068",
+   "lib-073",
+   "lib-074",
+   "lib-075",
+   "xlib-047",
+   "xlib-048",
+   "xlib-049",
+   "xlib-061"
+  ],
+  "n_det": 54,
+  "false_div": {
+   "k": 0,
+   "ids": [],
+   "wilson95": [
+    0,
+    0.0664
+   ]
+  },
+  "bnu_wrong": {
+   "k": 0,
+   "ids": [],
+   "wilson95": [
+    0,
+    0.0664
+   ]
+  }
+ }
+}

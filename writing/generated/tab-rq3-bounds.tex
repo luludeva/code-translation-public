@@ -1,0 +1,29 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+% R16: caption phai nhac gia dinh "build fail giu la fail" va M tinh la khong chap nhan
+\begin{tabular}{@{}l rrrrrr rrrrrr@{}}
+\toprule
+ & \multicolumn{6}{c}{Executable programs (\% of $P_0$)} & \multicolumn{6}{c}{Libraries (\% of $P_0$)} \\
+\cmidrule(lr){2-7} \cmidrule(l){8-13}
+System & $P_0$ & $P_{\mathit{acc}}$ & $s$ & lower & upper & width & $P_0$ & $P_{\mathit{acc}}$ & $s$ & lower & upper & width \\
+\midrule
+\multicolumn{13}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & \rqPzeroExeAllKiroNum & \rqPaccExeAllKiroNum & \rqSRExeAllKiroPct & \rqSRLoExeAllKiroPct & \rqSRHiExeAllKiroPct & \rqSRWidthExeAllKiroPct & \rqPzeroLibAllKiroNum & \rqPaccLibAllKiroNum & \rqSRLibAllKiroPct & \rqSRLoLibAllKiroPct & \rqSRHiLibAllKiroPct & \rqSRWidthLibAllKiroPct \\
+\quad Claude Code & \rqPzeroExeAllClaudeNum & \rqPaccExeAllClaudeNum & \rqSRExeAllClaudePct & \rqSRLoExeAllClaudePct & \rqSRHiExeAllClaudePct & \rqSRWidthExeAllClaudePct & \rqPzeroLibAllClaudeNum & \rqPaccLibAllClaudeNum & \rqSRLibAllClaudePct & \rqSRLoLibAllClaudePct & \rqSRHiLibAllClaudePct & \rqSRWidthLibAllClaudePct \\
+\quad Codex (GPT-5.4) & \rqPzeroExeAllCodexNum & \rqPaccExeAllCodexNum & \rqSRExeAllCodexPct & \rqSRLoExeAllCodexPct & \rqSRHiExeAllCodexPct & \rqSRWidthExeAllCodexPct & \rqPzeroLibAllCodexNum & \rqPaccLibAllCodexNum & \rqSRLibAllCodexPct & \rqSRLoLibAllCodexPct & \rqSRHiLibAllCodexPct & \rqSRWidthLibAllCodexPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & \rqPzeroExeAllCTwoRustNum & \rqPaccExeAllCTwoRustNum & \rqSRExeAllCTwoRustPct & \rqSRLoExeAllCTwoRustPct & \rqSRHiExeAllCTwoRustPct & \rqSRWidthExeAllCTwoRustPct & \rqPzeroLibAllCTwoRustNum & \rqPaccLibAllCTwoRustNum & \rqSRLibAllCTwoRustPct & \rqSRLoLibAllCTwoRustPct & \rqSRHiLibAllCTwoRustPct & \rqSRWidthLibAllCTwoRustPct \\
+\quad Laertes & \rqPzeroExeAllLaertesNum & \rqPaccExeAllLaertesNum & \rqSRExeAllLaertesPct & \rqSRLoExeAllLaertesPct & \rqSRHiExeAllLaertesPct & \rqSRWidthExeAllLaertesPct & \rqPzeroLibAllLaertesNum & \rqPaccLibAllLaertesNum & \rqSRLibAllLaertesPct & \rqSRLoLibAllLaertesPct & \rqSRHiLibAllLaertesPct & \rqSRWidthLibAllLaertesPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & \rqPzeroExeAllCTwoSaferRustNum & \rqPaccExeAllCTwoSaferRustNum & \rqSRExeAllCTwoSaferRustPct & \rqSRLoExeAllCTwoSaferRustPct & \rqSRHiExeAllCTwoSaferRustPct & \rqSRWidthExeAllCTwoSaferRustPct & \rqPzeroLibAllCTwoSaferRustNum & \rqPaccLibAllCTwoSaferRustNum & \rqSRLibAllCTwoSaferRustPct & \rqSRLoLibAllCTwoSaferRustPct & \rqSRHiLibAllCTwoSaferRustPct & \rqSRWidthLibAllCTwoSaferRustPct \\
+\quad SmartC2Rust & \rqPzeroExeAllSmartCTwoRustNum & \rqPaccExeAllSmartCTwoRustNum & \rqSRExeAllSmartCTwoRustPct & \rqSRLoExeAllSmartCTwoRustPct & \rqSRHiExeAllSmartCTwoRustPct & \rqSRWidthExeAllSmartCTwoRustPct & \rqPzeroLibAllSmartCTwoRustNum & \rqPaccLibAllSmartCTwoRustNum & \rqSRLibAllSmartCTwoRustPct & \rqSRLoLibAllSmartCTwoRustPct & \rqSRHiLibAllSmartCTwoRustPct & \rqSRWidthLibAllSmartCTwoRustPct \\
+\addlinespace
+\multicolumn{13}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & \rqPzeroExeAllKimiNum & \rqPaccExeAllKimiNum & \rqSRExeAllKimiPct & \rqSRLoExeAllKimiPct & \rqSRHiExeAllKimiPct & \rqSRWidthExeAllKimiPct & \rqPzeroLibAllKimiNum & \rqPaccLibAllKimiNum & \rqSRLibAllKimiPct & \rqSRLoLibAllKimiPct & \rqSRHiLibAllKimiPct & \rqSRWidthLibAllKimiPct \\
+\quad GPT-5.4 & \rqPzeroExeAllGptFiveNum & \rqPaccExeAllGptFiveNum & \rqSRExeAllGptFivePct & \rqSRLoExeAllGptFivePct & \rqSRHiExeAllGptFivePct & \rqSRWidthExeAllGptFivePct & \rqPzeroLibAllGptFiveNum & \rqPaccLibAllGptFiveNum & \rqSRLibAllGptFivePct & \rqSRLoLibAllGptFivePct & \rqSRHiLibAllGptFivePct & \rqSRWidthLibAllGptFivePct \\
+\quad Gemini 3.1 Pro & \rqPzeroExeAllGeminiNum & \rqPaccExeAllGeminiNum & \rqSRExeAllGeminiPct & \rqSRLoExeAllGeminiPct & \rqSRHiExeAllGeminiPct & \rqSRWidthExeAllGeminiPct & \rqPzeroLibAllGeminiNum & \rqPaccLibAllGeminiNum & \rqSRLibAllGeminiPct & \rqSRLoLibAllGeminiPct & \rqSRHiLibAllGeminiPct & \rqSRWidthLibAllGeminiPct \\
+\midrule
+Total & \rqPzeroExeAllNum & \rqPaccExeAllNum & \rqSRExeAllPct & \rqSRLoExeAllPct & \rqSRHiExeAllPct & \rqSRWidthExeAllPct & \rqPzeroLibAllNum & \rqPaccLibAllNum & \rqSRLibAllPct & \rqSRLoLibAllPct & \rqSRHiLibAllPct & \rqSRWidthLibAllPct \\
+\bottomrule
+\end{tabular}

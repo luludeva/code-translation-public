@@ -1,0 +1,33 @@
+% ---- Engine: XeLaTeX (can cho tieng Viet o front matter) ----
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{vietnamese}
+
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{placeins}     % \FloatBarrier o ranh gioi muc Chuong 3 (Le duyet 26/10)
+\usepackage{siunitx}      % dinh dang so lon trong v3 (Le 12/11): dau phay nhom ba chu so tu 5 chu so tro len
+\sisetup{group-separator={,}, group-minimum-digits=5, detect-all}
+\usepackage{xltabular}  % bang tham so dai nhieu trang (phu luc B)
+\usepackage{algorithm}      % Algorithm 1 (\S3.4)
+\usepackage{algpseudocode}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\usepackage{microtype}
+% Cho phep TeX gian khoang cach tu nhieu hon thay vi tran le, dung cho
+% cac cum tu dai khong ngat duoc (vd: \thesisTitleEn in hoa chen inline
+% vao giua cau o 06-declaration.tex).
+\setlength{\emergencystretch}{3em}
+\usepackage{tikz}
+\usetikzlibrary{calc,positioning,arrows.meta,fit,backgrounds,patterns}
+\usepackage{etoolbox}

@@ -1,0 +1,22 @@
+{
+ "n": 78,
+ "agree": 69,
+ "disagree": 9,
+ "spot": [
+  "exe-012",
+  "exe-014",
+  "exe-017",
+  "exe-018",
+  "exe-019",
+  "exe-021",
+  "lib-052",
+  "lib-059",
+  "lib-069",
+  "lib-072"
+ ],
+ "to_le": 34,
+ "q2_vs_script_on_agreed": {
+  "true": 67,
+  "false": 2
+ }
+}

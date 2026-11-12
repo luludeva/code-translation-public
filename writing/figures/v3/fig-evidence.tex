@@ -1,0 +1,15 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  b/.style={draw, rounded corners=2pt, align=center, text width=7.0cm, minimum height=11mm, inner sep=3pt},
+  pa/.style={b, draw=passc, fill=passc!8}, fa/.style={b, draw=failc, fill=failc!8}]
+\node[font=\small\bfseries, text=passc] at (-4.0,1.0) {RQ1: PASS decisions};
+\node[font=\small\bfseries, text=failc] at (4.0,1.0) {RQ2: FAIL decisions at the test stage};
+\node[pa] (a1) at (-4.0,0) {Original vectors and generated inputs:\\observe C and Rust};
+\node[b] (a2) at (-4.0,-1.7) {Difference found:\\repeat the executions to check stability};
+\node[b] (a3) at (-4.0,-3.4) {Sanitizer check of the C execution:\\completed without a report?};
+\node[pa, thick] (a4) at (-4.0,-5.2) {At least one retained divergence: counted in $D$\\otherwise: none detected, or evidence incomplete};
+\node[fa] (b1) at (4.0,0) {Every failing vector:\\observe C and Rust, \pRqTwoReps{} runs per vector};
+\node[b] (b2) at (4.0,-1.7) {Adjudicate each vector:\\comparison, stability, sanitizer check of C};
+\node[b] (b3) at (4.0,-3.4) {Combine the vectors of the rejection\\in a fixed order of precedence};
+\node[fa, thick] (b4) at (4.0,-5.2) {At least one vector supports the rejection: $A$\\all vectors agree with C: $F$\\otherwise: $\mathit{na}$ or no outcome ($L_R$)};
+\foreach \x/\y in {a1/a2,a2/a3,a3/a4,b1/b2,b2/b3,b3/b4} \draw[->] (\x) -- (\y);
+\end{tikzpicture}

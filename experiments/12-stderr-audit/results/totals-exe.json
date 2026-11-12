@@ -1,0 +1,67 @@
+{
+ "B02_organic/qmath": {
+  "kiro": {
+   "equal_obs": 4152,
+   "err_diff": 1714
+  },
+  "claude": {
+   "equal_obs": 4293,
+   "err_diff": 1714
+  },
+  "codex-gpt54": {
+   "equal_obs": 4422,
+   "err_diff": 1714
+  },
+  "c2rust": {
+   "equal_obs": 4422,
+   "err_diff": 1714
+  },
+  "laertes": {
+   "equal_obs": 4422,
+   "err_diff": 1714
+  },
+  "c2saferrust": {
+   "equal_obs": 4422,
+   "err_diff": 1714
+  }
+ },
+ "B02_synthetic/static_vars_fpts": {
+  "claude": {
+   "equal_obs": 4590
+  },
+  "codex-gpt54": {
+   "equal_obs": 4590
+  },
+  "c2rust": {
+   "equal_obs": 4617
+  },
+  "laertes": {
+   "equal_obs": 4617
+  },
+  "c2saferrust": {
+   "equal_obs": 4617
+  }
+ },
+ "B02_synthetic/tu_linkage": {
+  "kiro": {
+   "equal_obs": 4935,
+   "err_diff": 640
+  },
+  "claude": {
+   "equal_obs": 5056,
+   "err_diff": 350
+  },
+  "codex-gpt54": {
+   "equal_obs": 5141,
+   "err_diff": 153
+  },
+  "c2rust": {
+   "equal_obs": 5213,
+   "err_diff": 1
+  },
+  "c2saferrust": {
+   "equal_obs": 5213,
+   "err_diff": 1
+  }
+ }
+}

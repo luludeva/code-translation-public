@@ -1,0 +1,107 @@
+{
+ "mode": "main",
+ "kind": "exe",
+ "rule": "amendment 2026-11-01 L2, L5, L6",
+ "priority": [
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-1of2/ci-out/rq1-main-exe-1of2",
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-2of2/ci-out/rq1-main-exe-2of2",
+  "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-light/ci-out/rq1-main-exe-light"
+ ],
+ "freeze": {
+  "tag": "protocol-freeze-r1",
+  "rule": "tag là HEAD hoặc tổ tiên; git diff --no-renames --name-status <tag> HEAD -- harness/ chỉ có trạng thái A; harness/ không có thay đổi chưa commit",
+  "ok": true,
+  "tag_commit": "bc82907c053f84438a735cd4fa890bb074703f01",
+  "head": "1bdc1ff0a1a504d03c45789f5e36f76e48c9917d",
+  "harness_diff": [
+   "A\tharness/analysis.py",
+   "A\tharness/main_merge.py",
+   "A\tharness/main_merge_v2.py",
+   "A\tharness/main_run.py"
+  ],
+  "harness_added": [
+   "harness/analysis.py",
+   "harness/main_merge.py",
+   "harness/main_merge_v2.py",
+   "harness/main_run.py"
+  ],
+  "reason": "ok"
+ },
+ "mode_problems": [],
+ "code_identity": {
+  "shards": {
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-1of2/ci-out/rq1-main-exe-1of2": {
+    "repo_commit": "b7ce94773004fc8cd4c23aa650c8c8971d464d36",
+    "n_files": 39
+   },
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-2of2/ci-out/rq1-main-exe-2of2": {
+    "repo_commit": "7011dbbc27bbcbde396de317ef9ea8f9cbe86682",
+    "n_files": 38
+   },
+   "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-light/ci-out/rq1-main-exe-light": {
+    "repo_commit": "d5eea6a28e9dc2ddb780bf25c2b8852a06ce5d98",
+    "n_files": 39
+   }
+  },
+  "common_files": 38,
+  "identity": "257cb5a651b8778f82270893b4e0bb11c9515f843b71f1df886f5efd8874adfb"
+ },
+ "merge": {
+  "kind": "exe",
+  "shards": [
+   "/home/ubuntu/work/metrics-main-v2/merged-exe/_view/0",
+   "/home/ubuntu/work/metrics-main-v2/merged-exe/_view/1",
+   "/home/ubuntu/work/metrics-main-v2/merged-exe/_view/2"
+  ],
+  "n_records": 291,
+  "problems": [],
+  "ok": true,
+  "n_harness_error_resolved": 0,
+  "harness_error_resolved": []
+ },
+ "selection": [
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-1of2/ci-out/rq1-main-exe-1of2",
+   "records": 65,
+   "chosen": 65
+  },
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-2of2/ci-out/rq1-main-exe-2of2",
+   "records": 103,
+   "chosen": 103
+  },
+  {
+   "shard": "/home/ubuntu/work/metrics-main-v2/in/rq1-main-exe-light/ci-out/rq1-main-exe-light",
+   "records": 258,
+   "chosen": 123
+  }
+ ],
+ "harness_error_unresolved": [],
+ "n_harness_error_unresolved": 0,
+ "missing": [
+  "B01_synthetic/004_nineality_sieve/s0",
+  "B01_synthetic/004_nineality_sieve/s1",
+  "B01_synthetic/004_nineality_sieve/s2",
+  "B01_synthetic/006_static_alias/s0",
+  "B01_synthetic/006_static_alias/s1",
+  "B01_synthetic/006_static_alias/s2",
+  "B01_synthetic/012_uninit_int_ptr/s2",
+  "B01_synthetic/017_signed_length_confusion/s2",
+  "B01_synthetic/018_stack_buffer_overflow_loop1/s0",
+  "B01_synthetic/018_stack_buffer_overflow_loop1/s1",
+  "B01_synthetic/018_stack_buffer_overflow_loop1/s2",
+  "B01_synthetic/021_complex_goto/s0",
+  "B01_synthetic/021_complex_goto/s1",
+  "B01_synthetic/021_complex_goto/s2",
+  "B01_synthetic/032_comma_operator/s0",
+  "B01_synthetic/032_comma_operator/s1",
+  "B01_synthetic/032_comma_operator/s2",
+  "B02_synthetic/pointer_comparison_ascii_art/s1",
+  "B02_synthetic/pointer_comparison_ascii_art/s2",
+  "P00_perlin_noise/001_perlin_noise/s1",
+  "P00_perlin_noise/001_perlin_noise/s2"
+ ],
+ "n_missing": 21,
+ "extra": [],
+ "ok": true
+}

@@ -1,0 +1,37 @@
+% Phu luc 05: Trang phu bia tieng Anh (yeu cau voi sinh vien CLC)
+\begin{titlepage}
+  % Doi xung lai le trai/phai cho trang bia, xem giai thich o 01-cover.tex
+  \newgeometry{top=2.5cm,bottom=3cm,left=2.5cm,right=2.5cm}
+  \uetTitlepageBorder
+  \centering
+  \setstretch{1.2}
+
+  % Header: ten truong
+  {\uetCoverHeaderFont VIETNAM NATIONAL UNIVERSITY, HANOI\\ UNIVERSITY OF ENGINEERING AND TECHNOLOGY\par}
+  \vspace{2.5cm}
+
+  % Ten sinh vien
+  {\uetCoverNameFont \authorNameEn\par}
+  \vspace{2.5cm}
+
+  % Ten de tai
+  {\uetCoverTitleFont \thesisTitleEn\par}
+  \vspace{2cm}
+
+  % Nganh
+  {\uetCoverNameFont Major: \majorEn\par}
+  \vfill
+
+  % Supervisor + Co-Supervisor (neu co): can giua theo lua chon cua Le 26/10 (mau Phu luc 02 cua UET can trai Major va Supervisor)
+  {\uetCoverNameFont Supervisor: \supervisorName\par}
+  \ifdefempty{\coSupervisorName}{}{%
+    \vspace{1cm}
+    {\uetCoverNameFont Co-Supervisor: \coSupervisorName\par}%
+  }
+  \vspace{2cm}
+
+  % Nam bao ve
+  {\uetCoverYearFont HA NOI - 20\defenseYear\par}
+
+  \restoregeometry
+\end{titlepage}

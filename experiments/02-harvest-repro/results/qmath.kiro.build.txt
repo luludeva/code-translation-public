@@ -1,0 +1,21 @@
+   Compiling driver v0.1.0 (/home/claude/exp02/.build/src/kiro/qmath)
+warning: function `vector_scale` is never used
+   --> src/lib.rs:188:11
+    |
+188 | unsafe fn vector_scale(v: *const f32, s: f32, o: *mut f32) {
+    |           ^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: creating a shared reference to mutable static
+   --> src/lib.rs:257:21
+    |
+257 |         vector_copy(vec3_origin.as_ptr(), dir);
+    |                     ^^^^^^^^^^^^^^^^^^^^ shared reference to mutable static
+    |
+    = note: shared references to mutable statics are dangerous; it's undefined behavior if the static is mutated or if a mutable reference is created for it while the shared reference lives
+    = note: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/static-mut-references.html>
+    = note: `#[warn(static_mut_refs)]` (part of `#[warn(rust_2024_compatibility)]`) on by default
+
+warning: `driver` (lib) generated 2 warnings
+    Finished `release` profile [optimized] target(s) in 0.24s

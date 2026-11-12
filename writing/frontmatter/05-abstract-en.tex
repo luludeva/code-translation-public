@@ -1,0 +1,20 @@
+% Phu luc 06: Trang tom tat tieng Anh. Khoang 360 tu, toi da 4 tu khoa.
+% F1: du 7 y (context, problem, motivation, methodology, methods, results toi da 3, conclusions).
+\IfFileExists{generated/rq-numbers.tex}{\input{generated/rq-numbers.tex}}{}
+\IfFileExists{generated/v3-numbers.tex}{\input{generated/v3-numbers.tex}}{}
+\thispagestyle{plain}
+\begin{center}
+{\fontsize{13}{16}\selectfont\bfseries ABSTRACT}
+\end{center}
+\vspace{1em}
+
+% Phu luc 06: noi dung abstract va keywords dung 12pt, khac co chu toan cuc 13pt
+\begingroup
+\fontsize{12}{15}\selectfont
+\noindent\textbf{Abstract:}
+Systems that translate C programs into Rust are usually evaluated by compiling each translation and running an existing test suite. The result for each translation is recorded as a PASS or FAIL decision, and the decisions are aggregated into the success rate of a system. How far such a rate can be trusted depends on whether the tests reveal differences in behavior and on whether the expectations used for grading are accurate, and studies of related tasks have shown that accepted outputs often fail when they are tested further. This thesis re-evaluates the published decisions of ten translation systems on the TRACTOR Public Test Corpus without rerunning any translator. It builds an independent differential testing harness that runs each Rust translation and its C program on the same inputs and compares their termination, their output and, for libraries, the state after a call. For accepted translations, the harness searches for a behavioral divergence on the original test vectors and on generated inputs; for translations rejected at the test stage, it replays the vectors that failed. An observation counts as evidence only if it is stable under repeated runs and the C execution completes a sanitizer check for undefined behavior without a report. Among the accepted translations that were fully re-evaluated, \rqFPExeAllNum/\rqFPExeAllDen{} executable (\rqFPExeAllPct\%) and \rqFPLibAllNum/\rqFPLibAllDen{} library translations (\rqFPLibAllPct\%) have at least one retained divergence, found almost entirely on generated inputs. Among the test-stage rejections that reached an outcome, \rqFFExeAllNum/\rqFFExeAllDen{} executable and \rqFFLibAllNum/\rqFFLibAllDen{} library rejections lack supporting evidence. When these reclassifications and the decisions that remain without a result are carried back into the original population, the success rate of executables under the oracle of this study lies between \rqSRLoExeAllPct\% and \rqSRUpExeAllPct\%, against \rqSRExeAllPct\% under the published decisions, and that of libraries between \rqSRLoLibAllPct\% and \rqSRUpLibAllPct\%, against \rqSRLibAllPct\%. On this corpus, the evidence that changes the reading of an evaluation lies mainly on the side of acceptances. The results indicate that accepted translations need behavioral evidence beyond the original tests, and that a reported success rate should be accompanied by its comparison rule, its full denominator and the uncertainty left by the decisions that were not examined. The findings are limited to one corpus, and a retained divergence records an observed difference whose status as a semantic error remains open.
+
+\vspace{1em}
+\noindent\textit{\textbf{Keywords:}} \textit{C-to-Rust translation, differential testing, test oracle, undefined behavior}
+\endgroup
+\clearpage

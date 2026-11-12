@@ -1,0 +1,44 @@
+{
+ "exe": {
+  "D": 176,
+  "P_test": 476,
+  "checked": 176,
+  "D_B1": 173,
+  "leave_all_c_unstable": [
+   [
+    "B01_synthetic",
+    "011_uninit_char_ptr",
+    "c2rust"
+   ],
+   [
+    "B01_synthetic",
+    "011_uninit_char_ptr",
+    "claude"
+   ],
+   [
+    "B01_synthetic",
+    "011_uninit_char_ptr",
+    "laertes"
+   ]
+  ],
+  "n_leave": 3,
+  "unchecked": [],
+  "n_unchecked": 0,
+  "limit_cases": null,
+  "n_inputs": 4961,
+  "n_inputs_c_unstable": 247
+ },
+ "lib": {
+  "D": 65,
+  "P_test": 1088,
+  "checked": 65,
+  "D_B1": 65,
+  "leave_all_c_unstable": [],
+  "n_leave": 0,
+  "unchecked": [],
+  "n_unchecked": 0,
+  "limit_cases": null,
+  "n_inputs": 1071,
+  "n_inputs_c_unstable": 0
+ }
+}

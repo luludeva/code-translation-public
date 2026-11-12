@@ -1,0 +1,28 @@
+% SINH TU DONG boi writing/scripts/gen-rq-tables.py. KHONG SUA TAY. O bang la macro cua generated/rq-numbers.tex.
+\begin{tabular}{@{}l rrrr rrrr@{}}
+\toprule
+ & \multicolumn{4}{c}{Executable programs} & \multicolumn{4}{c}{Libraries} \\
+\cmidrule(lr){2-5} \cmidrule(l){6-9}
+System & $P_{\mathit{test}}$ & $\mathit{NB}^L$ & $\mathit{NB}^U$ & range (\%) & $P_{\mathit{test}}$ & $\mathit{NB}^L$ & $\mathit{NB}^U$ & range (\%) \\
+\midrule
+\multicolumn{9}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & \rqPtestExeAllKiroNum & \rqNBLoExeAllKiroNum & \rqNBHiExeAllKiroNum & \rqNBLoExeAllKiroPct--\rqNBHiExeAllKiroPct & \rqPtestLibAllKiroNum & \rqNBLoLibAllKiroNum & \rqNBHiLibAllKiroNum & \rqNBLoLibAllKiroPct--\rqNBHiLibAllKiroPct \\
+\quad Claude Code & \rqPtestExeAllClaudeNum & \rqNBLoExeAllClaudeNum & \rqNBHiExeAllClaudeNum & \rqNBLoExeAllClaudePct--\rqNBHiExeAllClaudePct & \rqPtestLibAllClaudeNum & \rqNBLoLibAllClaudeNum & \rqNBHiLibAllClaudeNum & \rqNBLoLibAllClaudePct--\rqNBHiLibAllClaudePct \\
+\quad Codex (GPT-5.4) & \rqPtestExeAllCodexNum & \rqNBLoExeAllCodexNum & \rqNBHiExeAllCodexNum & \rqNBLoExeAllCodexPct--\rqNBHiExeAllCodexPct & \rqPtestLibAllCodexNum & \rqNBLoLibAllCodexNum & \rqNBHiLibAllCodexNum & \rqNBLoLibAllCodexPct--\rqNBHiLibAllCodexPct \\
+\addlinespace
+\multicolumn{9}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & \rqPtestExeAllCTwoRustNum & \rqNBLoExeAllCTwoRustNum & \rqNBHiExeAllCTwoRustNum & \rqNBLoExeAllCTwoRustPct--\rqNBHiExeAllCTwoRustPct & \rqPtestLibAllCTwoRustNum & \rqNBLoLibAllCTwoRustNum & \rqNBHiLibAllCTwoRustNum & \rqNBLoLibAllCTwoRustPct--\rqNBHiLibAllCTwoRustPct \\
+\quad Laertes & \rqPtestExeAllLaertesNum & \rqNBLoExeAllLaertesNum & \rqNBHiExeAllLaertesNum & \rqNBLoExeAllLaertesPct--\rqNBHiExeAllLaertesPct & \rqPtestLibAllLaertesNum & \rqNBLoLibAllLaertesNum & \rqNBHiLibAllLaertesNum & \rqNBLoLibAllLaertesPct--\rqNBHiLibAllLaertesPct \\
+\addlinespace
+\multicolumn{9}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & \rqPtestExeAllCTwoSaferRustNum & \rqNBLoExeAllCTwoSaferRustNum & \rqNBHiExeAllCTwoSaferRustNum & \rqNBLoExeAllCTwoSaferRustPct--\rqNBHiExeAllCTwoSaferRustPct & \rqPtestLibAllCTwoSaferRustNum & \rqNBLoLibAllCTwoSaferRustNum & \rqNBHiLibAllCTwoSaferRustNum & \rqNBLoLibAllCTwoSaferRustPct--\rqNBHiLibAllCTwoSaferRustPct \\
+\quad SmartC2Rust & \rqPtestExeAllSmartCTwoRustNum & \rqNBLoExeAllSmartCTwoRustNum & \rqNBHiExeAllSmartCTwoRustNum & \rqNBLoExeAllSmartCTwoRustPct--\rqNBHiExeAllSmartCTwoRustPct & \rqPtestLibAllSmartCTwoRustNum & \rqNBLoLibAllSmartCTwoRustNum & \rqNBHiLibAllSmartCTwoRustNum & \rqNBLoLibAllSmartCTwoRustPct--\rqNBHiLibAllSmartCTwoRustPct \\
+\addlinespace
+\multicolumn{9}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & \rqPtestExeAllKimiNum & \rqNBLoExeAllKimiNum & \rqNBHiExeAllKimiNum & \rqNBLoExeAllKimiPct--\rqNBHiExeAllKimiPct & \rqPtestLibAllKimiNum & \rqNBLoLibAllKimiNum & \rqNBHiLibAllKimiNum & \rqNBLoLibAllKimiPct--\rqNBHiLibAllKimiPct \\
+\quad GPT-5.4 & \rqPtestExeAllGptFiveNum & \rqNBLoExeAllGptFiveNum & \rqNBHiExeAllGptFiveNum & \rqNBLoExeAllGptFivePct--\rqNBHiExeAllGptFivePct & \rqPtestLibAllGptFiveNum & \rqNBLoLibAllGptFiveNum & \rqNBHiLibAllGptFiveNum & \rqNBLoLibAllGptFivePct--\rqNBHiLibAllGptFivePct \\
+\quad Gemini 3.1 Pro & \rqPtestExeAllGeminiNum & \rqNBLoExeAllGeminiNum & \rqNBHiExeAllGeminiNum & \rqNBLoExeAllGeminiPct--\rqNBHiExeAllGeminiPct & \rqPtestLibAllGeminiNum & \rqNBLoLibAllGeminiNum & \rqNBHiLibAllGeminiNum & \rqNBLoLibAllGeminiPct--\rqNBHiLibAllGeminiPct \\
+\midrule
+Total & \rqPtestExeAllNum & \rqNBLoExeAllNum & \rqNBHiExeAllNum & \rqNBLoExeAllPct--\rqNBHiExeAllPct & \rqPtestLibAllNum & \rqNBLoLibAllNum & \rqNBHiLibAllNum & \rqNBLoLibAllPct--\rqNBHiLibAllPct \\
+\bottomrule
+\end{tabular}

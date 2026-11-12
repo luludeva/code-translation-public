@@ -1,0 +1,10 @@
+{
+ "n": 62,
+ "agree": 59,
+ "disagree": 3,
+ "spot": [],
+ "to_le": 3,
+ "q2_vs_script_on_agreed": {
+  "true": 59
+ }
+}

@@ -1,0 +1,26 @@
+% Macro dung chung
+\newcommand{\systemname}[1]{\textsc{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+
+% Khung ke doi quanh trang bia / phu bia, theo mau anh Phu luc 01, 02, 05
+% cua "Quy dinh ve trinh bay khoa luan tot nghiep"
+\newcommand{\uetTitlepageBorder}{%
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=1.2pt]
+      ($ (current page.north west) + (1.8cm,-1.8cm) $)
+      rectangle
+      ($ (current page.south east) + (-1.8cm,1.8cm) $);
+    \draw [line width=0.4pt]
+      ($ (current page.north west) + (1.95cm,-1.95cm) $)
+      rectangle
+      ($ (current page.south east) + (-1.95cm,1.95cm) $);
+  \end{tikzpicture}%
+}
+
+% Cac con so ket qua duoc SINH TU DONG tu du lieu thi nghiem.
+% Khong go so truc tiep vao than bai. Xem scripts/gen-results-macros.sh
+\IfFileExists{generated/results-numbers.tex}{
+  \input{generated/results-numbers.tex}
+}{
+  \typeout{[CANH BAO] Chua co generated/results-numbers.tex. Chay scripts/gen-results-macros.sh}
+}

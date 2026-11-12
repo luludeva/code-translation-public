@@ -1,0 +1,165 @@
+{
+ "B01_synthetic/001_helloworld_lib": {},
+ "B01_organic/gaussian_kernel_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  },
+  "codex-gpt54": {
+   "equal_obs": 200
+  },
+  "c2rust": {
+   "equal_obs": 200
+  },
+  "laertes": {
+   "equal_obs": 200
+  },
+  "gpt-5.4": {
+   "equal_obs": 137
+  },
+  "gemini-3.1-pro-preview": {
+   "equal_obs": 166
+  },
+  "kimi": {
+   "equal_obs": 103
+  }
+ },
+ "B02_organic/encode_base64_lib": {
+  "claude": {
+   "equal_obs": 165
+  },
+  "codex-gpt54": {
+   "equal_obs": 164
+  },
+  "c2rust": {
+   "equal_obs": 163
+  },
+  "laertes": {
+   "equal_obs": 164
+  },
+  "kiro": {
+   "equal_obs": 138
+  },
+  "gpt-5.4": {
+   "equal_obs": 138
+  },
+  "c2saferrust": {
+   "equal_obs": 137
+  },
+  "gemini-3.1-pro-preview": {
+   "equal_obs": 136
+  }
+ },
+ "P01_sphincs_plus/054_blake_128f_s_prf_addr_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  }
+ },
+ "B02_synthetic/memchra2_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  },
+  "codex-gpt54": {
+   "equal_obs": 200
+  },
+  "c2rust": {
+   "equal_obs": 200
+  },
+  "laertes": {
+   "equal_obs": 200
+  },
+  "c2saferrust": {
+   "equal_obs": 200
+  },
+  "gpt-5.4": {
+   "equal_obs": 200
+  },
+  "kimi": {
+   "equal_obs": 200
+  },
+  "gemini-3.1-pro-preview": {
+   "equal_obs": 200
+  }
+ },
+ "B02_organic/aabb_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "codex-gpt54": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  },
+  "c2rust": {
+   "equal_obs": 200
+  },
+  "laertes": {
+   "equal_obs": 200
+  },
+  "gpt-5.4": {
+   "equal_obs": 200
+  },
+  "kimi": {
+   "equal_obs": 200
+  },
+  "c2saferrust": {
+   "equal_obs": 200
+  }
+ },
+ "B01_synthetic/029_strcspn_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  },
+  "codex-gpt54": {
+   "equal_obs": 200
+  },
+  "c2rust": {
+   "equal_obs": 200
+  },
+  "laertes": {
+   "equal_obs": 200
+  },
+  "gpt-5.4": {
+   "equal_obs": 200
+  },
+  "kimi": {
+   "equal_obs": 200
+  },
+  "gemini-3.1-pro-preview": {
+   "equal_obs": 200
+  }
+ },
+ "P01_sphincs_plus/053_blake_128f_s_initialize_hash_function_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  }
+ },
+ "P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib": {
+  "kiro": {
+   "equal_obs": 200
+  }
+ },
+ "P01_sphincs_plus/056_blake_128f_s_hash_message_lib": {
+  "kiro": {
+   "equal_obs": 200
+  },
+  "claude": {
+   "equal_obs": 200
+  }
+ }
+}

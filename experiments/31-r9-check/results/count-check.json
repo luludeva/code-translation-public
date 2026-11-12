@@ -1,0 +1,18 @@
+[
+ {
+  "kind": "exe",
+  "D": 176,
+  "P_test": 476,
+  "metrics_D": 176,
+  "metrics_P_test": 476,
+  "match": true
+ },
+ {
+  "kind": "lib",
+  "D": 65,
+  "P_test": 1088,
+  "metrics_D": 65,
+  "metrics_P_test": 1088,
+  "match": true
+ }
+]

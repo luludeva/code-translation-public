@@ -1,0 +1,42 @@
+% SINH TU DONG boi scripts/gen-population-table.py. KHONG SUA TAY.
+% Nguon: experiments/02-harvest-repro/data/pub-decision-exe.tsv; experiments/06-library-census/results/census-lib.jsonl
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Study population by system, from the decisions recorded in the
+HARVEST results repository. $P_0$: pairs of a non-pilot program and a system;
+$P_{\mathit{acc}}$: accepted translations; $R_0$: rejected translations,
+split by the stage recorded in \code{result.json}; $M$: pairs with no
+released translation. The counts involve no execution.}
+\label{tab:m-population}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l rrrrr @{\hspace{10pt}} rrrrr@{}}
+\toprule
+ & \multicolumn{5}{c}{Executable programs} & \multicolumn{5}{c}{Libraries} \\
+\cmidrule(lr){2-6} \cmidrule(l){7-11}
+ & & & \multicolumn{2}{c}{$R_0$} & & & & \multicolumn{2}{c}{$R_0$} & \\
+\cmidrule(lr){4-5} \cmidrule(lr){9-10}
+System & $P_0$ & $P_{\mathit{acc}}$ & build & test & $M$ & $P_0$ & $P_{\mathit{acc}}$ & build & test & $M$ \\
+\midrule
+\multicolumn{11}{@{}l}{\textit{Agentic (ACTOR)}} \\
+\quad Kiro & 106 & 96 & 0 & 10 & 0 & 219 & 217 & 0 & 2 & 0 \\
+\quad Claude Code & 106 & 101 & 0 & 5 & 0 & 219 & 206 & 0 & 13 & 0 \\
+\quad Codex (GPT-5.4) & 106 & 63 & 0 & 43 & 0 & 219 & 171 & 1 & 47 & 0 \\
+\addlinespace
+\multicolumn{11}{@{}l}{\textit{Rule-based}} \\
+\quad C2Rust & 106 & 54 & 52 & 0 & 0 & 219 & 141 & 77 & 1 & 0 \\
+\quad Laertes & 106 & 56 & 50 & 0 & 0 & 219 & 137 & 81 & 1 & 0 \\
+\addlinespace
+\multicolumn{11}{@{}l}{\textit{LLM-assisted}} \\
+\quad C2SaferRust & 106 & 42 & 52 & 12 & 0 & 219 & 105 & 89 & 25 & 0 \\
+\quad SmartC2Rust & 106 & 40 & 58 & 8 & 0 & 219 & 0 & 219 & 0 & 0 \\
+\addlinespace
+\multicolumn{11}{@{}l}{\textit{One-shot LLM}} \\
+\quad Kimi K2.5 & 106 & 28 & 14 & 17 & 47 & 219 & 85 & 37 & 21 & 76 \\
+\quad GPT-5.4 & 106 & 37 & 51 & 18 & 0 & 219 & 111 & 93 & 15 & 0 \\
+\quad Gemini 3.1 Pro & 106 & 42 & 49 & 15 & 0 & 219 & 108 & 98 & 13 & 0 \\
+\midrule
+Total & 1060 & 559 & 326 & 128 & 47 & 2190 & 1281 & 695 & 138 & 76 \\
+\bottomrule
+\end{tabular}
+\end{table}

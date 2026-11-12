@@ -1,0 +1,39 @@
+% Trang bia chinh, dich theo bo cuc Phu luc 01 (quy dinh chi co ban tieng
+% Viet cho trang bia; dich sang tieng Anh theo cung cach Phu luc 05 da dich
+% Phu luc 02, vi khoa luan chon viet toan bo bang tieng Anh - muc "Cach lam
+% viec" trong CLAUDE.md).
+\begin{titlepage}
+  % Le than bai bat doi xung (trai 3cm, phai 2cm) lam khoi van ban lech tam
+  % so voi khung ve doi xung theo mep giay vat ly (anh mau Phu luc 01 co
+  % khung ke doi bao quanh trang). Doi lai doi xung rieng cho trang bia.
+  \newgeometry{top=2.5cm,bottom=3cm,left=2.5cm,right=2.5cm}
+  \uetTitlepageBorder
+  \centering
+  \setstretch{1.2}
+
+  % Header: ten truong, chu hoa 12pt dam, can giua
+  {\uetCoverHeaderFont VIETNAM NATIONAL UNIVERSITY, HANOI\\ UNIVERSITY OF ENGINEERING AND TECHNOLOGY\par}
+  \vspace{1.5cm}
+
+  % Logo truong
+  \includegraphics[width=2.8cm]{figures/logo-uet.png}
+  \vspace{0.5cm}
+
+  % Ten sinh vien, chu thuong 14pt dam, can giua
+  {\uetCoverNameFont \authorNameEn\par}
+  \vspace{3cm}
+
+  % Ten de tai, chu hoa 18pt dam, can giua
+  {\uetCoverTitleFont \thesisTitleEn\par}
+  \vfill
+
+  % Loai khoa luan + nganh, chu hoa/thuong 14pt dam
+  {\uetCoverNameFont BACHELOR'S GRADUATION THESIS\par}
+  {\uetCoverNameFont Major: \majorEn\par}
+  \vspace{2cm}
+
+  % Nam bao ve, chu hoa 12pt dam
+  {\uetCoverYearFont HA NOI - 20\defenseYear\par}
+
+  \restoregeometry
+\end{titlepage}

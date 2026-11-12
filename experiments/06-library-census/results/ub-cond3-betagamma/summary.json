@@ -1,0 +1,142 @@
+[
+ {
+  "case": "betagamma_lib",
+  "vector": "1.json",
+  "runs": 24,
+  "run_errors": 0,
+  "distinct_observations": 1,
+  "observations": {
+   "[\"Pass\", {\"a\": 0, \"b\": 0, \"c\": 0, \"d\": 0, \"returns\": 464}, \"\"]": [
+    "aslr-off.perturb-165.glibc.rep0",
+    "aslr-off.perturb-165.glibc.rep1",
+    "aslr-off.perturb-165.glibc.rep2",
+    "aslr-off.perturb-165.jemalloc.rep0",
+    "aslr-off.perturb-165.jemalloc.rep1",
+    "aslr-off.perturb-165.jemalloc.rep2",
+    "aslr-off.perturb-unset.glibc.rep0",
+    "aslr-off.perturb-unset.glibc.rep1",
+    "aslr-off.perturb-unset.glibc.rep2",
+    "aslr-off.perturb-unset.jemalloc.rep0",
+    "aslr-off.perturb-unset.jemalloc.rep1",
+    "aslr-off.perturb-unset.jemalloc.rep2",
+    "aslr-on.perturb-165.glibc.rep0",
+    "aslr-on.perturb-165.glibc.rep1",
+    "aslr-on.perturb-165.glibc.rep2",
+    "aslr-on.perturb-165.jemalloc.rep0",
+    "aslr-on.perturb-165.jemalloc.rep1",
+    "aslr-on.perturb-165.jemalloc.rep2",
+    "aslr-on.perturb-unset.glibc.rep0",
+    "aslr-on.perturb-unset.glibc.rep1",
+    "aslr-on.perturb-unset.glibc.rep2",
+    "aslr-on.perturb-unset.jemalloc.rep0",
+    "aslr-on.perturb-unset.jemalloc.rep1",
+    "aslr-on.perturb-unset.jemalloc.rep2"
+   ]
+  }
+ },
+ {
+  "case": "betagamma_lib",
+  "vector": "2.json",
+  "runs": 24,
+  "run_errors": 0,
+  "distinct_observations": 1,
+  "observations": {
+   "[\"Pass\", {\"a\": 10, \"b\": 20, \"c\": 30, \"d\": 40, \"returns\": 989}, \"\"]": [
+    "aslr-off.perturb-165.glibc.rep0",
+    "aslr-off.perturb-165.glibc.rep1",
+    "aslr-off.perturb-165.glibc.rep2",
+    "aslr-off.perturb-165.jemalloc.rep0",
+    "aslr-off.perturb-165.jemalloc.rep1",
+    "aslr-off.perturb-165.jemalloc.rep2",
+    "aslr-off.perturb-unset.glibc.rep0",
+    "aslr-off.perturb-unset.glibc.rep1",
+    "aslr-off.perturb-unset.glibc.rep2",
+    "aslr-off.perturb-unset.jemalloc.rep0",
+    "aslr-off.perturb-unset.jemalloc.rep1",
+    "aslr-off.perturb-unset.jemalloc.rep2",
+    "aslr-on.perturb-165.glibc.rep0",
+    "aslr-on.perturb-165.glibc.rep1",
+    "aslr-on.perturb-165.glibc.rep2",
+    "aslr-on.perturb-165.jemalloc.rep0",
+    "aslr-on.perturb-165.jemalloc.rep1",
+    "aslr-on.perturb-165.jemalloc.rep2",
+    "aslr-on.perturb-unset.glibc.rep0",
+    "aslr-on.perturb-unset.glibc.rep1",
+    "aslr-on.perturb-unset.glibc.rep2",
+    "aslr-on.perturb-unset.jemalloc.rep0",
+    "aslr-on.perturb-unset.jemalloc.rep1",
+    "aslr-on.perturb-unset.jemalloc.rep2"
+   ]
+  }
+ },
+ {
+  "case": "betagamma_lib",
+  "vector": "3.json",
+  "runs": 24,
+  "run_errors": 0,
+  "distinct_observations": 1,
+  "observations": {
+   "[\"Pass\", {\"a\": 5, \"b\": 15, \"c\": 25, \"d\": 35, \"returns\": 884}, \"\"]": [
+    "aslr-off.perturb-165.glibc.rep0",
+    "aslr-off.perturb-165.glibc.rep1",
+    "aslr-off.perturb-165.glibc.rep2",
+    "aslr-off.perturb-165.jemalloc.rep0",
+    "aslr-off.perturb-165.jemalloc.rep1",
+    "aslr-off.perturb-165.jemalloc.rep2",
+    "aslr-off.perturb-unset.glibc.rep0",
+    "aslr-off.perturb-unset.glibc.rep1",
+    "aslr-off.perturb-unset.glibc.rep2",
+    "aslr-off.perturb-unset.jemalloc.rep0",
+    "aslr-off.perturb-unset.jemalloc.rep1",
+    "aslr-off.perturb-unset.jemalloc.rep2",
+    "aslr-on.perturb-165.glibc.rep0",
+    "aslr-on.perturb-165.glibc.rep1",
+    "aslr-on.perturb-165.glibc.rep2",
+    "aslr-on.perturb-165.jemalloc.rep0",
+    "aslr-on.perturb-165.jemalloc.rep1",
+    "aslr-on.perturb-165.jemalloc.rep2",
+    "aslr-on.perturb-unset.glibc.rep0",
+    "aslr-on.perturb-unset.glibc.rep1",
+    "aslr-on.perturb-unset.glibc.rep2",
+    "aslr-on.perturb-unset.jemalloc.rep0",
+    "aslr-on.perturb-unset.jemalloc.rep1",
+    "aslr-on.perturb-unset.jemalloc.rep2"
+   ]
+  }
+ },
+ {
+  "case": "betagamma_lib",
+  "vector": "4.json",
+  "runs": 24,
+  "run_errors": 0,
+  "distinct_observations": 1,
+  "observations": {
+   "[\"Pass\", {\"a\": 100, \"b\": 200, \"c\": 300, \"d\": 400, \"returns\": 5714}, \"\"]": [
+    "aslr-off.perturb-165.glibc.rep0",
+    "aslr-off.perturb-165.glibc.rep1",
+    "aslr-off.perturb-165.glibc.rep2",
+    "aslr-off.perturb-165.jemalloc.rep0",
+    "aslr-off.perturb-165.jemalloc.rep1",
+    "aslr-off.perturb-165.jemalloc.rep2",
+    "aslr-off.perturb-unset.glibc.rep0",
+    "aslr-off.perturb-unset.glibc.rep1",
+    "aslr-off.perturb-unset.glibc.rep2",
+    "aslr-off.perturb-unset.jemalloc.rep0",
+    "aslr-off.perturb-unset.jemalloc.rep1",
+    "aslr-off.perturb-unset.jemalloc.rep2",
+    "aslr-on.perturb-165.glibc.rep0",
+    "aslr-on.perturb-165.glibc.rep1",
+    "aslr-on.perturb-165.glibc.rep2",
+    "aslr-on.perturb-165.jemalloc.rep0",
+    "aslr-on.perturb-165.jemalloc.rep1",
+    "aslr-on.perturb-165.jemalloc.rep2",
+    "aslr-on.perturb-unset.glibc.rep0",
+    "aslr-on.perturb-unset.glibc.rep1",
+    "aslr-on.perturb-unset.glibc.rep2",
+    "aslr-on.perturb-unset.jemalloc.rep0",
+    "aslr-on.perturb-unset.jemalloc.rep1",
+    "aslr-on.perturb-unset.jemalloc.rep2"
+   ]
+  }
+ }
+]

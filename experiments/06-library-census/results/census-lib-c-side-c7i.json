@@ -1,0 +1,2777 @@
+{
+ "B01_organic/bin2hex_lib": {
+  "bundle": "B01_organic",
+  "case": "bin2hex_lib",
+  "library": "bin2hex_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_bin2hex_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/bitwriter_add_lib": {
+  "bundle": "B01_organic",
+  "case": "bitwriter_add_lib",
+  "library": "bitwriter_add_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_bitwriter_add_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 3,
+   "Skip": 2
+  }
+ },
+ "B01_organic/collided_lib": {
+  "bundle": "B01_organic",
+  "case": "collided_lib",
+  "library": "collided_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_collided_cando_librunner",
+  "c_so": true,
+  "n_vectors": 8,
+  "c_results": {
+   "Pass": 8
+  }
+ },
+ "B01_organic/colourblind_lib": {
+  "bundle": "B01_organic",
+  "case": "colourblind_lib",
+  "library": "colourblind_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_colourblind_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/contrast_ratio_lib": {
+  "bundle": "B01_organic",
+  "case": "contrast_ratio_lib",
+  "library": "contrast_ratio_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_contrast_ratio_cando_librunner",
+  "c_so": true,
+  "n_vectors": 16,
+  "c_results": {
+   "Pass": 16
+  }
+ },
+ "B01_organic/crc16_lib": {
+  "bundle": "B01_organic",
+  "case": "crc16_lib",
+  "library": "crc16_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_crc16_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B01_organic/dequantize_granule_lib": {
+  "bundle": "B01_organic",
+  "case": "dequantize_granule_lib",
+  "library": "dequantize_granule_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_dequantize_granule_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 1,
+   "Skip": 1
+  }
+ },
+ "B01_organic/div_euclid_lib": {
+  "bundle": "B01_organic",
+  "case": "div_euclid_lib",
+  "library": "div_euclid_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_div_euclid_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 10
+  }
+ },
+ "B01_organic/encode_quant_lib": {
+  "bundle": "B01_organic",
+  "case": "encode_quant_lib",
+  "library": "encode_quant_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_encode_quant_cando_librunner",
+  "c_so": true,
+  "n_vectors": 23,
+  "c_results": {
+   "Pass": 23
+  }
+ },
+ "B01_organic/flac_validate_lib": {
+  "bundle": "B01_organic",
+  "case": "flac_validate_lib",
+  "library": "flac_validate_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_flac_validate_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_organic/flip_horizontal_lib": {
+  "bundle": "B01_organic",
+  "case": "flip_horizontal_lib",
+  "library": "flip_horizontal_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_flip_horizontal_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/float2half_lib": {
+  "bundle": "B01_organic",
+  "case": "float2half_lib",
+  "library": "float2half_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_float2half_cando_librunner",
+  "c_so": true,
+  "n_vectors": 24,
+  "c_results": {
+   "Pass": 24
+  }
+ },
+ "B01_organic/gaussian_kernel_lib": {
+  "bundle": "B01_organic",
+  "case": "gaussian_kernel_lib",
+  "library": "gaussian_kernel_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_gaussian_kernel_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 4,
+   "Skip": 1
+  }
+ },
+ "B01_organic/half2float_lib": {
+  "bundle": "B01_organic",
+  "case": "half2float_lib",
+  "library": "half2float_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_half2float_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/hdr_bitrate_lib": {
+  "bundle": "B01_organic",
+  "case": "hdr_bitrate_lib",
+  "library": "hdr_bitrate_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hdr_bitrate_cando_librunner",
+  "c_so": true,
+  "n_vectors": 117,
+  "c_results": {
+   "Pass": 103,
+   "Skip": 14
+  }
+ },
+ "B01_organic/hdr_compare_lib": {
+  "bundle": "B01_organic",
+  "case": "hdr_compare_lib",
+  "library": "hdr_compare_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hdr_compare_cando_librunner",
+  "c_so": true,
+  "n_vectors": 30,
+  "c_results": {
+   "Pass": 30
+  }
+ },
+ "B01_organic/hex2bin_lib": {
+  "bundle": "B01_organic",
+  "case": "hex2bin_lib",
+  "library": "hex2bin_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hex2bin_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/hsl_to_rgb_lib": {
+  "bundle": "B01_organic",
+  "case": "hsl_to_rgb_lib",
+  "library": "hsl_to_rgb_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hsl_to_rgb_cando_librunner",
+  "c_so": true,
+  "n_vectors": 66,
+  "c_results": {
+   "Pass": 66
+  }
+ },
+ "B01_organic/hsv_to_rgb_lib": {
+  "bundle": "B01_organic",
+  "case": "hsv_to_rgb_lib",
+  "library": "hsv_to_rgb_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hsv_to_rgb_cando_librunner",
+  "c_so": true,
+  "n_vectors": 80,
+  "c_results": {
+   "Pass": 80
+  }
+ },
+ "B01_organic/ima_parse_lib": {
+  "bundle": "B01_organic",
+  "case": "ima_parse_lib",
+  "library": "ima_parse_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_ima_parse_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/ldexp_q2_lib": {
+  "bundle": "B01_organic",
+  "case": "ldexp_q2_lib",
+  "library": "ldexp_q2_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_ldexp_q2_cando_librunner",
+  "c_so": true,
+  "n_vectors": 68,
+  "c_results": {
+   "Pass": 62,
+   "Skip": 6
+  }
+ },
+ "B01_organic/max_size_frame_lib": {
+  "bundle": "B01_organic",
+  "case": "max_size_frame_lib",
+  "library": "max_size_frame_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_max_size_frame_cando_librunner",
+  "c_so": true,
+  "n_vectors": 85,
+  "c_results": {
+   "Pass": 85
+  }
+ },
+ "B01_organic/md5_digest_lib": {
+  "bundle": "B01_organic",
+  "case": "md5_digest_lib",
+  "library": "md5_digest_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_md5_digest_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/merge_sort_lib": {
+  "bundle": "B01_organic",
+  "case": "merge_sort_lib",
+  "library": "merge_sort_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_merge_sort_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 4,
+   "Skip": 1
+  }
+ },
+ "B01_organic/next_double_lib": {
+  "bundle": "B01_organic",
+  "case": "next_double_lib",
+  "library": "next_double_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_next_double_cando_librunner",
+  "c_so": true,
+  "n_vectors": 75,
+  "c_results": {
+   "Pass": 75
+  }
+ },
+ "B01_organic/normalize_lib": {
+  "bundle": "B01_organic",
+  "case": "normalize_lib",
+  "library": "normalize_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_normalize_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/pow43_lib": {
+  "bundle": "B01_organic",
+  "case": "pow43_lib",
+  "library": "pow43_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_pow43_cando_librunner",
+  "c_so": true,
+  "n_vectors": 91,
+  "c_results": {
+   "Pass": 83,
+   "Skip": 8
+  }
+ },
+ "B01_organic/premultiply_lib": {
+  "bundle": "B01_organic",
+  "case": "premultiply_lib",
+  "library": "premultiply_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_premultiply_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/read_side_info_lib": {
+  "bundle": "B01_organic",
+  "case": "read_side_info_lib",
+  "library": "read_side_info_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_read_side_info_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 4,
+   "Skip": 1
+  }
+ },
+ "B01_organic/rev16_lib": {
+  "bundle": "B01_organic",
+  "case": "rev16_lib",
+  "library": "rev16_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_rev16_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/rgb_to_hsv_lib": {
+  "bundle": "B01_organic",
+  "case": "rgb_to_hsv_lib",
+  "library": "rgb_to_hsv_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_rgb_to_hsv_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/synth_pair_lib": {
+  "bundle": "B01_organic",
+  "case": "synth_pair_lib",
+  "library": "synth_pair_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_synth_pair_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B01_organic/tfm_lib": {
+  "bundle": "B01_organic",
+  "case": "tfm_lib",
+  "library": "tfm_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_tfm_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/to_barycentric_lib": {
+  "bundle": "B01_organic",
+  "case": "to_barycentric_lib",
+  "library": "to_barycentric_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_to_barycentric_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/tritanopia_lib": {
+  "bundle": "B01_organic",
+  "case": "tritanopia_lib",
+  "library": "tritanopia_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_tritanopia_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 4,
+   "Skip": 1
+  }
+ },
+ "B01_organic/update_frame_header_lib": {
+  "bundle": "B01_organic",
+  "case": "update_frame_header_lib",
+  "library": "update_frame_header_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_update_frame_header_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_organic/update_md5_lib": {
+  "bundle": "B01_organic",
+  "case": "update_md5_lib",
+  "library": "update_md5_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_update_md5_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Skip": 1
+  }
+ },
+ "B01_organic/wcscat_lib": {
+  "bundle": "B01_organic",
+  "case": "wcscat_lib",
+  "library": "wcscat_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_wcscat_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_synthetic/001_helloworld_lib": {
+  "bundle": "B01_synthetic",
+  "case": "001_helloworld_lib",
+  "library": "hello",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_001_helloworld_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/003_string_slicing_lib": {
+  "bundle": "B01_synthetic",
+  "case": "003_string_slicing_lib",
+  "library": "String_Slice",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_003_string_slicing_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 7
+  }
+ },
+ "B01_synthetic/004_nineality_sieve_lib": {
+  "bundle": "B01_synthetic",
+  "case": "004_nineality_sieve_lib",
+  "library": "Sieve",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_004_nineality_sieve_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/005_static_loop_lib": {
+  "bundle": "B01_synthetic",
+  "case": "005_static_loop_lib",
+  "library": "StaticLoop",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_005_static_loop_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B01_synthetic/006_static_alias_lib": {
+  "bundle": "B01_synthetic",
+  "case": "006_static_alias_lib",
+  "library": "StaticAlias",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_006_static_alias_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B01_synthetic/007_errno_pow_lib": {
+  "bundle": "B01_synthetic",
+  "case": "007_errno_pow_lib",
+  "library": "pow",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_007_errno_pow_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 7
+  }
+ },
+ "B01_synthetic/008_long_run_lib": {
+  "bundle": "B01_synthetic",
+  "case": "008_long_run_lib",
+  "library": "long",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_008_long_run_cando_librunner",
+  "c_so": true,
+  "n_vectors": 0,
+  "c_results": {}
+ },
+ "B01_synthetic/009_stack_buffer_overflow_lib": {
+  "bundle": "B01_synthetic",
+  "case": "009_stack_buffer_overflow_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_009_stack_buffer_overflow_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 5,
+   "Skip": 2
+  }
+ },
+ "B01_synthetic/010_integer_overflow_lib": {
+  "bundle": "B01_synthetic",
+  "case": "010_integer_overflow_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_010_integer_overflow_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Skip": 1,
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/011_uninit_char_ptr_lib": {
+  "bundle": "B01_synthetic",
+  "case": "011_uninit_char_ptr_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_011_uninit_char_ptr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Skip": 1,
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/012_uninit_int_ptr_lib": {
+  "bundle": "B01_synthetic",
+  "case": "012_uninit_int_ptr_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_012_uninit_int_ptr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Skip": 1,
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/013_poor_quality_addition_lib": {
+  "bundle": "B01_synthetic",
+  "case": "013_poor_quality_addition_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_013_poor_quality_addition_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/014_dead_code_lib": {
+  "bundle": "B01_synthetic",
+  "case": "014_dead_code_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_014_dead_code_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/015_return_stack_buffer_lib": {
+  "bundle": "B01_synthetic",
+  "case": "015_return_stack_buffer_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_015_return_stack_buffer_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 1,
+   "Skip": 1
+  }
+ },
+ "B01_synthetic/016_divide_by_zero_float_lib": {
+  "bundle": "B01_synthetic",
+  "case": "016_divide_by_zero_float_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_016_divide_by_zero_float_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 3,
+   "Skip": 1
+  }
+ },
+ "B01_synthetic/017_signed_length_confusion_lib": {
+  "bundle": "B01_synthetic",
+  "case": "017_signed_length_confusion_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_017_signed_length_confusion_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/018_stack_buffer_overflow_loop1_lib": {
+  "bundle": "B01_synthetic",
+  "case": "018_stack_buffer_overflow_loop1_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_018_stack_buffer_overflow_loop1_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/019_integer_overflow_char_max_multiply_lib": {
+  "bundle": "B01_synthetic",
+  "case": "019_integer_overflow_char_max_multiply_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_019_integer_overflow_char_max_multiply_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 1,
+   "Skip": 1
+  }
+ },
+ "B01_synthetic/020_stack_linked_list_lib": {
+  "bundle": "B01_synthetic",
+  "case": "020_stack_linked_list_lib",
+  "library": "SimpleList",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_020_stack_linked_list_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B01_synthetic/021_complex_goto_lib": {
+  "bundle": "B01_synthetic",
+  "case": "021_complex_goto_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_021_complex_goto_cando_librunner",
+  "c_so": true,
+  "n_vectors": 30,
+  "c_results": {
+   "Pass": 30
+  }
+ },
+ "B01_synthetic/022_stdlib_div_lib": {
+  "bundle": "B01_synthetic",
+  "case": "022_stdlib_div_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_022_stdlib_div_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 5,
+   "Skip": 1
+  }
+ },
+ "B01_synthetic/023_struct_and_errno_lib": {
+  "bundle": "B01_synthetic",
+  "case": "023_struct_and_errno_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_023_struct_and_errno_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/024_struct_and_static_lib": {
+  "bundle": "B01_synthetic",
+  "case": "024_struct_and_static_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_024_struct_and_static_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/025_struct_and_errno_and_static_lib": {
+  "bundle": "B01_synthetic",
+  "case": "025_struct_and_errno_and_static_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_025_struct_and_errno_and_static_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/026_goto_and_static_lib": {
+  "bundle": "B01_synthetic",
+  "case": "026_goto_and_static_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_026_goto_and_static_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/027_ctype_ascii_lib": {
+  "bundle": "B01_synthetic",
+  "case": "027_ctype_ascii_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_027_ctype_ascii_cando_librunner",
+  "c_so": true,
+  "n_vectors": 20,
+  "c_results": {
+   "Pass": 20
+  }
+ },
+ "B01_synthetic/028_strchr_lib": {
+  "bundle": "B01_synthetic",
+  "case": "028_strchr_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_028_strchr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/029_strcspn_lib": {
+  "bundle": "B01_synthetic",
+  "case": "029_strcspn_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_029_strcspn_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/030_mutable_buffer_overlap_extrahard_lib": {
+  "bundle": "B01_synthetic",
+  "case": "030_mutable_buffer_overlap_extrahard_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_030_mutable_buffer_overlap_extrahard_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Skip": 1,
+   "Pass": 4
+  }
+ },
+ "B01_synthetic/031_disjoint_arrays_lib": {
+  "bundle": "B01_synthetic",
+  "case": "031_disjoint_arrays_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_031_disjoint_arrays_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B01_synthetic/032_comma_operator_lib": {
+  "bundle": "B01_synthetic",
+  "case": "032_comma_operator_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_032_comma_operator_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/033_bitfield_lib": {
+  "bundle": "B01_synthetic",
+  "case": "033_bitfield_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_033_bitfield_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B01_synthetic/034_cast_to_char_ptr_int_lib": {
+  "bundle": "B01_synthetic",
+  "case": "034_cast_to_char_ptr_int_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_034_cast_to_char_ptr_int_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B01_synthetic/035_cast_to_char_ptr_float_lib": {
+  "bundle": "B01_synthetic",
+  "case": "035_cast_to_char_ptr_float_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_035_cast_to_char_ptr_float_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/036_cast_to_char_ptr_struct_lib": {
+  "bundle": "B01_synthetic",
+  "case": "036_cast_to_char_ptr_struct_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_036_cast_to_char_ptr_struct_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/037_cast_to_char_ptr_int_no_strict_aliasing_lib": {
+  "bundle": "B01_synthetic",
+  "case": "037_cast_to_char_ptr_int_no_strict_aliasing_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_037_cast_to_char_ptr_int_no_strict_aliasing_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B01_synthetic/038_cast_to_char_ptr_float_no_strict_aliasing_lib": {
+  "bundle": "B01_synthetic",
+  "case": "038_cast_to_char_ptr_float_no_strict_aliasing_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_038_cast_to_char_ptr_float_no_strict_aliasing_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B01_synthetic/039_cast_to_char_ptr_struct_no_strict_aliasing_lib": {
+  "bundle": "B01_synthetic",
+  "case": "039_cast_to_char_ptr_struct_no_strict_aliasing_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_039_cast_to_char_ptr_struct_no_strict_aliasing_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/040_storage_class_auto_lib": {
+  "bundle": "B01_synthetic",
+  "case": "040_storage_class_auto_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_040_storage_class_auto_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/041_storage_class_register_lib": {
+  "bundle": "B01_synthetic",
+  "case": "041_storage_class_register_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_041_storage_class_register_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B01_synthetic/042_float_union_lib": {
+  "bundle": "B01_synthetic",
+  "case": "042_float_union_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_042_float_union_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B01_synthetic/043_iso646_and_digraphs_lib": {
+  "bundle": "B01_synthetic",
+  "case": "043_iso646_and_digraphs_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_043_iso646_and_digraphs_cando_librunner",
+  "c_so": true,
+  "n_vectors": 8,
+  "c_results": {
+   "Pass": 8
+  }
+ },
+ "B02_organic/aabb_lib": {
+  "bundle": "B02_organic",
+  "case": "aabb_lib",
+  "library": "aabb_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_aabb_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/agglom_lib": {
+  "bundle": "B02_organic",
+  "case": "agglom_lib",
+  "library": "agglom_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_agglom_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/arr_del_lib": {
+  "bundle": "B02_organic",
+  "case": "arr_del_lib",
+  "library": "arr_del_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_arr_del_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/arr_ins_lib": {
+  "bundle": "B02_organic",
+  "case": "arr_ins_lib",
+  "library": "arr_ins_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_arr_ins_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/arr_push_lib": {
+  "bundle": "B02_organic",
+  "case": "arr_push_lib",
+  "library": "arr_push_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_arr_push_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/basename_lib": {
+  "bundle": "B02_organic",
+  "case": "basename_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_basename_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 10
+  }
+ },
+ "B02_organic/cJSON_lib": {
+  "bundle": "B02_organic",
+  "case": "cJSON_lib",
+  "library": "cJSON",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_cJSON_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 7
+  }
+ },
+ "B02_organic/call_predict_lib": {
+  "bundle": "B02_organic",
+  "case": "call_predict_lib",
+  "library": "call_predict_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_call_predict_cando_librunner",
+  "c_so": true,
+  "n_vectors": 13,
+  "c_results": {
+   "Pass": 13
+  }
+ },
+ "B02_organic/capsule_lib": {
+  "bundle": "B02_organic",
+  "case": "capsule_lib",
+  "library": "capsule_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_capsule_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/circle_collide_lib": {
+  "bundle": "B02_organic",
+  "case": "circle_collide_lib",
+  "library": "circle_collide_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_circle_collide_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/convert_pix_lib": {
+  "bundle": "B02_organic",
+  "case": "convert_pix_lib",
+  "library": "convert_pix_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_convert_pix_cando_librunner",
+  "c_so": true,
+  "n_vectors": 9,
+  "c_results": {
+   "Pass": 9
+  }
+ },
+ "B02_organic/decode_base64_lib": {
+  "bundle": "B02_organic",
+  "case": "decode_base64_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_decode_base64_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 9,
+   "Skip": 1
+  }
+ },
+ "B02_organic/encode_base64_lib": {
+  "bundle": "B02_organic",
+  "case": "encode_base64_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_encode_base64_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 9,
+   "Skip": 1
+  }
+ },
+ "B02_organic/file_queue_lib": {
+  "bundle": "B02_organic",
+  "case": "file_queue_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_file_queue_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 10
+  }
+ },
+ "B02_organic/gen_ray_lib": {
+  "bundle": "B02_organic",
+  "case": "gen_ray_lib",
+  "library": "gen_ray_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_gen_ray_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B02_organic/get_predict_func_lib": {
+  "bundle": "B02_organic",
+  "case": "get_predict_func_lib",
+  "library": "get_predict_func_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_get_predict_func_cando_librunner",
+  "c_so": true,
+  "n_vectors": 13,
+  "c_results": {
+   "Pass": 13
+  }
+ },
+ "B02_organic/gjk_cache_lib": {
+  "bundle": "B02_organic",
+  "case": "gjk_cache_lib",
+  "library": "gjk_cache_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_gjk_cache_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/gjk_lib": {
+  "bundle": "B02_organic",
+  "case": "gjk_lib",
+  "library": "gjk_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_gjk_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/helxo_lib": {
+  "bundle": "B02_organic",
+  "case": "helxo_lib",
+  "library": "helxo_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_helxo_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/hm_geti_lib": {
+  "bundle": "B02_organic",
+  "case": "hm_geti_lib",
+  "library": "hm_geti_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hm_geti_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/intput_lib": {
+  "bundle": "B02_organic",
+  "case": "intput_lib",
+  "library": "intput_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_intput_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/lines_in_buffer_lib": {
+  "bundle": "B02_organic",
+  "case": "lines_in_buffer_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_lines_in_buffer_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 10
+  }
+ },
+ "B02_organic/load_png_mem_lib": {
+  "bundle": "B02_organic",
+  "case": "load_png_mem_lib",
+  "library": "load_png_mem_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_load_png_mem_cando_librunner",
+  "c_so": true,
+  "n_vectors": 8,
+  "c_results": {
+   "Pass": 8
+  }
+ },
+ "B02_organic/omni_collide_lib": {
+  "bundle": "B02_organic",
+  "case": "omni_collide_lib",
+  "library": "omni_collide_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_omni_collide_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 7
+  }
+ },
+ "B02_organic/omni_manifold_lib": {
+  "bundle": "B02_organic",
+  "case": "omni_manifold_lib",
+  "library": "omni_manifold_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_omni_manifold_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Pass": 7
+  }
+ },
+ "B02_organic/parse_number_lib": {
+  "bundle": "B02_organic",
+  "case": "parse_number_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_parse_number_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 10
+  }
+ },
+ "B02_organic/parse_uname_lib": {
+  "bundle": "B02_organic",
+  "case": "parse_uname_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_parse_uname_cando_librunner",
+  "c_so": true,
+  "n_vectors": 10,
+  "c_results": {
+   "Pass": 9,
+   "Skip": 1
+  }
+ },
+ "B02_organic/pinflate_lib": {
+  "bundle": "B02_organic",
+  "case": "pinflate_lib",
+  "library": "pinflate_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_pinflate_cando_librunner",
+  "c_so": true,
+  "n_vectors": 8,
+  "c_results": {
+   "Pass": 8
+  }
+ },
+ "B02_organic/poly_ray_lib": {
+  "bundle": "B02_organic",
+  "case": "poly_ray_lib",
+  "library": "poly_ray_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_poly_ray_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B02_organic/rdg_genstdout_lib": {
+  "bundle": "B02_organic",
+  "case": "rdg_genstdout_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_rdg_genstdout_cando_librunner",
+  "c_so": true,
+  "n_vectors": 9,
+  "c_results": {
+   "Pass": 8,
+   "Skip": 1
+  }
+ },
+ "B02_organic/reverse_collide_lib": {
+  "bundle": "B02_organic",
+  "case": "reverse_collide_lib",
+  "library": "reverse_collide_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_reverse_collide_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/search_and_replace_lib": {
+  "bundle": "B02_organic",
+  "case": "search_and_replace_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_search_and_replace_cando_librunner",
+  "c_so": true,
+  "n_vectors": 14,
+  "c_results": {
+   "Skip": 5,
+   "Pass": 9
+  }
+ },
+ "B02_organic/sh_geti_lib": {
+  "bundle": "B02_organic",
+  "case": "sh_geti_lib",
+  "library": "sh_geti_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_sh_geti_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/sh_puts_lib": {
+  "bundle": "B02_organic",
+  "case": "sh_puts_lib",
+  "library": "sh_puts_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_sh_puts_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/siphash_lib": {
+  "bundle": "B02_organic",
+  "case": "siphash_lib",
+  "library": "siphash_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_siphash_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/spec_ray_lib": {
+  "bundle": "B02_organic",
+  "case": "spec_ray_lib",
+  "library": "spec_ray_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_spec_ray_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B02_organic/str_dups_lib": {
+  "bundle": "B02_organic",
+  "case": "str_dups_lib",
+  "library": "str_dups_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_str_dups_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/str_put_lib": {
+  "bundle": "B02_organic",
+  "case": "str_put_lib",
+  "library": "str_put_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_str_put_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_organic/strdup_lib": {
+  "bundle": "B02_organic",
+  "case": "strdup_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_strdup_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_organic/underhanded_c_nuke_lib": {
+  "bundle": "B02_organic",
+  "case": "underhanded_c_nuke_lib",
+  "library": "underhanded_c_nuke_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_underhanded_c_nuke_cando_librunner",
+  "c_so": true,
+  "n_vectors": 2,
+  "c_results": {
+   "Pass": 2
+  }
+ },
+ "B02_organic/unfilter_lib": {
+  "bundle": "B02_organic",
+  "case": "unfilter_lib",
+  "library": "unfilter_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_unfilter_cando_librunner",
+  "c_so": true,
+  "n_vectors": 9,
+  "c_results": {
+   "Pass": 8,
+   "Skip": 1
+  }
+ },
+ "B02_organic/utf8_lib": {
+  "bundle": "B02_organic",
+  "case": "utf8_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_utf8_cando_librunner",
+  "c_so": true,
+  "n_vectors": 14,
+  "c_results": {
+   "Skip": 2,
+   "Pass": 12
+  }
+ },
+ "B02_synthetic/arity_lib": {
+  "bundle": "B02_synthetic",
+  "case": "arity_lib",
+  "library": "arity_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_arity_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Skip": 4,
+   "Pass": 1
+  }
+ },
+ "B02_synthetic/arrayfunc_lib": {
+  "bundle": "B02_synthetic",
+  "case": "arrayfunc_lib",
+  "library": "arrayfunc_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_arrayfunc_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/betagamma_lib": {
+  "bundle": "B02_synthetic",
+  "case": "betagamma_lib",
+  "library": "betagamma_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_betagamma_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/buffapp_lib": {
+  "bundle": "B02_synthetic",
+  "case": "buffapp_lib",
+  "library": "buffapp_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_buffapp_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/charinbuf_lib": {
+  "bundle": "B02_synthetic",
+  "case": "charinbuf_lib",
+  "library": "charinbuf_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_charinbuf_cando_librunner",
+  "c_so": true,
+  "n_vectors": 6,
+  "c_results": {
+   "Pass": 6
+  }
+ },
+ "B02_synthetic/checkshift_lib": {
+  "bundle": "B02_synthetic",
+  "case": "checkshift_lib",
+  "library": "checkshift_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_checkshift_cando_librunner",
+  "c_so": true,
+  "n_vectors": 3,
+  "c_results": {
+   "Pass": 3
+  }
+ },
+ "B02_synthetic/cleanup_lib": {
+  "bundle": "B02_synthetic",
+  "case": "cleanup_lib",
+  "library": "cleanup_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_cleanup_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/complexmode_lib": {
+  "bundle": "B02_synthetic",
+  "case": "complexmode_lib",
+  "library": "complexmode_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_complexmode_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/confusion_lib": {
+  "bundle": "B02_synthetic",
+  "case": "confusion_lib",
+  "library": "confusion_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_confusion_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/dataentry_lib": {
+  "bundle": "B02_synthetic",
+  "case": "dataentry_lib",
+  "library": "dataentry_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_dataentry_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/doubleneg_lib": {
+  "bundle": "B02_synthetic",
+  "case": "doubleneg_lib",
+  "library": "doubleneg_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_doubleneg_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Skip": 4
+  }
+ },
+ "B02_synthetic/envy_lib": {
+  "bundle": "B02_synthetic",
+  "case": "envy_lib",
+  "library": "envy_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_envy_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/fallcalc_lib": {
+  "bundle": "B02_synthetic",
+  "case": "fallcalc_lib",
+  "library": "fallcalc_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_fallcalc_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/findrep_lib": {
+  "bundle": "B02_synthetic",
+  "case": "findrep_lib",
+  "library": "findrep_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_findrep_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/goto_lib": {
+  "bundle": "B02_synthetic",
+  "case": "goto_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_goto_cando_librunner",
+  "c_so": true,
+  "n_vectors": 7,
+  "c_results": {
+   "Skip": 1,
+   "Pass": 6
+  }
+ },
+ "B02_synthetic/gotomach_lib": {
+  "bundle": "B02_synthetic",
+  "case": "gotomach_lib",
+  "library": "gotomach_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_gotomach_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/hatch_lib": {
+  "bundle": "B02_synthetic",
+  "case": "hatch_lib",
+  "library": "hatch_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_hatch_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/inreftree_lib": {
+  "bundle": "B02_synthetic",
+  "case": "inreftree_lib",
+  "library": "inreftree_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_inreftree_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/jumpnode_lib": {
+  "bundle": "B02_synthetic",
+  "case": "jumpnode_lib",
+  "library": "jumpnode_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_jumpnode_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/mathop_lib": {
+  "bundle": "B02_synthetic",
+  "case": "mathop_lib",
+  "library": "mathop_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_mathop_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/matrix_mult_lib": {
+  "bundle": "B02_synthetic",
+  "case": "matrix_mult_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_matrix_mult_cando_librunner",
+  "c_so": true,
+  "n_vectors": 11,
+  "c_results": {
+   "Pass": 9,
+   "Skip": 2
+  }
+ },
+ "B02_synthetic/maxnmin_lib": {
+  "bundle": "B02_synthetic",
+  "case": "maxnmin_lib",
+  "library": "maxnmin_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_maxnmin_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 5
+  }
+ },
+ "B02_synthetic/memchra2_lib": {
+  "bundle": "B02_synthetic",
+  "case": "memchra2_lib",
+  "library": "memchra2_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_memchra2_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/modeselect_lib": {
+  "bundle": "B02_synthetic",
+  "case": "modeselect_lib",
+  "library": "modeselect_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_modeselect_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Skip": 5
+  }
+ },
+ "B02_synthetic/overunder_lib": {
+  "bundle": "B02_synthetic",
+  "case": "overunder_lib",
+  "library": "overunder_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_overunder_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ },
+ "B02_synthetic/task_manager_lib": {
+  "bundle": "B02_synthetic",
+  "case": "task_manager_lib",
+  "library": "driver",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_task_manager_cando_librunner",
+  "c_so": true,
+  "n_vectors": 5,
+  "c_results": {
+   "Pass": 3,
+   "Skip": 2
+  }
+ },
+ "P01_sphincs_plus/053_blake_128f_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "053_blake_128f_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_053_blake_128f_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/054_blake_128f_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "054_blake_128f_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_054_blake_128f_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "055_blake_128f_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_055_blake_128f_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/056_blake_128f_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "056_blake_128f_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_056_blake_128f_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/057_blake_128f_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "057_blake_128f_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_057_blake_128f_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/058_blake_128f_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "058_blake_128f_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_058_blake_128f_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/059_blake_128f_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "059_blake_128f_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_059_blake_128f_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/060_blake_128f_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "060_blake_128f_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_060_blake_128f_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/061_blake_128s_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "061_blake_128s_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_061_blake_128s_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/062_blake_128s_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "062_blake_128s_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_062_blake_128s_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/063_blake_128s_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "063_blake_128s_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_063_blake_128s_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/064_blake_128s_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "064_blake_128s_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_064_blake_128s_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/065_blake_128s_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "065_blake_128s_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_065_blake_128s_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/066_blake_128s_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "066_blake_128s_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_066_blake_128s_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/067_blake_128s_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "067_blake_128s_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_067_blake_128s_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/068_blake_128s_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "068_blake_128s_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_068_blake_128s_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/069_blake_192f_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "069_blake_192f_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_069_blake_192f_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/070_blake_192f_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "070_blake_192f_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_070_blake_192f_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/071_blake_192f_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "071_blake_192f_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_071_blake_192f_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/072_blake_192f_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "072_blake_192f_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_072_blake_192f_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/073_blake_192f_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "073_blake_192f_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_073_blake_192f_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/074_blake_192f_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "074_blake_192f_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_074_blake_192f_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/075_blake_192f_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "075_blake_192f_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_075_blake_192f_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/076_blake_192f_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "076_blake_192f_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_076_blake_192f_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/077_blake_192s_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "077_blake_192s_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_077_blake_192s_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/078_blake_192s_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "078_blake_192s_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_078_blake_192s_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/079_blake_192s_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "079_blake_192s_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_079_blake_192s_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/080_blake_192s_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "080_blake_192s_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_080_blake_192s_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/081_blake_192s_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "081_blake_192s_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_081_blake_192s_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/082_blake_192s_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "082_blake_192s_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_082_blake_192s_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/083_blake_192s_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "083_blake_192s_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_083_blake_192s_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/084_blake_192s_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "084_blake_192s_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_084_blake_192s_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/085_blake_256f_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "085_blake_256f_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_085_blake_256f_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/086_blake_256f_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "086_blake_256f_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_086_blake_256f_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/087_blake_256f_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "087_blake_256f_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_087_blake_256f_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/088_blake_256f_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "088_blake_256f_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_088_blake_256f_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/089_blake_256f_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "089_blake_256f_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_089_blake_256f_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/090_blake_256f_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "090_blake_256f_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_090_blake_256f_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/091_blake_256f_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "091_blake_256f_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_091_blake_256f_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/092_blake_256f_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "092_blake_256f_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_092_blake_256f_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/093_blake_256s_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "093_blake_256s_s_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_093_blake_256s_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/094_blake_256s_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "094_blake_256s_s_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_094_blake_256s_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/095_blake_256s_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "095_blake_256s_s_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_095_blake_256s_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/096_blake_256s_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "096_blake_256s_s_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_096_blake_256s_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/097_blake_256s_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "097_blake_256s_r_initialize_hash_function_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_097_blake_256s_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/098_blake_256s_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "098_blake_256s_r_prf_addr_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_098_blake_256s_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/099_blake_256s_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "099_blake_256s_r_gen_message_random_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_099_blake_256s_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/100_blake_256s_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "100_blake_256s_r_hash_message_lib",
+  "library": "blake",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_100_blake_256s_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/101_sha2_128f_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "101_sha2_128f_s_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_101_sha2_128f_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/102_sha2_128f_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "102_sha2_128f_s_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_102_sha2_128f_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/103_sha2_128f_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "103_sha2_128f_s_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_103_sha2_128f_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/104_sha2_128f_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "104_sha2_128f_s_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_104_sha2_128f_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/105_sha2_128f_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "105_sha2_128f_r_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_105_sha2_128f_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/106_sha2_128f_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "106_sha2_128f_r_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_106_sha2_128f_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/107_sha2_128f_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "107_sha2_128f_r_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_107_sha2_128f_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/108_sha2_128f_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "108_sha2_128f_r_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_108_sha2_128f_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/109_sha2_128s_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "109_sha2_128s_s_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_109_sha2_128s_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/110_sha2_128s_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "110_sha2_128s_s_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_110_sha2_128s_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/111_sha2_128s_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "111_sha2_128s_s_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_111_sha2_128s_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/112_sha2_128s_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "112_sha2_128s_s_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_112_sha2_128s_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/113_sha2_128s_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "113_sha2_128s_r_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_113_sha2_128s_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/114_sha2_128s_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "114_sha2_128s_r_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_114_sha2_128s_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/115_sha2_128s_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "115_sha2_128s_r_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_115_sha2_128s_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/116_sha2_128s_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "116_sha2_128s_r_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_116_sha2_128s_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/117_sha2_192f_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "117_sha2_192f_s_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_117_sha2_192f_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/118_sha2_192f_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "118_sha2_192f_s_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_118_sha2_192f_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/119_sha2_192f_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "119_sha2_192f_s_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_119_sha2_192f_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/120_sha2_192f_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "120_sha2_192f_s_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_120_sha2_192f_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/121_sha2_192f_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "121_sha2_192f_r_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_121_sha2_192f_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/122_sha2_192f_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "122_sha2_192f_r_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_122_sha2_192f_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/123_sha2_192f_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "123_sha2_192f_r_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_123_sha2_192f_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/124_sha2_192f_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "124_sha2_192f_r_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_124_sha2_192f_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/125_sha2_192s_s_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "125_sha2_192s_s_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_125_sha2_192s_s_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/126_sha2_192s_s_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "126_sha2_192s_s_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_126_sha2_192s_s_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/127_sha2_192s_s_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "127_sha2_192s_s_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_127_sha2_192s_s_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/128_sha2_192s_s_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "128_sha2_192s_s_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_128_sha2_192s_s_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/129_sha2_192s_r_initialize_hash_function_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "129_sha2_192s_r_initialize_hash_function_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_129_sha2_192s_r_initialize_hash_function_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/130_sha2_192s_r_prf_addr_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "130_sha2_192s_r_prf_addr_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_130_sha2_192s_r_prf_addr_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/131_sha2_192s_r_gen_message_random_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "131_sha2_192s_r_gen_message_random_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_131_sha2_192s_r_gen_message_random_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "P01_sphincs_plus/132_sha2_192s_r_hash_message_lib": {
+  "bundle": "P01_sphincs_plus",
+  "case": "132_sha2_192s_r_hash_message_lib",
+  "library": "sha2",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_132_sha2_192s_r_hash_message_cando_librunner",
+  "c_so": true,
+  "n_vectors": 1,
+  "c_results": {
+   "Pass": 1
+  }
+ },
+ "B02_synthetic/matrix_sum_lib": {
+  "bundle": "B02_synthetic",
+  "case": "matrix_sum_lib",
+  "library": "matrix_sum_lib",
+  "runner_ok": true,
+  "runner_bin": "/home/ubuntu/build/census-lib-c7i/runner-target/release/_matrix_sum_cando_librunner",
+  "c_so": true,
+  "n_vectors": 4,
+  "c_results": {
+   "Pass": 4
+  }
+ }
+}

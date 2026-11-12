@@ -1,0 +1,320 @@
+{
+ "rule": "README exp 36: phát hiện = >= 1 divergence giữ lại trên input nguồn khác seed/vector, hợp ba seed",
+ "primary": {
+  "all": {
+   "k": 11,
+   "n": 11,
+   "wilson95": [
+    0.7412,
+    1.0
+   ]
+  },
+  "exe": {
+   "k": 4,
+   "n": 4,
+   "wilson95": [
+    0.5101,
+    1.0
+   ]
+  },
+  "lib": {
+   "k": 7,
+   "n": 7,
+   "wilson95": [
+    0.6457,
+    1.0
+   ]
+  }
+ },
+ "secondary_with_remaining_vectors": {
+  "k": 6,
+  "n": 6,
+  "wilson95": [
+   0.6097,
+   1.0
+  ]
+ },
+ "translations": [
+  {
+   "unit": "u00",
+   "kind": "exe",
+   "case": "B02_synthetic/static_vars_fpts",
+   "system": "kiro",
+   "withheld": 7,
+   "kept_vectors": 88,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 153731,
+   "n_div_all": 37093,
+   "n_retained": 37093,
+   "n_retained_generated": 37093,
+   "sources_retained_generated": {
+    "M/random": 12451,
+    "M/dict": 993,
+    "M/syntax": 6864,
+    "MS/random": 10353,
+    "MS/syntax": 5267,
+    "MS/dict": 982,
+    "A/afl": 183
+   },
+   "detected": true
+  },
+  {
+   "unit": "u01",
+   "kind": "exe",
+   "case": "B02_synthetic/static_vars_fpts",
+   "system": "gpt-5.4",
+   "withheld": 15,
+   "kept_vectors": 80,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 153609,
+   "n_div_all": 30899,
+   "n_retained": 30899,
+   "n_retained_generated": 30899,
+   "sources_retained_generated": {
+    "M/random": 8182,
+    "M/syntax": 7548,
+    "MS/random": 6962,
+    "MS/syntax": 7402,
+    "A/afl": 176,
+    "M/dict": 322,
+    "MS/dict": 307
+   },
+   "detected": true
+  },
+  {
+   "unit": "u02",
+   "kind": "exe",
+   "case": "B02_synthetic/tu_linkage",
+   "system": "gemini-3.1-pro-preview",
+   "withheld": 38,
+   "kept_vectors": 132,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 177955,
+   "n_div_all": 60477,
+   "n_retained": 58567,
+   "n_retained_generated": 58567,
+   "sources_retained_generated": {
+    "M/random": 12731,
+    "M/syntax": 12418,
+    "M/dict": 2406,
+    "MS/random": 16627,
+    "MS/syntax": 11812,
+    "MS/dict": 2500,
+    "A/afl": 73
+   },
+   "detected": true
+  },
+  {
+   "unit": "u02",
+   "kind": "exe",
+   "case": "B02_synthetic/tu_linkage",
+   "system": "gpt-5.4",
+   "withheld": 38,
+   "kept_vectors": 132,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 177955,
+   "n_div_all": 60477,
+   "n_retained": 58567,
+   "n_retained_generated": 58567,
+   "sources_retained_generated": {
+    "M/random": 12731,
+    "M/syntax": 12418,
+    "M/dict": 2406,
+    "MS/random": 16627,
+    "MS/syntax": 11812,
+    "MS/dict": 2500,
+    "A/afl": 73
+   },
+   "detected": true
+  },
+  {
+   "unit": "u03",
+   "kind": "lib",
+   "case": "B02_organic/encode_base64_lib",
+   "system": "kimi",
+   "withheld": 8,
+   "kept_vectors": 2,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 6003,
+   "n_div_all": 5234,
+   "n_retained": 2883,
+   "n_retained_generated": 2883,
+   "sources_retained_generated": {
+    "None/random": 2367,
+    "None/dict": 516
+   },
+   "detected": true
+  },
+  {
+   "unit": "u04",
+   "kind": "lib",
+   "case": "P01_sphincs_plus/054_blake_128f_s_prf_addr_lib",
+   "system": "codex-gpt54",
+   "withheld": 1,
+   "kept_vectors": 0,
+   "status": "harness_error",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 4000,
+   "n_div_all": 4005,
+   "n_retained": 4003,
+   "n_retained_generated": 4003,
+   "sources_retained_generated": {
+    "None/typed": 3,
+    "None/random": 2800,
+    "None/dict": 1200
+   },
+   "detected": true
+  },
+  {
+   "unit": "u05",
+   "kind": "lib",
+   "case": "B01_synthetic/029_strcspn_lib",
+   "system": "c2saferrust",
+   "withheld": 6,
+   "kept_vectors": 0,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 6000,
+   "n_div_all": 6000,
+   "n_retained": 6000,
+   "n_retained_generated": 6000,
+   "sources_retained_generated": {
+    "None/typed": 3,
+    "None/random": 5391,
+    "None/dict": 606
+   },
+   "detected": true
+  },
+  {
+   "unit": "u06",
+   "kind": "lib",
+   "case": "B01_organic/gaussian_kernel_lib",
+   "system": "c2saferrust",
+   "withheld": 3,
+   "kept_vectors": 2,
+   "status": "harness_error",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 2001,
+   "n_div_all": 2176,
+   "n_retained": 1081,
+   "n_retained_generated": 1081,
+   "sources_retained_generated": {
+    "None/random": 1025,
+    "None/dict": 56
+   },
+   "detected": true
+  },
+  {
+   "unit": "u07",
+   "kind": "lib",
+   "case": "P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib",
+   "system": "claude",
+   "withheld": 1,
+   "kept_vectors": 0,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 6000,
+   "n_div_all": 6000,
+   "n_retained": 6000,
+   "n_retained_generated": 6000,
+   "sources_retained_generated": {
+    "None/typed": 3,
+    "None/random": 2997,
+    "None/dict": 1800,
+    "None/sweep": 1200
+   },
+   "detected": true
+  },
+  {
+   "unit": "u07",
+   "kind": "lib",
+   "case": "P01_sphincs_plus/055_blake_128f_s_gen_message_random_lib",
+   "system": "codex-gpt54",
+   "withheld": 1,
+   "kept_vectors": 0,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 6000,
+   "n_div_all": 6000,
+   "n_retained": 6000,
+   "n_retained_generated": 6000,
+   "sources_retained_generated": {
+    "None/typed": 3,
+    "None/random": 2997,
+    "None/dict": 1800,
+    "None/sweep": 1200
+   },
+   "detected": true
+  },
+  {
+   "unit": "u08",
+   "kind": "lib",
+   "case": "P01_sphincs_plus/056_blake_128f_s_hash_message_lib",
+   "system": "codex-gpt54",
+   "withheld": 1,
+   "kept_vectors": 0,
+   "status": "P_test",
+   "seeds_with_record": [
+    0,
+    1,
+    2
+   ],
+   "n_inputs_case": 6000,
+   "n_div_all": 6000,
+   "n_retained": 6000,
+   "n_retained_generated": 6000,
+   "sources_retained_generated": {
+    "None/typed": 3,
+    "None/random": 2997,
+    "None/dict": 1800,
+    "None/sweep": 1200
+   },
+   "detected": true
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "spot": [
+  "xexe-003",
+  "xexe-005",
+  "xexe-008",
+  "xexe-009",
+  "xexe-010",
+  "xexe-012",
+  "xlib-033",
+  "xlib-039",
+  "xlib-056",
+  "xlib-059"
+ ],
+ "consensus_unclear": [
+  "xlib-051",
+  "xlib-052",
+  "xlib-053",
+  "xlib-061"
+ ],
+ "disagree": [
+  "xlib-047",
+  "xlib-048",
+  "xlib-049"
+ ]
+}

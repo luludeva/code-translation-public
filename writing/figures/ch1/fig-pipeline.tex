@@ -1,0 +1,27 @@
+\begin{tikzpicture}[>=Stealth, font=\footnotesize,
+  st/.style={draw, rounded corners=2pt, align=center, text width=#1, minimum height=12mm, inner sep=3pt},
+  st/.default=2.8cm,
+  pa/.style={st=#1, draw=passc, fill=passc!8, thick}, pa/.default=2.8cm,
+  fa/.style={st=#1, draw=failc, fill=failc!8, thick}, fa/.default=2.8cm,
+  outb/.style={draw, thick, rounded corners=2pt, align=center, text width=#1, minimum height=12mm},
+  outb/.default=1.1cm]
+\node[st=1.8cm, fill=black!4] (src) at (0,0) {HARVEST: released translations and decisions of 10~systems};
+\node[st=1.9cm] (rep) at (2.45,0) {Reproduce each decision with the corpus runner};
+\node[pa] (a1) at (6.3,1.55) {Run $C_c$ and $t$ on test vectors and generated inputs};
+\node[pa] (a2) at (9.55,1.55) {Keep divergences that recur and pass the sanitizer check};
+\node[outb, draw=passc] (a3) at (12.3,1.55) {$D$\\RQ1};
+\node[fa] (b1) at (6.3,-1.55) {Replay the failing vectors on $C_c$ and $t$};
+\node[fa] (b2) at (9.55,-1.55) {Adjudicate each vector: repeated runs, sanitizers};
+\node[outb, draw=failc] (b3) at (12.3,-1.55) {$F$\\RQ2};
+\node[outb=1.5cm] (r3) at (14.4,0) {Bounds on $s_{\mathit{rec}}$\\RQ3};
+\draw[->] (src) -- (rep);
+\draw[->, passc, thick] (rep.east) -- ++(0.3,0) |- node[pos=0.78, above, font=\scriptsize\bfseries]{PASS} (a1.west);
+\draw[->, failc, thick] (rep.east) -- ++(0.3,0) |- node[pos=0.78, below, font=\scriptsize\bfseries]{FAIL} (b1.west);
+\draw[->, passc, thick] (a1) -- (a2); \draw[->, passc, thick] (a2) -- (a3);
+\draw[->, failc, thick] (b1) -- (b2); \draw[->, failc, thick] (b2) -- (b3);
+\draw[->] (a3.east) -- (r3); \draw[->] (b3.east) -- (r3);
+\draw[->, dashed, black!60] (rep.south) -- (rep.south |- 0,-2.75) -- node[pos=0.5, below, font=\scriptsize]{decisions lost or left undecided widen the RQ3 bounds} (r3.south |- 0,-2.75) -- (r3.south);
+% contribution bands
+\foreach \x/\w/\t in {2.45/2.1/{C1 protocol}, 6.3/3.0/{C2 harness}, 9.55/3.0/{C1 protocol}, 13.35/3.3/{C3 assessment}}
+  \node[draw=black!50, fill=black!6, rounded corners=1.5pt, font=\scriptsize\bfseries, minimum width=\w cm, inner sep=2pt] at (\x,2.75) {\t};
+\end{tikzpicture}

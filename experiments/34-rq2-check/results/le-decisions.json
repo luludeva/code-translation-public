@@ -1,0 +1,16 @@
+{
+ "date": "2026-11-03",
+ "note": "Le xử qua AskUserQuestion; 10 mục kiểm ngẫu nhiên và lib-054 đồng ý nhãn đồng thuận.",
+ "rules": {
+  "lib-030": "Le chốt 3/11 18:xx (thay quyết định trước): q1 yes, kênh [status], q3 unclear, reason runner_buffer_contract_unverified. Bằng chứng đã đọc: runner synth_pair cấp lại pcm = nch*16+1 (main.rs dòng 20, TRACTOR 37960ee); hợp đồng buffer của runner chưa được kiểm khi chạy. Chốt 3/11 theo exp 35: C-san không báo tràn (buffer đủ), Rust SIGSEGV trong synth_pair() của .so bản dịch; q3 no."
+ },
+ "override": {
+  "lib-030": {
+   "q1": "yes",
+   "q2": [
+    "status"
+   ],
+   "q3": "no"
+  }
+ }
+}

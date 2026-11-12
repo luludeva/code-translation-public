@@ -1,0 +1,857 @@
+{
+ "all_keywords.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "all_token_types.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "alternating_types.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_comments.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_keywords.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_numbers.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_strings.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_then_complexity.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "analyze_then_distribution.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "array_declarations.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "backslash_newline.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "block_comment_asterisks.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "buffer_8191_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "buffer_8192_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "buffer_9192_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "carriage_returns.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "case_sensitive_pattern.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "character_literals.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "comment_then_code.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "common_words.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "comparison_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "complex_c_code.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "complexity_complex.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "complexity_score.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "complexity_simple.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "control_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "decimal_numbers.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "empty_analysis.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "empty_at_prompts.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "empty_pattern.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "eof_during_menu.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "eof_during_text.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "eof_no_newline.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "escape_sequences.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "find_pattern_not_found.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "find_pattern_simple.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "function_pointers.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "hex_like_syntax.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "immediate_exit.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "inc_dec_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "input_boundary_4086.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "input_over_4096.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "interactive_complex.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "interactive_tokenizer_empty.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "interactive_tokenizer_simple.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "interactive_truncation.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "invalid_menu_choice.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "invalid_number.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "leading_zeros.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "logical_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "long_pattern.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "lookahead_test.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "many_lines.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "many_tokens.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "member_access.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "mixed_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "mixed_quotes.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "multi_line_comment.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "multiple_analyses.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "multiple_newlines.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "nested_string_escapes.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "nested_structures.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "non_numeric_menu.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "null_byte.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "only_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "only_punctuation.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "only_whitespace.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "operation_sequence.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "operators_no_spaces.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "pattern_after_ops.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "pattern_in_keywords.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "pattern_special_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "pointer_operations.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "preprocessor_syntax.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "punctuation_test.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "repeated_analysis.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "shift_operators.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "show_distribution.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "simple_analysis.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "single_line_comment.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "special_characters.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "string_with_newline.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "tabs_whitespace.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "ternary_operator.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "token_255_chars.json": {
+  "oracle_result": "VectorComparisonFailed",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": false
+ },
+ "token_256_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "token_356_chars.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "tokenizer_reset.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "type_casting.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "unclosed_comment.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "unclosed_string.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "unicode_characters.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "very_long_line.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ },
+ "very_long_string.json": {
+  "oracle_result": "Pass",
+  "c_rc": 0,
+  "c_san_rc": 0,
+  "c_ub": false,
+  "c_san_stderr": "",
+  "has_ub_field": false,
+  "c_stdout_eq_kiro": true
+ }
+}

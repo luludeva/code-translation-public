@@ -1,0 +1,33 @@
+{
+ "rule": "exp 40, AX-1 (amendment 2026-11-05 mục 3); post hoc, sơ bộ, chưa kiểm tay",
+ "exe": {
+  "D": 176,
+  "retained_div": 6655127,
+  "translations": {
+   "status": 39,
+   "stderr_only": 11,
+   "stdout": 176
+  },
+  "divergences": {
+   "status": 1355545,
+   "stderr_only": 192298,
+   "stdout": 6462602
+  }
+ },
+ "lib": {
+  "D": 65,
+  "retained_div": 18194,
+  "translations": {
+   "state": 43,
+   "status": 25,
+   "stderr_only": 3,
+   "stdout": 19
+  },
+  "divergences": {
+   "state": 13762,
+   "status": 5798,
+   "stderr_only": 798,
+   "stdout": 5575
+  }
+ }
+}

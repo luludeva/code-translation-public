@@ -1,0 +1,62 @@
+{"id": "xexe-000", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 1, dòng stdout 1 khác chữ (start so với stop), không có dấu hiệu harness."}
+{"id": "xexe-001", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "Exit code 0 (C) so với 1 (Rust từ chối argv số rất lớn), không cắt output, khác biệt do xử lý input của bản dịch."}
+{"id": "xexe-002", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "Exit code 0 so với 1 (Rust báo domain error cho pow(NaN)), R-NaN không áp vì trạng thái và stdout khác."}
+{"id": "xexe-003", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 1 ffffffce so với ce (khác mở rộng dấu), không phụ thuộc môi trường."}
+{"id": "xexe-004", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "Exit như nhau, stdout C chỉ là một dòng rỗng còn Rust rỗng, trùng sau khi B1 bỏ dòng rỗng cuối."}
+{"id": "xexe-005", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "Exit như nhau, stdout C là \\n còn Rust rỗng, trùng sau B1."}
+{"id": "xexe-006", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Exit như nhau, Rust không in dòng nào nên không có vị trí dòng chung, C dài hơn."}
+{"id": "xexe-007", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Exit như nhau, Rust stdout rỗng, C in một dòng, không có dòng chung để N3 áp."}
+{"id": "xexe-008", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 6 là 25 so với 2147483647, số nguyên phải bằng đúng nên B2 không khớp."}
+{"id": "xexe-009", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 3 là -999 so với -1000, số nguyên khác nên B2 không khớp."}
+{"id": "xexe-010", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 6 là 25 so với 2147483647, số nguyên khác."}
+{"id": "xexe-011", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 3 là 0 so với 100, số nguyên khác."}
+{"id": "xexe-012", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 6 là 100 so với 100000000, số nguyên khác."}
+{"id": "xexe-013", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là 04 so với fe (chữ khác), C còn thêm dòng cảnh báo."}
+{"id": "xexe-014", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 khác ở remainder 0 so với 1, số nguyên khác."}
+{"id": "xexe-015", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Từ dòng 4 số bedrooms 4 so với -477218584 (tràn số phía Rust), số nguyên khác."}
+{"id": "xexe-016", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 2 là x: 0 so với x: 1, số nguyên khác."}
+{"id": "xexe-017", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Bốn dòng đầu trùng, Rust dừng sau 4 dòng còn C in tiếp đến 100 dòng, không cắt output."}
+{"id": "xexe-018", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là -1 so với -1908874354, số nguyên khác."}
+{"id": "xexe-019", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 token đầu 3 so với 0, số nguyên khác."}
+{"id": "xexe-020", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng hex 7b000000... so với 00000000..., chữ khác."}
+{"id": "xexe-021", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 ffffffff so với 00000000, chữ khác."}
+{"id": "xexe-022", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 37894100 so với 00000000, số nguyên khác."}
+{"id": "xexe-023", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng hex ffffffff03... so với 0000000003..., chữ khác."}
+{"id": "xexe-024", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là 300 so với 1908874654, số nguyên khác."}
+{"id": "xexe-025", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "Exit 0 so với 101 (Rust panic do unwrap ParseIntError NegOverflow), hành vi bản dịch."}
+{"id": "xexe-026", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là 276 so với 300, số nguyên khác."}
+{"id": "xexe-027", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là 298 so với 300, số nguyên khác."}
+{"id": "xexe-028", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Dòng 1 là -19999700 so với 300, số nguyên khác."}
+{"id": "xexe-029", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "Exit 0 so với 2 (Rust in usage khi argv có khoảng trắng cuối), cả hai nhận cùng argv nên không phải lỗi harness."}
+{"id": "xlib-030", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, trường returns 0 so với 1."}
+{"id": "xlib-031", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, trường returns -68 so với 0."}
+{"id": "xlib-032", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C Pass có state, Rust SegmentationFault, crash phía Rust là hành vi bản dịch."}
+{"id": "xlib-033", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C Pass, Rust SegmentationFault."}
+{"id": "xlib-034", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, pix[0] r/g/b khác (20/79/81 so với 28/108/111)."}
+{"id": "xlib-035", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C Pass, Rust SegmentationFault."}
+{"id": "xlib-036", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C Pass, Rust Panic."}
+{"id": "xlib-037", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "dest[1] phía C là NaN (state_nonfinite có NaN) còn Rust là -5e29, NaN bằng NaN không áp vì Rust hữu hạn."}
+{"id": "xlib-038", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, dst[0] 64 so với 0."}
+{"id": "xlib-039", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai báo kết quả, returns -1.0 so với 0.0 vượt sai số tương đối 1e-6 (C còn ghi Range error ra stderr)."}
+{"id": "xlib-040", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out khớp, stdout C chỉ là \\n còn Rust rỗng, trùng sau B1; chênh Pass/VectorComparisonFailed chỉ phản ánh việc có ghi luồng."}
+{"id": "xlib-041", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out khớp, stdout \\n so với rỗng, trùng sau B1."}
+{"id": "xlib-042", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out khớp, stdout \\n so với rỗng, trùng sau B1."}
+{"id": "xlib-043", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout dòng 1 fffffffe so với fe."}
+{"id": "xlib-044", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout dòng 1 fffffffe so với fe."}
+{"id": "xlib-045", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, returns -1 so với 2147483647."}
+{"id": "xlib-046", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout dòng 1 là 6 so với 0."}
+{"id": "xlib-047", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Cả hai không báo kết quả (C UnknownFailure, Rust Panic), không có state/stdout/stderr; chỉ khác ở nhãn kết thúc, và UnknownFailure là nhãn gom chung nên không tách được crash chương trình với lỗi runner."}
+{"id": "xlib-048", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure so với Rust Panic, không có quan sát nào khác; khác biệt chỉ ở phân loại kết thúc của runner, chưa rõ có tương đương 'khác signal' hay không."}
+{"id": "xlib-049", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure so với Rust Panic, không state, không output; không đủ bằng chứng để biết phía C là crash thật hay lỗi runner."}
+{"id": "xlib-050", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, m.count 0 so với 1 và các trường contact/depths/n khác."}
+{"id": "xlib-051", "q1": "yes", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure không state, Rust Pass có state; trạng thái khác thật nhưng UnknownFailure không kèm stdout/stderr nên không loại được lỗi runner phía C."}
+{"id": "xlib-052", "q1": "yes", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure, Rust Pass; không có output phía C để phân biệt crash chương trình với lỗi runner."}
+{"id": "xlib-053", "q1": "yes", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure với input string null, Rust Pass; có thể phía C crash khi nhận null nhưng nhãn UnknownFailure không cho biết là chương trình hay runner."}
+{"id": "xlib-054", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "state_out khớp, C in 'Invalid mode' ra stdout còn Rust ra stderr; stdout Rust rỗng nên không có dòng chung, C dài hơn."}
+{"id": "xlib-055", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "returns 14082 so với 1073755906, stdout cũng khác nhưng N4 khớp trước."}
+{"id": "xlib-056", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, returns -2 so với -1."}
+{"id": "xlib-057", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cả hai Pass, returns 360 so với 359."}
+{"id": "xlib-058", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "returns -21 so với 19 (priority -30 so với 10 trong stdout)."}
+{"id": "xlib-059", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "returns -334792353 so với -334792343."}
+{"id": "xlib-060", "q1": "yes", "q2": "U-stderr", "q3": "no", "why": "state_out, stdout và result khớp, chỉ thông báo lỗi stderr khác câu chữ."}
+{"id": "xlib-061", "q1": "yes", "q2": "N1-status", "q3": "unclear", "why": "C bị gắn MemLimit (đã xác nhận chạy lại) còn Rust trả VectorComparisonFailed có state, nhưng stderr Rust chứa cùng câu Cannot allocate memory với width_a 245394539, tức cả hai đều chạm trần bộ nhớ mà marker chỉ gắn một phía."}

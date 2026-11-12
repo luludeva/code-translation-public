@@ -1,0 +1,121 @@
+% Thesis v3, Phu luc A (dan y Le duyet 12/11). Noi dung quan trong cua ba phu luc cu duoc gom ve day.
+\chapter{Execution Settings}\label{app:settings}
+
+This appendix gives the settings that Chapter~\ref{ch:methodology} leaves out because they do not change how a result is read. They are listed so that the re-evaluation can be repeated.
+
+\section{Environment}\label{app:s-env}
+
+The main run was executed on cloud machines of one type (\sEnvInstance{}, \sEnvVcpu{} vCPUs, \sEnvMemGiB{}~GiB of memory) with GCC~\sEnvGcc{}, Clang~\sEnvClang{}, AFL++~\sEnvAfl{} and rustc~\sEnvRustc{}. The corpus pins rustc~\sEnvRustcCorpus{} for the reproduction of decisions. Every job records the versions of its tools, its parameters and the hashes of its input sets.
+
+\section{Reading and Reproducing the Published Decisions}\label{app:s-repro}
+
+The decision for a translation is read from the result file that HARVEST stores with it. The translation counts as accepted when the file marks it as passed. For a rejected translation, the recorded error is either a failed build or a failed test, and the study reads these two values as a rejection at the build stage and at the test stage.
+
+Each decision is reproduced with the public revision of the TRACTOR runner. Translations whose source uses unstable Rust features are built with the corresponding compiler switch. Each vector first runs with a time limit of \pTimeoutSec{} seconds. A translation with a vector that does not pass runs again with the default of the corpus, \pReproTimeoutFullSec{} seconds per vector. If it then fails only through time limits, it runs \pReproRecheckReps{} more times, and an acceptance is reproduced only if all of these runs pass. When a library translation builds its shared object under a name different from the one the runner loads, the object is linked under the expected name, which leaves the executed code unchanged.
+
+\section{Limits and Repetitions of One Execution}\label{app:s-limits}
+
+\begin{table}[!htb]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Settings of one execution.}
+\label{tab:app-limits}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Setting & Value \\
+\midrule
+Time limit & \pTimeoutSec{} seconds; for an executable case, \pCTimeFactor{} times the longest running time of its C program on a test vector when this is larger \\
+Rerun after a limit exceeded on one side & Time limit multiplied by \pRerunFactor{} \\
+Output & \pOutputCapMiB{}~MiB for each output stream \\
+Memory & \pMemLimitGiB{}~GiB of address space \\
+Files written & \pFsizeLimitGiB{}~GiB; an execution above this limit ends with a signal \\
+Working directory and program name & A new, empty directory for each execution; both programs of an executable case run under the same program name \\
+Stability check (accepted branch) & \pStabReps{} further executions of each side \\
+Failing vector (rejected branch) & \pRqTwoReps{} executions of each side \\
+Sanitized execution & Time limit multiplied by \pSanTimeoutFactor{}; \pSanRssMiB{}~MiB of resident memory; leak detection disabled \\
+Attempts after an infrastructure fault & Up to \pInfraAttempts{} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A run that exceeds the time limit or the output limit ends in a budget-exceeded status. The memory limit is recognized from the allocation-failure message that a run prints at the limit, so a run that dies there without such a message counts as an ordinary exit or signal.
+
+\section{Input Generation}\label{app:s-inputs}
+
+For each executable case and each seed, the budget is \num{\sBudgetExeInputs} generated inputs for mutation, the same number for structural change, and \num{\sBudgetAflExecs} executions of AFL++. For each library case and each seed, it is \num{\sBudgetLibStates} generated states. Table~\ref{tab:app-inputs} gives the composition of the generated inputs. The budget bounds what is generated. For executables, generated inputs that the runner cannot deliver are dropped, \num{\sMainExeInputsOodM} from mutation and \num{\sMainExeInputsOodMs} from structural change, together with duplicates, so the main run executed \num{\sMainExeInputsExecM} inputs from mutation, \num{\sMainExeInputsExecMs} from structural change, \num{\sMainExeInputsExecA} from the fuzzer and \num{\sMainExeInputsExecS} original vectors. The fuzzer adds few inputs because the harness executes only the inputs that AFL++ keeps in its queue, together with its crashes and hangs. These inputs still yield a retained divergence for \rqDivTransLayerAExeAllNum{} of the \rqFPExeAllNum{} executable translations in $D$. It did not run for \sMainAflError{} case--seed records because of an error and for \sMainAflBuildFailed{} because its instrumented build failed.
+
+\begin{table}[!htb]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{Composition of the generated inputs.}
+\label{tab:app-inputs}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Source & Composition \\
+\midrule
+Mutation (executable) & Random changes to arguments and standard input; a nominal \pExeConstSyntaxPct\% of the inputs insert constants from the C source or change the syntax of an input \\
+Structural change (executable) & As mutation, and in addition: all arguments removed, an empty argument inserted, the standard input removed, or the standard input of another vector used \\
+Fuzzing (executable) & AFL++ with a time limit of \pAflExecTimeoutMs{}~ms per execution and a dictionary of the constants; the inputs it keeps are then run on both sides \\
+States (library) & \pLibRandomPct\% mutation by field type, \pLibDictPct\% constants from the C source, \pLibSweepPct\% sweeps of integer fields with at most \pLibSweepMaxValues{} admissible values \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Three kinds of input are treated separately. An input that the original runner cannot deliver, such as invalid UTF-8 text, a NUL byte in an argument or a state that the runner refuses, is removed before execution and counted. An executable case runs on its vectors only when its C program imports no function that reads standard input, a file, the environment or command-line options, and every definition of its \code{main} function takes no parameters. A library case whose function takes no input field admits no generated state, so its accepted translations cannot be re-evaluated and are counted as attrition.
+
+\section{Comparison}\label{app:s-comparison}
+
+The published decisions and the results of this thesis come from two different checks. Table~\ref{tab:app-checks} sets them side by side.
+
+\begin{table}[!htb]
+\centering
+\small
+\renewcommand{\arraystretch}{1.2}
+\caption{How the TRACTOR runner and the harness judge one execution.}
+\label{tab:app-checks}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.19\linewidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Aspect & Runner & Harness \\
+\midrule
+Reference & Expected values stored in each vector & Execution of the C program on the same input \\
+Inputs & Existing vectors & Existing vectors and generated inputs (accepted branch); failing vectors (rejected branch) \\
+Output streams & Equality with the expected text, or a match of a regular expression & Equality with the output of C after normalization \\
+Termination & Exit code 101 and signals count as failure & Compared with the termination of C \\
+Library state & Fields named in the expected state; scalar floating-point values compared approximately, arrays exactly & Every field of the state after the call; relative tolerance for every floating-point value \\
+Vectors marked for undefined behavior & Skipped & Left out of the inputs; the sanitizer check decides \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The harness applies the following normalization before it compares two observations. On standard output, every spelling of a not-a-number value is mapped to one form. Standard error is compared in lower case, with memory addresses and process and thread identifiers masked and with trailing white space and blank lines removed. Floating-point fields of a library state are equal within a relative tolerance of $10^{\pFloatRelTolExp}$, a not-a-number value equals a not-a-number value, and an infinity equals only an infinity of the same sign. Numbers printed to standard output are compared as text.
+
+When both sides exceed a limit, the outputs of an executable are cut at the shorter length, the incomplete last line of each side is dropped, and the remaining parts are compared without standard error, because the output of a stopped process is a prefix of its full output. In the rejected branch, a vector on which both sides exceed a limit is not adjudicable.
+
+\section{Sanitizer Check}\label{app:s-sanitizer}
+
+The C program is built with AddressSanitizer and UndefinedBehaviorSanitizer, and the sanitized execution stops at the first report. The check ends in one of four ways. It reports undefined behavior when the output of the sanitized execution contains a report of either sanitizer, apart from reports that only concern exhausted memory. It completes without a report when the sanitized execution ends without such a line. It is inconclusive when the sanitized execution exceeds its own limits. It is unresolved when the sanitized program cannot be built, or when it ends abnormally without a report while the ordinary C program does not, in each of the attempts allowed.
+
+\section{Model-Assisted Labeling}\label{app:s-labeling}
+
+Four steps of the study rely on labels assigned with the help of a language model: the inspection of retained divergences for false evidence (Section~\ref{sec:m-evidence}), the inspection of rejections that reached an outcome, the labels of case design used in Section~\ref{sec:r-rq1}, and the causes of the non-reproduced decisions reported in Section~\ref{sec:r-rq2}. In each step, every item was labeled in three independent passes by Claude Opus~5.5, each pass run as a separate agent with the same fixed prompt, which the repository stores with the step. No pass saw the labels of another pass, and the prompts withhold the results of the harness that a label is meant to check. The author resolved every disagreement and checked a random subset of the items on which the three passes agreed. Table~\ref{tab:app-labeling} gives the number of items of each step and the number on which the three passes agreed.
+
+\begin{table}[!htb]
+\centering
+\small
+\caption{Model-assisted labeling: items and agreement of the three passes.}
+\label{tab:app-labeling}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Step & Items & Same label in all three passes \\
+\midrule
+Inspection of retained divergences & \rqLabInspN & \rqLabInspAgree \\
+Inspection of rejections & \rqLabRqTwoN & \rqLabRqTwoAgree \\
+Design of the cases with a translation in $D$ & \rqLabThemeN & \rqLabThemeAgree \\
+Causes of non-reproduced decisions & \rqLabNonrepN & \rqLabNonrepAgree \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Three passes of one model are not independent in the statistical sense: passes that rely on the same incomplete evidence can share an error, and agreement among them does not establish that a label is correct. The labels of equivalent and non-equivalent mutants used in the validation (Table~\ref{tab:d-validation}) were also assigned in three passes and checked by the author on a sample; the record of that step does not state the model used.

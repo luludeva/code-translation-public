@@ -1,0 +1,718 @@
+{
+ "rule": "exp 41 (Le duyệt 12/11): L_P \\ L_P* = acceptance thiếu seed có retained divergence trên seed hoàn tất",
+ "translations": [
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "claude",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "kimi",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "kiro",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_organic",
+   "case": "pow43_lib",
+   "system": "laertes",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "claude",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "kimi",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "kiro",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "004_nineality_sieve_lib",
+   "system": "laertes",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "claude",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "006_static_alias_lib",
+   "system": "kiro",
+   "seeds": [
+    0,
+    1
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "kimi",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "008_long_run_lib",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "021_complex_goto_lib",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "kimi",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B01_synthetic",
+   "case": "032_comma_operator_lib",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "arr_push_lib",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "c2rust",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "claude",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": true
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "gpt-5.4",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "kimi",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "kiro",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "hm_geti_lib",
+   "system": "laertes",
+   "seeds": [
+    0
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "c2rust",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "c2saferrust",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "claude",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "codex-gpt54",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "gemini-3.1-pro-preview",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "kiro",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  },
+  {
+   "bundle": "B02_organic",
+   "case": "sh_geti_lib",
+   "system": "laertes",
+   "seeds": [
+    0,
+    2
+   ],
+   "status": "P_test",
+   "retained": false
+  }
+ ],
+ "retained_by_system": {
+  "codex-gpt54": 1
+ }
+}

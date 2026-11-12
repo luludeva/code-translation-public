@@ -1,0 +1,78 @@
+{"id": "exe-000", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "C in một dòng rỗng \"\\n\", Rust không in gì; exit 0 hai phía, stdout chỉ trùng sau khi bỏ dòng rỗng cuối (B1), không có dấu hiệu harness."}
+{"id": "exe-001", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "C in một dòng rỗng \"\\n\", Rust không in gì; exit 0 hai phía, stdout chỉ trùng sau khi bỏ dòng rỗng cuối (B1), không có dấu hiệu harness."}
+{"id": "exe-002", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "C in một dòng rỗng \"\\n\", Rust không in gì; exit 0 hai phía, stdout chỉ trùng sau khi bỏ dòng rỗng cuối (B1), không có dấu hiệu harness."}
+{"id": "exe-003", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 7 C in \"Unknown command: 'àH'\" cho dòng input rỗng còn Rust in \"> > > Goodbye!\"; khác biệt xử lý dòng rỗng tồn tại bất kể nội dung rác 'àH'."}
+{"id": "exe-004", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 7 C báo Unknown command cho dòng rỗng còn Rust bỏ qua; hai dòng cùng vị trí khác nội dung, output không bị cắt."}
+{"id": "exe-005", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 7 C báo Unknown command cho dòng rỗng còn Rust in \"> > Goodbye!\"; dòng chung vị trí khác nội dung."}
+{"id": "exe-006", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, stdout một dòng \"0\" (C) và \"1\" (Rust), số nguyên phải bằng đúng nên không qua B2."}
+{"id": "exe-007", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, stdout \"0\" so với \"1\", số nguyên khác nhau ở dòng chung."}
+{"id": "exe-008", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C chết bởi signal (rc -11, SIGSEGV) trong khi Rust exit 0 và in \"0\"; không timeout, output không bị cắt."}
+{"id": "exe-009", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0 và 26 dòng, dòng 14 C in \"1\" còn Rust in \"0\" (mảng trong bad() khác vị trí bit 1)."}
+{"id": "exe-010", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"ffffffd5\" còn Rust in \"d5\" (khác cách mở rộng dấu của char), phần chữ khác nên không qua B2."}
+{"id": "exe-011", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Cùng exit 0, C in một dòng nội dung còn Rust không in gì; không có dòng chung vị trí nên rơi vào phần dư một output dài hơn."}
+{"id": "exe-012", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Cùng exit 0, C in một dòng nội dung còn Rust không in gì; không có dòng chung vị trí nên rơi vào phần dư một output dài hơn."}
+{"id": "exe-013", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Cùng exit 0, C in một dòng nội dung còn Rust không in gì; không có dòng chung vị trí nên rơi vào phần dư một output dài hơn."}
+{"id": "exe-014", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng duy nhất \"helperGood1 string\" (C) khác \"helperBad string\" (Rust)."}
+{"id": "exe-015", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Cùng exit 0, C in một dòng nội dung còn Rust không in gì; không có dòng chung vị trí nên rơi vào phần dư một output dài hơn."}
+{"id": "exe-016", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 0 C in \"04\" còn Rust in \"fffffffe\", C in thêm thông báo quá lớn."}
+{"id": "exe-017", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"An error occurred\" còn Rust in bảng 8 dòng về căn nhà; dòng 0 khác nội dung."}
+{"id": "exe-018", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"An error occurred\" còn Rust in bảng 8 dòng về căn nhà; dòng 0 khác nội dung."}
+{"id": "exe-019", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C exit 0 in 8 dòng, Rust panic exit 101 (ParseIntError PosOverflow); trạng thái kết thúc khác."}
+{"id": "exe-020", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"An error occurred\" còn Rust in bảng 8 dòng về căn nhà; dòng 0 khác nội dung."}
+{"id": "exe-021", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 7 \"graphical: 32768\" so với \"graphical: 1\" (cùng ở printing, punctuation); số nguyên khác nhau."}
+{"id": "exe-022", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"A: 0 / x: 0\" còn Rust in \"A: 2 / x: 1\"; số nguyên khác ở dòng chung."}
+{"id": "exe-023", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"3\" còn Rust in \"2916\" cho cùng input dài."}
+{"id": "exe-024", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"-2147483648\" còn Rust in \"123\" (xử lý tràn int khác nhau)."}
+{"id": "exe-025", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"-3\" còn Rust in \"42\" với input số quá dài."}
+{"id": "exe-026", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, token thứ hai \"7\" (C) khác \"0\" (Rust) trên cùng dòng."}
+{"id": "exe-027", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, \"2 0 0 0\" so với \"0 0 1 1\", các số nguyên khác nhau."}
+{"id": "exe-028", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"ffffffff\" còn Rust in \"00000000\" cho số tràn."}
+{"id": "exe-029", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, chuỗi hex C bắt đầu \"ffffffff\" còn Rust bắt đầu \"00000000\", phần còn lại giống nhau."}
+{"id": "exe-030", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, chuỗi hex C bắt đầu \"ffffffff\" còn Rust bắt đầu \"00000000\", phần còn lại giống nhau."}
+{"id": "exe-031", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"00000000\" còn Rust in \"00000080\" cho số âm tràn."}
+{"id": "exe-032", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"b6f39d3f\" (bit của 1.234 parse được từ tiền tố) còn Rust in \"00000000\"."}
+{"id": "exe-033", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C exit 0 in \"000040c1\", Rust panic exit 101 (ParseFloatError Invalid) với input \"-12%\"."}
+{"id": "exe-034", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"0000f6c2\" còn Rust in \"00000000\" với input \"-123---\"."}
+{"id": "exe-035", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, C in \"302\" còn Rust in \"300\"."}
+{"id": "exe-036", "q1": "yes", "q2": "U-residual", "q3": "no", "why": "Cùng exit 0, 57 dòng của Rust trùng 57 dòng đầu của C, C in thêm một vòng menu; không cắt, không có dòng chung khác nội dung."}
+{"id": "exe-037", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "Cùng exit 0, dòng 9 C báo Unknown command 'àH' cho dòng rỗng còn Rust gộp prompt và chuyển sang lệnh \"1\"."}
+{"id": "exe-038", "q1": "yes", "q2": "U-stderr", "q3": "no", "why": "Exit 1 và stdout rỗng như nhau hai phía, chỉ stderr khác (\"byte 5\" so với \"byte 4\") sau chuẩn hoá N."}
+{"id": "lib-039", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "k1, stdout, stderr, returns như nhau; trường sfbtab của cả 4 granule khác (C [0..8], Rust [6..18]), giá trị là nội dung bảng nên không phụ thuộc địa chỉ."}
+{"id": "lib-040", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "k1, stdout, stderr, returns như nhau; trường sfbtab của cả 4 granule khác (C [0..8], Rust [6..18]), giá trị là nội dung bảng nên không phụ thuộc địa chỉ."}
+{"id": "lib-041", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "k1, stdout, stderr, returns như nhau; trường sfbtab của cả 4 granule khác (C [0..8], Rust [6..18]), giá trị là nội dung bảng nên không phụ thuộc địa chỉ."}
+{"id": "lib-042", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, state_out chỉ khác dst[0]: C giữ 64 còn Rust ghi 0."}
+{"id": "lib-043", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, state_out chỉ khác dst[0]: C giữ 64 còn Rust ghi 0."}
+{"id": "lib-044", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, state_out chỉ khác dst[0]: C giữ 64 còn Rust ghi 0."}
+{"id": "lib-045", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out và stderr khớp, C in stdout \"\\n\" (runner ghi VectorComparisonFailed vì có ghi luồng) còn Rust không in; trùng sau khi bỏ dòng rỗng cuối."}
+{"id": "lib-046", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out và stderr khớp, C in stdout \"\\n\" (runner ghi VectorComparisonFailed vì có ghi luồng) còn Rust không in; trùng sau khi bỏ dòng rỗng cuối."}
+{"id": "lib-047", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out và stderr khớp, C in stdout \"\\n\" (runner ghi VectorComparisonFailed vì có ghi luồng) còn Rust không in; trùng sau khi bỏ dòng rỗng cuối."}
+{"id": "lib-048", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, stdout và stderr khớp, trường returns khác (0 so với 1)."}
+{"id": "lib-049", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-050", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust SegmentationFault không có state_out."}
+{"id": "lib-051", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "k1, stdout, stderr, returns như nhau; trường sfbtab của cả 4 granule khác (C [0..8], Rust [6..18]), giá trị là nội dung bảng nên không phụ thuộc địa chỉ."}
+{"id": "lib-052", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-053", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-054", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-055", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-056", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "k1, stdout, stderr, returns như nhau; trường sfbtab của cả 4 granule khác (C [0..8], Rust [6..18]), giá trị là nội dung bảng nên không phụ thuộc địa chỉ."}
+{"id": "lib-057", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, dest[1] là NaN ở C còn Rust là -5e29; NaN chỉ bằng NaN nên trường khác."}
+{"id": "lib-058", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "returns khác (-1.0 so với 0.0) và C có thêm stderr Range error của pow; N4 khớp trước, khác biệt do xử lý tràn số của bản dịch."}
+{"id": "lib-059", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout C là một dòng rỗng còn Rust là \"string\"; dòng chung vị trí 0 khác nội dung (nếu coi dòng rỗng cuối của C bị B1 bỏ thì thành U-residual)."}
+{"id": "lib-060", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out và stderr khớp, C in stdout \"\\n\" (runner ghi VectorComparisonFailed vì có ghi luồng) còn Rust không in; trùng sau khi bỏ dòng rỗng cuối."}
+{"id": "lib-061", "q1": "yes", "q2": "B1-whitespace", "q3": "no", "why": "state_out và stderr khớp, C in stdout \"\\n\" (runner ghi VectorComparisonFailed vì có ghi luồng) còn Rust không in; trùng sau khi bỏ dòng rỗng cuối."}
+{"id": "lib-062", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout C là một dòng rỗng còn Rust là \"string\"; dòng chung vị trí 0 khác nội dung (nếu coi dòng rỗng cuối của C bị B1 bỏ thì thành U-residual)."}
+{"id": "lib-063", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout dòng 5 C in \"299\" còn Rust in \"300\"."}
+{"id": "lib-064", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout dòng 5 C in \"74\" còn Rust in \"75\"."}
+{"id": "lib-065", "q1": "yes", "q2": "N3-line", "q3": "no", "why": "state_out khớp, stdout C in \"fffffffe\" còn Rust in \"fe\"."}
+{"id": "lib-066", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, returns của C là chuỗi giải mã một phần (kèm byte rác ở cuối) còn Rust trả null."}
+{"id": "lib-067", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, cast3.n khác: C (0, 1) còn Rust (-1, 0); t là NaN ở cả hai nên bằng nhau."}
+{"id": "lib-068", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Cả hai phía đều không báo kết quả (C UnknownFailure, Rust Panic), không có state_out, stdout và stderr như nhau; luật N1 library chỉ nêu ca một phía báo kết quả, và UnknownFailure của C không rõ là crash chương trình hay lỗi runner."}
+{"id": "lib-069", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, mọi trường số thực khớp, returns khác (1 so với 0)."}
+{"id": "lib-070", "q1": "yes", "q2": "N1-status", "q3": "no", "why": "C báo kết quả Pass, Rust panic (rc 1, không có state_out); một phía báo kết quả, phía kia crash."}
+{"id": "lib-071", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, C parse \"1.23e-T\" thành số 1.23 (type_t 8, returns true) còn Rust trả false và item rỗng."}
+{"id": "lib-072", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "Cùng Pass, returns C là mảng 16 phần tử còn Rust là [0]."}
+{"id": "lib-073", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "C UnknownFailure, Rust SegmentationFault, cả hai không có state_out, stdout và stderr như nhau; hai phía cùng thất bại theo kiểu khác nhau, UnknownFailure không rõ nguồn gốc."}
+{"id": "lib-074", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Cả hai phía đều không báo kết quả (C UnknownFailure, Rust Panic), không có state_out, stdout và stderr như nhau; luật N1 library chỉ nêu ca một phía báo kết quả, và UnknownFailure của C không rõ là crash chương trình hay lỗi runner."}
+{"id": "lib-075", "q1": "unclear", "q2": "N1-status", "q3": "unclear", "why": "Cả hai phía đều không báo kết quả (C UnknownFailure, Rust Panic), không có state_out, stdout và stderr như nhau; luật N1 library chỉ nêu ca một phía báo kết quả, và UnknownFailure của C không rõ là crash chương trình hay lỗi runner."}
+{"id": "lib-076", "q1": "yes", "q2": "N4-field", "q3": "no", "why": "returns khác (13789 so với 1073755613) do phép SHIFT của -1 khác (dịch số học so với dịch logic); stdout cũng khác nhưng N4 khớp trước."}
+{"id": "lib-077", "q1": "yes", "q2": "U-stderr", "q3": "no", "why": "k1, state_out, stdout khớp, chỉ stderr khác (\"Insufficient columns in row 1.\" so với \"Insufficient rows in input string.\")."}

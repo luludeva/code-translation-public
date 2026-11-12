@@ -1,0 +1,9 @@
+# TRACTOR PUBLIC-Test-Corpus @ 37960ee08a7c644ee66e29855eca33903f702e67
+group	cases	vector_json	key_file_changes	key_setup	file_changes_files	resources_dirs	cases_with_any
+B01_organic	38	808	0	0	0	0	0
+B01_synthetic	85	416	0	0	0	0	0
+B02_organic	44	274	0	0	0	0	0
+B02_synthetic	42	1112	0	0	0	0	0
+P00_perlin_noise	1	30	0	0	0	0	0
+P01_sphincs_plus	128	128	0	0	0	0	0
+Examples	2	18	0	0	14	0	2

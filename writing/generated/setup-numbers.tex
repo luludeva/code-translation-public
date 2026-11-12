@@ -1,0 +1,354 @@
+% SINH TU DONG boi writing/scripts/gen-setup-macros.py. KHONG SUA TAY.
+% Repo commit: 69c5429c32cc0e55ba85204bec5db7ada2e01c0a. So Le chap nhan khong kiem tay 2026-11-12 (Chuong 4: moi truong, kiem chung, calibration, van hanh luot chinh).
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvInstance}{}\renewcommand{\sEnvInstance}{c7i.2xlarge}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvInstanceId}{}\renewcommand{\sEnvInstanceId}{i-094e7da9f40a3fc38}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvVcpu}{}\renewcommand{\sEnvVcpu}{8}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvCpu}{}\renewcommand{\sEnvCpu}{Intel(R) Xeon(R) Platinum 8488C}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvMemGiB}{}\renewcommand{\sEnvMemGiB}{15.3}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvKernel}{}\renewcommand{\sEnvKernel}{7.0.0-1014-aws}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvRustc}{}\renewcommand{\sEnvRustc}{1.97.0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvClang}{}\renewcommand{\sEnvClang}{18.1.3}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvGcc}{}\renewcommand{\sEnvGcc}{13.3.0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvAfl}{}\renewcommand{\sEnvAfl}{4.09c}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/manifest.json
+\providecommand{\sEnvPython}{}\renewcommand{\sEnvPython}{3.12.3}
+% nguon: TRACTOR@37960ee:rust-toolchain.toml
+\providecommand{\sEnvRustcCorpus}{}\renewcommand{\sEnvRustcCorpus}{1.94.1}
+% nguon: experiments/30-main-s0/results/ops-summary.json shards.*.workers (giá trị phổ biến)
+\providecommand{\sEnvWorkers}{}\renewcommand{\sEnvWorkers}{6}
+% nguon: ops-summary.json shards.rq1-main-lib-shgeti.workers
+\providecommand{\sEnvWorkersShgeti}{}\renewcommand{\sEnvWorkersShgeti}{3}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sLevelExe}{}\renewcommand{\sLevelExe}{x10}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sLevelLib}{}\renewcommand{\sLevelLib}{x10}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetExeInputsXOne}{}\renewcommand{\sBudgetExeInputsXOne}{3000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetAflXOne}{}\renewcommand{\sBudgetAflXOne}{10000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetLibXOne}{}\renewcommand{\sBudgetLibXOne}{200}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetExeInputsXThree}{}\renewcommand{\sBudgetExeInputsXThree}{9000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetAflXThree}{}\renewcommand{\sBudgetAflXThree}{30000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetLibXThree}{}\renewcommand{\sBudgetLibXThree}{600}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetExeInputs}{}\renewcommand{\sBudgetExeInputs}{30000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetAflExecs}{}\renewcommand{\sBudgetAflExecs}{100000}
+% nguon: bc82907:harness/sweep.py LEVELS
+\providecommand{\sBudgetLibStates}{}\renewcommand{\sBudgetLibStates}{2000}
+% nguon: 442d51e:.github/workflows/runner-jobs.yml timeout-minutes
+\providecommand{\sJobCapOldMin}{}\renewcommand{\sJobCapOldMin}{1440}
+% nguon: 803ecba:.github/workflows/runner-jobs.yml timeout-minutes
+\providecommand{\sJobCapNewMin}{}\renewcommand{\sJobCapNewMin}{4320}
+% nguon: 442d51e:ci/jobs/rq1-main-exe-1of2.sh dòng 3 (ci/main_cost.py)
+\providecommand{\sShardEstExeOneH}{}\renewcommand{\sShardEstExeOneH}{12.4}
+% nguon: results/unittest-only@a0d02d0:ci-out/unittest-only/unittest.txt
+\providecommand{\sUnitRun}{}\renewcommand{\sUnitRun}{471}
+% nguon: results/unittest-only@a0d02d0:ci-out/unittest-only/unittest.txt
+\providecommand{\sUnitPass}{}\renewcommand{\sUnitPass}{468}
+% nguon: results/unittest-only@a0d02d0:ci-out/unittest-only/unittest.txt
+\providecommand{\sUnitSkip}{}\renewcommand{\sUnitSkip}{3}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/unittest.txt
+\providecommand{\sUnitRunBc}{}\renewcommand{\sUnitRunBc}{428}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/unittest.txt
+\providecommand{\sUnitFailBc}{}\renewcommand{\sUnitFailBc}{16}
+% nguon: results/unittest-only@a0d02d0:ci-out/source-commit.txt
+\providecommand{\sUnitCommit}{}\renewcommand{\sUnitCommit}{a12c235}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExePairs}{}\renewcommand{\sVFiveExePairs}{548}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExeCompared}{}\renewcommand{\sVFiveExeCompared}{548}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExeVec}{}\renewcommand{\sVFiveExeVec}{4878}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExeMisPairs}{}\renewcommand{\sVFiveExeMisPairs}{3}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExeMisVec}{}\renewcommand{\sVFiveExeMisVec}{43}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveExeDOne}{}\renewcommand{\sVFiveExeDOne}{0}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixExeCases}{}\renewcommand{\sVSixExeCases}{104}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixExeInputs}{}\renewcommand{\sVSixExeInputs}{3060}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixExeDone}{}\renewcommand{\sVSixExeDone}{102}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixExeUnstable}{}\renewcommand{\sVSixExeUnstable}{3}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibPairs}{}\renewcommand{\sVFiveLibPairs}{1264}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibCompared}{}\renewcommand{\sVFiveLibCompared}{1264}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibVec}{}\renewcommand{\sVFiveLibVec}{10391}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibMisPairs}{}\renewcommand{\sVFiveLibMisPairs}{2}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibMisVec}{}\renewcommand{\sVFiveLibMisVec}{21}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVFiveLibDOne}{}\renewcommand{\sVFiveLibDOne}{0}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixLibCases}{}\renewcommand{\sVSixLibCases}{216}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixLibInputs}{}\renewcommand{\sVSixLibInputs}{6390}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixLibDone}{}\renewcommand{\sVSixLibDone}{213}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt
+\providecommand{\sVSixLibUnstable}{}\renewcommand{\sVSixLibUnstable}{14}
+% nguon: results/harness-checks@fd5b506:ci-out/harness-checks/summary.txt (exe cộng lib)
+\providecommand{\sVSixUnstable}{}\renewcommand{\sVSixUnstable}{17}
+% nguon: config/v6-causes@2ecbc6a:ci-config/v6-causes.jsonl
+\providecommand{\sVSixCUB}{}\renewcommand{\sVSixCUB}{10}
+% nguon: config/v6-causes@2ecbc6a:ci-config/v6-causes.jsonl
+\providecommand{\sVSixCUninit}{}\renewcommand{\sVSixCUninit}{3}
+% nguon: config/v6-causes@2ecbc6a:ci-config/v6-causes.jsonl
+\providecommand{\sVSixNearTo}{}\renewcommand{\sVSixNearTo}{4}
+% nguon: config/v6-causes@2ecbc6a:ci-config/v6-causes.jsonl
+\providecommand{\sVSixHarness}{}\renewcommand{\sVSixHarness}{0}
+% nguon: config/v6-causes@2ecbc6a:ci-config/v6-causes.jsonl
+\providecommand{\sVSixUnexplained}{}\renewcommand{\sVSixUnexplained}{0}
+% nguon: bc82907:harness/checks.py V6_INPUTS
+\providecommand{\sVSixInputsPerCase}{}\renewcommand{\sVSixInputsPerCase}{30}
+% nguon: bc82907:harness/checks.py V6_REPS
+\providecommand{\sVSixReps}{}\renewcommand{\sVSixReps}{5}
+% nguon: results/v8@1f84213:ci-out/v8/exe/v8-result.json
+\providecommand{\sVEightExePass}{}\renewcommand{\sVEightExePass}{pass}
+% nguon: results/v8@1f84213:ci-out/v8/exe/v8-inputs-result.json
+\providecommand{\sVEightExeInputsPass}{}\renewcommand{\sVEightExeInputsPass}{pass}
+% nguon: results/v8@1f84213:ci-out/v8/exe/orphans-after.json
+\providecommand{\sVEightExeOrphans}{}\renewcommand{\sVEightExeOrphans}{0}
+% nguon: results/v8@1f84213:ci-out/v8/lib/v8-result.json
+\providecommand{\sVEightLibPass}{}\renewcommand{\sVEightLibPass}{pass}
+% nguon: results/v8@1f84213:ci-out/v8/lib/v8-inputs-result.json
+\providecommand{\sVEightLibInputsPass}{}\renewcommand{\sVEightLibInputsPass}{pass}
+% nguon: results/v8@1f84213:ci-out/v8/lib/orphans-after.json
+\providecommand{\sVEightLibOrphans}{}\renewcommand{\sVEightLibOrphans}{0}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExePairs}{}\renewcommand{\sMutExePairs}{8}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeTried}{}\renewcommand{\sMutExeTried}{95}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeBuilt}{}\renewcommand{\sMutExeBuilt}{92}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeNotBuilt}{}\renewcommand{\sMutExeNotBuilt}{3}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeKilledVec}{}\renewcommand{\sMutExeKilledVec}{76}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeScanned}{}\renewcommand{\sMutExeScanned}{16}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeK}{}\renewcommand{\sMutExeK}{6}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeN}{}\renewcommand{\sMutExeN}{6}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeU}{}\renewcommand{\sMutExeU}{0}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeRate}{}\renewcommand{\sMutExeRate}{1.000}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeLo}{}\renewcommand{\sMutExeLo}{1.000}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeHi}{}\renewcommand{\sMutExeHi}{1.000}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeEq}{}\renewcommand{\sMutExeEq}{10}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeNeNotCaught}{}\renewcommand{\sMutExeNeNotCaught}{0}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json C.status
+\providecommand{\sMutExeConfirmed}{}\renewcommand{\sMutExeConfirmed}{6}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/a3-report-exe.json
+\providecommand{\sMutExeCrosscheck}{}\renewcommand{\sMutExeCrosscheck}{0}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/mutants-exe.jsonl (bản dịch có mutant caught)
+\providecommand{\sMutExeNTrans}{}\renewcommand{\sMutExeNTrans}{4}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-exe/mutants-exe.jsonl
+\providecommand{\sMutExeNCases}{}\renewcommand{\sMutExeNCases}{2}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibPairs}{}\renewcommand{\sMutLibPairs}{26}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibTried}{}\renewcommand{\sMutLibTried}{261}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibBuilt}{}\renewcommand{\sMutLibBuilt}{255}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibNotBuilt}{}\renewcommand{\sMutLibNotBuilt}{6}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibKilledVec}{}\renewcommand{\sMutLibKilledVec}{162}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibScanned}{}\renewcommand{\sMutLibScanned}{93}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibK}{}\renewcommand{\sMutLibK}{21}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibN}{}\renewcommand{\sMutLibN}{36}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibU}{}\renewcommand{\sMutLibU}{4}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibRate}{}\renewcommand{\sMutLibRate}{0.583}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibLo}{}\renewcommand{\sMutLibLo}{0.525}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibHi}{}\renewcommand{\sMutLibHi}{0.625}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibEq}{}\renewcommand{\sMutLibEq}{53}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibNeNotCaught}{}\renewcommand{\sMutLibNeNotCaught}{15}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json C.status
+\providecommand{\sMutLibConfirmed}{}\renewcommand{\sMutLibConfirmed}{21}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/a3-report-lib.json
+\providecommand{\sMutLibCrosscheck}{}\renewcommand{\sMutLibCrosscheck}{5}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/mutants-lib.jsonl (bản dịch có mutant caught)
+\providecommand{\sMutLibNTrans}{}\renewcommand{\sMutLibNTrans}{11}
+% nguon: results/a3-control-r2@1c7f9b2:ci-out/a3-control/a3-lib/mutants-lib.jsonl
+\providecommand{\sMutLibNCases}{}\renewcommand{\sMutLibNCases}{4}
+% nguon: review/a3-labels@8c78a1b:experiments/29-a3-labels/merge/agreement.md
+\providecommand{\sLabMut}{}\renewcommand{\sLabMut}{109}
+% nguon: review/a3-labels@8c78a1b:experiments/29-a3-labels/merge/agreement.md
+\providecommand{\sLabAgree}{}\renewcommand{\sLabAgree}{108}
+% nguon: review/a3-labels@8c78a1b:experiments/29-a3-labels/merge/review-sample.md
+\providecommand{\sLabSample}{}\renewcommand{\sLabSample}{62}
+% nguon: review/a3-labels@8c78a1b:experiments/29-a3-labels/merge/expand-EQ.md
+\providecommand{\sLabExtraEq}{}\renewcommand{\sLabExtraEq}{44}
+% nguon: review/a3-labels@8c78a1b:experiments/29-a3-labels/le-decisions.jsonl
+\providecommand{\sLabToUnknown}{}\renewcommand{\sLabToUnknown}{3}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeCases}{}\renewcommand{\sCcExeCases}{3}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeExcluded}{}\renewcommand{\sCcExeExcluded}{0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeInputs}{}\renewcommand{\sCcExeInputs}{158123}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeDivRaw}{}\renewcommand{\sCcExeDivRaw}{0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeDivUb}{}\renewcommand{\sCcExeDivUb}{0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-exe/cc-report-exe.json
+\providecommand{\sCcExeRetained}{}\renewcommand{\sCcExeRetained}{0}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibCases}{}\renewcommand{\sCcLibCases}{10}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibExcluded}{}\renewcommand{\sCcLibExcluded}{1}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibInputs}{}\renewcommand{\sCcLibInputs}{18032}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibDivRaw}{}\renewcommand{\sCcLibDivRaw}{286}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibDivUb}{}\renewcommand{\sCcLibDivUb}{286}
+% nguon: results/compiler-control@a7274ee:ci-out/compiler-control/cc-lib/cc-report-lib.json
+\providecommand{\sCcLibRetained}{}\renewcommand{\sCcLibRetained}{0}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeXOne}{}\renewcommand{\sCalExeXOne}{12}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeXThree}{}\renewcommand{\sCalExeXThree}{15}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeXTen}{}\renewcommand{\sCalExeXTen}{16}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json (x10 trừ x3)
+\providecommand{\sCalExeIncTen}{}\renewcommand{\sCalExeIncTen}{1}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeScanned}{}\renewcommand{\sCalExeScanned}{26}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeLowNotHigh}{}\renewcommand{\sCalExeLowNotHigh}{0}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalExeUnconfirmed}{}\renewcommand{\sCalExeUnconfirmed}{0}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibXOne}{}\renewcommand{\sCalLibXOne}{9}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibXThree}{}\renewcommand{\sCalLibXThree}{10}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibXTen}{}\renewcommand{\sCalLibXTen}{12}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json (x10 trừ x3)
+\providecommand{\sCalLibIncTen}{}\renewcommand{\sCalLibIncTen}{2}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibScanned}{}\renewcommand{\sCalLibScanned}{69}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibLowNotHigh}{}\renewcommand{\sCalLibLowNotHigh}{0}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json
+\providecommand{\sCalLibUnconfirmed}{}\renewcommand{\sCalLibUnconfirmed}{0}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json cap.hours
+\providecommand{\sCalHoursExe}{}\renewcommand{\sCalHoursExe}{46.3}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json cap.hours
+\providecommand{\sCalHoursLib}{}\renewcommand{\sCalHoursLib}{19.6}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json cap.total
+\providecommand{\sCalHoursTotal}{}\renewcommand{\sCalHoursTotal}{65.9}
+% nguon: results/sweep-a7@54c5a9a:ci-out/sweep-a7/select.json estimate.cap
+\providecommand{\sDurationCeilingH}{}\renewcommand{\sDurationCeilingH}{72}
+% nguon: experiments/12-stderr-audit/results/labels-c.jsonl
+\providecommand{\sStderrItems}{}\renewcommand{\sStderrItems}{76}
+% nguon: labels-c.jsonl, relabel/run2.jsonl, relabel/run3.jsonl
+\providecommand{\sStderrRunAgree}{}\renewcommand{\sStderrRunAgree}{76}
+% nguon: experiments/12-stderr-audit/results/relabel/items.jsonl (case nhiều nhất)
+\providecommand{\sStderrSameCause}{}\renewcommand{\sStderrSameCause}{70}
+% nguon: experiments/12-stderr-audit/results/le-independent-20.md
+\providecommand{\sStderrAuthor}{}\renewcommand{\sStderrAuthor}{20}
+% nguon: experiments/12-stderr-audit/results/le-independent-20.md
+\providecommand{\sStderrAuthorAgree}{}\renewcommand{\sStderrAuthorAgree}{20}
+% nguon: experiments/12-stderr-audit/results/le-independent-20.md
+\providecommand{\sStderrUnreviewed}{}\renewcommand{\sStderrUnreviewed}{64}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainRunners}{}\renewcommand{\sMainRunners}{5}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobHours}{}\renewcommand{\sMainJobHours}{358.1}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobsSuccess}{}\renewcommand{\sMainJobsSuccess}{4}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobHoursSuccess}{}\renewcommand{\sMainJobHoursSuccess}{67.3}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobsFailure}{}\renewcommand{\sMainJobsFailure}{5}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobHoursFailure}{}\renewcommand{\sMainJobHoursFailure}{129.7}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobsCancelled}{}\renewcommand{\sMainJobsCancelled}{5}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainJobHoursCancelled}{}\renewcommand{\sMainJobHoursCancelled}{161.1}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.generated_by_layer
+\providecommand{\sMainExeInputsGenM}{}\renewcommand{\sMainExeInputsGenM}{3688565}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.out_of_domain_by_layer
+\providecommand{\sMainExeInputsOodM}{}\renewcommand{\sMainExeInputsOodM}{748271}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.duplicates_by_layer
+\providecommand{\sMainExeInputsDupM}{}\renewcommand{\sMainExeInputsDupM}{2226}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.executed_by_layer
+\providecommand{\sMainExeInputsExecM}{}\renewcommand{\sMainExeInputsExecM}{2938068}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.generated_by_layer
+\providecommand{\sMainExeInputsGenMs}{}\renewcommand{\sMainExeInputsGenMs}{3738007}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.out_of_domain_by_layer
+\providecommand{\sMainExeInputsOodMs}{}\renewcommand{\sMainExeInputsOodMs}{705759}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.duplicates_by_layer
+\providecommand{\sMainExeInputsDupMs}{}\renewcommand{\sMainExeInputsDupMs}{914502}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.executed_by_layer
+\providecommand{\sMainExeInputsExecMs}{}\renewcommand{\sMainExeInputsExecMs}{2117746}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.generated_by_layer
+\providecommand{\sMainExeInputsGenA}{}\renewcommand{\sMainExeInputsGenA}{7171}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.out_of_domain_by_layer
+\providecommand{\sMainExeInputsOodA}{}\renewcommand{\sMainExeInputsOodA}{2343}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.duplicates_by_layer
+\providecommand{\sMainExeInputsDupA}{}\renewcommand{\sMainExeInputsDupA}{2286}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.executed_by_layer
+\providecommand{\sMainExeInputsExecA}{}\renewcommand{\sMainExeInputsExecA}{2542}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.generated_by_layer
+\providecommand{\sMainExeInputsGenS}{}\renewcommand{\sMainExeInputsGenS}{2328}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.out_of_domain_by_layer
+\providecommand{\sMainExeInputsOodS}{}\renewcommand{\sMainExeInputsOodS}{0}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.duplicates_by_layer
+\providecommand{\sMainExeInputsDupS}{}\renewcommand{\sMainExeInputsDupS}{35}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.executed_by_layer
+\providecommand{\sMainExeInputsExecS}{}\renewcommand{\sMainExeInputsExecS}{2293}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainExeRecords}{}\renewcommand{\sMainExeRecords}{291}
+% nguon: experiments/30-main-s0/results/ops-summary.json
+\providecommand{\sMainLibRecords}{}\renewcommand{\sMainLibRecords}{625}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.afl_status_by_record
+\providecommand{\sMainAflDone}{}\renewcommand{\sMainAflDone}{129}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.afl_status_by_record
+\providecommand{\sMainAflSkipped}{}\renewcommand{\sMainAflSkipped}{51}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.afl_status_by_record
+\providecommand{\sMainAflError}{}\renewcommand{\sMainAflError}{6}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.afl_status_by_record
+\providecommand{\sMainAflBuildFailed}{}\renewcommand{\sMainAflBuildFailed}{3}
+% nguon: experiments/30-main-s0/results/ops-summary.json merged_inputs_exe.afl_status_by_record
+\providecommand{\sMainAflAbsent}{}\renewcommand{\sMainAflAbsent}{102}

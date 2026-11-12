@@ -1,0 +1,33 @@
+% Hinh khoang ti le thanh cong theo he (RQ3). Moi toa do lay tu macro rqSR*; khong go so tay.
+\begin{tikzpicture}[font=\footnotesize, x=0.062cm, y=0.52cm]
+\newcommand{\ivrow}[4]{% #1 = y, #2 = Exe/Lib, #3 = ma he, #4 = dich ngang
+  \pgfmathsetmacro{\lo}{\csname rqSRLo#2All#3Pct\endcsname}
+  \pgfmathsetmacro{\hi}{\csname rqSRUp#2All#3Pct\endcsname}
+  \pgfmathsetmacro{\pb}{\csname rqSR#2All#3Pct\endcsname}
+  \draw[black!25] (#4,#1) -- ++(100,0);
+  \draw[line width=3.2pt, passc] (#4+\lo,#1) -- (#4+\hi,#1);
+  \draw[line width=3.2pt, passc] (#4+\lo-0.4,#1) -- (#4+\lo+0.4,#1);
+  \node[circle, draw=black, fill=white, inner sep=1.3pt] at (#4+\pb,#1) {};
+}
+\newcommand{\ivpanel}[3]{% #1 = Exe/Lib, #2 = dich ngang, #3 = tieu de
+  \node[font=\small\bfseries] at (#2+50,11.3) {#3};
+  \foreach \t in {0,25,50,75,100} {
+    \draw[black!15] (#2+\t,-0.6) -- (#2+\t,10.6);
+    \node[below] at (#2+\t,-0.6) {\t};
+  }
+  \ivrow{10}{#1}{Kiro}{#2}\ivrow{9}{#1}{Claude}{#2}\ivrow{8}{#1}{Codex}{#2}
+  \ivrow{7}{#1}{CTwoRust}{#2}\ivrow{6}{#1}{Laertes}{#2}
+  \ivrow{5}{#1}{CTwoSaferRust}{#2}\ivrow{4}{#1}{SmartCTwoRust}{#2}
+  \ivrow{3}{#1}{Kimi}{#2}\ivrow{2}{#1}{GptFive}{#2}\ivrow{1}{#1}{Gemini}{#2}
+  \ivrow{0}{#1}{}{#2}
+  \node[below] at (#2+50,-1.5) {success rate (\% of pairs in $P_0$)};
+}
+\foreach \y/\n in {10/Kiro, 9/Claude Code, 8/Codex (GPT-5.4), 7/C2Rust, 6/Laertes, 5/C2SaferRust, 4/SmartC2Rust, 3/Kimi K2.5, 2/GPT-5.4, 1/Gemini 3.1 Pro, 0/\textbf{All systems}}
+  \node[anchor=east] at (-3,\y) {\n};
+\ivpanel{Exe}{0}{Executable}
+\ivpanel{Lib}{118}{Library}
+\node[circle, draw=black, fill=white, inner sep=1.3pt] (lg1) at (40,-3.4) {};
+\node[anchor=west] at (lg1.east) {published rate};
+\draw[line width=3.2pt, passc] (95,-3.4) -- (107,-3.4);
+\node[anchor=west] at (108,-3.4) {interval after reclassification};
+\end{tikzpicture}

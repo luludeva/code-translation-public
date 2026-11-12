@@ -1,0 +1,85 @@
+# run-log exp 38 (post hoc, sơ bộ, chưa kiểm tay), 2026-11-08T04:02:24Z; chạy trong repo lúc commit (apply.sh); lượt trước 2026-11-04T16:29:11Z, 2026-11-04T17:25:40Z, số không đổi
+# repo HEAD 27eee551e8a9c8f94477e968b383772bde6e6ebf; Python 3.13.18
+$ python3 experiments/38-rq2-san-bound/scripts/bound.py /tmp/tmp.ETCPNgWae6/rq2-exe.jsonl --out experiments/38-rq2-san-bound/results/bound-exe.json
+input cd094ca44ca71b5229291ef49a11329e6a25007ed7db1e6dd3bfd3663f26877f blob a21f90d2a5ca55302acf745f07a334ba546b103b (kỳ vọng a21f90d2a5ca55302acf745f07a334ba546b103b)
+records 128; vectors recomputed 810, mismatches 0; translations recomputed 128, mismatches 0
+targets (incomplete_harness_run:san_build_failed): 36 {'codex-gpt54': 36} {'P01_sphincs_plus': 36}
+  san=no_report: targets {'behavioral_disagreement': 36} reasons {}; F_R_run 0, A_R_run 128
+  san=ub: targets {'not_adjudicable': 36} reasons {'ub_in_c': 36}; F_R_run 0, A_R_run 92
+  san=inconclusive: targets {'not_adjudicable': 36} reasons {'sanitizer_inconclusive': 36}; F_R_run 0, A_R_run 92
+  san=infra (phụ): targets {'not_re_examined': 36} reasons {'incomplete_harness_run:san_infra': 36}; F_R_run 0, A_R_run 92
+A range R_run: {'min': 92, 'max': 128, 'adjudicated_min': 92, 'adjudicated_max': 128, 'R_run': 128, 'over': ['no_report', 'ub', 'inconclusive']}; any behavioral_agreement: False
+evidence: C=expected 36/36, Rust=got 36/36, distinct C {1: 36}, distinct Rust {1: 36}, channels {'stdout': 108}, diff truncated 0
+  check codex-gpt54: A,F,not_re_examined từ rq2-exe.jsonl = metrics-split: ok
+  check codex-gpt54: R_run census = số bản ghi RQ2: ok
+  check codex-gpt54: rqSRHiExeAllCodexNum ở rq-numbers.tex: ok (macro 90, tính 90)
+  check codex-gpt54: rqSRLoExeAllCodexNum ở rq-numbers.tex: ok (macro 45, tính 45)
+  check codex-gpt54: rqLrExeAllCodexNum ở rq-numbers.tex: ok (macro 36, tính 36)
+  check codex-gpt54: rqSRExeAllCodexNum ở rq-numbers.tex: ok (macro 63, tính 63)
+  check _all: A,F,not_re_examined từ rq2-exe.jsonl = metrics-split: ok
+  check _all: R_run census = số bản ghi RQ2: ok
+  check _all: rqSRHiExeAllNum ở rq-numbers.tex: ok (macro 419, tính 419)
+  check _all: rqSRLoExeAllNum ở rq-numbers.tex: ok (macro 300, tính 300)
+  check _all: rqLrExeAllNum ở rq-numbers.tex: ok (macro 36, tính 36)
+  check _all: rqSRExeAllNum ở rq-numbers.tex: ok (macro 559, tính 559)
+RQ3 codex-gpt54: base P0 106 P_acc 63 R0_test 43 D 9 L_P 9 A 7 F 0 L_R 36 upper 90/106 lower 45/106; k_max(upper<SR) 8, k(upper=SR) [9], k=n reproduces base True
+  k= 0 A=43 F=0 L_R=0 upper 54/106 (50.9%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 1 A=42 F=0 L_R=1 upper 55/106 (51.9%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 2 A=41 F=0 L_R=2 upper 56/106 (52.8%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 3 A=40 F=0 L_R=3 upper 57/106 (53.8%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 4 A=39 F=0 L_R=4 upper 58/106 (54.7%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 5 A=38 F=0 L_R=5 upper 59/106 (55.7%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 6 A=37 F=0 L_R=6 upper 60/106 (56.6%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 7 A=36 F=0 L_R=7 upper 61/106 (57.5%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 8 A=35 F=0 L_R=8 upper 62/106 (58.5%) SR 63/106 (59.4%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k= 9 A=34 F=0 L_R=9 upper 63/106 (59.4%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=10 A=33 F=0 L_R=10 upper 64/106 (60.4%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=11 A=32 F=0 L_R=11 upper 65/106 (61.3%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=12 A=31 F=0 L_R=12 upper 66/106 (62.3%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=13 A=30 F=0 L_R=13 upper 67/106 (63.2%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=14 A=29 F=0 L_R=14 upper 68/106 (64.2%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=15 A=28 F=0 L_R=15 upper 69/106 (65.1%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=16 A=27 F=0 L_R=16 upper 70/106 (66.0%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=17 A=26 F=0 L_R=17 upper 71/106 (67.0%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=18 A=25 F=0 L_R=18 upper 72/106 (67.9%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=19 A=24 F=0 L_R=19 upper 73/106 (68.9%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=20 A=23 F=0 L_R=20 upper 74/106 (69.8%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=21 A=22 F=0 L_R=21 upper 75/106 (70.8%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=22 A=21 F=0 L_R=22 upper 76/106 (71.7%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=23 A=20 F=0 L_R=23 upper 77/106 (72.6%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=24 A=19 F=0 L_R=24 upper 78/106 (73.6%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=25 A=18 F=0 L_R=25 upper 79/106 (74.5%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=26 A=17 F=0 L_R=26 upper 80/106 (75.5%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=27 A=16 F=0 L_R=27 upper 81/106 (76.4%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=28 A=15 F=0 L_R=28 upper 82/106 (77.4%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=29 A=14 F=0 L_R=29 upper 83/106 (78.3%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=30 A=13 F=0 L_R=30 upper 84/106 (79.2%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=31 A=12 F=0 L_R=31 upper 85/106 (80.2%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=32 A=11 F=0 L_R=32 upper 86/106 (81.1%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=33 A=10 F=0 L_R=33 upper 87/106 (82.1%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=34 A=9 F=0 L_R=34 upper 88/106 (83.0%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=35 A=8 F=0 L_R=35 upper 89/106 (84.0%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+  k=36 A=7 F=0 L_R=36 upper 90/106 (84.9%) SR 63/106 (59.4%) below=False ub~inconcl=True ub~infra(A,F)=True
+RQ3 _all: base P0 1060 P_acc 559 R0_test 128 D 176 L_P 83 A 92 F 0 L_R 36 upper 419/1060 lower 300/1060; k_max(upper<SR) 36, k(upper=SR) [], k=n reproduces base True
+  k= 0 A=128 F=0 L_R=0 upper 383/1060 (36.1%) SR 559/1060 (52.7%) below=True ub~inconcl=True ub~infra(A,F)=True
+  k=36 A=92 F=0 L_R=36 upper 419/1060 (39.5%) SR 559/1060 (52.7%) below=True ub~inconcl=True ub~infra(A,F)=True
+Đã ghi /home/claude/code-translation/experiments/38-rq2-san-bound/results/bound-exe.json
+exit 0
+
+$ BOUND_RQ2_EXE=/tmp/tmp.ETCPNgWae6/rq2-exe.jsonl python3 experiments/38-rq2-san-bound/scripts/test_bound.py -v
+test_F_zero_every_scenario (__main__.TestBound.test_F_zero_every_scenario) ... ok
+test_no_behavioral_agreement (__main__.TestBound.test_no_behavioral_agreement) ... ok
+test_recompute_matches_stored (__main__.TestBound.test_recompute_matches_stored) ... ok
+test_rq3_k_full_reproduces_s0 (__main__.TestBound.test_rq3_k_full_reproduces_s0) ... ok
+test_scenario_partition (__main__.TestBound.test_scenario_partition)
+Mỗi kịch bản dồn cả tập vào đúng một outcome (dữ liệu hiện tại); cờ cho người đọc nếu dữ liệu đổi. ... ok
+test_targets_are_san_build_failed_only (__main__.TestBound.test_targets_are_san_build_failed_only) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.964s
+
+OK
+exit 0
+$ python3 writing/scripts/gen-sanbound-macros.py
+Đã ghi /home/claude/code-translation/writing/generated/sanbound-numbers.tex: 63 macro, 0 ??
+exit 0

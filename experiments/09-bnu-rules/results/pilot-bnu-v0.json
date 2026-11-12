@@ -1,0 +1,532 @@
+{
+ "rules_version": "bnu-v0",
+ "self_tests": 14,
+ "n_records": 30877,
+ "divergence_level": {
+  "exp03|c2rust": {
+   "R-NaN": 10
+  },
+  "exp03|claude": {
+   "R-NaN": 5,
+   "N3-line": 18,
+   "U-residual": 4,
+   "R15-UB": 2
+  },
+  "exp03|kiro": {
+   "R-NaN": 14,
+   "N3-line": 20,
+   "R15-UB": 2
+  },
+  "exp04|claude": {
+   "N3-line": 3830,
+   "U-residual": 584,
+   "T-truncated": 37,
+   "R15-UB": 294
+  },
+  "exp04|kiro": {
+   "N3-line": 7014,
+   "B2-numeric": 555,
+   "R15-UB": 294
+  }
+ },
+ "rejected_pairs_skipped": [
+  "static_vars_fpts:kiro"
+ ],
+ "translation_level": {
+  "exp03|qmath|c2rust": {
+   "level": "none",
+   "counts": {
+    "not_S": 10
+   },
+   "rules": {
+    "R-NaN": 10
+   }
+  },
+  "exp03|qmath|claude": {
+   "level": "N",
+   "counts": {
+    "not_S": 5,
+    "N": 10
+   },
+   "rules": {
+    "R-NaN": 5,
+    "N3-line": 10
+   }
+  },
+  "exp03|qmath|kiro": {
+   "level": "N",
+   "counts": {
+    "not_S": 14,
+    "N": 12
+   },
+   "rules": {
+    "R-NaN": 14,
+    "N3-line": 12
+   }
+  },
+  "exp03|static_vars_fpts|claude": {
+   "level": "U",
+   "counts": {
+    "U": 4
+   },
+   "rules": {
+    "U-residual": 4
+   }
+  },
+  "exp03|tu_linkage|claude": {
+   "level": "N",
+   "counts": {
+    "N": 8,
+    "not_S": 2
+   },
+   "rules": {
+    "N3-line": 8,
+    "R15-UB": 2
+   }
+  },
+  "exp03|tu_linkage|kiro": {
+   "level": "N",
+   "counts": {
+    "N": 8,
+    "not_S": 2
+   },
+   "rules": {
+    "N3-line": 8,
+    "R15-UB": 2
+   }
+  },
+  "exp04|qmath|claude": {
+   "level": "N",
+   "counts": {
+    "N": 2154
+   },
+   "rules": {
+    "N3-line": 2154
+   }
+  },
+  "exp04|qmath|kiro": {
+   "level": "N",
+   "counts": {
+    "N": 5338,
+    "B": 555
+   },
+   "rules": {
+    "N3-line": 5338,
+    "B2-numeric": 555
+   }
+  },
+  "exp04|static_vars_fpts|claude": {
+   "level": "T",
+   "counts": {
+    "U": 584,
+    "T": 37
+   },
+   "rules": {
+    "U-residual": 584,
+    "T-truncated": 37
+   }
+  },
+  "exp04|tu_linkage|claude": {
+   "level": "N",
+   "counts": {
+    "N": 1676,
+    "not_S": 294
+   },
+   "rules": {
+    "N3-line": 1676,
+    "R15-UB": 294
+   }
+  },
+  "exp04|tu_linkage|kiro": {
+   "level": "N",
+   "counts": {
+    "N": 1676,
+    "not_S": 294
+   },
+   "rules": {
+    "N3-line": 1676,
+    "R15-UB": 294
+   }
+  }
+ },
+ "translation_level_by_run": {
+  "exp03|qmath|c2rust|v0|all": "none",
+  "exp03|qmath|claude|v0|all": "N",
+  "exp03|qmath|kiro|v0|all": "N",
+  "exp03|static_vars_fpts|claude|v0|all": "U",
+  "exp03|tu_linkage|claude|v0|all": "N",
+  "exp03|tu_linkage|kiro|v0|all": "N",
+  "exp04|qmath|claude|M|0": "N",
+  "exp04|qmath|claude|M|1": "N",
+  "exp04|qmath|claude|M|2": "N",
+  "exp04|qmath|claude|MS|0": "N",
+  "exp04|qmath|claude|MS|1": "N",
+  "exp04|qmath|claude|MS|2": "N",
+  "exp04|qmath|kiro|M|0": "N",
+  "exp04|qmath|kiro|M|1": "N",
+  "exp04|qmath|kiro|M|2": "N",
+  "exp04|qmath|kiro|MS|0": "N",
+  "exp04|qmath|kiro|MS|1": "N",
+  "exp04|qmath|kiro|MS|2": "N",
+  "exp04|static_vars_fpts|claude|M|0": "T",
+  "exp04|static_vars_fpts|claude|M|1": "T",
+  "exp04|static_vars_fpts|claude|M|2": "T",
+  "exp04|static_vars_fpts|claude|MS|0": "T",
+  "exp04|static_vars_fpts|claude|MS|1": "T",
+  "exp04|static_vars_fpts|claude|MS|2": "T",
+  "exp04|tu_linkage|claude|M|0": "N",
+  "exp04|tu_linkage|claude|M|1": "N",
+  "exp04|tu_linkage|claude|M|2": "N",
+  "exp04|tu_linkage|claude|MS|0": "N",
+  "exp04|tu_linkage|claude|MS|1": "N",
+  "exp04|tu_linkage|claude|MS|2": "N",
+  "exp04|tu_linkage|kiro|M|0": "N",
+  "exp04|tu_linkage|kiro|M|1": "N",
+  "exp04|tu_linkage|kiro|M|2": "N",
+  "exp04|tu_linkage|kiro|MS|0": "N",
+  "exp04|tu_linkage|kiro|MS|1": "N",
+  "exp04|tu_linkage|kiro|MS|2": "N"
+ },
+ "examples": {
+  "exp03|static_vars_fpts|claude|U-residual": [
+   {
+    "c_out_tail": "istribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: \n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: ",
+    "r_out_tail": " Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Invalid input\n\n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: "
+   },
+   {
+    "c_out_tail": "istribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: \n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: ",
+    "r_out_tail": " Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Invalid input\n\n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: "
+   }
+  ],
+  "exp04|qmath|kiro|B2-numeric": [
+   {
+    "c_out_tail": "0.000000 -0.000000 0.999550\n",
+    "r_out_tail": "0.000000 0.000000 0.999550\n"
+   },
+   {
+    "c_out_tail": "-0.000000 0.000000 0.999550\n",
+    "r_out_tail": "0.000000 0.000000 0.999550\n"
+   }
+  ],
+  "exp04|static_vars_fpts|claude|U-residual": [
+   {
+    "c_out_tail": "istribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: \n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: ",
+    "r_out_tail": " Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Invalid input\n\n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: "
+   },
+   {
+    "c_out_tail": "istribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: \n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: ",
+    "r_out_tail": " Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Invalid input\n\n=== Text Analyzer ===\n1. Analyze text\n2. Load text from file\n3. Show token distribution\n4. Calculate complexity score\n5. Find pattern\n6. Interactive tokenizer\n7. Exit\nChoice: Enter pattern to search: "
+   }
+  ]
+ },
+ "library_sanity": [
+  {
+   "system": "kiro",
+   "case": "gaussian_kernel_lib",
+   "mutant": 4,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "gaussian_kernel_lib",
+   "mutant": 4,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 1,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 1,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 8,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 8,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 10,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "aabb_lib",
+   "mutant": 10,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "aabb_lib",
+   "mutant": 7,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "aabb_lib",
+   "mutant": 7,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "aabb_lib",
+   "mutant": 9,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "aabb_lib",
+   "mutant": 9,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 6,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 6,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 10,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 10,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 11,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "kiro",
+   "case": "aabb_lib",
+   "mutant": 11,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "memchra2_lib",
+   "mutant": 4,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "c2rust",
+   "case": "memchra2_lib",
+   "mutant": 4,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "056_blake_128f_s_hash_message_lib",
+   "mutant": 1,
+   "run": 0,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  },
+  {
+   "system": "claude",
+   "case": "056_blake_128f_s_hash_message_lib",
+   "mutant": 1,
+   "run": 1,
+   "mutant_vs_c": [
+    "N",
+    "N4-field"
+   ],
+   "orig_vs_c": [
+    "not_S",
+    "R-norm-lib"
+   ]
+  }
+ ]
+}
